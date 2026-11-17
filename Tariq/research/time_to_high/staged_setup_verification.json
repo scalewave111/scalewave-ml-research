@@ -1,0 +1,45 @@
+{
+  "status": "PASS_SYNTHETIC_ALL_HORIZON_PIPELINE_CLOUD_INTEGRATION_NOT_RUN",
+  "hashes": {
+    "reference": "e584210af02adb15168245cd13e2cb6603eed882069cb75cd877d29122a6821b",
+    "optimized": "29fd33d96055bc3fe20829806211d34333ec4e0be12fb676c9bb37d4d0f5ed7b",
+    "core": "60176c7c93ae4103b4ba8e71a77e2441affb8c76f843d8177a63920761b035cb",
+    "runner": "c3de0f8d4d6f3354cd1832365eaa79c34af4696cef7f3de510e9f95eea49092c",
+    "report": "5a9ebbb91e16cb52f774af9c61621970a6e76ce3dbfc0af6ab1c469076ce92bf",
+    "source_compat": "e8d85cc0d35be2b1a43cf5b7cb774d41d0f5d5a34e22e28ade5367e0153fb303",
+    "io_guard": "3847bcce7a3adeb864718bc1ae91c2a0d2c6c99f39e59b1f6d09fc885dec6285",
+    "range_reader": "4ac4e8be2378643f90af71c3ff286cdcca65921277a959d99a3cecad4be6bfcb"
+  },
+  "method": "16-quantile-bin median screen; top3 features per inner fold; six-setting trees; selected feature/setting evaluated once per outer fold",
+  "scope": {
+    "horizons": 10,
+    "features": 386,
+    "folds": 5,
+    "max_expensive_tree_fits_before_reuse": 950,
+    "cheap_fits_max": 38600
+  },
+  "checks": [
+    "synthetic all-ten-horizon screen/refine/report pipeline",
+    "same five chronological fold definitions and six tree settings",
+    "selected outer tree scores equal frozen reference",
+    "changing outer cheap scores cannot change inner shortlist",
+    "training-only quantile bins and median predictions",
+    "missing/insufficient-feature fallback retains all evaluation rows",
+    "strict recorded label-end purges",
+    "interrupt after durable fit checkpoint then resume",
+    "zero fits on complete policy resume",
+    "all applicable legacy shortlist fits reused without new fitting",
+    "checkpoint corruption rejection",
+    "PDF and complete pending-aware CSV creation",
+    "self-contained notebook syntax/source hashes",
+    "original 15m/1h runner identities untouched"
+  ],
+  "not_verified": [
+    "Live Colab authentication, Drive permissions and quota availability",
+    "Full-period all-feature runtime",
+    "Completion by tomorrow 10am"
+  ],
+  "stop_policy": "No clock cutoff; stop only on completion, error or platform/user interruption. Manual restart required if Colab terminates.",
+  "original_experiment_preserved": true,
+  "real_data_training_launched_locally": false
+}

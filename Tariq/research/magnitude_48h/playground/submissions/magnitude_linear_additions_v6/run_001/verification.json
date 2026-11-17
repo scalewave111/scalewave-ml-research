@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "rows": 18481,
+  "horizon_minutes": 2880,
+  "max_prediction_replay_error": 8.526512829121202e-14,
+  "new_verification_fits": 0,
+  "checks": [
+    "source hashes",
+    "identical target and scoring rows",
+    "strict inner and outer label purges",
+    "training-only transformations",
+    "linear parameters and coefficient replay",
+    "unchanged RF individual-tree replay",
+    "earlier-inner-MAE blend selection",
+    "independent pooled MAE and rank IC recomputation"
+  ],
+  "fresh_data_accessed": false
+}

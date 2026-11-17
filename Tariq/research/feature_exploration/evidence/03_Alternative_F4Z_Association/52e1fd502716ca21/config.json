@@ -1,0 +1,23 @@
+{
+  "method_version": "range_transfer_weekly_bootstrap_v1",
+  "symbol": "BTCUSDT",
+  "event_threshold": 500.0,
+  "horizon_minutes": 2880,
+  "rank_start": "2023-07-01T00:00:00Z",
+  "rank_end": "2024-07-01T00:00:00Z",
+  "validation_start": "2024-07-03T00:00:00Z",
+  "quantile_bands": 5,
+  "min_coverage": 0.1,
+  "min_condition_rows": 60,
+  "min_control_rows": 60,
+  "min_rows_per_group_per_quarter": 10,
+  "min_train_quarters": 2,
+  "min_rank_quarters": 3,
+  "min_condition_blocks": 10,
+  "block_days": 7,
+  "bootstrap_replicates": 100,
+  "bootstrap_lower_quantile": 0.05,
+  "min_valid_bootstrap_fraction": 0.9,
+  "seed": 20261030,
+  "top_k": 10
+}

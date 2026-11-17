@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "horizon_minutes": 2880,
+  "validation_rows": 18481,
+  "target_values_loaded": false,
+  "new_fits": 0,
+  "hashes": {
+    "submissions\\magnitude_active\\config.json": "090f7c0bb7f14990c7865e3ac52d197c67dc43910db01ad5c08d42b015efa138",
+    "submissions\\magnitude_active\\feature_experiment.py": "b29883be29c255ebf58c9e1b8ea613173e619cd63bcf09ef609648b1919a3982",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\predictions.parquet": "d205be577fd17ecc9f71630fc733612704168789e29b511b8641173166964ccb",
+    "submissions\\magnitude_rf_hybrid_v4\\config.json": "26136a0a2a41e04442e4757fc0693d6e27e908422a8b051cceb710fb5ec1e6cc",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\verification.json": "68d3ce288f068f77f00a474ae8a7ced9006a6663100ffcdeb79356b2fede7407",
+    "data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner.json": "86d0d82c2d9187e582a29b542e0b84c94242b5a7164e69906634fe232c8be623",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_1_pair.json": "2fa0d81eb2e9db432a858326ab2094b6144b6571b7b90f1713e505da8dec0930",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner_predictions.parquet": "a2416f879c5578e0b831c7d326ae5d1cee8a9bbd6e79291c7d930e802b9d672a",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner.json": "34af2e8f882121d8b091bad5326e4618b79ab5b97ec0749f3db199debf7bc049",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_2_pair.json": "b35a72a0883228f44d561c27596aeb493c7e08507b6b59b2dfda12b7383fec3b",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner_predictions.parquet": "fa8fbcde50bfce922f603d7f9f28a50caf99b8c3c36beaaba8fd535f83b7314a",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner.json": "c49ca067bee5c419be19f678e660231c923daa23c475908f9007de70349bedfe",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_3_pair.json": "22d6f25196d2dd8f3c89e13422d23072480f8febddd6792f0d43e28dd8cb6cbf",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner_predictions.parquet": "4857b0b34a182885cf3a61cfa72fc090ebe84e0c77fef50093336f75d09d8f53",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner.json": "b8eb85d76ad7ff71d4bc0d664a59d56ab50deb2beb221a1c870b3ebd8bbb7b21",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_4_pair.json": "6148ae525893474d48d8e6daffe4dfaeb53f839b9ad838d3104c7bf61a75630a",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner_predictions.parquet": "6a9e0c3c52cdd2879e96c8b8823847f1e7dfd1c0b0de7912504698fa3338efe7"
+  }
+}

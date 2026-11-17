@@ -1,0 +1,54 @@
+{
+  "selection": {
+    "fold": 3,
+    "variant": "ensemble",
+    "weight": 0.25,
+    "MAE": 153.97158571622793,
+    "depth": 5,
+    "leaf": 128,
+    "max_samples": 4096,
+    "seeds": [
+      48,
+      17,
+      91
+    ]
+  },
+  "preprocessing": {
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+      "median": 0.916,
+      "center": 0.8656805209780132,
+      "scale": 0.10461741658596321
+    },
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+      "median": 0.643,
+      "center": 0.6267319636258812,
+      "scale": 0.1661830440293277
+    },
+    "F4Z__flow__flow_activity_percentile__1h__value": {
+      "median": 0.49600000000000005,
+      "center": 0.49472596242039885,
+      "scale": 0.28595652288440027
+    },
+    "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+      "median": 0.49700000000000005,
+      "center": 0.49731240336486815,
+      "scale": 0.28035363164899535
+    },
+    "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+      "median": 0.504,
+      "center": 0.5038122068188369,
+      "scale": 0.2804162367897833
+    },
+    "F4Z__flow__flow_activity_percentile__15m__value": {
+      "median": 0.48000000000000004,
+      "center": 0.4843487512775493,
+      "scale": 0.2932550675208207
+    },
+    "F4Z__flow__flow_activity_percentile__5m__value": {
+      "median": 0.461,
+      "center": 0.4681453654445872,
+      "scale": 0.30109818289644924
+    }
+  },
+  "training_rows": 38159
+}

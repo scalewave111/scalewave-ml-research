@@ -1,0 +1,76 @@
+{
+  "magnitude": {
+    "model_id": "MP0004",
+    "features": [
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+    ],
+    "coefficients": [
+      164.37229619422692,
+      50.22784203455388,
+      -7.0972457421637785,
+      -16.965259408223677,
+      21.496500305253335
+    ],
+    "design_order": [
+      "intercept",
+      "Z1",
+      "M1",
+      "Z2",
+      "M2"
+    ],
+    "preprocessing": {
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+        "median": 0.8440000000000001,
+        "center": 0.8392569306094885,
+        "scale": 0.10434972465280914
+      },
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+        "median": 0.5760000000000001,
+        "center": 0.5901491811581968,
+        "scale": 0.1642033361542177
+      }
+    }
+  },
+  "direction": {
+    "model_id": "P3908",
+    "features": [
+      "F4Z__basis__basis_persistence_percentile__1h__value",
+      "F4Z__volatility__realized_variance_level_percentile__4h__value"
+    ],
+    "coefficients": [
+      0.13234282532914962,
+      0.041774830267824206,
+      -0.34234423733756597,
+      0.08766595930631331,
+      -0.31848276979536705
+    ],
+    "design_order": [
+      "intercept",
+      "Z1",
+      "M1",
+      "Z2",
+      "M2"
+    ],
+    "preprocessing": {
+      "F4Z__basis__basis_persistence_percentile__1h__value": {
+        "median": 0.5820000000000001,
+        "center": 0.5200268107378018,
+        "scale": 0.21933899933778436,
+        "input_order": [
+          "standardized_X_star",
+          "M"
+        ]
+      },
+      "F4Z__volatility__realized_variance_level_percentile__4h__value": {
+        "median": 0.43200000000000005,
+        "center": 0.4441144014857336,
+        "scale": 0.2594426744269065,
+        "input_order": [
+          "standardized_X_star",
+          "M"
+        ]
+      }
+    }
+  }
+}

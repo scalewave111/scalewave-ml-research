@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "scope": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_active\\run_001",
+  "experiments": [
+    "ensemble_context_volatility_realized_variance_level_rz__12h",
+    "ensemble_context_price_price_excursion_range_rz__12h",
+    "ensemble_context_basis_basis_range_rz__12h",
+    "ensemble_context_liquidation_liq_temporal_concentration_percentile__12h"
+  ],
+  "pruning": "Unselected candidate artifacts removed after verification; verified winner and replay dependencies retained. Original data untouched.",
+  "active_directory_empty": true,
+  "post_cleanup_replay": {
+    "status": "PASS",
+    "rows": 18481,
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "new_fits": 0
+  },
+  "current_prediction_sha256": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+  "promotion_cleanup": null
+}

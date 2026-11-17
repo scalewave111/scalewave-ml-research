@@ -1,0 +1,21 @@
+{
+  "status": "PASS_OFFLINE_METADATA_COMPATIBILITY_COLAB_RESUME_PENDING",
+  "module_sha256": "e8d85cc0d35be2b1a43cf5b7cb774d41d0f5d5a34e22e28ade5367e0153fb303",
+  "evidence": "User supplied field-level comparison: only modifiedTime changed on X and Y.",
+  "observed_modifiedTime": {
+    "X": "2026-11-16T07:46:35.633Z",
+    "Y": "2026-11-16T07:46:41.598Z"
+  },
+  "policy": "Accept only modifiedTime differences; identical field set and file ID/name/size/MD5 required.",
+  "execution_change": "Hash-pinned original runner compiled with exactly two archive checks replaced. Both code hashes and real observed metadata recorded in separate horizon audit receipt on Drive.",
+  "preserved": "Frozen source contract, model/fit code, per-fit checkpoint identities, reserve exclusion and caches.",
+  "tests": [
+    "timestamp-only acceptance",
+    "ID/name/size/MD5/missing checksum/field changes rejected",
+    "unknown runner hash rejected",
+    "exact two-assertion substitution and unchanged fit AST",
+    "audit records actual and expected metadata",
+    "both packaged notebooks preserve checkpoint-identity hashes"
+  ],
+  "not_claimed": "No new archive byte replay performed locally; remote loaders still verify cache and archive-member hashes."
+}

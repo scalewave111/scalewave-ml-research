@@ -1,0 +1,160 @@
+{
+  "input_hashes": {
+    "submissions\\magnitude_active\\run_model_comparison.py": "a70323be405794ca6bd67d3c625d48ecca750539a5291fbcf45d539644fc895b",
+    "submissions\\magnitude_active\\model_trial_helpers.py": "f2d9129f7979eb5c0b2450cdaa844c8d83f7d42fe8fddff599fed84177addf36",
+    "submissions\\magnitude_active\\feature_experiment.py": "b29883be29c255ebf58c9e1b8ea613173e619cd63bcf09ef609648b1919a3982",
+    "submissions\\magnitude_current\\run_001\\config.json": "ba77b1814c1c28461280393b6309c45bb3182ea42453d99b46f270c796254a88",
+    "submissions\\magnitude_current\\run_001\\predictions.parquet": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner.json": "86d0d82c2d9187e582a29b542e0b84c94242b5a7164e69906634fe232c8be623",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner.json": "34af2e8f882121d8b091bad5326e4618b79ab5b97ec0749f3db199debf7bc049",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner.json": "c49ca067bee5c419be19f678e660231c923daa23c475908f9007de70349bedfe",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner.json": "b8eb85d76ad7ff71d4bc0d664a59d56ab50deb2beb221a1c870b3ebd8bbb7b21",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_1_pair.json": "2fa0d81eb2e9db432a858326ab2094b6144b6571b7b90f1713e505da8dec0930",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_2_pair.json": "b35a72a0883228f44d561c27596aeb493c7e08507b6b59b2dfda12b7383fec3b",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_3_pair.json": "22d6f25196d2dd8f3c89e13422d23072480f8febddd6792f0d43e28dd8cb6cbf",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_4_pair.json": "6148ae525893474d48d8e6daffe4dfaeb53f839b9ad838d3104c7bf61a75630a"
+  },
+  "baseline": {
+    "experiment": "ensemble_context_flow_flow_activity_percentile__5m",
+    "prediction_file": "submissions/magnitude_current/run_001/predictions.parquet",
+    "prediction_column": "prediction",
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "Pearson_IC": 0.06533420578948929,
+    "verification": "submissions/magnitude_current/run_001/verification.json",
+    "IC_verification": "submissions/magnitude_current/run_001/verification.json",
+    "prediction_sha256": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "replay_script": "submissions/magnitude_current/replay.py"
+  },
+  "config": {
+    "version": "ensemble_context_flow_flow_activity_percentile__5m",
+    "authorization": "User authorized four individual additions: price range RZ 1h, basis range percentile 4h, realized variance RZ 15m, flow activity percentile 5m. Use eight workers, three seeds and 128 trees; defer combinations.",
+    "horizon_minutes": 2880,
+    "target_column": "magnitude_log_bps",
+    "label_end_column": "label_end",
+    "data_parts": [
+      {
+        "X": "data/X_train.parquet",
+        "y": "data/y_train.parquet"
+      },
+      {
+        "X": "data/X_development.parquet",
+        "y": "data/y_development.parquet"
+      }
+    ],
+    "anchor_features": [
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+    ],
+    "additions": {
+      "flow": "F4Z__flow__flow_activity_percentile__1h__value",
+      "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+      "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value",
+      "flow_flow_activity_percentile__15m": "F4Z__flow__flow_activity_percentile__15m__value",
+      "flow_flow_activity_percentile__5m": "F4Z__flow__flow_activity_percentile__5m__value"
+    },
+    "change_scope": "Exactly one RF feature addition to the incumbent six raw features; per-fold predictive settings and evaluation fixed.",
+    "validation_windows": [
+      [
+        "2024-01-01T00:00:00Z",
+        "2024-04-01T00:00:00Z"
+      ],
+      [
+        "2024-04-01T00:00:00Z",
+        "2024-07-01T00:00:00Z"
+      ],
+      [
+        "2024-07-01T00:00:00Z",
+        "2024-10-01T00:00:00Z"
+      ],
+      [
+        "2024-10-01T00:00:00Z",
+        "2025-01-22T00:30:00Z"
+      ]
+    ],
+    "inner_validation_months": 3,
+    "minimum_valid_training": 1000,
+    "forest": {
+      "n_estimators": 128,
+      "criterion": "absolute_error",
+      "max_depth": 3,
+      "min_samples_leaf": 128,
+      "max_features": 1.0,
+      "bootstrap": true,
+      "max_samples": 4096,
+      "n_jobs": 8,
+      "random_state": 48
+    },
+    "forest_weights": [
+      0.0,
+      0.1,
+      0.25,
+      0.5
+    ],
+    "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+    "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+    "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+    "anchor_horizon_minutes": 2880,
+    "benchmark_horizon_minutes": 2880,
+    "benchmark_predictions": "submissions/magnitude_current/run_001/predictions.parquet",
+    "benchmark_column": "prediction",
+    "benchmark_mae": 180.81520672728772,
+    "new_fit_budget": 24,
+    "prior_fit_count": 1260,
+    "fit_accounting": "24 new forests plus four earlier blend selections per candidate.",
+    "promotion_rule": "Promote only verified lower same-row MAE. Track Spearman only. Keep compact history and discard losing model/prediction artifacts after verification.",
+    "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+    "stopping_rule": "Exactly these four individual additions; no combinations or other horizons in this batch.",
+    "fresh_data": "Deferred; not accessed.",
+    "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment.",
+    "selection_rule": "Lowest earlier inner ensemble blend MAE; tie lower RF weight.",
+    "seeds": [
+      48,
+      17,
+      91
+    ],
+    "interruption_accounting": "Includes one completed but unsaved fit from interrupted attempt; one unfinished fit recorded separately in interruption_receipt.json.",
+    "execution_policy": {
+      "timing_receipt": "submissions\\magnitude_active\\execution_benchmark.json",
+      "receipt_sha256": "12f4d3586488b839cb5346d7a921ff041a0f52f6735bb2b074dd0843cb21691f",
+      "change": "Worker count only; trees, seeds, data, scoring and selection unchanged."
+    }
+  },
+  "settings": {
+    "hgb": [
+      {
+        "leaves": 7
+      },
+      {
+        "leaves": 15
+      }
+    ],
+    "nn": [
+      {
+        "widths": [
+          32,
+          16
+        ]
+      },
+      {
+        "widths": [
+          64,
+          32
+        ]
+      }
+    ]
+  },
+  "seeds": [
+    48,
+    17,
+    91
+  ],
+  "NN": "Two ReLU hidden layers; Softplus output; MAE loss; train-only median target scale; Adam lr=.001 weight_decay=.001; batch512; maximum80 epochs; patience10 using inner validation; outer epochs fixed from inner.",
+  "HGB": "absolute_error; max_iter200; lr=.05; leaves7 or15; min_leaf64; l2=1; no internal random validation.",
+  "selection": "Within each family, select standalone setting by inner MAE; separately select blend setting and weight from 0,.1,.25,.5. Mean of seeds48,17,91. Never select using outer labels.",
+  "scope": "Fixed original four folds and seven features. Fresh data untouched. Current incumbent is preserved; a verified winning challenger is retained for review, not automatically promoted."
+}

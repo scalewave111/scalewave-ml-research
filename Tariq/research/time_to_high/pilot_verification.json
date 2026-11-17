@@ -1,0 +1,28 @@
+{
+  "status": "PASS_PILOT_RECEIPT_VERIFICATION",
+  "result_sha256": "4509567f3ea70beb5d6d070b81dee35cd36c1088c2e81fc194d86315bebefebc",
+  "source_drive_id": "10bWkPD01n17ERy0T4AfY6HGoxkPhtAmL",
+  "jobs": 9,
+  "fits": 315,
+  "outer_folds": 45,
+  "elapsed_minutes": 34.58255241695,
+  "peak_process_RSS_MiB": 558.58984375,
+  "checks": [
+    "frozen local config and notebook runner identity",
+    "all9 job signatures match main receipt",
+    "315 fits report independent tree traversal PASS",
+    "earlier-only inner selection and deterministic ties",
+    "recorded inner/outer label-end cutoffs",
+    "outer row and training counts match frozen baseline receipts",
+    "pooled weighted MAE reproduced from fold sums"
+  ],
+  "limits": [
+    "Raw data and trained trees not replayed locally; verification checks recorded evidence and arithmetic.",
+    "Small gains on exposed development are not significance or fresh-test evidence.",
+    "Pilot does not establish full-universe feature ranking.",
+    "F4Z upstream timing and normalization still provisional."
+  ],
+  "full_runtime_naive_extrapolation_hours": 138.3567560680389,
+  "runtime_caveat": "Illustration from nine pilot jobs on this runtime, not a forecast guarantee. Excludes remaining data loading. Feature cardinality, coverage, workers and checkpoint latency can materially change duration.",
+  "next": "Optimize and verify throughput without changing folds, candidate grid, rows or primary metric before full run. Do not auto-expand."
+}

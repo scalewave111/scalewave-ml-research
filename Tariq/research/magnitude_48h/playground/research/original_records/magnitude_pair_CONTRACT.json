@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-31T10:09:05.385370+00:00",
+  "scope": "All unique unordered pairs of the top20 magnitude improvers printed immediately before this request; 190 pairs, not all32 improvers",
+  "target": "abs(r), log bps",
+  "units": "log bps",
+  "split": {
+    "cutoff_utc": "2024-01-01T00:00:00Z",
+    "training_rule": "t+48h < cutoff",
+    "evaluation_rule": "t >= cutoff",
+    "purge_rule": "t < cutoff and t+48h >= cutoff",
+    "training_n": 29615,
+    "purged_n": 96,
+    "evaluation_n": 18481,
+    "training_first_origin": "2022-04-22 00:30:00+00:00",
+    "training_last_origin": "2023-12-29 23:30:00+00:00",
+    "evaluation_first_origin": "2024-01-01 00:00:00+00:00",
+    "evaluation_last_origin": "2025-01-22 00:00:00+00:00"
+  },
+  "baseline_median": 161.46183882158175,
+  "baseline_MAE": 187.83107169705042,
+  "candidate_rule": "Saved standalone MAE<baseline, ascending MAE then feature name, first20; selection already used development",
+  "model": "minimize sum absolute training errors for b0+b1*Z1+bm1*M1+b2*Z2+bm2*M2; same unpenalized median regression; no products",
+  "preprocessing": "Reuse each standalone training median, mean and std, preserve both missing flags and every development row",
+  "projection": "max(0,raw forecast)",
+  "solver": "highs-ipm",
+  "solver_options": {
+    "primal_feasibility_tolerance": 1e-07,
+    "dual_feasibility_tolerance": 1e-07,
+    "ipm_optimality_tolerance": 1e-08
+  },
+  "workers": 4,
+  "worker_threads": 1,
+  "fit_budget": 190,
+  "no_tuning": true,
+  "primary": "Pair MAE minus better standalone parent MAE on same18481 rows; best parent fixed from full-development single score",
+  "comparators": [
+    "M0",
+    "X1",
+    "X2",
+    "best_parent",
+    "global_best_single"
+  ],
+  "uncertainty": "Paired 7d/14d chronological blocks,2000 draws,seed48+days; nominal intervals for all comparisons and simultaneous190-pair bands for best-parent MAE",
+  "decision": "NO_INCREMENTAL_MAE_GAIN if pair MAE>=best parent; otherwise EXPLORATORY_INCREMENTAL_GAIN unless majority months improve over fixed best parent, nonconstant prediction and both simultaneous upper bounds<0, then DEVELOPMENT_ADDITIVE_LEAD",
+  "diagnostics": "Monthly, both-valid/any-missing, concept groups, correlated values, identical missing flags, rank-deficient designs. Concentration for top incremental, top absolute and all leads.",
+  "exposure": "Previously exposed development; no verified untouched holdout; pair-family adjustment does not undo prior feature selection",
+  "single_source": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\REPEATABLE PLAN\\48H_ML\\magnitude\\tournaments\\standalone256_20261031T095717_608161Z",
+  "single_manifest_sha256": "a7be808d683f07ce81b8b34df8427f5d248e53e3e63fbf149d0a6e0956ce3541",
+  "baseline_contract_sha256": "e2e5c4ae51c3b1ebf61d5d876cb4d035fcee2d77015cf36b96d2e255f3876437",
+  "script_sha256": "92d68dec33cbf9fd1940255aa8ccaadd7c7941975f3849b28eb6a441fa014a1a"
+}

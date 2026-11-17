@@ -1,0 +1,64 @@
+{
+  "train": {
+    "missing_features": [],
+    "extra_features": [],
+    "x_y_index_equal": true,
+    "index_unique": true,
+    "index_sorted": true,
+    "index_nulls": 0,
+    "index_matches_ledger": true,
+    "target_columns": [
+      "label_end",
+      "signed_return_log_bps",
+      "magnitude_log_bps",
+      "direction_up"
+    ],
+    "label_horizon_correct": true
+  },
+  "development": {
+    "missing_features": [],
+    "extra_features": [],
+    "x_y_index_equal": true,
+    "index_unique": true,
+    "index_sorted": true,
+    "index_nulls": 0,
+    "index_matches_ledger": true,
+    "target_columns": [
+      "label_end",
+      "signed_return_log_bps",
+      "magnitude_log_bps",
+      "direction_up"
+    ],
+    "label_horizon_correct": true
+  },
+  "split_counts": {
+    "train": 29615,
+    "evaluation": 18481,
+    "purged": 96
+  },
+  "ledger_missing_30min_timestamps": 96,
+  "identical_feature_order": true,
+  "data_matches_manifest": {
+    "feature_dictionary_and_admission.csv": true,
+    "split_ledger.csv": true,
+    "X_development.parquet": true,
+    "X_train.parquet": true,
+    "y_development.parquet": true,
+    "y_train.parquet": true
+  },
+  "archive_data_matches_extracted": {
+    "feature_dictionary_and_admission.csv": true,
+    "split_ledger.csv": true,
+    "X_development.parquet": true,
+    "X_train.parquet": true,
+    "y_development.parquet": true,
+    "y_train.parquet": true
+  },
+  "ledger_time_gaps": [
+    {
+      "start": "2024-03-03 20:00:00+00:00",
+      "end": "2024-03-05 19:30:00+00:00",
+      "missing_intervals": 96
+    }
+  ]
+}

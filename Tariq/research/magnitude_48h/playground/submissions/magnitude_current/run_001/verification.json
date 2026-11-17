@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "rows": 18481,
+  "checks": [
+    "source hashes unchanged",
+    "strict label-end purges",
+    "exact targets and timestamps",
+    "fixed params and seed identities",
+    "saved forests replayed through individual trees for inner and outer predictions",
+    "earlier-only blend selection"
+  ],
+  "new_verification_fits": 0
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "condition": "volatility_4h",
+    "fold": 1,
+    "training_lower_tertile": -0.6551420253994544,
+    "training_upper_tertile": 0.32198412593701975,
+    "training_rows": 29615
+  },
+  {
+    "condition": "volatility_4h",
+    "fold": 2,
+    "training_lower_tertile": -0.5248659558206556,
+    "training_upper_tertile": 0.4451425002466084,
+    "training_rows": 33791
+  },
+  {
+    "condition": "volatility_4h",
+    "fold": 3,
+    "training_lower_tertile": -0.5357143454119385,
+    "training_upper_tertile": 0.42439833727868326,
+    "training_rows": 38159
+  },
+  {
+    "condition": "volatility_4h",
+    "fold": 4,
+    "training_lower_tertile": -0.5087410723140373,
+    "training_upper_tertile": 0.42293593763844484,
+    "training_rows": 42575
+  },
+  {
+    "condition": "flow_1h",
+    "fold": 1,
+    "training_lower_tertile": 0.323,
+    "training_upper_tertile": 0.666,
+    "training_rows": 29615
+  },
+  {
+    "condition": "flow_1h",
+    "fold": 2,
+    "training_lower_tertile": 0.334,
+    "training_upper_tertile": 0.675,
+    "training_rows": 33791
+  },
+  {
+    "condition": "flow_1h",
+    "fold": 3,
+    "training_lower_tertile": 0.322,
+    "training_upper_tertile": 0.666,
+    "training_rows": 38159
+  },
+  {
+    "condition": "flow_1h",
+    "fold": 4,
+    "training_lower_tertile": 0.326,
+    "training_upper_tertile": 0.667,
+    "training_rows": 42575
+  }
+]

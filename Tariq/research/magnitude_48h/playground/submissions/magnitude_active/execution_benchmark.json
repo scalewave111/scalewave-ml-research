@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "purpose": "Execution timing only; no feature or seed selection",
+  "logical_cpus": 12,
+  "training_rows": 29615,
+  "prediction_rows": 4272,
+  "trees_per_fit": 128,
+  "seed_for_timing": 48,
+  "production_seeds_unchanged": [
+    48,
+    17,
+    91
+  ],
+  "runs": [
+    {
+      "workers": 4,
+      "fit_seconds": 107.40948309999658,
+      "tree_and_bootstrap_identity": "PASS",
+      "max_canonical_prediction_difference": 0.0
+    },
+    {
+      "workers": 8,
+      "fit_seconds": 81.87047969998093,
+      "tree_and_bootstrap_identity": "PASS",
+      "max_canonical_prediction_difference": 0.0
+    }
+  ],
+  "speedup_4_over_8": 1.311943981440011,
+  "selected_n_jobs": 8,
+  "new_model_fits": 2,
+  "new_model_selection_steps": 0,
+  "limitation": "One representative full fit per worker count; runtime varies. No full-batch speedup guarantee.",
+  "incumbent_prediction_sha256": "4ea4f96a4640f2fbc43dfe198589215637dfb9b19b4eafff0e2d655beea445fc",
+  "model_binaries_saved": false
+}

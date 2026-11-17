@@ -1,0 +1,149 @@
+{
+  "pooled_MAE": {
+    "expanding": 182.20968918768847,
+    "rolling_12month": 185.16634778806755,
+    "rolling_6month": 185.43256526141283,
+    "frozen_MP0004": 182.0369772107621,
+    "expanding_3month": 181.97660210071422
+  },
+  "best_new_schedule": "expanding",
+  "new_fits": 19,
+  "cached_fits_reused": 2,
+  "total_session_fits": 39,
+  "nominal_paired_intervals": [
+    {
+      "candidate": "expanding",
+      "reference": "frozen_MP0004",
+      "block_days": 7,
+      "mean_delta": 0.17271197692634613,
+      "low": -0.3015930837078885,
+      "high": 0.6218805804985936
+    },
+    {
+      "candidate": "expanding",
+      "reference": "frozen_MP0004",
+      "block_days": 14,
+      "mean_delta": 0.17271197692634613,
+      "low": -0.2434014760782219,
+      "high": 0.5742651263031971
+    },
+    {
+      "candidate": "expanding",
+      "reference": "expanding_3month",
+      "block_days": 7,
+      "mean_delta": 0.23308708697428682,
+      "low": -0.08972573135291463,
+      "high": 0.5814503243195964
+    },
+    {
+      "candidate": "expanding",
+      "reference": "expanding_3month",
+      "block_days": 14,
+      "mean_delta": 0.23308708697428682,
+      "low": -0.08353226707779342,
+      "high": 0.5767772887224012
+    },
+    {
+      "candidate": "rolling_12month",
+      "reference": "frozen_MP0004",
+      "block_days": 7,
+      "mean_delta": 3.129370577305407,
+      "low": -0.18351940405967512,
+      "high": 6.730468940471274
+    },
+    {
+      "candidate": "rolling_12month",
+      "reference": "frozen_MP0004",
+      "block_days": 14,
+      "mean_delta": 3.129370577305407,
+      "low": -0.4035231924398712,
+      "high": 6.8009379631262705
+    },
+    {
+      "candidate": "rolling_12month",
+      "reference": "expanding_3month",
+      "block_days": 7,
+      "mean_delta": 3.1897456873533474,
+      "low": -0.16622296893314462,
+      "high": 6.714298942589253
+    },
+    {
+      "candidate": "rolling_12month",
+      "reference": "expanding_3month",
+      "block_days": 14,
+      "mean_delta": 3.1897456873533474,
+      "low": -0.27805466173677806,
+      "high": 6.792681700072024
+    },
+    {
+      "candidate": "rolling_12month",
+      "reference": "expanding",
+      "block_days": 7,
+      "mean_delta": 2.9566586003790616,
+      "low": -0.18255461772279172,
+      "high": 6.335314801825321
+    },
+    {
+      "candidate": "rolling_12month",
+      "reference": "expanding",
+      "block_days": 14,
+      "mean_delta": 2.9566586003790616,
+      "low": -0.3449636346409267,
+      "high": 6.357935072940521
+    },
+    {
+      "candidate": "rolling_6month",
+      "reference": "frozen_MP0004",
+      "block_days": 7,
+      "mean_delta": 3.3955880506507174,
+      "low": -0.06300848505673484,
+      "high": 7.382267207412684
+    },
+    {
+      "candidate": "rolling_6month",
+      "reference": "frozen_MP0004",
+      "block_days": 14,
+      "mean_delta": 3.3955880506507174,
+      "low": -0.2998435508630934,
+      "high": 7.095063434266439
+    },
+    {
+      "candidate": "rolling_6month",
+      "reference": "expanding_3month",
+      "block_days": 7,
+      "mean_delta": 3.455963160698658,
+      "low": -0.06044763857299018,
+      "high": 7.420909249976053
+    },
+    {
+      "candidate": "rolling_6month",
+      "reference": "expanding_3month",
+      "block_days": 14,
+      "mean_delta": 3.455963160698658,
+      "low": -0.18648624891250393,
+      "high": 7.0847148304050185
+    },
+    {
+      "candidate": "rolling_6month",
+      "reference": "expanding",
+      "block_days": 7,
+      "mean_delta": 3.222876073724371,
+      "low": -0.06944653476031504,
+      "high": 6.927456847966691
+    },
+    {
+      "candidate": "rolling_6month",
+      "reference": "expanding",
+      "block_days": 14,
+      "mean_delta": 3.222876073724371,
+      "low": -0.19898051516252413,
+      "high": 6.641831764308384
+    }
+  ],
+  "months_better_frozen": {
+    "expanding": 5,
+    "rolling_12month": 6,
+    "rolling_6month": 5
+  },
+  "interpretation": "Exposed development comparison; negative deltas favor candidate. Intervals do not correct adaptive search. All candidates score identical rows; fresh test not accessed."
+}

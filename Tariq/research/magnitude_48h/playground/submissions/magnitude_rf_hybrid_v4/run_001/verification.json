@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "rows": 18481,
+  "new_verification_fits": 0,
+  "checks": [
+    "exact outer rows and targets",
+    "inner and outer label purges",
+    "train-only transformations",
+    "inner forest and pair replay",
+    "training-only blend weight selection",
+    "outer tree-level forest replay",
+    "both hybrid formulas",
+    "independent MAE recomputation"
+  ],
+  "fresh_data_accessed": false
+}

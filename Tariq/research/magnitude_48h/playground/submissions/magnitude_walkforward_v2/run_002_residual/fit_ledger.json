@@ -1,0 +1,30 @@
+[
+  {
+    "fit_number": 17,
+    "fold": 1,
+    "model": "residual_xgb",
+    "status": "completed",
+    "time_utc": "2026-11-02T11:41:12.155414+00:00"
+  },
+  {
+    "fit_number": 18,
+    "fold": 2,
+    "model": "residual_xgb",
+    "status": "completed",
+    "time_utc": "2026-11-02T11:41:14.100196+00:00"
+  },
+  {
+    "fit_number": 19,
+    "fold": 3,
+    "model": "residual_xgb",
+    "status": "completed",
+    "time_utc": "2026-11-02T11:41:15.078192+00:00"
+  },
+  {
+    "fit_number": 20,
+    "fold": 4,
+    "model": "residual_xgb",
+    "status": "completed",
+    "time_utc": "2026-11-02T11:41:16.255195+00:00"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "horizon_minutes": 2880,
+  "rows": 18481,
+  "max_prediction_replay_error": 5.684341886080802e-14,
+  "new_verification_fits": 0,
+  "checks": [
+    "target horizon and exact row alignment",
+    "inner/outer label-end purges",
+    "fold-specific feature admission and preprocessing",
+    "fixed forest parameters",
+    "training-only blend selection",
+    "all saved inner/outer forest replays",
+    "independent individual-tree averaging",
+    "independent MAE recomputation"
+  ],
+  "fresh_data_accessed": false
+}

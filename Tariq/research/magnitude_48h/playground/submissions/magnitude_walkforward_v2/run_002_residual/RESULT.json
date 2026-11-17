@@ -1,0 +1,42 @@
+{
+  "pooled_MAE": {
+    "training_median": 186.3437357866197,
+    "frozen_MP0004": 182.0369772107621,
+    "refitted_pair": 181.97660210071422,
+    "xgb_pair": 184.76346004522728,
+    "xgb_pair_variance": 185.90572990540352,
+    "residual_xgb": 183.23085813474248
+  },
+  "new_fits": 4,
+  "total_fits": 20,
+  "months_residual_beats_refitted_pair": 3,
+  "nominal_residual_delta_intervals": [
+    {
+      "comparator": "frozen_MP0004",
+      "block_days": 7,
+      "low": -1.0306927726659816,
+      "high": 3.4818661064879355
+    },
+    {
+      "comparator": "frozen_MP0004",
+      "block_days": 14,
+      "low": -1.353241062352922,
+      "high": 3.644338725659208
+    },
+    {
+      "comparator": "refitted_pair",
+      "block_days": 7,
+      "low": -1.073867843828258,
+      "high": 3.5361674644722605
+    },
+    {
+      "comparator": "refitted_pair",
+      "block_days": 14,
+      "low": -1.2544510171522307,
+      "high": 3.68960932050421
+    }
+  ],
+  "saved_model_replay": "PASS",
+  "fresh_test_accessed": false,
+  "interpretation": "Adaptive development follow-up, registered after initial results; not independent confirmation. Negative deltas are improvements. All fits stay within 20 total."
+}

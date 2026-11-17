@@ -1,0 +1,32 @@
+{
+  "status": "DEVELOPMENT_COMPARISON_COMPLETE",
+  "rows": 18481,
+  "fits_used": 20,
+  "fresh_test_accessed": false,
+  "pooled_MAE": {
+    "frozen_MP0004": 182.0369772107621,
+    "refitted_pair": 181.97660210071422,
+    "xgb_pair": 184.76346004522728,
+    "xgb_pair_variance": 185.90572990540352,
+    "residual_xgb": 183.23085813474248
+  },
+  "best": "refitted_pair",
+  "improvement_over_frozen_log_bps": 0.06037511004794076,
+  "improvement_percent": 0.0331663989223676,
+  "refitted_pair_months_better_frozen": 6,
+  "refitted_pair_months_tied_frozen": 3,
+  "refitted_pair_minus_frozen_nominal_intervals": [
+    {
+      "block_days": 7,
+      "low": -0.4207183777539484,
+      "high": 0.28244162626550906
+    },
+    {
+      "block_days": 14,
+      "low": -0.3277732986933706,
+      "high": 0.14173552944488998
+    }
+  ],
+  "decision": "Keep the liquidation pair. Tiny numerical improvement from walk-forward refitting is not a convincing upgrade. All three XGBoost variants lost. No further fits authorized by the current 20-fit budget.",
+  "next_hypothesis": "Before another registered fit budget, diagnose forecast calibration and feature distribution changes from saved out-of-fold predictions; do not tune rules on future labels."
+}

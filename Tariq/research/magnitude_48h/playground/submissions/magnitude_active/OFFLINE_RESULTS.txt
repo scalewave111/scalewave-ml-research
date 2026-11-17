@@ -1,0 +1,18 @@
+BOTH REMAINING BATCHES COMPLETE
+
+Current MAE: 180.798518098
+Spearman IC: 0.078526513
+
+Batch 1
+ensemble_context_liquidation_liq_activity_severity_active_severity_rz__4h: MAE 181.990736128; Spearman 0.034006998
+ensemble_context_flow_flow_activity_rz__1h: MAE 180.813130532; Spearman 0.078584236
+ensemble_context_price_price_excursion_range_rz__5m: MAE 180.803889027; Spearman 0.079071691
+ensemble_context_liquidation_venue_breadth_percentile__15m: MAE 180.929905025; Spearman 0.078355808
+Batch 2
+ensemble_context_volatility_realized_variance_level_rz__12h: MAE 181.449854455; Spearman 0.051447282
+ensemble_context_price_price_excursion_range_rz__12h: MAE 181.432562875; Spearman 0.056641346
+ensemble_context_basis_basis_range_rz__12h: MAE 181.543267598; Spearman 0.049424740
+ensemble_context_liquidation_liq_temporal_concentration_percentile__12h: MAE 181.503927182; Spearman 0.052174822
+
+Replay verified. Unused generated models pruned. Original data untouched.
+PDF report was not regenerated automatically; ask Codex to update it from these results.

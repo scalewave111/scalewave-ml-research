@@ -1,0 +1,4 @@
+features,MAE,Spearman_IC,delta_MAE_vs_start
+Current pair + flow benchmark,181.06650820557817,0.0700806284070547,0.0
+venue_fragmentation_1h + temporal_concentration_1h,181.0610241130761,0.07195947735301861,-0.0054840925020869236
+venue_fragmentation_1h + price_range_1h,181.42053648752136,0.06094768572288592,0.3540282819431866

@@ -1,0 +1,28 @@
+{
+  "status": "SUPERSEDED_BY_USER_EXTERNAL_FRESH_TEST",
+  "user_instruction": "Reserve final three calendar months; exclude from fitting, preprocessing, feature selection, tuning and early stopping.",
+  "scope": "Union of supplied prepared train and development origins; original 96-row 2024 boundary gap remains absent.",
+  "test_start_inclusive": "2024-10-22T00:00:00+00:00",
+  "test_end_inclusive": "2025-01-22T00:00:00+00:00",
+  "definition": "Latest supplied usable decision timestamp minus pandas DateOffset(months=3), through latest decision timestamp, both inclusive.",
+  "label_end_max": "2025-01-24T00:00:00+00:00",
+  "pretest_rule": "label_end strictly before test_start",
+  "counts": {
+    "pretest_train_tune_pool": 43583,
+    "reserved_test": 4417,
+    "purged": 96
+  },
+  "test_exposure": "Previously inspected development history; not historically untouched.",
+  "source_limit": "Source archives unavailable locally; reference manifest mentions withheld partitions through 2025-05-15. This split does not certify the whole-source final period.",
+  "modeling_status": "NOT_STARTED; resolve source scope before fitting",
+  "evaluation": "Recompute candidate and frozen MP0004 MAE on identical new test rows. Historical 182.036977 score is not the threshold for this different subset.",
+  "training_policy": "Pretest pool needs chronological inner folds with label-end purging; old full-development scorer is not valid for this split.",
+  "fit_budget": 20,
+  "new_fits": 0,
+  "source_sha256": {
+    "data/y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data/y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e"
+  },
+  "superseded_by": "../magnitude_walkforward_v2/experiment_contract.json",
+  "supersession_reason": "User has separate fresh test data and explicitly released the final-three-month reservation. Historical fields below are retained as an audit record, not active restrictions."
+}

@@ -1,0 +1,847 @@
+{
+  "scope": "Both magnitude tables only; exact representations and windows; deduplicated",
+  "features": [
+    {
+      "pdf_name": "volatility_realized_variance_level_rz__1d",
+      "column": "F4Z__volatility__realized_variance_level_rz__1d__value",
+      "tables": {
+        "all_horizons": 1
+      },
+      "inner_nonmissing": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "inner_unique": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "INSUFFICIENT_TRAINING_COVERAGE"
+    },
+    {
+      "pdf_name": "volatility_realized_variance_level_rz__12h",
+      "column": "F4Z__volatility__realized_variance_level_rz__12h__value",
+      "tables": {
+        "all_horizons": 2
+      },
+      "inner_nonmissing": [
+        1103,
+        5470,
+        9598,
+        13966
+      ],
+      "inner_unique": [
+        1103,
+        5470,
+        9598,
+        13966
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__12h",
+      "MAE": 181.44985445504696,
+      "Spearman_IC": 0.05144728242526365,
+      "promoted": false
+    },
+    {
+      "pdf_name": "price_price_excursion_range_rz__1d",
+      "column": "F4Z__price__price_excursion_range_rz__1d__value",
+      "tables": {
+        "all_horizons": 3
+      },
+      "inner_nonmissing": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "inner_unique": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "INSUFFICIENT_TRAINING_COVERAGE"
+    },
+    {
+      "pdf_name": "volatility_realized_variance_level_rz__4h",
+      "column": "F4Z__volatility__realized_variance_level_rz__4h__value",
+      "tables": {
+        "all_horizons": 4
+      },
+      "inner_nonmissing": [
+        17167,
+        21566,
+        25726,
+        30094
+      ],
+      "inner_unique": [
+        17167,
+        21566,
+        25726,
+        30094
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "price_price_excursion_range_rz__12h",
+      "column": "F4Z__price__price_excursion_range_rz__12h__value",
+      "tables": {
+        "all_horizons": 5
+      },
+      "inner_nonmissing": [
+        1199,
+        5615,
+        9767,
+        14135
+      ],
+      "inner_unique": [
+        1199,
+        5615,
+        9767,
+        14135
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_price_price_excursion_range_rz__12h",
+      "MAE": 181.43256287526418,
+      "Spearman_IC": 0.0566413464747852,
+      "promoted": false
+    },
+    {
+      "pdf_name": "volatility_realized_variance_level_rz__1h",
+      "column": "F4Z__volatility__realized_variance_level_rz__1h__value",
+      "tables": {
+        "all_horizons": 6,
+        "f4z_magnitude": 2
+      },
+      "inner_nonmissing": [
+        23189,
+        27600,
+        31772,
+        36140
+      ],
+      "inner_unique": [
+        23189,
+        27600,
+        31772,
+        36140
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__1h",
+      "MAE": 180.89535819078594,
+      "Spearman_IC": 0.07015638025963018,
+      "promoted": false
+    },
+    {
+      "pdf_name": "price_price_excursion_range_percentile__4h",
+      "column": "F4Z__price__price_excursion_range_percentile__4h__value",
+      "tables": {
+        "all_horizons": 7
+      },
+      "inner_nonmissing": [
+        17199,
+        21615,
+        25783,
+        30151
+      ],
+      "inner_unique": [
+        1001,
+        1001,
+        1001,
+        1001
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "flow_flow_activity_rz__4h",
+      "column": "F4Z__flow__flow_activity_rz__4h__value",
+      "tables": {
+        "all_horizons": 8
+      },
+      "inner_nonmissing": [
+        17199,
+        21615,
+        25791,
+        30159
+      ],
+      "inner_unique": [
+        17199,
+        21615,
+        25791,
+        30159
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "price_price_excursion_range_rz__1h",
+      "column": "F4Z__price__price_excursion_range_rz__1h__value",
+      "tables": {
+        "all_horizons": 9
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31789,
+        36157
+      ],
+      "inner_unique": [
+        23199,
+        27615,
+        31789,
+        36157
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_price_price_excursion_range_rz__1h",
+      "MAE": 180.8350396497946,
+      "Spearman_IC": 0.07530784624288916,
+      "promoted": false
+    },
+    {
+      "pdf_name": "basis_basis_range_rz__1d",
+      "column": "F4Z__basis__basis_range_rz__1d__value",
+      "tables": {
+        "all_horizons": 10
+      },
+      "inner_nonmissing": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "inner_unique": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "INSUFFICIENT_TRAINING_COVERAGE"
+    },
+    {
+      "pdf_name": "basis_basis_range_percentile__4h",
+      "column": "F4Z__basis__basis_range_percentile__4h__value",
+      "tables": {
+        "all_horizons": 11
+      },
+      "inner_nonmissing": [
+        17199,
+        21615,
+        25791,
+        30159
+      ],
+      "inner_unique": [
+        1642,
+        1736,
+        1790,
+        1825
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_basis_basis_range_percentile__4h",
+      "MAE": 182.00970156257645,
+      "Spearman_IC": 0.021219964316193007,
+      "promoted": false
+    },
+    {
+      "pdf_name": "liquidation_liq_activity_severity_active_severity_rz__4h",
+      "column": "F4Z__liquidation__liq_activity_severity_active_severity_rz__4h__value",
+      "tables": {
+        "all_horizons": 12
+      },
+      "inner_nonmissing": [
+        17184,
+        21600,
+        25776,
+        30144
+      ],
+      "inner_unique": [
+        16696,
+        21076,
+        25248,
+        29611
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_liquidation_liq_activity_severity_active_severity_rz__4h",
+      "MAE": 181.99073612786447,
+      "Spearman_IC": 0.03400699771052037,
+      "promoted": false
+    },
+    {
+      "pdf_name": "volatility_vol_shock_concentration_percentile__1d",
+      "column": "F4Z__volatility__vol_shock_concentration_percentile__1d__value",
+      "tables": {
+        "all_horizons": 13
+      },
+      "inner_nonmissing": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "inner_unique": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "INSUFFICIENT_TRAINING_COVERAGE"
+    },
+    {
+      "pdf_name": "basis_basis_range_rz__12h",
+      "column": "F4Z__basis__basis_range_rz__12h__value",
+      "tables": {
+        "all_horizons": 14
+      },
+      "inner_nonmissing": [
+        1199,
+        5615,
+        9791,
+        14159
+      ],
+      "inner_unique": [
+        265,
+        1373,
+        2439,
+        3555
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_basis_basis_range_rz__12h",
+      "MAE": 181.5432675984845,
+      "Spearman_IC": 0.04942473965940329,
+      "promoted": false
+    },
+    {
+      "pdf_name": "volatility_realized_variance_level_rz__15m",
+      "column": "F4Z__volatility__realized_variance_level_rz__15m__value",
+      "tables": {
+        "all_horizons": 15,
+        "f4z_magnitude": 7
+      },
+      "inner_nonmissing": [
+        24694,
+        29108,
+        33282,
+        37650
+      ],
+      "inner_unique": [
+        24694,
+        29108,
+        33282,
+        37650
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__15m",
+      "MAE": 180.80543778379962,
+      "Spearman_IC": 0.08028501055573824,
+      "promoted": false
+    },
+    {
+      "pdf_name": "basis_basis_range_rz__1h",
+      "column": "F4Z__basis__basis_range_rz__1h__value",
+      "tables": {
+        "all_horizons": 16
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31791,
+        36159
+      ],
+      "inner_unique": [
+        22141,
+        26367,
+        30371,
+        34565
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_basis_basis_range_rz__1h",
+      "MAE": 180.809325732056,
+      "Spearman_IC": 0.07780894962445861,
+      "promoted": false
+    },
+    {
+      "pdf_name": "liquidation_liq_acceleration_percentile__5m__1d",
+      "column": "F4Z__liquidation__liq_acceleration_percentile__5m__1d__value",
+      "tables": {
+        "all_horizons": 17
+      },
+      "inner_nonmissing": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "inner_unique": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "INSUFFICIENT_TRAINING_COVERAGE"
+    },
+    {
+      "pdf_name": "flow_flow_activity_rz__1h",
+      "column": "F4Z__flow__flow_activity_rz__1h__value",
+      "tables": {
+        "all_horizons": 18
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31791,
+        36159
+      ],
+      "inner_unique": [
+        23199,
+        27615,
+        31791,
+        36159
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_flow_flow_activity_rz__1h",
+      "MAE": 180.81313053234356,
+      "Spearman_IC": 0.07858423565750063,
+      "promoted": false
+    },
+    {
+      "pdf_name": "liquidation_liq_temporal_concentration_percentile__12h",
+      "column": "F4Z__liquidation__liq_temporal_concentration_percentile__12h__value",
+      "tables": {
+        "all_horizons": 19
+      },
+      "inner_nonmissing": [
+        1199,
+        5615,
+        9791,
+        14159
+      ],
+      "inner_unique": [
+        566,
+        979,
+        989,
+        995
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_liquidation_liq_temporal_concentration_percentile__12h",
+      "MAE": 181.50392718242117,
+      "Spearman_IC": 0.05217482156866046,
+      "promoted": false
+    },
+    {
+      "pdf_name": "liquidation_liq_acceleration_rz__15m__1d",
+      "column": "F4Z__liquidation__liq_acceleration_rz__15m__1d__value",
+      "tables": {
+        "all_horizons": 20
+      },
+      "inner_nonmissing": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "inner_unique": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "INSUFFICIENT_TRAINING_COVERAGE"
+    },
+    {
+      "pdf_name": "flow_flow_activity_percentile__1h",
+      "column": "F4Z__flow__flow_activity_percentile__1h__value",
+      "tables": {
+        "f4z_magnitude": 1
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31791,
+        36159
+      ],
+      "inner_unique": [
+        1001,
+        1001,
+        1001,
+        1001
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "price_price_excursion_range_percentile__1h",
+      "column": "F4Z__price__price_excursion_range_percentile__1h__value",
+      "tables": {
+        "f4z_magnitude": 3
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31789,
+        36157
+      ],
+      "inner_unique": [
+        1001,
+        1001,
+        1001,
+        1001
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "basis_basis_range_percentile__1h",
+      "column": "F4Z__basis__basis_range_percentile__1h__value",
+      "tables": {
+        "f4z_magnitude": 4
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31791,
+        36159
+      ],
+      "inner_unique": [
+        1546,
+        1591,
+        1635,
+        1677
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "flow_flow_activity_percentile__15m",
+      "column": "F4Z__flow__flow_activity_percentile__15m__value",
+      "tables": {
+        "f4z_magnitude": 5
+      },
+      "inner_nonmissing": [
+        24699,
+        29115,
+        33291,
+        37659
+      ],
+      "inner_unique": [
+        1001,
+        1001,
+        1001,
+        1001
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_flow_flow_activity_percentile__15m",
+      "MAE": 180.81520672728772,
+      "Spearman_IC": 0.07795173134982929,
+      "promoted": true
+    },
+    {
+      "pdf_name": "liquidation_liq_activity_severity_active_severity_rz__1h",
+      "column": "F4Z__liquidation__liq_activity_severity_active_severity_rz__1h__value",
+      "tables": {
+        "f4z_magnitude": 6
+      },
+      "inner_nonmissing": [
+        22523,
+        26880,
+        31051,
+        35402
+      ],
+      "inner_unique": [
+        22296,
+        26623,
+        30786,
+        35130
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "volatility_realized_variance_level_rz__5m",
+      "column": "F4Z__volatility__realized_variance_level_rz__5m__value",
+      "tables": {
+        "f4z_magnitude": 8
+      },
+      "inner_nonmissing": [
+        25021,
+        29435,
+        33610,
+        37978
+      ],
+      "inner_unique": [
+        25021,
+        29435,
+        33610,
+        37978
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__5m",
+      "MAE": 180.80313507585643,
+      "Spearman_IC": 0.07914913385025726,
+      "promoted": false
+    },
+    {
+      "pdf_name": "liquidation_liq_temporal_concentration_percentile__1h",
+      "column": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value",
+      "tables": {
+        "f4z_magnitude": 9
+      },
+      "inner_nonmissing": [
+        22523,
+        26880,
+        31051,
+        35402
+      ],
+      "inner_unique": [
+        1140,
+        1143,
+        1145,
+        1145
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "price_price_excursion_range_rz__15m",
+      "column": "F4Z__price__price_excursion_range_rz__15m__value",
+      "tables": {
+        "f4z_magnitude": 10
+      },
+      "inner_nonmissing": [
+        24699,
+        29115,
+        33290,
+        37658
+      ],
+      "inner_unique": [
+        24699,
+        29115,
+        33290,
+        37658
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_price_price_excursion_range_rz__15m",
+      "MAE": 180.80897698464625,
+      "Spearman_IC": 0.07897134903505203,
+      "promoted": false
+    },
+    {
+      "pdf_name": "flow_flow_activity_percentile__5m",
+      "column": "F4Z__flow__flow_activity_percentile__5m__value",
+      "tables": {
+        "f4z_magnitude": 11
+      },
+      "inner_nonmissing": [
+        25033,
+        29449,
+        33625,
+        37993
+      ],
+      "inner_unique": [
+        1001,
+        1001,
+        1001,
+        1001
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_flow_flow_activity_percentile__5m",
+      "MAE": 180.79851809782613,
+      "Spearman_IC": 0.07852651265983954,
+      "promoted": true
+    },
+    {
+      "pdf_name": "liquidation_cross_asset_liq_activity_raw_active_severity_rz__1h",
+      "column": "F4Z__liquidation__cross_asset_liq_activity_raw_active_severity_rz__1h__value",
+      "tables": {
+        "f4z_magnitude": 12
+      },
+      "inner_nonmissing": [
+        22844,
+        27244,
+        31419,
+        35786
+      ],
+      "inner_unique": [
+        22711,
+        27102,
+        31275,
+        35639
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_liquidation_cross_asset_liq_activity_raw_active_severity_rz__1h",
+      "MAE": 180.83090717493843,
+      "Spearman_IC": 0.07635565292702157,
+      "promoted": false
+    },
+    {
+      "pdf_name": "liquidation_venue_fragmentation_percentile__1h",
+      "column": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+      "tables": {
+        "f4z_magnitude": 13
+      },
+      "inner_nonmissing": [
+        22523,
+        26880,
+        31051,
+        35402
+      ],
+      "inner_unique": [
+        1168,
+        1171,
+        1173,
+        1174
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "price_price_excursion_range_rz__5m",
+      "column": "F4Z__price__price_excursion_range_rz__5m__value",
+      "tables": {
+        "f4z_magnitude": 14
+      },
+      "inner_nonmissing": [
+        25033,
+        29449,
+        33624,
+        37992
+      ],
+      "inner_unique": [
+        25033,
+        29449,
+        33624,
+        37992
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_price_price_excursion_range_rz__5m",
+      "MAE": 180.8038890272105,
+      "Spearman_IC": 0.07907169090800446,
+      "promoted": false
+    },
+    {
+      "pdf_name": "basis_basis_level_rz__1h",
+      "column": "F4Z__basis__basis_level_rz__1h__value",
+      "tables": {
+        "f4z_magnitude": 15
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31791,
+        36159
+      ],
+      "inner_unique": [
+        23197,
+        27613,
+        31789,
+        36157
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "liquidation_venue_breadth_percentile__1h",
+      "column": "F4Z__liquidation__venue_breadth_percentile__1h__value",
+      "tables": {
+        "f4z_magnitude": 16
+      },
+      "inner_nonmissing": [
+        23199,
+        27615,
+        31791,
+        36159
+      ],
+      "inner_unique": [
+        1616,
+        1623,
+        1628,
+        1628
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_liquidation_venue_breadth_percentile__1h",
+      "MAE": 181.1971703914071,
+      "Spearman_IC": 0.07032548417244198,
+      "promoted": false
+    },
+    {
+      "pdf_name": "funding_funding_persistence_percentile__5m",
+      "column": "F4Z__funding__funding_persistence_percentile__5m__value",
+      "tables": {
+        "f4z_magnitude": 17
+      },
+      "inner_nonmissing": [
+        23467,
+        27607,
+        31522,
+        35617
+      ],
+      "inner_unique": [
+        80,
+        80,
+        80,
+        82
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_funding_funding_persistence_percentile__5m",
+      "MAE": 180.96069981584893,
+      "Spearman_IC": 0.07540306433967081,
+      "promoted": false
+    },
+    {
+      "pdf_name": "liquidation_venue_breadth_percentile__15m",
+      "column": "F4Z__liquidation__venue_breadth_percentile__15m__value",
+      "tables": {
+        "f4z_magnitude": 18
+      },
+      "inner_nonmissing": [
+        24699,
+        29115,
+        33291,
+        37659
+      ],
+      "inner_unique": [
+        1924,
+        1925,
+        1930,
+        1931
+      ],
+      "status": "TESTED_CURRENT_BATCH",
+      "experiment": "ensemble_context_liquidation_venue_breadth_percentile__15m",
+      "MAE": 180.92990502488826,
+      "Spearman_IC": 0.07835580822762654,
+      "promoted": false
+    },
+    {
+      "pdf_name": "funding_funding_persistence_percentile__15m",
+      "column": "F4Z__funding__funding_persistence_percentile__15m__value",
+      "tables": {
+        "f4z_magnitude": 19
+      },
+      "inner_nonmissing": [
+        23141,
+        27281,
+        31196,
+        35291
+      ],
+      "inner_unique": [
+        133,
+        138,
+        138,
+        143
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    },
+    {
+      "pdf_name": "volatility_vol_shock_concentration_percentile__5m",
+      "column": "F4Z__volatility__vol_shock_concentration_percentile__5m__value",
+      "tables": {
+        "f4z_magnitude": 20
+      },
+      "inner_nonmissing": [
+        25030,
+        29445,
+        33620,
+        37988
+      ],
+      "inner_unique": [
+        1738,
+        1776,
+        1782,
+        1787
+      ],
+      "status": "PREVIOUSLY_TESTED"
+    }
+  ]
+}

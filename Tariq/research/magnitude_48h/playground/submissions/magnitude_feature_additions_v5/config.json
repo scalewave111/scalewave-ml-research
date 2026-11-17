@@ -1,0 +1,80 @@
+{
+  "version": "magnitude_feature_additions_v5",
+  "authorization": "User authorized the three complementary feature comparisons, explicitly making the verified hybrid 181.5238678328609 the current benchmark and requesting a repeatable process across target horizons.",
+  "horizon_minutes": 2880,
+  "target_column": "magnitude_log_bps",
+  "label_end_column": "label_end",
+  "data_parts": [
+    {
+      "X": "data/X_train.parquet",
+      "y": "data/y_train.parquet"
+    },
+    {
+      "X": "data/X_development.parquet",
+      "y": "data/y_development.parquet"
+    }
+  ],
+  "anchor_features": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+  ],
+  "additions": {
+    "variance_rz_4h": "F4Z__volatility__realized_variance_level_rz__4h__value",
+    "flow_rz_4h": "F4Z__flow__flow_activity_rz__4h__value",
+    "flow_percentile_1h": "F4Z__flow__flow_activity_percentile__1h__value"
+  },
+  "change_scope": "Only RF feature set gains one feature. Pair remains the two-feature anchor. Every added value has its own training-fit transform and missing flag.",
+  "validation_windows": [
+    [
+      "2024-01-01T00:00:00Z",
+      "2024-04-01T00:00:00Z"
+    ],
+    [
+      "2024-04-01T00:00:00Z",
+      "2024-07-01T00:00:00Z"
+    ],
+    [
+      "2024-07-01T00:00:00Z",
+      "2024-10-01T00:00:00Z"
+    ],
+    [
+      "2024-10-01T00:00:00Z",
+      "2025-01-22T00:30:00Z"
+    ]
+  ],
+  "inner_validation_months": 3,
+  "minimum_valid_training": 1000,
+  "forest": {
+    "n_estimators": 128,
+    "criterion": "absolute_error",
+    "max_depth": 3,
+    "min_samples_leaf": 128,
+    "max_features": 1.0,
+    "bootstrap": true,
+    "max_samples": 4096,
+    "n_jobs": 4,
+    "random_state": 48
+  },
+  "forest_weights": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+  "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+  "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+  "anchor_horizon_minutes": 2880,
+  "benchmark_horizon_minutes": 2880,
+  "benchmark_predictions": "submissions/magnitude_rf_hybrid_v4/run_001/predictions.parquet",
+  "benchmark_column": "selected_blend",
+  "benchmark_mae": 181.5238678328609,
+  "new_fit_budget": 36,
+  "prior_fit_count": 55,
+  "fit_accounting": "3 candidates x 4 folds x (inner forest + weight selection + outer forest) = 36. Pair models and benchmark forecasts reused, no extra pair fits.",
+  "promotion_rule": "After replay verification, the strictly lowest same-population MAE becomes the new development benchmark; prefer incumbent on exact ties. Retain all old results. Nominal uncertainty must be reported separately.",
+  "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+  "stopping_rule": "Run the three additions only. No combinations or additional tuning before their results are assessed.",
+  "fresh_data": "Deferred; not accessed.",
+  "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment."
+}

@@ -1,0 +1,99 @@
+{
+  "status": "COMPLETE_PENDING_REPLAY_VERIFICATION",
+  "horizon_minutes": 2880,
+  "rows": 18481,
+  "pooled_MAE": {
+    "refitted_pair": 181.97660210071422,
+    "incumbent_hybrid": 181.5238678328609,
+    "flow_percentile_1h": 181.78349428946552,
+    "variance_rz_4h": 182.88057185964513,
+    "flow_rz_4h": 183.01256563379206
+  },
+  "pooled_Spearman_IC": {
+    "refitted_pair": 0.027241073957620095,
+    "incumbent_hybrid": 0.07737672515285152,
+    "flow_percentile_1h": 0.0844780827687555,
+    "variance_rz_4h": 0.0730563040813845,
+    "flow_rz_4h": 0.0678856719785549
+  },
+  "pooled_Pearson_IC": {
+    "refitted_pair": 0.03587420658053796,
+    "incumbent_hybrid": 0.04400400482390407,
+    "flow_percentile_1h": 0.05404425091999714,
+    "variance_rz_4h": 0.04024594155794238,
+    "flow_rz_4h": 0.0335851781279343
+  },
+  "lowest_development_MAE": "incumbent_hybrid",
+  "selected_forest_weights": {
+    "flow_percentile_1h": {
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.25,
+      "4": 0.0
+    },
+    "variance_rz_4h": {
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5,
+      "4": 0.5
+    },
+    "flow_rz_4h": {
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.5,
+      "4": 0.5
+    }
+  },
+  "months_better_incumbent": {
+    "flow_percentile_1h": 4,
+    "variance_rz_4h": 5,
+    "flow_rz_4h": 5
+  },
+  "nominal_paired_intervals": [
+    {
+      "candidate": "flow_percentile_1h",
+      "block_days": 7,
+      "mean_delta": 0.2596264566045955,
+      "low": -0.2894028041704045,
+      "high": 0.7970535816534979
+    },
+    {
+      "candidate": "flow_percentile_1h",
+      "block_days": 14,
+      "mean_delta": 0.2596264566045955,
+      "low": -0.2041392351518061,
+      "high": 0.693762380278557
+    },
+    {
+      "candidate": "variance_rz_4h",
+      "block_days": 7,
+      "mean_delta": 1.3567040267842194,
+      "low": -0.7398831702566365,
+      "high": 3.5209831684693347
+    },
+    {
+      "candidate": "variance_rz_4h",
+      "block_days": 14,
+      "mean_delta": 1.3567040267842194,
+      "low": -0.8245029584252384,
+      "high": 3.530306606034787
+    },
+    {
+      "candidate": "flow_rz_4h",
+      "block_days": 7,
+      "mean_delta": 1.4886978009311909,
+      "low": -0.5725940076108254,
+      "high": 3.598019534220544
+    },
+    {
+      "candidate": "flow_rz_4h",
+      "block_days": 14,
+      "mean_delta": 1.4886978009311909,
+      "low": -0.6148819243884107,
+      "high": 3.64260397908109
+    }
+  ],
+  "new_fits_including_weight_selection": 36,
+  "cumulative_fits_including_weight_selection": 127,
+  "interpretation": "Adaptive development feature comparison. Fixed RF models; one added median-regression feature per candidate. MAE is the only optimization/promotion metric; Spearman is tracked only. Lower MAE may update the scoreboard only after verification, not establish independent confirmation. Fresh test not accessed."
+}

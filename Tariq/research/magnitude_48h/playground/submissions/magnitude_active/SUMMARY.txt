@@ -1,0 +1,16 @@
+INDIVIDUAL PDF FEATURE ADDITIONS - VERIFIED
+
+                                               feature        MAE  Spearman_IC  delta_MAE_vs_start
+                           Starting 7-feature ensemble 180.798518     0.078527            0.000000
+            volatility_realized_variance_level_rz__12h 181.449854     0.051447            0.651336
+                   price_price_excursion_range_rz__12h 181.432563     0.056641            0.634045
+                             basis_basis_range_rz__12h 181.543268     0.049425            0.744750
+liquidation_liq_temporal_concentration_percentile__12h 181.503927     0.052175            0.705409
+
+Current benchmark MAE: 180.79851809782613; Spearman IC: 0.07852651265983954
+Same initial 7-feature ensemble plus one candidate at a time. Three fixed seeds, 128 trees per seed, fixed per-fold depths/leaves/bootstrap draws.
+Earlier three-month validation chooses blend on original grid. Same four periods, 18,481 timestamps and strict label-end purges.
+Completed 4 candidate comparisons; 96 forests plus 16 blend selections. Cumulative count 1624.
+All candidates and retained winner replay verified. Losing generated outputs pruned; compact history and scripts retained.
+MAE decides promotion; Spearman tracked only. No combinations or neural networks tested. Fresh data untouched.
+Inventory: 0 eligible features remain queued; 6 unavailable under current training coverage.

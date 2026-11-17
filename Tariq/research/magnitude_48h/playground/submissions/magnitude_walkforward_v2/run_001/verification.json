@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "prediction_rows": 18481,
+  "saved_model_max_replay_error": 0.0,
+  "checks": [
+    "exact targets and keys",
+    "strict label-end purge",
+    "train-only baseline transforms",
+    "saved model prediction replay",
+    "independent MAE recomputation",
+    "16 completed fits"
+  ],
+  "new_fits": 0,
+  "fresh_data_accessed": false
+}

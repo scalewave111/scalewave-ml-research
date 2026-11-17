@@ -1,0 +1,655 @@
+{
+  "results": {
+    "6": {
+      "months": 6,
+      "MAE": 184.40489754309007,
+      "Spearman_IC": -0.03228259401959056,
+      "folds": [
+        {
+          "fold": 1,
+          "weight": 0.5,
+          "files": [
+            "m6_fold1_seed48.joblib",
+            "m6_fold1_seed17.joblib",
+            "m6_fold1_seed91.joblib"
+          ],
+          "rows": 8736,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.8170000000000001,
+              "center": 0.815370077838828,
+              "scale": 0.12133722295052575
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.5475000000000001,
+              "center": 0.574767055860806,
+              "scale": 0.18762632952977462
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.505,
+              "center": 0.5024821428571429,
+              "scale": 0.29183613049462337
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.505,
+              "center": 0.5050042353479854,
+              "scale": 0.28272281438086866
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.48600000000000004,
+              "center": 0.48763049450549456,
+              "scale": 0.2835943661417769
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.48300000000000004,
+              "center": 0.48673271520146527,
+              "scale": 0.2936314126014886
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.47000000000000003,
+              "center": 0.47177518315018324,
+              "scale": 0.30433467833194106
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 64,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 8736,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 2,
+          "weight": 0.5,
+          "files": [
+            "m6_fold2_seed48.joblib",
+            "m6_fold2_seed17.joblib",
+            "m6_fold2_seed91.joblib"
+          ],
+          "rows": 8496,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.9530000000000001,
+              "center": 0.934213747645951,
+              "scale": 0.07282128938469894
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.77,
+              "center": 0.7486819679849342,
+              "scale": 0.13448400581428205
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.5740000000000001,
+              "center": 0.5545370762711865,
+              "scale": 0.27838881393345993
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.536,
+              "center": 0.5269454449152541,
+              "scale": 0.2830846103095836
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.458,
+              "center": 0.46960440207156307,
+              "scale": 0.2873544323396382
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.5,
+              "center": 0.4989738700564972,
+              "scale": 0.2931184831669608
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.462,
+              "center": 0.4691317090395481,
+              "scale": 0.3040653646062069
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 64,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 8496,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 3,
+          "weight": 0.25,
+          "files": [
+            "m6_fold3_seed48.joblib",
+            "m6_fold3_seed17.joblib",
+            "m6_fold3_seed91.joblib"
+          ],
+          "rows": 8544,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.9570000000000001,
+              "center": 0.9530558286516855,
+              "scale": 0.031039953958984602
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.753,
+              "center": 0.7522325608614233,
+              "scale": 0.09767088099855427
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.49900000000000005,
+              "center": 0.4925149812734083,
+              "scale": 0.2950524694820763
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.48600000000000004,
+              "center": 0.48786434925093636,
+              "scale": 0.28862090231866666
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.514,
+              "center": 0.5128914442883895,
+              "scale": 0.29085118832178586
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.47600000000000003,
+              "center": 0.4822093867041199,
+              "scale": 0.2976981648904109
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.45,
+              "center": 0.46030945692883896,
+              "scale": 0.3054261792303594
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 128,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 4096,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 4,
+          "weight": 0.0,
+          "files": [],
+          "rows": 8688
+        }
+      ],
+      "fold_scores": {
+        "1": {
+          "MAE": 216.72015478672432,
+          "Spearman_IC": -0.08874195391883831
+        },
+        "2": {
+          "MAE": 163.29228090466512,
+          "Spearman_IC": -0.057201112732096465
+        },
+        "3": {
+          "MAE": 194.63303613449438,
+          "Spearman_IC": 0.09482619347263778
+        },
+        "4": {
+          "MAE": 167.63101192321784,
+          "Spearman_IC": 0.006178338200544946
+        }
+      },
+      "status": "VERIFIED",
+      "retained_files": []
+    },
+    "12": {
+      "months": 12,
+      "MAE": 182.79163056619444,
+      "Spearman_IC": 0.025069108246605746,
+      "folds": [
+        {
+          "fold": 1,
+          "weight": 0.5,
+          "files": [
+            "m12_fold1_seed48.joblib",
+            "m12_fold1_seed17.joblib",
+            "m12_fold1_seed91.joblib"
+          ],
+          "rows": 17424,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.794,
+              "center": 0.8038144513314968,
+              "scale": 0.09905937580959776
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.526,
+              "center": 0.5456201790633609,
+              "scale": 0.1535095844334014
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.528,
+              "center": 0.5179253328741965,
+              "scale": 0.2909134031263875
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.517,
+              "center": 0.51350060261708,
+              "scale": 0.28398032324864597
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.47950000000000004,
+              "center": 0.4844948634067953,
+              "scale": 0.2850939675803077
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.49400000000000005,
+              "center": 0.4928368342516071,
+              "scale": 0.29374621337846
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.47100000000000003,
+              "center": 0.47459010560146936,
+              "scale": 0.3004756044567253
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 64,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 16384,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 2,
+          "weight": 0.5,
+          "files": [
+            "m12_fold2_seed48.joblib",
+            "m12_fold2_seed17.joblib",
+            "m12_fold2_seed91.joblib"
+          ],
+          "rows": 17280,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.8390000000000001,
+              "center": 0.8397505787037037,
+              "scale": 0.1171916667146188
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.5860000000000001,
+              "center": 0.601833275462963,
+              "scale": 0.18554972826427762
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.509,
+              "center": 0.5056264467592593,
+              "scale": 0.29124295688847657
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.501,
+              "center": 0.5007744212962963,
+              "scale": 0.2835730974593224
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.49200000000000005,
+              "center": 0.4947462384259259,
+              "scale": 0.286624828913177
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.48700000000000004,
+              "center": 0.488762326388889,
+              "scale": 0.29347733571501605
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.462,
+              "center": 0.4693920138888889,
+              "scale": 0.3032061222586228
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 64,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 16384,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 3,
+          "weight": 0.25,
+          "files": [
+            "m12_fold3_seed48.joblib",
+            "m12_fold3_seed17.joblib",
+            "m12_fold3_seed91.joblib"
+          ],
+          "rows": 17280,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.937,
+              "center": 0.8834480324074074,
+              "scale": 0.11250909668291875
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.6985000000000001,
+              "center": 0.662513888888889,
+              "scale": 0.17431789232570633
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.501,
+              "center": 0.4975539351851852,
+              "scale": 0.2934731496540146
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.49400000000000005,
+              "center": 0.4963519097222222,
+              "scale": 0.28578058166821185
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.49800000000000005,
+              "center": 0.5003051215277778,
+              "scale": 0.2874766745264777
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.47950000000000004,
+              "center": 0.4844961805555556,
+              "scale": 0.2956578368095345
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.46,
+              "center": 0.4661060185185186,
+              "scale": 0.304928742223733
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 128,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 4096,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 4,
+          "weight": 0.0,
+          "files": [],
+          "rows": 17280
+        }
+      ],
+      "fold_scores": {
+        "1": {
+          "MAE": 216.58495454744423,
+          "Spearman_IC": -0.15270302006972022
+        },
+        "2": {
+          "MAE": 155.1722971192707,
+          "Spearman_IC": 0.11253755535738155
+        },
+        "3": {
+          "MAE": 196.04401385116088,
+          "Spearman_IC": 0.005652775649188453
+        },
+        "4": {
+          "MAE": 167.63101192321784,
+          "Spearman_IC": 0.006178338200544946
+        }
+      },
+      "status": "VERIFIED",
+      "retained_files": []
+    },
+    "18": {
+      "months": 18,
+      "MAE": 182.43698737466912,
+      "Spearman_IC": 0.03215704085654907,
+      "folds": [
+        {
+          "fold": 1,
+          "weight": 0.5,
+          "files": [
+            "m18_fold1_seed48.joblib",
+            "m18_fold1_seed17.joblib",
+            "m18_fold1_seed91.joblib"
+          ],
+          "rows": 26256,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.8270000000000001,
+              "center": 0.8294442794028033,
+              "scale": 0.1047542600567117
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.557,
+              "center": 0.5746019195612432,
+              "scale": 0.1597666053733918
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.49100000000000005,
+              "center": 0.49262583790371733,
+              "scale": 0.29433284452041936
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.49800000000000005,
+              "center": 0.49751639625228516,
+              "scale": 0.28703116899535586
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.504,
+              "center": 0.5030690127970749,
+              "scale": 0.28651285368037355
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.48200000000000004,
+              "center": 0.4854388711151737,
+              "scale": 0.29437684908407097
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.465,
+              "center": 0.4706270947592931,
+              "scale": 0.300596677465386
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 64,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 16384,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 2,
+          "weight": 0.5,
+          "files": [
+            "m18_fold2_seed48.joblib",
+            "m18_fold2_seed17.joblib",
+            "m18_fold2_seed91.joblib"
+          ],
+          "rows": 26016,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.8260000000000001,
+              "center": 0.831685962484625,
+              "scale": 0.10869902035526999
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.555,
+              "center": 0.5832810193726938,
+              "scale": 0.1725690681275823
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.507,
+              "center": 0.5031215021525216,
+              "scale": 0.294136283070607
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.505,
+              "center": 0.5017204028290283,
+              "scale": 0.28614330140327965
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.49500000000000005,
+              "center": 0.4974152060270603,
+              "scale": 0.28736713431711
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.48300000000000004,
+              "center": 0.4863736931119311,
+              "scale": 0.29467072128915256
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.465,
+              "center": 0.47001610547355477,
+              "scale": 0.30174455764658714
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 64,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 16384,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 3,
+          "weight": 0.25,
+          "files": [
+            "m18_fold3_seed48.joblib",
+            "m18_fold3_seed17.joblib",
+            "m18_fold3_seed91.joblib"
+          ],
+          "rows": 25968,
+          "preprocessing": {
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+              "median": 0.8630000000000001,
+              "center": 0.8529178989525571,
+              "scale": 0.10871193163074662
+            },
+            "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+              "median": 0.614,
+              "center": 0.6135998536660505,
+              "scale": 0.1684478971361118
+            },
+            "F4Z__flow__flow_activity_percentile__1h__value": {
+              "median": 0.517,
+              "center": 0.5095648105360443,
+              "scale": 0.2925254580320889
+            },
+            "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+              "median": 0.507,
+              "center": 0.5048806030499077,
+              "scale": 0.2857639496343965
+            },
+            "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+              "median": 0.49000000000000005,
+              "center": 0.4940306723659889,
+              "scale": 0.287303543698094
+            },
+            "F4Z__flow__flow_activity_percentile__15m__value": {
+              "median": 0.48800000000000004,
+              "center": 0.48934018792359835,
+              "scale": 0.29509457901845104
+            },
+            "F4Z__flow__flow_activity_percentile__5m__value": {
+              "median": 0.464,
+              "center": 0.4698914818237832,
+              "scale": 0.3021879020064522
+            }
+          },
+          "parameters": {
+            "n_estimators": 128,
+            "criterion": "absolute_error",
+            "max_depth": 5,
+            "min_samples_leaf": 128,
+            "max_features": 1.0,
+            "bootstrap": true,
+            "max_samples": 4096,
+            "n_jobs": 8,
+            "random_state": 91
+          }
+        },
+        {
+          "fold": 4,
+          "weight": 0.0,
+          "files": [],
+          "rows": 26064
+        }
+      ],
+      "fold_scores": {
+        "1": {
+          "MAE": 215.1939347740337,
+          "Spearman_IC": -0.029927979227062845
+        },
+        "2": {
+          "MAE": 155.1421018069413,
+          "Spearman_IC": 0.0467042031524147
+        },
+        "3": {
+          "MAE": 195.93535641766562,
+          "Spearman_IC": 0.06004112230137649
+        },
+        "4": {
+          "MAE": 167.63101192321784,
+          "Spearman_IC": 0.006178338200544946
+        }
+      },
+      "status": "VERIFIED",
+      "retained_files": []
+    }
+  },
+  "leader": null,
+  "completed_fits": [
+    "m6_fold1_seed48.joblib",
+    "m6_fold1_seed17.joblib",
+    "m6_fold1_seed91.joblib",
+    "m6_fold2_seed48.joblib",
+    "m6_fold2_seed17.joblib",
+    "m6_fold2_seed91.joblib",
+    "m6_fold3_seed48.joblib",
+    "m6_fold3_seed17.joblib",
+    "m6_fold3_seed91.joblib",
+    "m12_fold1_seed48.joblib",
+    "m12_fold1_seed17.joblib",
+    "m12_fold1_seed91.joblib",
+    "m12_fold2_seed48.joblib",
+    "m12_fold2_seed17.joblib",
+    "m12_fold2_seed91.joblib",
+    "m12_fold3_seed48.joblib",
+    "m12_fold3_seed17.joblib",
+    "m12_fold3_seed91.joblib",
+    "m18_fold1_seed48.joblib",
+    "m18_fold1_seed17.joblib",
+    "m18_fold1_seed91.joblib",
+    "m18_fold2_seed48.joblib",
+    "m18_fold2_seed17.joblib",
+    "m18_fold2_seed91.joblib",
+    "m18_fold3_seed48.joblib",
+    "m18_fold3_seed17.joblib",
+    "m18_fold3_seed91.joblib"
+  ]
+}

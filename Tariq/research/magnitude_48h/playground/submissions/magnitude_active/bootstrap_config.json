@@ -1,0 +1,86 @@
+{
+  "version": "rf_bootstrap_16384_extension",
+  "authorization": "User authorized 4096/8192/16384 bootstrap draws with unchanged current five features, depths, leaves, 128 trees and earlier-validation selection.",
+  "horizon_minutes": 2880,
+  "target_column": "magnitude_log_bps",
+  "label_end_column": "label_end",
+  "data_parts": [
+    {
+      "X": "data/X_train.parquet",
+      "y": "data/y_train.parquet"
+    },
+    {
+      "X": "data/X_development.parquet",
+      "y": "data/y_development.parquet"
+    }
+  ],
+  "anchor_features": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+  ],
+  "additions": {
+    "flow": "F4Z__flow__flow_activity_percentile__1h__value",
+    "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+    "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value"
+  },
+  "change_scope": "Only max_samples varies; sample with replacement. Original weight grid and 128 trees retained.",
+  "validation_windows": [
+    [
+      "2024-01-01T00:00:00Z",
+      "2024-04-01T00:00:00Z"
+    ],
+    [
+      "2024-04-01T00:00:00Z",
+      "2024-07-01T00:00:00Z"
+    ],
+    [
+      "2024-07-01T00:00:00Z",
+      "2024-10-01T00:00:00Z"
+    ],
+    [
+      "2024-10-01T00:00:00Z",
+      "2025-01-22T00:30:00Z"
+    ]
+  ],
+  "inner_validation_months": 3,
+  "minimum_valid_training": 1000,
+  "forest": {
+    "n_estimators": 128,
+    "criterion": "absolute_error",
+    "max_depth": 3,
+    "min_samples_leaf": 128,
+    "max_features": 1.0,
+    "bootstrap": true,
+    "max_samples": 4096,
+    "n_jobs": 4,
+    "random_state": 48
+  },
+  "forest_weights": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+  "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+  "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+  "anchor_horizon_minutes": 2880,
+  "benchmark_horizon_minutes": 2880,
+  "benchmark_predictions": "submissions/magnitude_current/run_001/predictions.parquet",
+  "benchmark_column": "prediction",
+  "benchmark_mae": 180.89120445756495,
+  "new_fit_budget": 12,
+  "prior_fit_count": 834,
+  "fit_accounting": "Reuse incumbent per-fold sample-size models; eight new inner fits and up to four selected outer fits, plus four selections.",
+  "promotion_rule": "Promote only verified lower same-row MAE. Track Spearman only. Keep compact history and discard losing model/prediction artifacts after verification.",
+  "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+  "stopping_rule": "One nested comparison of three bootstrap sample sizes; no other parameter changes.",
+  "fresh_data": "Deferred; not accessed.",
+  "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment.",
+  "selection_rule": "Lowest inner MAE; ties: lower RF weight, then 4096 draws, then smaller sample size.",
+  "sample_sizes": [
+    4096,
+    8192,
+    16384
+  ]
+}

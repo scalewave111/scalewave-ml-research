@@ -1,0 +1,22 @@
+{
+  "status": "PASS_SYNTHETIC_CHECKS_NOT_REAL_DATA_RUN",
+  "runner_sha256": "25ae53d6a34e1695381372f46bcd26298428c341517336f3096e6d9815b172f0",
+  "notebook_sha256": "2d461f8dc9998c3b5d523ab1fffc8c8d299b982b5c5c77ac2480408ca42df5b5",
+  "config_sha256": "4cf16e6e080c858c8c7d2b9af372c1359b1e28222600580c8aa1b6fc45997c27",
+  "pilot_max_fits": 315,
+  "checks": [
+    "strict inner/outer label maturity",
+    "train-only imputation",
+    "missing evaluation rows retained",
+    "independent tree prediction traversal",
+    "controlled setting tie break",
+    "ZIP range extraction and CRC",
+    "cache content hashes and source-identity rejection",
+    "synthetic F4Z and target Parquet ingestion",
+    "completed-cache resume without archive rereads",
+    "weighted score and interrupted-aggregation recovery",
+    "notebook syntax and exact pilot scope"
+  ],
+  "remote_execution": "Pending user Colab run",
+  "full_mode": "Not launched; review pilot first"
+}

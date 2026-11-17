@@ -1,0 +1,90 @@
+{
+  "pooled_MAE": {
+    "frozen_MP0004": 182.0369772107621,
+    "refitted_pair": 181.97660210071422,
+    "forest_only": 182.61313904711153,
+    "fixed_blend": 181.82014626796752,
+    "selected_blend": 181.5238678328609
+  },
+  "rows": 18481,
+  "selected_forest_weights": {
+    "1": 0.5,
+    "2": 0.5,
+    "3": 0.25,
+    "4": 0.0
+  },
+  "months_better_refitted_pair": {
+    "fixed_blend": 10,
+    "selected_blend": 6
+  },
+  "nominal_paired_intervals": [
+    {
+      "candidate": "fixed_blend",
+      "reference": "refitted_pair",
+      "block_days": 7,
+      "mean_delta": -0.15645583274666872,
+      "low": -0.47866469281842894,
+      "high": 0.16286459360164177
+    },
+    {
+      "candidate": "fixed_blend",
+      "reference": "refitted_pair",
+      "block_days": 14,
+      "mean_delta": -0.15645583274666872,
+      "low": -0.46870440475568004,
+      "high": 0.13308527689726637
+    },
+    {
+      "candidate": "fixed_blend",
+      "reference": "frozen_MP0004",
+      "block_days": 7,
+      "mean_delta": -0.21683094279460946,
+      "low": -0.7437146343321913,
+      "high": 0.2726496151533311
+    },
+    {
+      "candidate": "fixed_blend",
+      "reference": "frozen_MP0004",
+      "block_days": 14,
+      "mean_delta": -0.21683094279460946,
+      "low": -0.6119946808488305,
+      "high": 0.15688080888880862
+    },
+    {
+      "candidate": "selected_blend",
+      "reference": "refitted_pair",
+      "block_days": 7,
+      "mean_delta": -0.4527342678532716,
+      "low": -1.5792100510415343,
+      "high": 0.5432127241899009
+    },
+    {
+      "candidate": "selected_blend",
+      "reference": "refitted_pair",
+      "block_days": 14,
+      "mean_delta": -0.4527342678532716,
+      "low": -1.5935682295516287,
+      "high": 0.4741005041115518
+    },
+    {
+      "candidate": "selected_blend",
+      "reference": "frozen_MP0004",
+      "block_days": 7,
+      "mean_delta": -0.5131093779012122,
+      "low": -1.7405628879590256,
+      "high": 0.6111329230382204
+    },
+    {
+      "candidate": "selected_blend",
+      "reference": "frozen_MP0004",
+      "block_days": 14,
+      "mean_delta": -0.5131093779012122,
+      "low": -1.6756894622478484,
+      "high": 0.46946411363773316
+    }
+  ],
+  "new_fits_including_weight_selection": 16,
+  "prior_fits": 39,
+  "cumulative_fits_including_weight_selection": 55,
+  "interpretation": "Development comparison only. Forest settings fixed; blend weights selected using earlier inner-validation labels only. Nominal intervals do not correct adaptive project search. Fresh test not accessed."
+}

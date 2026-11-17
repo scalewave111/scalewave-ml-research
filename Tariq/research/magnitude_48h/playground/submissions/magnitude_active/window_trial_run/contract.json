@@ -1,0 +1,162 @@
+{
+  "hashes": {
+    "submissions\\magnitude_active\\run_model_comparison.py": "a70323be405794ca6bd67d3c625d48ecca750539a5291fbcf45d539644fc895b",
+    "submissions\\magnitude_active\\model_trial_helpers.py": "f2d9129f7979eb5c0b2450cdaa844c8d83f7d42fe8fddff599fed84177addf36",
+    "submissions\\magnitude_active\\feature_experiment.py": "b29883be29c255ebf58c9e1b8ea613173e619cd63bcf09ef609648b1919a3982",
+    "submissions\\magnitude_current\\run_001\\config.json": "ba77b1814c1c28461280393b6309c45bb3182ea42453d99b46f270c796254a88",
+    "submissions\\magnitude_current\\run_001\\predictions.parquet": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner.json": "86d0d82c2d9187e582a29b542e0b84c94242b5a7164e69906634fe232c8be623",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner.json": "34af2e8f882121d8b091bad5326e4618b79ab5b97ec0749f3db199debf7bc049",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner.json": "c49ca067bee5c419be19f678e660231c923daa23c475908f9007de70349bedfe",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner.json": "b8eb85d76ad7ff71d4bc0d664a59d56ab50deb2beb221a1c870b3ebd8bbb7b21",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_1_pair.json": "2fa0d81eb2e9db432a858326ab2094b6144b6571b7b90f1713e505da8dec0930",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_2_pair.json": "b35a72a0883228f44d561c27596aeb493c7e08507b6b59b2dfda12b7383fec3b",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_3_pair.json": "22d6f25196d2dd8f3c89e13422d23072480f8febddd6792f0d43e28dd8cb6cbf",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_4_pair.json": "6148ae525893474d48d8e6daffe4dfaeb53f839b9ad838d3104c7bf61a75630a",
+    "submissions\\magnitude_active\\run_window_comparison.py": "ea870b72590277abcd914b2e4b9d6cffc2c8e431103c80e74c74a920a74fb1ee",
+    "submissions\\magnitude_current\\run_001\\fold_1_selected.json": "467c775bc80d319ea723e12ef93e659d2c6ac1710fa7b30267f54a604202ff59",
+    "submissions\\magnitude_current\\run_001\\fold_2_selected.json": "36762763462fb4d932c4d6894114851c59b8a8fdfe5ea650f117ab1f73c00395",
+    "submissions\\magnitude_current\\run_001\\fold_3_selected.json": "f8497adc914c56f57e260c64dfd6e4a3b9a8c7794d8af84f3cb73e0034855d9f",
+    "submissions\\magnitude_current\\run_001\\fold_4_selected.json": "4dfb635dcdcefe31eabed67da143f4a9a1a26b906f5225581f56ef40efe9b66e"
+  },
+  "plan": [
+    {
+      "months": 6,
+      "fold": 1,
+      "rows": 8736,
+      "start": "2023-07-01 00:00:00+00:00",
+      "max_label_end": "2023-12-31 23:30:00+00:00",
+      "requested_max_samples": 16384,
+      "effective_max_samples": 8736,
+      "weight": 0.5
+    },
+    {
+      "months": 6,
+      "fold": 2,
+      "rows": 8496,
+      "start": "2023-10-01 00:00:00+00:00",
+      "max_label_end": "2024-03-31 23:30:00+00:00",
+      "requested_max_samples": 16384,
+      "effective_max_samples": 8496,
+      "weight": 0.5
+    },
+    {
+      "months": 6,
+      "fold": 3,
+      "rows": 8544,
+      "start": "2024-01-01 00:00:00+00:00",
+      "max_label_end": "2024-06-30 23:30:00+00:00",
+      "requested_max_samples": 4096,
+      "effective_max_samples": 4096,
+      "weight": 0.25
+    },
+    {
+      "months": 6,
+      "fold": 4,
+      "rows": 8688,
+      "start": "2024-04-01 00:00:00+00:00",
+      "max_label_end": "2024-09-30 23:30:00+00:00",
+      "requested_max_samples": 4096,
+      "effective_max_samples": 4096,
+      "weight": 0.0
+    },
+    {
+      "months": 12,
+      "fold": 1,
+      "rows": 17424,
+      "start": "2023-01-01 00:00:00+00:00",
+      "max_label_end": "2023-12-31 23:30:00+00:00",
+      "requested_max_samples": 16384,
+      "effective_max_samples": 16384,
+      "weight": 0.5
+    },
+    {
+      "months": 12,
+      "fold": 2,
+      "rows": 17280,
+      "start": "2023-04-01 00:00:00+00:00",
+      "max_label_end": "2024-03-31 23:30:00+00:00",
+      "requested_max_samples": 16384,
+      "effective_max_samples": 16384,
+      "weight": 0.5
+    },
+    {
+      "months": 12,
+      "fold": 3,
+      "rows": 17280,
+      "start": "2023-07-01 00:00:00+00:00",
+      "max_label_end": "2024-06-30 23:30:00+00:00",
+      "requested_max_samples": 4096,
+      "effective_max_samples": 4096,
+      "weight": 0.25
+    },
+    {
+      "months": 12,
+      "fold": 4,
+      "rows": 17280,
+      "start": "2023-10-01 00:00:00+00:00",
+      "max_label_end": "2024-09-30 23:30:00+00:00",
+      "requested_max_samples": 4096,
+      "effective_max_samples": 4096,
+      "weight": 0.0
+    },
+    {
+      "months": 18,
+      "fold": 1,
+      "rows": 26256,
+      "start": "2022-07-01 00:00:00+00:00",
+      "max_label_end": "2023-12-31 23:30:00+00:00",
+      "requested_max_samples": 16384,
+      "effective_max_samples": 16384,
+      "weight": 0.5
+    },
+    {
+      "months": 18,
+      "fold": 2,
+      "rows": 26016,
+      "start": "2022-10-01 00:00:00+00:00",
+      "max_label_end": "2024-03-31 23:30:00+00:00",
+      "requested_max_samples": 16384,
+      "effective_max_samples": 16384,
+      "weight": 0.5
+    },
+    {
+      "months": 18,
+      "fold": 3,
+      "rows": 25968,
+      "start": "2023-01-01 00:00:00+00:00",
+      "max_label_end": "2024-06-30 23:30:00+00:00",
+      "requested_max_samples": 4096,
+      "effective_max_samples": 4096,
+      "weight": 0.25
+    },
+    {
+      "months": 18,
+      "fold": 4,
+      "rows": 26064,
+      "start": "2023-04-01 00:00:00+00:00",
+      "max_label_end": "2024-09-30 23:30:00+00:00",
+      "requested_max_samples": 4096,
+      "effective_max_samples": 4096,
+      "weight": 0.0
+    }
+  ],
+  "benchmark": {
+    "experiment": "ensemble_context_flow_flow_activity_percentile__5m",
+    "prediction_file": "submissions/magnitude_current/run_001/predictions.parquet",
+    "prediction_column": "prediction",
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "Pearson_IC": 0.06533420578948929,
+    "verification": "submissions/magnitude_current/run_001/verification.json",
+    "IC_verification": "submissions/magnitude_current/run_001/verification.json",
+    "prediction_sha256": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "replay_script": "submissions/magnitude_current/replay.py"
+  },
+  "protocol": "Only RF history changes; current pair, per-fold depth/leaf and blend weights fixed. 128 trees, seeds 48/17/91, eight workers. Bootstrap draws capped at available rows. Train-only preprocessing and strict label-end purge. No inner reselection. Zero-weight outer RF fits skipped because predictions are identical.",
+  "interpretation": "Adaptive development comparison; not fresh confirmation. Winner retained for review, incumbent unchanged."
+}

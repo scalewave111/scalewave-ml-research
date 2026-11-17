@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "rows": 18481,
+  "model_window_combinations": 21,
+  "new_fits": 19,
+  "reused_fits": 2,
+  "max_replay_error": 0.0,
+  "checks": [
+    "identical evaluation keys and targets",
+    "strict label-end purge",
+    "rolling calendar cutoffs",
+    "train-only transformations",
+    "all coefficient replays",
+    "independent MAE recomputation"
+  ],
+  "verification_fits": 0,
+  "fresh_data_accessed": false
+}

@@ -1,0 +1,39 @@
+{
+  "pooled_MAE": {
+    "training_median": 186.3437357866197,
+    "refitted_pair": 181.97660210071422,
+    "xgb_pair": 184.76346004522728,
+    "xgb_pair_variance": 185.90572990540352
+  },
+  "best_xgb": "xgb_pair",
+  "best_xgb_beats_both_controls": false,
+  "nominal_delta_vs_refitted_pair_intervals": [
+    {
+      "model": "xgb_pair",
+      "block_days": 7,
+      "low": -0.781231219336175,
+      "high": 6.35276774439898
+    },
+    {
+      "model": "xgb_pair_variance",
+      "block_days": 7,
+      "low": 0.5642436284847667,
+      "high": 7.5060596657250045
+    },
+    {
+      "model": "xgb_pair",
+      "block_days": 14,
+      "low": -1.0952386105870122,
+      "high": 6.681489061309288
+    },
+    {
+      "model": "xgb_pair_variance",
+      "block_days": 14,
+      "low": 0.054029720935018545,
+      "high": 7.643907155354325
+    }
+  ],
+  "new_fits": 16,
+  "fresh_test_accessed": false,
+  "interpretation": "Selected on exposed walk-forward development. Not independent confirmation; intervals are not search-adjusted. Negative delta is improvement. No final model refit performed."
+}

@@ -1,0 +1,1909 @@
+{
+  "signature": "729209d72e1ee50796f4964f087eb66b7e4fb87a6200e926cf8ef838af92272e",
+  "identity": {
+    "contract": {
+      "version": "time_high_btc_stage1_v2_mean",
+      "symbol": "BTCUSDT",
+      "target": "time_to_high_min",
+      "horizons_minutes": [
+        15,
+        60,
+        240,
+        480,
+        960,
+        2880,
+        4320,
+        7200,
+        12000,
+        18000
+      ],
+      "reserved_source_partition_start": "2024-07-24",
+      "reserved_utc_start_inclusive": "2024-07-24T00:01:00Z",
+      "reserved_utc_end_inclusive": "2025-01-24T00:00:00Z",
+      "research_label_end_rule": "strictly before reserved_utc_start_inclusive",
+      "stage1_origin_end_exclusive": "2024-07-01T00:00:00Z",
+      "stage1_allowed_source_months": [
+        "2022-04",
+        "2024-06"
+      ],
+      "partial_month_policy": "Skip all July 2024 partitions: no mixed reserved/research member read. July research days remain unused in stage 1.",
+      "origin_cadence_minutes": 30,
+      "validation_periods": [
+        [
+          "2023-04-01",
+          "2023-07-01"
+        ],
+        [
+          "2023-07-01",
+          "2023-10-01"
+        ],
+        [
+          "2023-10-01",
+          "2024-01-01"
+        ],
+        [
+          "2024-01-01",
+          "2024-04-01"
+        ],
+        [
+          "2024-04-01",
+          "2024-07-01"
+        ]
+      ],
+      "training": "Expanding earlier origins; label_end strictly before each validation start.",
+      "baselines": [
+        "training_median_time_to_high",
+        "horizon_midpoint",
+        "training_mean_time_to_high"
+      ],
+      "primary_metric": "MAE_minutes",
+      "secondary_metric": "100*MAE_minutes/horizon_minutes",
+      "ties": "Earliest occurrence of exact maximum, including minute zero.",
+      "row_selection": "VALID label, exact UTC half-hour origin, finite target in [0,horizon]. Same rows for all three baselines.",
+      "test_policy": "Six-month reserve excluded from all stage-1 reads/scoring/tuning. Final test requires separately frozen policy. Prior project exposure disclosed.",
+      "feature_policy": "No X values read in stage 1. F4/F4Z eligibility and upstream normalization unresolved; no automatic admission or F4Z leakage-free claim.",
+      "storage": "Archive ranges in cloud memory; one horizon at a time. Compact progress/results JSON in one dedicated Drive folder. No models or row-level prediction files.",
+      "resume": "Completed horizons reused only if contract, runner and source ZIP identity match; interrupted horizon restarts.",
+      "next_stage": "Review baseline matrix, then propose an explicit individual-feature batch before training.",
+      "magnitude_incumbent": "Unchanged; no previous magnitude experiments repeated."
+    },
+    "source": {
+      "id": "1y351d1ibxpAH-MxijvGDHPWEfqOJ70aM",
+      "name": "HANDOFF_2_CANONICAL_XY_V1_1.zip",
+      "modifiedTime": "2026-11-13T05:57:28.270Z",
+      "md5Checksum": "bf2cb8dd274222747fde1b2e979b42b7",
+      "size": "3033662926"
+    },
+    "runner_sha256": "cabc7506ca991faf62c4c4ad180af05fd33985caea086fef368ae20e95570e80"
+  },
+  "completed": {
+    "15": {
+      "horizon_minutes": 15,
+      "raw_partition_status_counts": {
+        "VALID": 1153424,
+        "INVALID_PRICE_PATH": 16
+      },
+      "eligible_research_rows": 38447,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-06-30 23:45:00+00:00",
+      "zero_time_fraction": 0.1355632429058184,
+      "endpoint_time_fraction": 0.13865841288006867,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16511,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:45:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 7.0,
+              "MAE_minutes": 4.884386446886447,
+              "MAE_percent_of_horizon": 32.56257631257631
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 7.5,
+              "MAE_minutes": 4.896062271062271,
+              "MAE_percent_of_horizon": 32.640415140415136
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 7.291684331657683,
+              "MAE_minutes": 4.891197756829001,
+              "MAE_percent_of_horizon": 32.607985045526675
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20879,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:45:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 7.0,
+              "MAE_minutes": 4.871150362318841,
+              "MAE_percent_of_horizon": 32.47433574879227
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 7.5,
+              "MAE_minutes": 4.891983695652174,
+              "MAE_percent_of_horizon": 32.61322463768116
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 7.307150725609464,
+              "MAE_minutes": 4.883948309219234,
+              "MAE_percent_of_horizon": 32.559655394794895
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25295,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:45:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 7.0,
+              "MAE_minutes": 4.88473731884058,
+              "MAE_percent_of_horizon": 32.5649154589372
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 7.5,
+              "MAE_minutes": 4.9132699275362315,
+              "MAE_percent_of_horizon": 32.755132850241544
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 7.296817552876062,
+              "MAE_minutes": 4.901675277021008,
+              "MAE_percent_of_horizon": 32.67783518014004
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29711,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-12-31 23:45:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 7.0,
+              "MAE_minutes": 4.867902930402931,
+              "MAE_percent_of_horizon": 32.4526862026862
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 7.5,
+              "MAE_minutes": 4.889652014652015,
+              "MAE_percent_of_horizon": 32.5976800976801
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 7.298980175692504,
+              "MAE_minutes": 4.880908020462815,
+              "MAE_percent_of_horizon": 32.539386803085435
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 34079,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:45:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 7.0,
+              "MAE_minutes": 4.928571428571429,
+              "MAE_percent_of_horizon": 32.857142857142854
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 7.5,
+              "MAE_minutes": 4.969093406593407,
+              "MAE_percent_of_horizon": 33.12728937728938
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 7.2947856451186945,
+              "MAE_minutes": 4.952462023436817,
+              "MAE_percent_of_horizon": 33.016413489578774
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21936,
+          "MAE_minutes": 4.887308533916849,
+          "MAE_percent_of_horizon": 32.58205689277899
+        },
+        "horizon_midpoint": {
+          "rows": 21936,
+          "MAE_minutes": 4.911971188913202,
+          "MAE_percent_of_horizon": 32.74647459275468
+        },
+        "training_mean_time_to_high": {
+          "rows": 21936,
+          "MAE_minutes": 4.9019978989068,
+          "MAE_percent_of_horizon": 32.679985992712
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-04/part.parquet": "d3b24163d0257ceae132152998c4309373fe12ed2d6be625220caecbc8d9dc6b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-05/part.parquet": "5b14cefe3b555cd268239d546b0fd2be5264e50b0cf74c244135e29c2208398b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-06/part.parquet": "0865f213bd38215647a85c1d149f506b18aeb591be46422202bdb0500d970f11",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-07/part.parquet": "4beffe66c4091ec4dda3cb40c1ab512b9ce3b5a23d08f6cb2962f797ee754a2d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-08/part.parquet": "980a4758cdfc9ce336e7a47161bca06a9721b189787c5869ad152673a206ed00",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-09/part.parquet": "dd26ecbddd58e62d76726823eb415a1e91b7340cb4e01404d7fa21b1a9337159",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-10/part.parquet": "e669635043c7521005298a832e011c930e482c9fc2d016b4722602d663fcddb1",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-11/part.parquet": "571f9ae41d3f1a9a627cdfdfcd3bfd48f3e362892e9f036044bcb2a76c7b7e0a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2022-12/part.parquet": "80babe9dd2b84bb4158a8d06e735ff115c85f9fe7360ebe2b7517f955826e05c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-01/part.parquet": "3819c3f12f1230f8df7e4edfc76d29ddb13f6ba57b95630f90b5858164fdf7f1",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-02/part.parquet": "595ee5edd5ad6786d111e3885c1833fa51219ff2de9379519662b2a846789e0f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-03/part.parquet": "903a65628371b224d90d5207f6c942b98516ecadc38862b6790ec432ed08b8d8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-04/part.parquet": "1842dd26fc84b28aa33717c42d021dd69ce1f8b17fdce95e4ee4ee551a830768",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-05/part.parquet": "a2f9ee699d350d67c016833fb0971d1f1f9e782e39c3f0cd59f2e176725c4207",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-06/part.parquet": "cb0ad412aced9fab4f74550eed98d2bd274ccf5327752bf6f6fccad5a19f043f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-07/part.parquet": "c0b80a2c44b6fb5483603223d5ce5be80e0b7fffb86f347b629324683d74300e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-08/part.parquet": "3748cdc1068f2e9284dc724808e0e6b0b5f3308bb61457ed61d3a17800f01297",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-09/part.parquet": "4a4e25856fe031904678d13f3bd15be43e7c69a942fcc111c40b73d1abac4852",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-10/part.parquet": "9c4ddf111069a87b3ac936ee76dfe552f6559100c1e89cbfa0eaaf2bfdbc0327",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-11/part.parquet": "cf5cc1a27a1c788cca4c6b1fc2dda1ce9881e6503e6c88092f8e90b5339a7f40",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2023-12/part.parquet": "33f8410e896601331ee437eef3539f698e0a2e610bce16af9893cba7111096af",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2024-01/part.parquet": "c188bc0d76abfca3749429f0df57e108b68ab5306263f1498509a85ffe6deab2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2024-02/part.parquet": "bb432b10c235ca168dec8473deae339068a029aa10ae6b9fa0553a2c58b0014a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2024-03/part.parquet": "4952c1557bda2e2dfc872c1e7dfdddd39816fe1bc2ba53a3821c9307b62d2d3a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2024-04/part.parquet": "1c80debd3e7a0cf30e53f7b074de903258233f6a9ebbf34400ae33cb0fa64f8c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2024-05/part.parquet": "6f85d5f1114b1b88fc8161568667c6088fafa84145b2ac513ecf545edf52b3ac",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=15/symbol=BTCUSDT/source_month=2024-06/part.parquet": "2d6e6bf493fde64ce590c987de8b3a55fdd90c8faf0c1000d8e4b2346fa398dd"
+      },
+      "original_baselines_unchanged": true
+    },
+    "60": {
+      "horizon_minutes": 60,
+      "raw_partition_status_counts": {
+        "VALID": 1153379,
+        "INVALID_PRICE_PATH": 61
+      },
+      "eligible_research_rows": 38445,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-01 00:30:00+00:00",
+      "zero_time_fraction": 0.06887761737547145,
+      "endpoint_time_fraction": 0.05529977890492912,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16509,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 27.0,
+              "MAE_minutes": 18.475732600732602,
+              "MAE_percent_of_horizon": 30.79288766788767
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 30.0,
+              "MAE_minutes": 18.55128205128205,
+              "MAE_percent_of_horizon": 30.918803418803417
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 28.08243988127688,
+              "MAE_minutes": 18.48418120585575,
+              "MAE_percent_of_horizon": 30.806968676426255
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20877,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 27.0,
+              "MAE_minutes": 18.36798007246377,
+              "MAE_percent_of_horizon": 30.613300120772944
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 30.0,
+              "MAE_minutes": 18.46082427536232,
+              "MAE_percent_of_horizon": 30.7680404589372
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 28.098960578627196,
+              "MAE_minutes": 18.38221577790343,
+              "MAE_percent_of_horizon": 30.637026296505717
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25293,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 27.0,
+              "MAE_minutes": 18.943840579710145,
+              "MAE_percent_of_horizon": 31.573067632850243
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 30.0,
+              "MAE_minutes": 18.91304347826087,
+              "MAE_percent_of_horizon": 31.521739130434785
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 28.111018858972837,
+              "MAE_minutes": 18.913547785175137,
+              "MAE_percent_of_horizon": 31.52257964195856
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29709,
+          "validation_rows": 4366,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 27.0,
+              "MAE_minutes": 18.995190105359598,
+              "MAE_percent_of_horizon": 31.65865017559933
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 30.0,
+              "MAE_minutes": 18.9283096655978,
+              "MAE_percent_of_horizon": 31.547182775996337
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 28.249150089198558,
+              "MAE_minutes": 18.949858358093664,
+              "MAE_percent_of_horizon": 31.583097263489435
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 34075,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 28.0,
+              "MAE_minutes": 18.63598901098901,
+              "MAE_percent_of_horizon": 31.059981684981683
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 30.0,
+              "MAE_minutes": 18.687271062271062,
+              "MAE_percent_of_horizon": 31.14545177045177
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 28.380278796771826,
+              "MAE_minutes": 18.640864380178396,
+              "MAE_percent_of_horizon": 31.068107300297324
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21934,
+          "MAE_minutes": 18.68359624327528,
+          "MAE_percent_of_horizon": 31.139327072125468
+        },
+        "horizon_midpoint": {
+          "rows": 21934,
+          "MAE_minutes": 18.70803319048053,
+          "MAE_percent_of_horizon": 31.180055317467556
+        },
+        "training_mean_time_to_high": {
+          "rows": 21934,
+          "MAE_minutes": 18.673993462468722,
+          "MAE_percent_of_horizon": 31.123322437447875
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-04/part.parquet": "e8193f456942855609eb0e14c888e728eb92b8ed8386b204ccc62c0d2c1656c0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-05/part.parquet": "6782b4ee0745aabcf937ea4b108eedc6d24e2e2b4c826def9e11ab6f17c556ce",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-06/part.parquet": "bfcb2ad46640965503628bc4bc92ad12615c5a8bc9bdf20bcbb42abb98d83efc",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-07/part.parquet": "f596a73c50efbaaecdd513adff1ca91b1f4973668de3a65c3d9b1144bf1b4340",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-08/part.parquet": "64d93eb5b5fb66b446c4378c37f76e9e421d2b890641e927d89141fa2d184346",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-09/part.parquet": "7ef4cfe4431de4199d1b0f001861fd03c5ddffa65284cde999ba6cb6480c544a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-10/part.parquet": "87d1ef6ccd0f910bf1b172bf00614904c33739166d825f7bbd27e8eff319d094",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-11/part.parquet": "c4ba993224b2bd9d3c676b607f4f466866367e3659e49f691ccec750f1ca7a5e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2022-12/part.parquet": "598e56015afc99b0903b3629f915ce6a3b6d20bd5fa61b817b2e0809ea5f7eb6",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-01/part.parquet": "20a78a755562adfd6c23e36dc06c143373b87c101e1af1e97e723a7b2c693fdc",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-02/part.parquet": "5dd6a353db0d245ea7984e465fb5c2cf6850477f6cc6f34a8f3bcfec30e1f720",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-03/part.parquet": "765e5c424eb3faf79ccb56346f9a9ed793990d36a2164ab7e49158c72e503b20",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-04/part.parquet": "17432c44cca78eabbfd3defab15661a14536a52d8fd7111a9119fa4b1af3bf79",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-05/part.parquet": "d7b97a37c9f9713938126b77105ad278e947ffd4cf0a93d0124401fd8a078da0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-06/part.parquet": "a9283aefd4732acbbeb963ce6a48f627733e82d5c1b455b2061ee8677431c5ab",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-07/part.parquet": "ad5cd390ec5c71a597f9d9f71d90f96efb04acb6ee73c43fbceb26359fbe11ee",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-08/part.parquet": "ad4a999cd2d2e7dc106ce96696fb58877f4991787184279c915eb59fd0cacdcc",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-09/part.parquet": "d9f2a73f7873f8f8ab4e309e65b525659717d05272183e81de022ca5f6d1019d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-10/part.parquet": "047c92cfe14f0b67f5fa23a7de84439d41d50dfb674a070f9c4af7369ab0f4a0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-11/part.parquet": "30926350ac57a75491336aed3462cdc543457d88341329f3c12a3e82d7c44fa3",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2023-12/part.parquet": "3e14506ee9109122a8134e625ca4aaec1a7e3c077e84b81567d25c989561015a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2024-01/part.parquet": "ef4dc6dd1d709c727bed2229fa4a903b9e44f8d6a9f43528fcd4267e43bfa530",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2024-02/part.parquet": "93ca0b51e396208ad1c1551e982d2f897fef6f15734dbbe26b52df6939a6834f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2024-03/part.parquet": "bfa644409e7c03706d9992cbdcd9485915713b07e8491335531938b98468e7d4",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2024-04/part.parquet": "3cab8e2115b0875150a7f878bf90ddaa0f6c03e432e88ed05a22b5c903b45df9",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2024-05/part.parquet": "98aea9d9c8d556ded23530f56f70bb6d751060c374bfdcf859f42cf9e011174f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=60/symbol=BTCUSDT/source_month=2024-06/part.parquet": "2c233860e7940ba78a4601eb3f193245269f2bd03c52f15fb3dc52661ee0706e"
+      },
+      "original_baselines_unchanged": true
+    },
+    "240": {
+      "horizon_minutes": 240,
+      "raw_partition_status_counts": {
+        "VALID": 1153199,
+        "INVALID_PRICE_PATH": 241
+      },
+      "eligible_research_rows": 38439,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-01 03:30:00+00:00",
+      "zero_time_fraction": 0.03296131533078384,
+      "endpoint_time_fraction": 0.02115039413096074,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16503,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 103.0,
+              "MAE_minutes": 71.43704212454213,
+              "MAE_percent_of_horizon": 29.765434218559218
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 120.0,
+              "MAE_minutes": 72.47000915750915,
+              "MAE_percent_of_horizon": 30.19583714896215
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 110.15251772405017,
+              "MAE_minutes": 71.67439091160915,
+              "MAE_percent_of_horizon": 29.86432954650381
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20871,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 103.0,
+              "MAE_minutes": 72.75679347826087,
+              "MAE_percent_of_horizon": 30.315330615942027
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 120.0,
+              "MAE_minutes": 73.2685688405797,
+              "MAE_percent_of_horizon": 30.528570350241544
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 109.84361075176082,
+              "MAE_minutes": 72.75165294625577,
+              "MAE_percent_of_horizon": 30.313188727606576
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25287,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 103.0,
+              "MAE_minutes": 74.03147644927536,
+              "MAE_percent_of_horizon": 30.8464485205314
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 120.0,
+              "MAE_minutes": 73.66598731884058,
+              "MAE_percent_of_horizon": 30.694161382850243
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 110.11670028077668,
+              "MAE_minutes": 73.69513047282415,
+              "MAE_percent_of_horizon": 30.70630436367673
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29703,
+          "validation_rows": 4360,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 105.0,
+              "MAE_minutes": 74.13050458715597,
+              "MAE_percent_of_horizon": 30.887710244648318
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 120.0,
+              "MAE_minutes": 73.8901376146789,
+              "MAE_percent_of_horizon": 30.787557339449542
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 111.01804531528802,
+              "MAE_minutes": 73.88927329337197,
+              "MAE_percent_of_horizon": 30.787197205571655
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 34063,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 106.0,
+              "MAE_minutes": 72.66002747252747,
+              "MAE_percent_of_horizon": 30.275011446886445
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 120.0,
+              "MAE_minutes": 73.13072344322345,
+              "MAE_percent_of_horizon": 30.47113476800977
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 111.76942723776531,
+              "MAE_minutes": 72.72582623110873,
+              "MAE_percent_of_horizon": 30.3024275962953
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21928,
+          "MAE_minutes": 73.0044691718351,
+          "MAE_percent_of_horizon": 30.418528821597956
+        },
+        "horizon_midpoint": {
+          "rows": 21928,
+          "MAE_minutes": 73.2856621670923,
+          "MAE_percent_of_horizon": 30.535692569621794
+        },
+        "training_mean_time_to_high": {
+          "rows": 21928,
+          "MAE_minutes": 72.94812001172704,
+          "MAE_percent_of_horizon": 30.395050004886265
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-04/part.parquet": "16dc39ef17f0845c415c19cb74eeaddf19c6a5bab596018aecea50aeaeff2ad7",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-05/part.parquet": "d27adcab82020c6b69b35c0cca56a9c20ef9320d5e615dd8edaec318a7cf12ee",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-06/part.parquet": "a4834e80b4f1a5dbc9ae3e7e580978ce9f2b7c4a51038f822ca92c96b176197b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-07/part.parquet": "c5bef06aa2ee999bf852867a2633b7ab7c46a39d8ca7fcb603d2f0760aa5e660",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-08/part.parquet": "42debc11c31456ddad3ed12f7e036b22024e15b0312675bdfb4a235f6bf3c639",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-09/part.parquet": "a35113240c36144ce462e3c10c617538cbbfe3c3b3b8c64fb91c3268a7ce0bfa",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-10/part.parquet": "0bcab4427b0661de6e36dfcdb5bbac9abedbe08f00cc3ee2f34294ff43cdb794",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-11/part.parquet": "58ed67e698bf12739c380e7a05801bc85126b67d1c5a0d1d595c10d89c377104",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2022-12/part.parquet": "a9d67bcf51770568903d7cfd71728109f0f41d793ece600901ec239cbbfbbe9d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-01/part.parquet": "302f5306c295c1851cb5f0b8551d760b35ddcd85a3ccdb4b1ae32ce729bfe290",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-02/part.parquet": "1e5fcae10fbdb125558141ca315f9c8e4b81f62fcadb8b5104dbc0c78d152f91",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-03/part.parquet": "ce6783ef796f3be28dd60a13bc2eb617753ab9883fe67c4fb73178437c362ebd",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-04/part.parquet": "8d0819f29a533fd768a57d67103aea67efbce5e25115ac95d02e4a78b074c6a2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-05/part.parquet": "7e358e8dc54ff6045e0d5276177aba082d539059b5bc2458ef8399fec96bed75",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-06/part.parquet": "5a5ac97c927c771de380652f08ad906d87cae7ff4f0b49fe356bc2fa93f17c07",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-07/part.parquet": "6518b9e5869e03154372041d65da012d6d7492bd9a76a1ff50415f999e777e6d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-08/part.parquet": "0d32400ef7320b5c8502064796078a3edbe0aca8e019fc21b683782bbdf347fc",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-09/part.parquet": "2b03eea4fac85bff5f61a33cdbd51140fdbfc08c902d1aa66a60a4819a96059c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-10/part.parquet": "3e8275aa70b92ba32f9039267aea1c386c3c00c275025c4dd6214a1362fde2f3",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-11/part.parquet": "720e092444132066f915def7ec80b8435b1609b4cbbdad4eadabf06104c213a4",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2023-12/part.parquet": "666f2468929c6170c9509528f744ee52b593c064b5e6be7b32c524fb345ea9f3",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2024-01/part.parquet": "a3d05da50c7128db575e38f97224bf8bd39e93616aa4af8cab7d7b0ac82efde1",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2024-02/part.parquet": "f879a01aa631259bf2b7f37bd6d49298cf9eb95460b51f339fbe969a5857c1c2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2024-03/part.parquet": "140ecee4359ecfe47bbb304e47c614a482942fb1409c45cd0f30e1e6e5323ae0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2024-04/part.parquet": "21c030a18d7ccb41311c69e0e69747e46203ceb4774702913e9eeede245b3f32",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2024-05/part.parquet": "865e5e9e2f7c7257cf276fcb30bc5248c6c734f825ff53637f80766416b02b8b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=240/symbol=BTCUSDT/source_month=2024-06/part.parquet": "3c24b9a5c3568f54986eb61a975a44a7fef7b5f1fffd6674450c6dd6c0947ddd"
+      },
+      "original_baselines_unchanged": true
+    },
+    "480": {
+      "horizon_minutes": 480,
+      "raw_partition_status_counts": {
+        "VALID": 1152959,
+        "INVALID_PRICE_PATH": 481
+      },
+      "eligible_research_rows": 38431,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-01 07:30:00+00:00",
+      "zero_time_fraction": 0.023054305118263903,
+      "endpoint_time_fraction": 0.012672061616923837,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16495,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 200.0,
+              "MAE_minutes": 141.04945054945054,
+              "MAE_percent_of_horizon": 29.3853021978022
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 240.0,
+              "MAE_minutes": 144.18956043956044,
+              "MAE_percent_of_horizon": 30.03949175824176
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 215.83952712943315,
+              "MAE_minutes": 141.68427090238245,
+              "MAE_percent_of_horizon": 29.517556437996344
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20863,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 199.0,
+              "MAE_minutes": 141.16621376811594,
+              "MAE_percent_of_horizon": 29.409627868357486
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 240.0,
+              "MAE_minutes": 143.47101449275362,
+              "MAE_percent_of_horizon": 29.88979468599034
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 215.2473278052054,
+              "MAE_minutes": 141.46262444018848,
+              "MAE_percent_of_horizon": 29.47138009170593
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25279,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 199.0,
+              "MAE_minutes": 145.28691123188406,
+              "MAE_percent_of_horizon": 30.268106506642514
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 240.0,
+              "MAE_minutes": 143.2284873188406,
+              "MAE_percent_of_horizon": 29.83926819142512
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 215.4389809723486,
+              "MAE_minutes": 143.82820495910568,
+              "MAE_percent_of_horizon": 29.96420936648035
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29695,
+          "validation_rows": 4352,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 205.0,
+              "MAE_minutes": 146.6511948529412,
+              "MAE_percent_of_horizon": 30.55233226102941
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 240.0,
+              "MAE_minutes": 144.72012867647058,
+              "MAE_percent_of_horizon": 30.150026807598042
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 218.50897457484425,
+              "MAE_minutes": 145.4564249712766,
+              "MAE_percent_of_horizon": 30.303421869015956
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 34047,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 210.0,
+              "MAE_minutes": 143.8113553113553,
+              "MAE_percent_of_horizon": 29.960699023199023
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 240.0,
+              "MAE_minutes": 144.52930402930403,
+              "MAE_percent_of_horizon": 30.11027167277167
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 221.10306341234175,
+              "MAE_minutes": 143.75421014916785,
+              "MAE_percent_of_horizon": 29.948793781076635
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21920,
+          "MAE_minutes": 143.58918795620437,
+          "MAE_percent_of_horizon": 29.91441415754258
+        },
+        "horizon_midpoint": {
+          "rows": 21920,
+          "MAE_minutes": 144.02422445255473,
+          "MAE_percent_of_horizon": 30.005046760948904
+        },
+        "training_mean_time_to_high": {
+          "rows": 21920,
+          "MAE_minutes": 143.23293564486542,
+          "MAE_percent_of_horizon": 29.840194926013634
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-04/part.parquet": "98d62cd65d9ed4e5fa8208d97659f2aeadd2339b880ae05162b13b4757b80a5d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-05/part.parquet": "82de60bb231bb5e1df70ee1ea595071878525010641d80d5701c351cc3784310",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-06/part.parquet": "deed2d279e9d1bdf3a5ceebbbcba4a0f58b5f39064b08e77f5227b1ac2e6826f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-07/part.parquet": "41a45bc8fbeed967424a0fbc804b32c2c15b4198fac6c2b180365b6a363b4f37",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-08/part.parquet": "0dec0c9da4d3ceeea43bacfd150ea62c19d3913e2bc079a80eb815ae4a029490",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-09/part.parquet": "dfce2199cfd45bf09cc1597ee2897aecf86dca02172215d4eb2ba3e9ee3355c5",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-10/part.parquet": "9b471eef9da4ec26d9d32aff71fa3cb0882666634cf7ef2a0a7090a83773a88c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-11/part.parquet": "aae9daef1e6693524f02c4ea50321c7d0ee35a95d54f7f62dba2a8a64059a179",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2022-12/part.parquet": "1193272bb8f8a57e4a8ff470bfecac2160b0b559edb78dd2bd43de186de5ab03",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-01/part.parquet": "5b2baa6e2d1fcfcc25a7eb59f81e06a9bfea25f7c8d39c46f0e26b47c3e1c8a3",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-02/part.parquet": "28997d7f15d25a42249deae9b4d6e580911e52223a13876334318e4c10104cfb",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-03/part.parquet": "509ab4df3d17f7c8c92a5ef512dbaae7a413d96ba3f7e2b6c3a787feecda1b9b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-04/part.parquet": "7fdbe14c723f4022180df5bb051ee22e0b5bbb65a36fef06578309b5d435885e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-05/part.parquet": "4064b9236ceb3ae32e3af8913ac0dd28974a6f5e5d4d07f11752f359e72fcf87",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-06/part.parquet": "adeae7443fbeb6f85f3e3d60cc66471e0e45d31672bbc469cca315f85fd867a6",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-07/part.parquet": "eb518e2f1da76fe8c65b340c624dd792c74ba89753e13f68a8b3c44a12ae1e0f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-08/part.parquet": "e046778a612f74480471ba844485aa2be091830c6f58e08afa6948bc13ed77ee",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-09/part.parquet": "4eebbb3d499e75e5776f32c9578792fbe0241ee41d3373f702aba118d9dc76d2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-10/part.parquet": "32163e5856b38720c2245b88c2862120176d56853b273572971fa3e0f4e158ad",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-11/part.parquet": "7cbbae98cc5a4c2477ed7cbf9e8253c8b341e4b309067cac8f8972ca7c83a71e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2023-12/part.parquet": "fd50bcceb6689a2907973f21583185dcea6ce39f809d8beafc5cbeb5015b74bb",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2024-01/part.parquet": "e7df3f3690e03642621cb7b85072651434a274ac27421c646cc2667635619e32",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2024-02/part.parquet": "46c09b012442d07899c4c4e829abc99d0111d7834f998ebbc8eb8b4f4d7e9fe9",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2024-03/part.parquet": "f361b43c515de053d673640300be560add1dc7d55340ea256a086c79dbf74a24",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2024-04/part.parquet": "97707bfd0a612f3e6001908f09493308a2120dff9cbb53f2a4680252c31577e8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2024-05/part.parquet": "47588a60017f8e4803a8851d33bcde7cc4734d5a73984535eed495c47e0abeb6",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=480/symbol=BTCUSDT/source_month=2024-06/part.parquet": "4bd18e2f7bdc7b4db07327355c0f407dadcc0b7ba2c82dfba2da4adef4b765b2"
+      },
+      "original_baselines_unchanged": true
+    },
+    "960": {
+      "horizon_minutes": 960,
+      "raw_partition_status_counts": {
+        "VALID": 1152479,
+        "INVALID_PRICE_PATH": 961
+      },
+      "eligible_research_rows": 38415,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-01 15:30:00+00:00",
+      "zero_time_fraction": 0.016191591826109592,
+      "endpoint_time_fraction": 0.00770532344136405,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16479,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 398.0,
+              "MAE_minutes": 285.29212454212455,
+              "MAE_percent_of_horizon": 29.71792963980464
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 480.0,
+              "MAE_minutes": 292.3543956043956,
+              "MAE_percent_of_horizon": 30.453582875457876
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 431.8416166029492,
+              "MAE_minutes": 286.9792620678066,
+              "MAE_percent_of_horizon": 29.89367313206318
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20847,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 395.0,
+              "MAE_minutes": 274.8016304347826,
+              "MAE_percent_of_horizon": 28.62516983695652
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 480.0,
+              "MAE_minutes": 281.9805253623188,
+              "MAE_percent_of_horizon": 29.372971391908212
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 430.36571209286706,
+              "MAE_minutes": 276.3509858619702,
+              "MAE_percent_of_horizon": 28.786561027288563
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25263,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 393.0,
+              "MAE_minutes": 284.87182971014494,
+              "MAE_percent_of_horizon": 29.674148928140095
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 480.0,
+              "MAE_minutes": 283.41621376811594,
+              "MAE_percent_of_horizon": 29.52252226751208
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 428.79460079958835,
+              "MAE_minutes": 282.79816619022955,
+              "MAE_percent_of_horizon": 29.458142311482245
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29679,
+          "validation_rows": 4336,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 401.0,
+              "MAE_minutes": 293.30096863468634,
+              "MAE_percent_of_horizon": 30.55218423277983
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 480.0,
+              "MAE_minutes": 287.2622232472325,
+              "MAE_percent_of_horizon": 29.923148254920047
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 433.91344047980056,
+              "MAE_minutes": 289.669557228209,
+              "MAE_percent_of_horizon": 30.173912211271773
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 34015,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 412.0,
+              "MAE_minutes": 290.4409340659341,
+              "MAE_percent_of_horizon": 30.254263965201464
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 480.0,
+              "MAE_minutes": 291.61309523809524,
+              "MAE_percent_of_horizon": 30.376364087301585
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 440.64874320152876,
+              "MAE_minutes": 290.08647771210616,
+              "MAE_percent_of_horizon": 30.21734142834439
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21904,
+          "MAE_minutes": 285.70457450693937,
+          "MAE_percent_of_horizon": 29.760893177806185
+        },
+        "horizon_midpoint": {
+          "rows": 21904,
+          "MAE_minutes": 287.30510409057706,
+          "MAE_percent_of_horizon": 29.92761500943511
+        },
+        "training_mean_time_to_high": {
+          "rows": 21904,
+          "MAE_minutes": 285.1457727795237,
+          "MAE_percent_of_horizon": 29.70268466453372
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-04/part.parquet": "de7477be9cd7a8d4b58277bb01ef0c55110ac53c7802e8990ece21a3a015967f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-05/part.parquet": "2d0bf1ce074e09cb096dda895c7b9a2f97962f3ccf41cebb3e3afc38d6be637f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-06/part.parquet": "de17d21e3b14025d1747b88cc858b256f79e7b8462a8dbe4e15d878631951570",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-07/part.parquet": "3b5d169e2fae7693778a91530ed52e161c0977eeb06fb79218f03fc4dace3863",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-08/part.parquet": "c1b70c520bc23b15e11b420c6a03a73c8620dfe8197c7d95ebcc76a6814e736a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-09/part.parquet": "2cb462fe5cff7f683b7c6d58b612ea92ed6010eb77fc9b8ebc151b55c27ef60a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-10/part.parquet": "20d8c78ad02656ba1659b139ffb75f2f3a4f269eaf0d42dc450648bcdde3e0d6",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-11/part.parquet": "332204fac2f6627b31b944005041b46833cad5f41bea3ed113250ec1231fb647",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2022-12/part.parquet": "2ca1d8f0ffc9f3a62b15377dc7d2c97d32f4cd06bd6dad5b172b6ffe23185124",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-01/part.parquet": "e97597b40a8e8b5bc11245de7f10b6e550cc5a9973b7e53782164524bbecd7c0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-02/part.parquet": "e2d517040d64ea288e9e40cd910b678cc040cdb2163be7e594e36acffd02d034",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-03/part.parquet": "a6609a00910a894e79623ebc607549022154dc75f3128b6053c027e840e641f4",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-04/part.parquet": "cc939ce060437c6c7b4eddc1d6f4f8967b84da492d2ab4301d9cfc453c066dd9",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-05/part.parquet": "2c949dde9f1838102d61e64224e55b3750ec816e2b13cffbac2c96335a70e3b2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-06/part.parquet": "e0017a6e7e379aeec3ba3bd7fb2ccf13f428fedd352d46b14e16f9bc3519b8af",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-07/part.parquet": "5fce1e2e7ddb039e4f4b0451c6b3d193e8e4859ecbfc394050e2909f44441bf7",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-08/part.parquet": "077dfbc5f1003af8a9607a6e95b10624dafef9882bf21fc93be267fb23daed9e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-09/part.parquet": "dff594ab4e1abb1c72f11feea3fc1571e047bdb6a71ec0e4adba893332954a20",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-10/part.parquet": "a6a77d8cb4307191f6740829a2a804684e5c051826b69740efee4bfe8e5daa9a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-11/part.parquet": "8cf77c8a53f20bfa5ed355248eaf80e8206de3bb84a3368291b87630c105f619",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2023-12/part.parquet": "d5a2d7a3cb75d19452a0be761b742cada9e12af6f42eac57e13a861a8d128da4",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2024-01/part.parquet": "09adcdf3315580cf92e2f13add08c8db4d30743bf725899b2864ae04c0b822f0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2024-02/part.parquet": "8b00ede850c354999a07532d9981d5dc4ba8b90a9aa47670cc606c3c3d756221",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2024-03/part.parquet": "a97a7a3f49c698a7ecf09c1f85b8af90ecb563f991f583ae914591b84af221ef",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2024-04/part.parquet": "dae143897d0bdfd63fab16b9443b0f80be0e5c29001389efe439eef47d6912f1",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2024-05/part.parquet": "07ced92ebfba8bc61fcf4a2b9af34a016ebf75cb1d87556485c914de704aa5d2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=960/symbol=BTCUSDT/source_month=2024-06/part.parquet": "075b10fe050271cbeb8ed305d673f980ca7cb8cc828ef9ce45be46f718092a33"
+      },
+      "original_baselines_unchanged": true
+    },
+    "2880": {
+      "horizon_minutes": 2880,
+      "raw_partition_status_counts": {
+        "VALID": 1150559,
+        "INVALID_PRICE_PATH": 2881
+      },
+      "eligible_research_rows": 38351,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-02 23:30:00+00:00",
+      "zero_time_fraction": 0.009491277932778807,
+      "endpoint_time_fraction": 0.003937315845740658,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16415,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1207.0,
+              "MAE_minutes": 844.3266941391942,
+              "MAE_percent_of_horizon": 29.316899102055352
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 1440.0,
+              "MAE_minutes": 852.5304487179487,
+              "MAE_percent_of_horizon": 29.601751691595442
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1305.7648492232713,
+              "MAE_minutes": 844.2371964326159,
+              "MAE_percent_of_horizon": 29.31379154279917
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20783,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1224.0,
+              "MAE_minutes": 834.7307518115942,
+              "MAE_percent_of_horizon": 28.9837066601248
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 1440.0,
+              "MAE_minutes": 849.7352807971015,
+              "MAE_percent_of_horizon": 29.504697249899355
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1310.4124043689553,
+              "MAE_minutes": 837.4146911873869,
+              "MAE_percent_of_horizon": 29.076898999562047
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25199,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1213.0,
+              "MAE_minutes": 847.0885416666666,
+              "MAE_percent_of_horizon": 29.41279658564815
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 1440.0,
+              "MAE_minutes": 835.2321105072464,
+              "MAE_percent_of_horizon": 29.00111494816828
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1303.536608595579,
+              "MAE_minutes": 838.7917700915926,
+              "MAE_percent_of_horizon": 29.12471423929141
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29615,
+          "validation_rows": 4272,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1246.0,
+              "MAE_minutes": 881.1350655430712,
+              "MAE_percent_of_horizon": 30.594967553578858
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 1440.0,
+              "MAE_minutes": 861.6027621722847,
+              "MAE_percent_of_horizon": 29.916762575426553
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1321.9928076988012,
+              "MAE_minutes": 871.3043961567331,
+              "MAE_percent_of_horizon": 30.253624866553235
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 33887,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1289.0,
+              "MAE_minutes": 842.3923992673992,
+              "MAE_percent_of_horizon": 29.249736085673586
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 1440.0,
+              "MAE_minutes": 847.4940476190476,
+              "MAE_percent_of_horizon": 29.426876653439155
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1345.3113878478473,
+              "MAE_minutes": 842.8964354138203,
+              "MAE_percent_of_horizon": 29.26723734075765
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21840,
+          "MAE_minutes": 849.7578754578755,
+          "MAE_percent_of_horizon": 29.50548178673179
+        },
+        "horizon_midpoint": {
+          "rows": 21840,
+          "MAE_minutes": 849.2348901098901,
+          "MAE_percent_of_horizon": 29.487322573260073
+        },
+        "training_mean_time_to_high": {
+          "rows": 21840,
+          "MAE_minutes": 846.7829586673431,
+          "MAE_percent_of_horizon": 29.4021860648383
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-04/part.parquet": "36dec22b461211668bccd829513f00d3882dfa5960bd4af30d1529c45110d048",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-05/part.parquet": "7d8780cadfef2c0407b89ff730016fba018dfac39195d7829b55d9da4372b11e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-06/part.parquet": "5655acb96a5feacf52252f10624fe8f3c32713355aa4ea32d38918847f9a4c63",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-07/part.parquet": "c328c3bb605017285c0ee2b4cc0bf8a76136d1b33c9224402f6249042dcbddc8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-08/part.parquet": "8e6f27326493f9a6596ce4b55c3e8d0d14ffefa0173a3b59b640e670de0c6a6d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-09/part.parquet": "935b061b356af91965e5fe56a3bfa8576c22c5dcdb70b3bd1434f5a5e93ed559",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-10/part.parquet": "f33cac48b064cf219b3a397be7fcfc0ad3afc9589cd0ee8404c51e8be123a757",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-11/part.parquet": "122c25308439db41ef0a158203184690adc2556567f99628a0e7173e8e16356b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2022-12/part.parquet": "829a0e65957793fce42a6f13197250f12ab49c5624e640e1fea34454afb8684d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-01/part.parquet": "4013a9cd8bbf49def29e68de98f7b1fdb3bcbe2b95475c58f928f69d0fe9955e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-02/part.parquet": "87b10950d54f99e6fbcab56586d8da65a83c74e4eb542e304c931e04154b5c46",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-03/part.parquet": "ff27804b43197fff75996b1c830c0183fc254a43fc8bceac613cb6da2ecf30e8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-04/part.parquet": "0f7d3b207cf9723ba56d90f9b0fa75770d85790af02c44b9b2e51758a153b076",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-05/part.parquet": "783dc2c387e8e8b6e9ffec29919db584d2ea68e84eafe5f6b32244a55848145a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-06/part.parquet": "ab5fbd488f59d93aeb6fbe9e950d04ffe213e3b1930cc66f6495a6360ce7934a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-07/part.parquet": "c1df31a72d6d84063746544df3de9c8083d6ca6c36b6bac67934a869c5cd2e96",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-08/part.parquet": "52f9f6d751ea5acbaf49cd4a8fefba5515b4bd0863bb3f6930353c0c70303bf7",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-09/part.parquet": "af282c2e426cd58ea13d7cc6f46c25255079dc4cc30024213ea3f2dc0bd99c5a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-10/part.parquet": "6bb0206e464c6b8eb55d618de5b78919d33ba26d85ff9912c3e1fc863a04ee40",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-11/part.parquet": "263b7c8d36fe329f74b7068505d13bf7dbb96d5fc70615b5088293dc0d5f59f0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2023-12/part.parquet": "ab1b2535cb35aa4e71288c1725b5ac9d6ed55d69e40cefd2921c030a4750c20a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2024-01/part.parquet": "448f9cb9966f6f9edb75fbca6dc630c3db971d3b7cb9248370d91487ba416a6a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2024-02/part.parquet": "cd0a9d2f509e738fddd21504b6e4fccca2ff7a646f160307385c061ad9847088",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2024-03/part.parquet": "2044cfb8accd72e618589724a09e32f53f38d3917c955145650cfad53e34a70b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2024-04/part.parquet": "e16cc38d0a5524bce64036d8afc7a315e86c09952212ddf522f087d27eff5963",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2024-05/part.parquet": "52473cc0eb00e6b8bad16b878a0b73d093c7861ca9e5af754da2b1146fd2ee6d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=2880/symbol=BTCUSDT/source_month=2024-06/part.parquet": "f9d4138fb6e646ea748dab9b93c2785080ae7aa8995b22ee045df65b3acf7b4a"
+      },
+      "original_baselines_unchanged": true
+    },
+    "4320": {
+      "horizon_minutes": 4320,
+      "raw_partition_status_counts": {
+        "VALID": 1149119,
+        "INVALID_PRICE_PATH": 4321
+      },
+      "eligible_research_rows": 38303,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-03 23:30:00+00:00",
+      "zero_time_fraction": 0.007780069446257473,
+      "endpoint_time_fraction": 0.003237344333342036,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16367,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1845.0,
+              "MAE_minutes": 1259.9036172161173,
+              "MAE_percent_of_horizon": 29.164435583706418
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 2160.0,
+              "MAE_minutes": 1277.077152014652,
+              "MAE_percent_of_horizon": 29.561971111450276
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1964.3180790615263,
+              "MAE_minutes": 1262.1398768120032,
+              "MAE_percent_of_horizon": 29.216200852129695
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20735,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1839.0,
+              "MAE_minutes": 1233.8686594202898,
+              "MAE_percent_of_horizon": 28.56177452361782
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 2160.0,
+              "MAE_minutes": 1259.120018115942,
+              "MAE_percent_of_horizon": 29.14629671564681
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1958.4260429225947,
+              "MAE_minutes": 1239.4461296886523,
+              "MAE_percent_of_horizon": 28.69088263168177
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25151,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1814.0,
+              "MAE_minutes": 1301.1453804347825,
+              "MAE_percent_of_horizon": 30.11910602858293
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 2160.0,
+              "MAE_minutes": 1257.4320652173913,
+              "MAE_percent_of_horizon": 29.10722373188406
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1941.330285078128,
+              "MAE_minutes": 1280.4264628239632,
+              "MAE_percent_of_horizon": 29.639501454258408
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29567,
+          "validation_rows": 4224,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1894.0,
+              "MAE_minutes": 1363.169981060606,
+              "MAE_percent_of_horizon": 31.554860672699213
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 2160.0,
+              "MAE_minutes": 1339.4848484848485,
+              "MAE_percent_of_horizon": 31.006593714927053
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 1987.6987519870127,
+              "MAE_minutes": 1352.4808538497823,
+              "MAE_percent_of_horizon": 31.307427172448666
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 33791,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 1947.0,
+              "MAE_minutes": 1247.0022893772893,
+              "MAE_percent_of_horizon": 28.865793735585402
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 2160.0,
+              "MAE_minutes": 1259.3882783882784,
+              "MAE_percent_of_horizon": 29.15250644417311
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 2024.585836465331,
+              "MAE_minutes": 1249.3699623672474,
+              "MAE_percent_of_horizon": 28.920600980723318
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21792,
+          "MAE_minutes": 1280.4156112334801,
+          "MAE_percent_of_horizon": 29.639250260034263
+        },
+        "horizon_midpoint": {
+          "rows": 21792,
+          "MAE_minutes": 1278.0083975770924,
+          "MAE_percent_of_horizon": 29.583527721691958
+        },
+        "training_mean_time_to_high": {
+          "rows": 21792,
+          "MAE_minutes": 1276.198213689985,
+          "MAE_percent_of_horizon": 29.541625316897807
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-04/part.parquet": "8f4a6eb275d6de3eb1b80cd35d9015bda9af6be04851e8d9ac2c084aafc18a66",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-05/part.parquet": "cdfe6b24a990cb927d5c187dd3dcad7c9ed542baff1057084f98044c5c1c97ea",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-06/part.parquet": "62ea3e6351f4d18943586826d9dee771093e4d1a71eb4fe02a9299d2e9a6a41e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-07/part.parquet": "81c6283c630e9b0151773e5e6aca2cc98fcc94dc9f3f9b9d0e291092779489dc",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-08/part.parquet": "31428bbdc33c19fffd536c3e284807f279c681e7c76fb707d1be36856a60a4cc",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-09/part.parquet": "1c70e715a57a2f41caef5a061b9f4fe6b0db102371116f643db7634da89b38a9",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-10/part.parquet": "55d09ed2da30e2e76d32d8b2e8cd9b56c4adda3775ed8624eb7c1ecb22d88a72",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-11/part.parquet": "1cdc1c27a63632a2cf638aa114614f03c0342cef04dd89c09dfa9e697ac6324c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2022-12/part.parquet": "fabb2dd86c9cc91eb0642ad79370b9b9a2802809f83c051d3ebb4eb1eca7f319",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-01/part.parquet": "6287fda10294a8c5b00839db02e8114b321b903323bfe5ccd64a52bc4978ffb0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-02/part.parquet": "15c39afbf9651975b7455dc34eb3d4654de5e5368b8434374bc08603d8138370",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-03/part.parquet": "2b38da75ded9eb66ae73734342ea0b6fcf7d60590842c59beff1dc418ab74826",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-04/part.parquet": "12bc0529b4314c2380c13fea3dd03212824a05ffaf830caf822e01491fff568a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-05/part.parquet": "b9b491a411d16f53a56d173c2e80727af83f69dd35da4c686caf7cc41dc5f612",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-06/part.parquet": "7bb9d3f82b488f40e30a6cd0644ba4142f4554dca6f18241ae341b23bee72f04",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-07/part.parquet": "b64c0663095f21551dd0294a249ca980181a0bff729ada70e41fe74bd7726b14",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-08/part.parquet": "47c32d89372185bc3ecde7b5f535e5cfdda1ce137a7cb064c3cefdf58483dc48",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-09/part.parquet": "edf08b4d98f13a1ac3afda213454319467d5b64cce9067b89be09f5d5657083c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-10/part.parquet": "4dbe3a2ceb53b3d911ed07425190e7f43f61224888a4c9c4f15dd4582c76fe33",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-11/part.parquet": "e2175567910012ab1d56f7e32ca8d59171ab7fb0cdd26998b37c76b9fafdc341",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2023-12/part.parquet": "366a8e2b1bc84cf37b0d2f008723fed34ff170f4526ed58dad1b744fb8754607",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2024-01/part.parquet": "f3421d4a6248688ce745f74f3ef6ca0e4dca13326ff0c16a6f0a2988e2e5b81d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2024-02/part.parquet": "2dc53b273f15d8a48d17d6bf08b47e235bb8bee1f47611b65fd1574e0e8258a8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2024-03/part.parquet": "2d80cc6a791cb772ae2c5760881bf4193ac564879c2a17b589507eded074f57b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2024-04/part.parquet": "729747b78b7e9fb4ec147b534f7d45693b58aed3e934d61a073eb02911105404",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2024-05/part.parquet": "119549127983c3da2d1235a1602dbaafd553394960e6fe389c599a7437ffa13c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=4320/symbol=BTCUSDT/source_month=2024-06/part.parquet": "24b6e545f6cfc56515a7be63454f4aaeb9dda3a5b674e9d7d87e69ee8925b6cb"
+      },
+      "original_baselines_unchanged": true
+    },
+    "7200": {
+      "horizon_minutes": 7200,
+      "raw_partition_status_counts": {
+        "VALID": 1146239,
+        "INVALID_PRICE_PATH": 7201
+      },
+      "eligible_research_rows": 38207,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-05 23:30:00+00:00",
+      "zero_time_fraction": 0.006124532153793808,
+      "endpoint_time_fraction": 0.0023032428612557907,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16271,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 3012.0,
+              "MAE_minutes": 2067.1160714285716,
+              "MAE_percent_of_horizon": 28.709945436507933
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 3600.0,
+              "MAE_minutes": 2103.2003205128203,
+              "MAE_percent_of_horizon": 29.211115562678064
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 3257.0089730194827,
+              "MAE_minutes": 2073.805176272061,
+              "MAE_percent_of_horizon": 28.802849670445298
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20639,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 2934.0,
+              "MAE_minutes": 2040.7133152173913,
+              "MAE_percent_of_horizon": 28.343240489130437
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 3600.0,
+              "MAE_minutes": 2062.358242753623,
+              "MAE_percent_of_horizon": 28.64386448268921
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 3219.963612578129,
+              "MAE_minutes": 2036.6613796098702,
+              "MAE_percent_of_horizon": 28.28696360569264
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 25055,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 2977.0,
+              "MAE_minutes": 2219.8890398550725,
+              "MAE_percent_of_horizon": 30.831792220209337
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 3600.0,
+              "MAE_minutes": 2122.954257246377,
+              "MAE_percent_of_horizon": 29.48547579508857
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 3223.1095190580722,
+              "MAE_minutes": 2172.49609077421,
+              "MAE_percent_of_horizon": 30.173556816308473
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29471,
+          "validation_rows": 4128,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 3150.0,
+              "MAE_minutes": 2348.936773255814,
+              "MAE_percent_of_horizon": 32.6241218507752
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 3600.0,
+              "MAE_minutes": 2302.8350290697676,
+              "MAE_percent_of_horizon": 31.983819848191214
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 3317.8189745851855,
+              "MAE_minutes": 2327.780279988487,
+              "MAE_percent_of_horizon": 32.330281666506764
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 33599,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 3267.0,
+              "MAE_minutes": 2160.4349816849817,
+              "MAE_percent_of_horizon": 30.00604141229141
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 3600.0,
+              "MAE_minutes": 2223.087912087912,
+              "MAE_percent_of_horizon": 30.876221001221
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 3399.470728295485,
+              "MAE_minutes": 2182.7318719803166,
+              "MAE_percent_of_horizon": 30.315720444171063
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21696,
+          "MAE_minutes": 2165.2458517699115,
+          "MAE_percent_of_horizon": 30.07285905235988
+        },
+        "horizon_midpoint": {
+          "rows": 21696,
+          "MAE_minutes": 2161.0283001474927,
+          "MAE_percent_of_horizon": 30.014281946492954
+        },
+        "training_mean_time_to_high": {
+          "rows": 21696,
+          "MAE_minutes": 2156.5850945692737,
+          "MAE_percent_of_horizon": 29.952570757906578
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-04/part.parquet": "f4fe49e81a303746cb99a2e0e7f3d628ca0eb376f633480e48dec58d005fe923",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-05/part.parquet": "cb6db1077092e6cd0555fa925f1f8185077f77dd71a3e986cd7575d9792691f3",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-06/part.parquet": "958412ee013bfadd4abc033dd0289c688bd9dfa39ee105efce499b273bd9863d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-07/part.parquet": "56ce6ad2289a5d29e7103f837227746ccaf3dc6b90d00896f1ab91bb89d620a7",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-08/part.parquet": "7c8ecb977203cba4298faebfc3f6e343dcf7742a181876e34104fb1ce35d38e5",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-09/part.parquet": "2c00a072896abd16db2b513c5145f5d75f3bf4049c00c9281c66c2bd9634d6e4",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-10/part.parquet": "2adf9ab274aa551018b72fb5e47a479953168547697ff305301ab856a9739fdc",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-11/part.parquet": "91833a79ee0f0cc12f2a69a869091268d91d76e62ccd6ed6734876302963bf33",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2022-12/part.parquet": "897c3b9b57613ccdccc4aa18ac2fb7e97e47f42f87fe1556c1ce5771691e906b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-01/part.parquet": "77ea7c7b2ba4b2edad8936febc4c17e7669b28c9b65f73f8dd4b376693a5242c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-02/part.parquet": "39b86b5460b648f7c647ebfcba6431c1fbe9f4ee8f3b5e1bf52e0c7247db842b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-03/part.parquet": "fec516783e7b064596d0d400dacf85aaaf22c73387f072a46ca36fda5202aaeb",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-04/part.parquet": "dee4d678fd99577ec21226976725bd04da4496819981c5f01c34c5a7620cc124",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-05/part.parquet": "18d274d05d0bbd324c860813d78fd75421d79dfb50246d87fa5d4bda941e4a20",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-06/part.parquet": "6fbff4c294a691dbd841f9117042360d20dd7103f5ce7885d36221d9df7241d0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-07/part.parquet": "9232afe86838a1b15a14b8da1f3d9836901c581000b200b60cc388b504afe4e8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-08/part.parquet": "fa2441d4773189e9e77c969474c19604dd3396f34db502ca174df96164122af9",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-09/part.parquet": "bc5a69957135bb8d82ad2ea47d256ccc456631b3da673a8988b182120685b706",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-10/part.parquet": "bd47d00afc2e4b4c3eba059e0ec1d2e61197d4d7029a1cc6362e1d2070b0f1d2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-11/part.parquet": "a5e3f1f1eca4a20bc26d4d7f48e7c19fb91f5f42415981b958514b9330a4be5b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2023-12/part.parquet": "e0f403fb34b2bcdba13798756732805863117b7a35b26857f573dc23d1b2d84c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2024-01/part.parquet": "b0583852a5cf45759050b10d6c44f7e2894cf39152ad3f05e0a2335390504b24",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2024-02/part.parquet": "cc48d6baa87e59b741e78f381d8e0bcc33cc8b78bf9805bcbd57a0487809ed39",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2024-03/part.parquet": "c4b8b610b18fac807a7b2f159207b0473dee3ffa58e5fd9a0c1657c475a5a880",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2024-04/part.parquet": "e1c56cb2a9dea0b58445873f3e427775981229966efcd5af70015d094c465ecf",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2024-05/part.parquet": "ed35add34cd1b3943c3eb82d5845987e4b6c7eaf5e5c5bc1a3fab300c81e08ba",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=7200/symbol=BTCUSDT/source_month=2024-06/part.parquet": "1a1c1329b7024ab8ca5128d6a2fc58bd7133be144234889265a0d386ac0b069e"
+      },
+      "original_baselines_unchanged": true
+    },
+    "12000": {
+      "horizon_minutes": 12000,
+      "raw_partition_status_counts": {
+        "VALID": 1141439,
+        "INVALID_PRICE_PATH": 12001
+      },
+      "eligible_research_rows": 38047,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-09 07:30:00+00:00",
+      "zero_time_fraction": 0.0042841748363865746,
+      "endpoint_time_fraction": 0.001892396246747444,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 16111,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 4895.0,
+              "MAE_minutes": 3363.687728937729,
+              "MAE_percent_of_horizon": 28.03073107448107
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 6000.0,
+              "MAE_minutes": 3509.364468864469,
+              "MAE_percent_of_horizon": 29.24470390720391
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 5444.083731611942,
+              "MAE_minutes": 3412.9922686374725,
+              "MAE_percent_of_horizon": 28.441602238645608
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20479,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 4665.0,
+              "MAE_minutes": 3321.6433423913045,
+              "MAE_percent_of_horizon": 27.6803611865942
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 6000.0,
+              "MAE_minutes": 3311.8358242753625,
+              "MAE_percent_of_horizon": 27.598631868961355
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 5287.110063967967,
+              "MAE_minutes": 3282.6887988627977,
+              "MAE_percent_of_horizon": 27.355739990523315
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 24895,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 4830.0,
+              "MAE_minutes": 3686.526947463768,
+              "MAE_percent_of_horizon": 30.721057895531402
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 6000.0,
+              "MAE_minutes": 3443.730751811594,
+              "MAE_percent_of_horizon": 28.69775626509662
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 5357.280377585861,
+              "MAE_minutes": 3554.0851631653663,
+              "MAE_percent_of_horizon": 29.617376359711386
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29311,
+          "validation_rows": 3968,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 5168.0,
+              "MAE_minutes": 3950.0665322580644,
+              "MAE_percent_of_horizon": 32.917221102150535
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 6000.0,
+              "MAE_minutes": 3742.439516129032,
+              "MAE_percent_of_horizon": 31.186995967741936
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 5557.869434683224,
+              "MAE_minutes": 3842.705349407109,
+              "MAE_percent_of_horizon": 32.02254457839257
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 33279,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 5538.0,
+              "MAE_minutes": 3543.793498168498,
+              "MAE_percent_of_horizon": 29.531612484737483
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 6000.0,
+              "MAE_minutes": 3647.3067765567766,
+              "MAE_percent_of_horizon": 30.39422313797314
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 5778.292707112593,
+              "MAE_minutes": 3594.7823805825474,
+              "MAE_percent_of_horizon": 29.95651983818789
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21536,
+          "MAE_minutes": 3565.834973997028,
+          "MAE_percent_of_horizon": 29.715291449975236
+        },
+        "horizon_midpoint": {
+          "rows": 21536,
+          "MAE_minutes": 3526.3243870728083,
+          "MAE_percent_of_horizon": 29.38603655894007
+        },
+        "training_mean_time_to_high": {
+          "rows": 21536,
+          "MAE_minutes": 3531.2503858913833,
+          "MAE_percent_of_horizon": 29.42708654909486
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-04/part.parquet": "344a4b1f11575a31105edcd534e10636765127fd4fffda662e2ba86d1dd9b13c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-05/part.parquet": "f068411e77fdc3e3a4b4faa4aa4d1851fd48f3d500feba14e9ee1cf09c8b047c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-06/part.parquet": "456ba5800b5457b79de0b86a5280df9072ee43adb5acab434574e45f6334dd4a",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-07/part.parquet": "05b074bff88a073defb12f986606568d1920d220d42ac90d3037a1501ccb81a8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-08/part.parquet": "52f7c2ee2c00242e1e7dee4aa4c3cdcee2caf953d89edc3a2225260a752db0f8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-09/part.parquet": "ff89d914f00e4dcb25839d93933942676a03e3dec6e7bbe4c2425777a51d9859",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-10/part.parquet": "24bb180d6e0ffe28606cdedca6a5d42fc657fc5defd362208de197d3e57aa225",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-11/part.parquet": "8a1462cedbb76a05a9ecea50aae740645be779717204bb173d2564dbd71fe48c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2022-12/part.parquet": "4024f06cc8632ac4c61fabfc9b513a054e68cb7651770b68dafbaf1bb2fa6e69",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-01/part.parquet": "74e35fda54fce2dc35d71a376d9d03daab2596db8d34264784aed1bf8f0318be",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-02/part.parquet": "3a51863702d84b9ddcf83d8b627e58d7316a724eae211c992699b41bd46e9db7",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-03/part.parquet": "d96b86c7b584ba8ed69334cc44bfc3eb9a7e42945c2b84f80bbeba7f5209050f",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-04/part.parquet": "06f7cacd0790f4245caeb136c0a2c7f16e367b45a3d832043686613d400aaecd",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-05/part.parquet": "44fc43d951500e839b73686ae89b0edbfa7aa15738c64c35cab5e129a9fd94aa",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-06/part.parquet": "8467ba6d01e4f951e20cb7175513a1495827affb15e245f3df22af200b017d0c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-07/part.parquet": "ee89e17544ce395fd4e1edfb808ef6927dbf5f3f8aa9157e6c86ef2e640edcf9",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-08/part.parquet": "532e25d3ce748d1a1637c21da391615102fd416d7c214061aa527d3dde04940d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-09/part.parquet": "e9b74d2ff0ec5d7802e1a78f0c807de19326f342036a253c7e71b267e23e30f0",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-10/part.parquet": "66de23a813930d041bd4ca83903da95f2a42e06105ebb5dd66a199220c236010",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-11/part.parquet": "6fcd1e8094df8b5ec2abbb2cc98d9e3984d8cf2a3b59bb8b6e81c51a62b44bc7",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2023-12/part.parquet": "4a0d95090614c472d2a10d97a240434a6b0ab81fa37b595b94de920d9a6aa7db",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2024-01/part.parquet": "3fb6c33a2e5caa1691c53e0fb8ae4d749a820f6850d85c906e8c5badf2a14ef1",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2024-02/part.parquet": "83680ddfb2a624fa6823e61156bed53962bc84518149251576b9aa834aeeac0d",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2024-03/part.parquet": "1f7e8a12bc779ddb80110fca581594fb7a038dd36c1077cf8402c44976c12847",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2024-04/part.parquet": "171499b6d812b1b0a68d9c213fc30ae957f379cbef4ac77fd6a102d45bbeceaa",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2024-05/part.parquet": "93a01245e39077cb9c696de1a4656b885a8dd18180a00cc7467bc4955cd21780",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=12000/symbol=BTCUSDT/source_month=2024-06/part.parquet": "f8370cb7300c41ab98c20c4b368fe531640c7aec7dce6bae19a503556b908cfb"
+      },
+      "original_baselines_unchanged": true
+    },
+    "18000": {
+      "horizon_minutes": 18000,
+      "raw_partition_status_counts": {
+        "VALID": 1135439,
+        "INVALID_PRICE_PATH": 18001
+      },
+      "eligible_research_rows": 37847,
+      "first_origin": "2022-04-22 00:30:00+00:00",
+      "last_origin": "2024-06-30 23:30:00+00:00",
+      "latest_label_end": "2024-07-13 11:30:00+00:00",
+      "zero_time_fraction": 0.0035934155943667927,
+      "endpoint_time_fraction": 0.0015589082357914763,
+      "folds": [
+        {
+          "start": "2023-04-01 00:00:00+00:00",
+          "end_exclusive": "2023-07-01 00:00:00+00:00",
+          "train_rows": 15911,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2023-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 8696.0,
+              "MAE_minutes": 5352.8802655677655,
+              "MAE_percent_of_horizon": 29.7382236975987
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 9000.0,
+              "MAE_minutes": 5429.743360805861,
+              "MAE_percent_of_horizon": 30.165240893365894
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 8920.142102947646,
+              "MAE_minutes": 5408.871697877939,
+              "MAE_percent_of_horizon": 30.049287210433
+            }
+          }
+        },
+        {
+          "start": "2023-07-01 00:00:00+00:00",
+          "end_exclusive": "2023-10-01 00:00:00+00:00",
+          "train_rows": 20279,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-06-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 7897.0,
+              "MAE_minutes": 5129.564764492754,
+              "MAE_percent_of_horizon": 28.497582024959744
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 9000.0,
+              "MAE_minutes": 5202.711503623188,
+              "MAE_percent_of_horizon": 28.9039527979066
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 8536.44124463731,
+              "MAE_minutes": 5158.7993310126285,
+              "MAE_percent_of_horizon": 28.65999628340349
+            }
+          }
+        },
+        {
+          "start": "2023-10-01 00:00:00+00:00",
+          "end_exclusive": "2024-01-01 00:00:00+00:00",
+          "train_rows": 24695,
+          "validation_rows": 4416,
+          "latest_training_label_end": "2023-09-30 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 7947.0,
+              "MAE_minutes": 5570.705842391304,
+              "MAE_percent_of_horizon": 30.948365791062805
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 9000.0,
+              "MAE_minutes": 5061.85303442029,
+              "MAE_percent_of_horizon": 28.121405746779388
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 8510.526300870622,
+              "MAE_minutes": 5284.208590795017,
+              "MAE_percent_of_horizon": 29.35671439330565
+            }
+          }
+        },
+        {
+          "start": "2024-01-01 00:00:00+00:00",
+          "end_exclusive": "2024-04-01 00:00:00+00:00",
+          "train_rows": 29111,
+          "validation_rows": 3768,
+          "latest_training_label_end": "2023-12-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 8778.0,
+              "MAE_minutes": 5374.03423566879,
+              "MAE_percent_of_horizon": 29.8557457537155
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 9000.0,
+              "MAE_minutes": 5300.083598726114,
+              "MAE_percent_of_horizon": 29.44490888181175
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 8932.683212531345,
+              "MAE_minutes": 5322.138291828823,
+              "MAE_percent_of_horizon": 29.567434954604575
+            }
+          }
+        },
+        {
+          "start": "2024-04-01 00:00:00+00:00",
+          "end_exclusive": "2024-07-01 00:00:00+00:00",
+          "train_rows": 32879,
+          "validation_rows": 4368,
+          "latest_training_label_end": "2024-03-31 23:30:00+00:00",
+          "scores": {
+            "training_median_time_to_high": {
+              "constant_prediction_minutes": 9417.0,
+              "MAE_minutes": 5443.871794871795,
+              "MAE_percent_of_horizon": 30.243732193732196
+            },
+            "horizon_midpoint": {
+              "constant_prediction_minutes": 9000.0,
+              "MAE_minutes": 5311.352106227107,
+              "MAE_percent_of_horizon": 29.507511701261702
+            },
+            "training_mean_time_to_high": {
+              "constant_prediction_minutes": 9256.438942790232,
+              "MAE_minutes": 5390.956308050153,
+              "MAE_percent_of_horizon": 29.94975726694529
+            }
+          }
+        }
+      ],
+      "pooled": {
+        "training_median_time_to_high": {
+          "rows": 21336,
+          "MAE_minutes": 5374.108033370829,
+          "MAE_percent_of_horizon": 29.856155740949045
+        },
+        "horizon_midpoint": {
+          "rows": 21336,
+          "MAE_minutes": 5259.473987626547,
+          "MAE_percent_of_horizon": 29.21929993125859
+        },
+        "training_mean_time_to_high": {
+          "rows": 21336,
+          "MAE_minutes": 5312.326059064842,
+          "MAE_percent_of_horizon": 29.512922550360233
+        }
+      },
+      "partition_sha256": {
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-04/part.parquet": "d9fcd685fc6304982bcba0b8720d1d6ac23d6a97659b10df7cfcdad5dc17f2aa",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-05/part.parquet": "4e57693ddcd131a74b941bdabf0da7e45ecbd4396788427da37b2642dbcabef3",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-06/part.parquet": "12359316635f09f6fa159fc649d2943820fbcd56453ff03dee7210fb99f96434",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-07/part.parquet": "1d0d0cde6040a6db1fe528e276ea28ca7de322bcfac7b7d338cac7f8a05e842c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-08/part.parquet": "a339d794bd204836e6a24a839d3f69b513cdbfa15fafbbdd688d1ba419cc4f26",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-09/part.parquet": "6deb88ca943c49a8902ad888c33aa442eaff3d1a88948c478d9869fbfe528974",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-10/part.parquet": "be84d2ff09477b0a5dfd2842c7bcbd32d175e0797b999ec6cac6fcb8e886a50e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-11/part.parquet": "650d4d26af3ca5a649954454968c8db520f4d9210e6859301676648fc2a89fb8",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2022-12/part.parquet": "77bb772fc4de0bff3115d26898c127eee9a4b3bd67ea8b755f1fb8b32e79b4b3",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-01/part.parquet": "f44162f3021b004f585ee7c996078684e403413271b8a0cd847c4d86816e7054",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-02/part.parquet": "3510874a5701226656f3e71ce952588b90ae59903019b50bcd220cc1fd6e0798",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-03/part.parquet": "639f355274fe62deee058d43a4505d92725a3c1d5cd5198f9bc14bee41143da5",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-04/part.parquet": "9bc09b3551ef4ef6f68eb4f8ccbcf7116590ce38aed43bcda5ae537d38e3d5f9",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-05/part.parquet": "86ec57dee15bcb2d1a881a75077ff55211d5a976ddfba39c00ebef68fcce7978",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-06/part.parquet": "320b95551eee44c5524039d10b7ada1e5405e6d86e30b4fbc00a521224ceb787",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-07/part.parquet": "c4efa10b2e68ad38a94d2cf82683890be403306b545dd78778cce2ffac47fdda",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-08/part.parquet": "d2c16583509a9ec8f81699770a2669e6a106d2a072bbcee53902f53b709e3695",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-09/part.parquet": "7adb0129f881a6f2098ed5b40a219290dc8c7d5b680a8c3d6caad3026575f54e",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-10/part.parquet": "b9e181aca666eabc2de1a2ffe439292530fcf1af5808a0915b2de97720cb4489",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-11/part.parquet": "562dd6b824b9a2d9cee085ebcf86a8ed4cf73712cc0de5a119cf166246976f20",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2023-12/part.parquet": "dc1b99d3c9a0ecf1ec762c1eaf7db7caa45d43b4cc558f71e73b46a7a6c505d2",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2024-01/part.parquet": "ed98480002771cf71b67188ad862394db096602569b43b016ec5167e1db65e1b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2024-02/part.parquet": "c36ffb7ff0334e873a8a45dd7ffec35dce16a794f1e2ed7dd2f32aef738a57d4",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2024-03/part.parquet": "7c4d7167939bf00b9e9ad936e43b9bce627b175b4f941cfe747be64f07c4782b",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2024-04/part.parquet": "60d0c66564830cf2b242f43d984b31edbb2e9fbed45ca59d02934a438428ad6c",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2024-05/part.parquet": "34477dde80ca23caed89eb24a8e6d480f121bfda197e7d4d49593826c830adea",
+        "HANDOFF_2_CANONICAL_XY_V1_1/y/horizon_minutes=18000/symbol=BTCUSDT/source_month=2024-06/part.parquet": "2324f796714f5c48a78206eb936e49c45b9362f303513025f211084dfb4882be"
+      },
+      "original_baselines_unchanged": true
+    }
+  },
+  "status": "COMPLETE_RESEARCH_BASELINES_ONLY",
+  "new_model_fits": 0,
+  "reserved_partitions_read": 0,
+  "migration": {
+    "from_signature": "46e1e57083eafdba5f92b59658900d809825a511d152ecfbecf55d333559b6f2",
+    "change": "Add historical-mean MAE only; verify original scores and populations unchanged."
+  },
+  "remote_bytes_read_this_session": 432300426
+}

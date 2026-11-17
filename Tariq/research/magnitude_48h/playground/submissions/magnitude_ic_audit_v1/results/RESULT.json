@@ -1,0 +1,54 @@
+{
+  "status": "VERIFIED",
+  "definition": {
+    "primary_IC": "Spearman rank correlation between predicted and actual absolute 48h endpoint log returns",
+    "secondary_IC": "Pearson correlation between the same raw forecast and target values",
+    "primary_definition_status": "Working convention stated to user; confirm if team requires Pearson instead",
+    "population": "Pooled time-series correlation across exactly the original 18481 BTC development origins; not a cross-asset IC or mean of monthly/fold ICs",
+    "ties": "Average ranks",
+    "missing": "Fail on nonfinite values; no row drops",
+    "constant_forecasts": "IC undefined (null), never silently zero",
+    "p_values": "Not reported: overlapping 48h labels violate independent-observation inference"
+  },
+  "horizon_minutes": 2880,
+  "start": "2024-01-01 00:00:00+00:00",
+  "end": "2025-01-22 00:00:00+00:00",
+  "models": {
+    "frozen_MP0004": {
+      "rows": 18481,
+      "MAE": 182.0369772107621,
+      "Spearman_IC": 0.03025442548026061,
+      "Pearson_IC": 0.051755413412708826
+    },
+    "walkforward_pair": {
+      "rows": 18481,
+      "MAE": 181.97660210071422,
+      "Spearman_IC": 0.027241073957620092,
+      "Pearson_IC": 0.03587420658053796
+    },
+    "current_hybrid": {
+      "rows": 18481,
+      "MAE": 181.5238678328609,
+      "Spearman_IC": 0.07737672515285152,
+      "Pearson_IC": 0.04400400482390407
+    }
+  },
+  "new_model_fits": 0,
+  "fresh_test_accessed": false,
+  "source_prediction_file": "submissions/magnitude_rf_hybrid_v4/run_001/predictions.parquet",
+  "prediction_sha256": "d205be577fd17ecc9f71630fc733612704168789e29b511b8641173166964ccb",
+  "source_y_sha256": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+  "software": {
+    "scipy": "1.15.3",
+    "pandas": "2.2.2",
+    "numpy": "2.2.6"
+  },
+  "verification": [
+    "exact saved forecast hash",
+    "exact target values and timestamps",
+    "independent MAE replay",
+    "Spearman checked as Pearson correlation of average ranks",
+    "Pearson checked against numpy correlation"
+  ],
+  "promotion_rule": "Require strictly lower same-row MAE AND strictly higher pooled Spearman IC than incumbent; retain incumbent if either fails. Pearson retained as diagnostic unless team specifies it as primary."
+}

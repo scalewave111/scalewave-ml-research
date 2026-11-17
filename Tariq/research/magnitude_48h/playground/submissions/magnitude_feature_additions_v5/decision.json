@@ -1,0 +1,19 @@
+{
+  "status": "VERIFIED_COMPLETE_NO_PROMOTION",
+  "current_benchmark_MAE": 181.5238678328609,
+  "current_benchmark_experiment": "magnitude_rf_hybrid_v4",
+  "candidate_MAE": {
+    "variance_rz_4h": 182.21974423665827,
+    "flow_rz_4h": 182.22018736416666,
+    "flow_percentile_1h": 181.55855346445884
+  },
+  "decision": "Retain existing pair-plus-RF hybrid. None of these one-feature RF additions reduced global MAE on the matched 18481 rows.",
+  "closest_candidate": "flow_percentile_1h",
+  "closest_delta": 0.03468563159793803,
+  "new_fits_including_weight_selection": 36,
+  "cumulative_fits_including_weight_selection": 91,
+  "scope": "RF-only additions; pair anchors, forest parameters and nested selection process unchanged. This is not a test of all possible uses of these features.",
+  "repeatability": "See REPEATABLE_PROCESS.txt and config.json. Only 48h is evaluated; other horizons require matching labels, pair anchors and benchmarks.",
+  "next_step": "Review where the current hybrid makes errors before registering another bounded experiment. Do not combine these features automatically after failed global improvements.",
+  "fresh_data_accessed": false
+}

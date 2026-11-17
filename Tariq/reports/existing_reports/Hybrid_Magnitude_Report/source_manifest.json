@@ -1,0 +1,63 @@
+{
+  "report_date": "2026-11-06",
+  "new_model_fits": 0,
+  "current_benchmark": {
+    "experiment": "ensemble_context_flow_flow_activity_percentile__5m",
+    "prediction_file": "submissions/magnitude_current/run_001/predictions.parquet",
+    "prediction_column": "prediction",
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "Pearson_IC": 0.06533420578948929,
+    "verification": "submissions/magnitude_current/run_001/verification.json",
+    "IC_verification": "submissions/magnitude_current/run_001/verification.json",
+    "prediction_sha256": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "replay_script": "submissions/magnitude_current/replay.py"
+  },
+  "replay": {
+    "status": "PASS",
+    "rows": 18481,
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "new_fits": 0
+  },
+  "source_sha256": {
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_benchmark_registry.json": "99adcf54a171373ae9d26f4dd14cfcf642dc453e1b1d8049e608894088de05eb",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\experiment_history.json": "04f85c781943655c84f02f92cf5e2dfdd61b09c977dbf2b4f11f0a0654e3da90",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_current\\run_001\\config.json": "ba77b1814c1c28461280393b6309c45bb3182ea42453d99b46f270c796254a88",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_current\\run_001\\RESULT.json": "55ba43a2b916a90b44ab8ef8afa105915ad18d1ed7a6bbe5d60cd8bc2b157474",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_current\\run_001\\verification.json": "e3c3ebaded331efdda85013cbfe552af882b2ac52acf4b7f240d5a4262bb6329",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_current\\run_001\\predictions.parquet": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_current\\replay.py": "76e8f3448bad8276340de4c83af323adc737e919410c804dacc570dcb65b074b",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_active\\context_results.json": "cf465ce34cd2c0db270926396ec6441ca0da44278c8aa6e9cca5ee60b7e1b695",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\benchmarks\\scores.json": "721114cb0e4443e72cc444fff3b5f6ddd74f5ee7f0dbe16612d541f80dc561de",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\CONTRACT.json": "34f1bfdfdd5862947a23723ab81acfba93d98ba0241487e20eaa566ed6e29ac4",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_active\\pdf_feature_inventory.json": "4b795ebd0aa1a59a57a6cf35fa7e074a54797d62864607c2ecee07c3614af5be",
+    "Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_active\\OFFLINE_RESULTS.txt": "34853d019ce142ae80d764c3428b459fa0b77978c693ae625d7312f8b0c74724"
+  },
+  "layout_checks": [
+    {
+      "page": 1,
+      "spare_points": 163.840087890625,
+      "scale": 1.0
+    },
+    {
+      "page": 2,
+      "spare_points": 65.16009521484375,
+      "scale": 1.0
+    },
+    {
+      "page": 3,
+      "spare_points": 90.6201171875,
+      "scale": 1.0
+    },
+    {
+      "page": 4,
+      "spare_points": 113.8001708984375,
+      "scale": 1.0
+    }
+  ],
+  "outputs": [
+    "Reports\\Hybrid_Magnitude_Report\\ScaleWave_Hybrid_Magnitude_Report.pdf",
+    "Reports\\Hybrid_Magnitude_Report\\ScaleWave_Hybrid_Magnitude_Report.html"
+  ]
+}

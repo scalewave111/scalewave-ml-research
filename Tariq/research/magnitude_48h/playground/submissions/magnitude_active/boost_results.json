@@ -1,0 +1,2117 @@
+{
+  "starting_MAE": 181.0610241130761,
+  "results": [
+    {
+      "mode": "direct",
+      "config": {
+        "version": "xgb_mae_direct",
+        "authorization": "User authorized direct MAE boosting then residual correction with current five features, identical walk-forward folds and earlier-only selection.",
+        "horizon_minutes": 2880,
+        "target_column": "magnitude_log_bps",
+        "label_end_column": "label_end",
+        "data_parts": [
+          {
+            "X": "data/X_train.parquet",
+            "y": "data/y_train.parquet"
+          },
+          {
+            "X": "data/X_development.parquet",
+            "y": "data/y_development.parquet"
+          }
+        ],
+        "anchor_features": [
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+        ],
+        "additions": {
+          "flow": "F4Z__flow__flow_activity_percentile__1h__value",
+          "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+          "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value"
+        },
+        "change_scope": "Only RF gains listed PDF features; liquidation pair and nine-setting nested tuning protocol unchanged.",
+        "validation_windows": [
+          [
+            "2024-01-01T00:00:00Z",
+            "2024-04-01T00:00:00Z"
+          ],
+          [
+            "2024-04-01T00:00:00Z",
+            "2024-07-01T00:00:00Z"
+          ],
+          [
+            "2024-07-01T00:00:00Z",
+            "2024-10-01T00:00:00Z"
+          ],
+          [
+            "2024-10-01T00:00:00Z",
+            "2025-01-22T00:30:00Z"
+          ]
+        ],
+        "inner_validation_months": 3,
+        "minimum_valid_training": 1000,
+        "forest": {
+          "n_estimators": 128,
+          "criterion": "absolute_error",
+          "max_depth": 3,
+          "min_samples_leaf": 128,
+          "max_features": 1.0,
+          "bootstrap": true,
+          "max_samples": 4096,
+          "n_jobs": 4,
+          "random_state": 48
+        },
+        "forest_weights": [
+          0.0,
+          0.1,
+          0.25,
+          0.5
+        ],
+        "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+        "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+        "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+        "anchor_horizon_minutes": 2880,
+        "benchmark_horizon_minutes": 2880,
+        "benchmark_predictions": "submissions/magnitude_current/run_001/predictions.parquet",
+        "benchmark_column": "prediction",
+        "benchmark_mae": 181.0610241130761,
+        "new_fit_budget": 28,
+        "prior_fit_count": 756,
+        "fit_accounting": "36 inner RF fits and 4 selected outer RF fits plus 4 joint selections per candidate.",
+        "promotion_rule": "Promote only verified lower same-row MAE. Track Spearman only. Keep compact history and discard losing model/prediction artifacts after verification.",
+        "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+        "stopping_rule": "Only direct and residual boosting; 24 inner and four selected outer fits per approach. No further tuning based on outer results.",
+        "fresh_data": "Deferred; not accessed.",
+        "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment.",
+        "grid_depths": [
+          2,
+          3,
+          5
+        ],
+        "grid_leaves": [
+          64,
+          128,
+          256
+        ],
+        "selection_rule": "Lowest inner blend MAE; tie: lower RF weight, then incumbent settings, then shallower depth, then larger leaf.",
+        "boost": {
+          "objective": "reg:absoluteerror",
+          "eval_metric": "mae",
+          "tree_method": "hist",
+          "learning_rate": 0.05,
+          "min_child_weight": 128,
+          "reg_lambda": 1.0,
+          "reg_alpha": 0.0,
+          "subsample": 1.0,
+          "colsample_bytree": 1.0,
+          "max_bin": 256,
+          "random_state": 48,
+          "n_jobs": 4,
+          "verbosity": 0
+        },
+        "boost_depths": [
+          2,
+          3
+        ],
+        "boost_trees": [
+          100,
+          300,
+          600
+        ],
+        "strengths": [
+          0.0,
+          0.1,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "residual_definition": "Training target minus in-sample training-only liquidation pair prediction; no outer targets used. Retain signed corrections; clip only final magnitude to nonnegative.",
+        "mode": "direct"
+      },
+      "result": {
+        "status": "VERIFIED",
+        "experiment": "xgb_mae_direct",
+        "mode": "direct",
+        "metrics": {
+          "incumbent": {
+            "MAE": 181.0610241130761,
+            "Spearman_IC": 0.07195947735301861
+          },
+          "prediction": {
+            "MAE": 182.4238072634937,
+            "Spearman_IC": 0.02688986396308387
+          }
+        },
+        "selected_settings": [
+          {
+            "fold": 1,
+            "depth": 2,
+            "trees": 100,
+            "strength": 1.0,
+            "MAE": 153.12647327609125
+          },
+          {
+            "fold": 2,
+            "depth": 3,
+            "trees": 100,
+            "strength": 1.0,
+            "MAE": 211.6148943678013
+          },
+          {
+            "fold": 3,
+            "depth": 3,
+            "trees": 600,
+            "strength": 0.25,
+            "MAE": 154.01675233912604
+          },
+          {
+            "fold": 4,
+            "depth": 2,
+            "trees": 100,
+            "strength": 0.0,
+            "MAE": 193.99331532699136
+          }
+        ],
+        "rows": 18481,
+        "new_model_fits": 28,
+        "new_selection_steps": 4,
+        "nominal_intervals": [
+          {
+            "block_days": 7,
+            "delta_MAE": 1.3627831504175625,
+            "interval": [
+              -0.05141445523919894,
+              2.83820862980396
+            ]
+          },
+          {
+            "block_days": 14,
+            "delta_MAE": 1.3627831504175625,
+            "interval": [
+              -0.12068364859154411,
+              3.012255985243284
+            ]
+          }
+        ],
+        "interpretation": "Earlier inner labels select depth, tree count and contribution. Pair model fixed. Residual targets, when used, are training-only in-sample residuals of the training-only pair. No outer labels used for fitting or selection. Adaptive development; fresh test untouched."
+      },
+      "verification": {
+        "status": "PASS",
+        "rows": 18481,
+        "checks": [
+          "source hashes",
+          "strict label-end purges",
+          "training-only preprocessing",
+          "training target hashes incl residual construction",
+          "native Booster replay of every inner score",
+          "earlier-data-only model and strength selection",
+          "native Booster outer replay and independent combination formulas",
+          "exact scoring rows",
+          "MAE and Spearman recomputation"
+        ],
+        "new_verification_fits": 0
+      },
+      "inner_scores": [
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 157.68114842799142
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 156.65780593857744
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 155.16989893377948
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 153.12647327609125
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 157.42660207487492
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 156.10620148499106
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 154.44824603064038
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 153.1535855310575
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 157.31198899848803
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 155.91200909287394
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 154.4575272094209
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 154.49953376360565
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 157.6652945298948
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 156.69859527313147
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 155.55188858790132
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 155.05669146851392
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 157.51036013268583
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 156.50026889557998
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 155.82185854883932
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 157.9600785604177
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 157.4512627949043
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 156.48684534948205
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 156.21546552809795
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 159.96264657921594
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 213.9375584616672
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 213.7078772412861
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 213.42946223633734
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 213.3805696959862
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 213.9495712424495
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 213.7646358879489
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 213.65980074129425
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 214.36427136472173
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 213.9779685963818
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 213.91712531732787
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 214.27656829241462
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 216.61938060216116
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 213.65530700870113
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 213.03699561091253
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 212.23303882621988
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 211.6148943678013
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 213.6499935582705
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 213.14151803982233
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 212.85042900138353
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 214.32820258024336
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 214.0112699488191
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 214.26353217980434
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 215.80902795430248
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 221.81240494528845
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 154.5715587893049
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 154.44646383218756
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 154.62558096166526
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 156.22850290407416
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 154.4769204716128
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 154.34114611133447
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 154.78161931061257
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 157.61871222300562
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 154.41694204616908
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 154.2704086108698
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 154.8903745201247
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 158.67638867593905
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 154.38837000933972
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 154.13225929832143
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 154.35092365469941
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 156.8132973271533
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 154.3162869074211
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 154.1106387012808
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 154.70044742289232
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 158.86628425110388
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 154.25309847623646
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 154.01675233912604
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 154.6752091842218
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 159.40857582340445
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 194.2222380544125
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 194.652979403391
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 195.5246663550145
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 197.79613736932174
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 194.21950820429694
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 194.7065407902615
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 195.80289895602576
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 199.00121513991598
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 194.3608754676653
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 195.12039948944133
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 196.7830904706895
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 201.6907544810143
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 194.33679825886352
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 195.01909236329914
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 196.43816227775275
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 200.33256488763118
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 194.4670812244732
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 195.4281102640738
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 197.46443533685758
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 203.54770494145774
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 194.57305966567992
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 195.75403751850718
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 198.3354379918954
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 206.66454253654445
+        }
+      ],
+      "fold_MAE_csv": "fold,incumbent,prediction\n1,211.90619237767748,214.60570455193118\n2,152.79371645521002,155.2386147564709\n3,195.68033053362927,196.3537824390975\n4,167.63101192321784,167.63101192321784\n",
+      "monthly_MAE_csv": "decision_time,incumbent,prediction\n2024-01,177.7902201349503,180.90742399906281\n2024-02,230.0851181412268,226.89240075924093\n2024-03,230.1960645287676,238.3413082459635\n2024-04,183.70654472084848,190.2474989421612\n2024-05,161.4725418807196,157.4095996083482\n2024-06,112.91276858321167,117.98637955717405\n2024-07,194.89620035060526,195.1931876028931\n2024-08,238.99279723823153,240.18161788543733\n2024-09,151.734382794665,152.2643004752909\n2024-10,132.88760015196692,132.88760015196692\n2024-11,225.4410402057594,225.4410402057594\n2024-12,149.12483268585953,149.12483268585953\n2025-01,163.65574006390236,163.65574006390236\n",
+      "decision": "NO_PROMOTION"
+    },
+    {
+      "mode": "residual",
+      "config": {
+        "version": "xgb_mae_residual",
+        "authorization": "User authorized direct MAE boosting then residual correction with current five features, identical walk-forward folds and earlier-only selection.",
+        "horizon_minutes": 2880,
+        "target_column": "magnitude_log_bps",
+        "label_end_column": "label_end",
+        "data_parts": [
+          {
+            "X": "data/X_train.parquet",
+            "y": "data/y_train.parquet"
+          },
+          {
+            "X": "data/X_development.parquet",
+            "y": "data/y_development.parquet"
+          }
+        ],
+        "anchor_features": [
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+        ],
+        "additions": {
+          "flow": "F4Z__flow__flow_activity_percentile__1h__value",
+          "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+          "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value"
+        },
+        "change_scope": "Only RF gains listed PDF features; liquidation pair and nine-setting nested tuning protocol unchanged.",
+        "validation_windows": [
+          [
+            "2024-01-01T00:00:00Z",
+            "2024-04-01T00:00:00Z"
+          ],
+          [
+            "2024-04-01T00:00:00Z",
+            "2024-07-01T00:00:00Z"
+          ],
+          [
+            "2024-07-01T00:00:00Z",
+            "2024-10-01T00:00:00Z"
+          ],
+          [
+            "2024-10-01T00:00:00Z",
+            "2025-01-22T00:30:00Z"
+          ]
+        ],
+        "inner_validation_months": 3,
+        "minimum_valid_training": 1000,
+        "forest": {
+          "n_estimators": 128,
+          "criterion": "absolute_error",
+          "max_depth": 3,
+          "min_samples_leaf": 128,
+          "max_features": 1.0,
+          "bootstrap": true,
+          "max_samples": 4096,
+          "n_jobs": 4,
+          "random_state": 48
+        },
+        "forest_weights": [
+          0.0,
+          0.1,
+          0.25,
+          0.5
+        ],
+        "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+        "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+        "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+        "anchor_horizon_minutes": 2880,
+        "benchmark_horizon_minutes": 2880,
+        "benchmark_predictions": "submissions/magnitude_current/run_001/predictions.parquet",
+        "benchmark_column": "prediction",
+        "benchmark_mae": 181.0610241130761,
+        "new_fit_budget": 28,
+        "prior_fit_count": 756,
+        "fit_accounting": "36 inner RF fits and 4 selected outer RF fits plus 4 joint selections per candidate.",
+        "promotion_rule": "Promote only verified lower same-row MAE. Track Spearman only. Keep compact history and discard losing model/prediction artifacts after verification.",
+        "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+        "stopping_rule": "Only direct and residual boosting; 24 inner and four selected outer fits per approach. No further tuning based on outer results.",
+        "fresh_data": "Deferred; not accessed.",
+        "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment.",
+        "grid_depths": [
+          2,
+          3,
+          5
+        ],
+        "grid_leaves": [
+          64,
+          128,
+          256
+        ],
+        "selection_rule": "Lowest inner blend MAE; tie: lower RF weight, then incumbent settings, then shallower depth, then larger leaf.",
+        "boost": {
+          "objective": "reg:absoluteerror",
+          "eval_metric": "mae",
+          "tree_method": "hist",
+          "learning_rate": 0.05,
+          "min_child_weight": 128,
+          "reg_lambda": 1.0,
+          "reg_alpha": 0.0,
+          "subsample": 1.0,
+          "colsample_bytree": 1.0,
+          "max_bin": 256,
+          "random_state": 48,
+          "n_jobs": 4,
+          "verbosity": 0
+        },
+        "boost_depths": [
+          2,
+          3
+        ],
+        "boost_trees": [
+          100,
+          300,
+          600
+        ],
+        "strengths": [
+          0.0,
+          0.1,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "residual_definition": "Training target minus in-sample training-only liquidation pair prediction; no outer targets used. Retain signed corrections; clip only final magnitude to nonnegative.",
+        "mode": "residual"
+      },
+      "result": {
+        "status": "VERIFIED",
+        "experiment": "xgb_mae_residual",
+        "mode": "residual",
+        "metrics": {
+          "incumbent": {
+            "MAE": 181.0610241130761,
+            "Spearman_IC": 0.07195947735301861
+          },
+          "prediction": {
+            "MAE": 183.2270625207759,
+            "Spearman_IC": 0.004706927131156544
+          }
+        },
+        "selected_settings": [
+          {
+            "fold": 1,
+            "depth": 2,
+            "trees": 300,
+            "strength": 1.0,
+            "MAE": 153.8759086042731
+          },
+          {
+            "fold": 2,
+            "depth": 3,
+            "trees": 100,
+            "strength": 1.0,
+            "MAE": 211.48201527103228
+          },
+          {
+            "fold": 3,
+            "depth": 3,
+            "trees": 600,
+            "strength": 0.25,
+            "MAE": 154.18283284862025
+          },
+          {
+            "fold": 4,
+            "depth": 3,
+            "trees": 100,
+            "strength": 0.25,
+            "MAE": 193.90986147970477
+          }
+        ],
+        "rows": 18481,
+        "new_model_fits": 28,
+        "new_selection_steps": 4,
+        "nominal_intervals": [
+          {
+            "block_days": 7,
+            "delta_MAE": 2.1660384076998076,
+            "interval": [
+              0.5795528583520598,
+              3.8379765881197834
+            ]
+          },
+          {
+            "block_days": 14,
+            "delta_MAE": 2.1660384076998076,
+            "interval": [
+              0.6695161312420966,
+              3.8986359679290117
+            ]
+          }
+        ],
+        "interpretation": "Earlier inner labels select depth, tree count and contribution. Pair model fixed. Residual targets, when used, are training-only in-sample residuals of the training-only pair. No outer labels used for fitting or selection. Adaptive development; fresh test untouched."
+      },
+      "verification": {
+        "status": "PASS",
+        "rows": 18481,
+        "checks": [
+          "source hashes",
+          "strict label-end purges",
+          "training-only preprocessing",
+          "training target hashes incl residual construction",
+          "native Booster replay of every inner score",
+          "earlier-data-only model and strength selection",
+          "native Booster outer replay and independent combination formulas",
+          "exact scoring rows",
+          "MAE and Spearman recomputation"
+        ],
+        "new_verification_fits": 0
+      },
+      "inner_scores": [
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 157.86960853831897
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 157.13667990816424
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 156.1529570124552
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 155.19124341129037
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 157.4855454406896
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 156.24905833578433
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 154.72813874665977
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 153.8759086042731
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 157.52540521167484
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 156.60334175836135
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 156.0548262706342
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 157.98489206035683
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 157.68486149245578
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 156.71859887763767
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 155.49340900686744
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 154.67650595465713
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 157.44133741866895
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 156.3282831129521
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 155.47581715109175
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 156.99868984451788
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 157.3416565834155
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 156.21153546194162
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 155.7271544029178
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 159.10127481182394
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 213.82991458616692
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 213.4478230601091
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 212.94274302986022
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 212.43770172234997
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 213.82610074944674
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 213.48785362537356
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 213.18350369809687
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 213.62618068668797
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 213.83283463075267
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 213.57109965707232
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 213.5970031994537
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 215.35968764360373
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 213.63232485824724
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 213.0032993544839
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 212.17379072310564
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 211.48201527103228
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 213.68022016453514
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 213.26266895680124
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 213.20857745596928
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 215.51818006981748
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 213.75023624601266
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 213.65659378626432
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 214.58267320746899
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 220.60515610710814
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 154.67971769857
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 154.6816296134692
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 155.01148241041994
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 156.68020432211952
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 154.54033281616447
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 154.5030791792301
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 155.1505494156859
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 158.4016703762114
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 154.50391402958812
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 154.4984616265764
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 155.3292140890513
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 159.4861592066043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 154.64815342559768
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 154.65631175698596
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 155.12766066642718
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 157.36413095066933
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 154.37657433746153
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 154.23821752567537
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 154.96019388330237
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 159.44029040288143
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 154.31147293509423
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 154.18283284862025
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 155.04374394847363
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 160.3789637694745
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 193.94317611879475
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 193.92766200576568
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 194.01773065113602
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 194.63543107047857
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 194.1381173071747
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 194.49236791413267
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 195.3576976574693
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 197.87985485044828
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 194.3537356270372
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 195.1123109826955
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 196.77607710701056
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 201.55118952023685
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.1,
+          "MAE": 193.92712881993822
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.25,
+          "MAE": 193.90986147970477
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 0.5,
+          "MAE": 194.12249119692012
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 100,
+          "strength": 1.0,
+          "MAE": 195.20183288116115
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.1,
+          "MAE": 194.2716541358342
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.25,
+          "MAE": 194.91358401261144
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 0.5,
+          "MAE": 196.4170291586489
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 300,
+          "strength": 1.0,
+          "MAE": 201.36959172869706
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.1,
+          "MAE": 194.47205504274967
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.25,
+          "MAE": 195.48804486979122
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 0.5,
+          "MAE": 197.7854435525907
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "trees": 600,
+          "strength": 1.0,
+          "MAE": 206.01896724314855
+        }
+      ],
+      "fold_MAE_csv": "fold,incumbent,prediction\n1,211.90619237767748,215.03429801782377\n2,152.79371645521002,155.8450386207328\n3,195.68033053362927,196.12711467016533\n4,167.63101192321784,169.7261482461761\n",
+      "monthly_MAE_csv": "decision_time,incumbent,prediction\n2024-01,177.7902201349503,182.5650217946305\n2024-02,230.0851181412268,227.25734479946823\n2024-03,230.1960645287676,237.51978788855834\n2024-04,183.70654472084848,188.2400145314249\n2024-05,161.4725418807196,161.6169234286633\n2024-06,112.91276858321167,117.4857817418458\n2024-07,194.89620035060526,195.31839682994803\n2024-08,238.99279723823153,239.02646654867775\n2024-09,151.734382794665,152.63345949726033\n2024-10,132.88760015196692,132.44477582856595\n2024-11,225.4410402057594,229.16878026508348\n2024-12,149.12483268585953,151.10071923839965\n2025-01,163.65574006390236,167.3395579723888\n",
+      "decision": "NO_PROMOTION"
+    }
+  ],
+  "best_MAE": 181.0610241130761,
+  "cumulative_counted_steps": 820
+}

@@ -1,0 +1,61 @@
+{
+  "version": "magnitude_walkforward_v2",
+  "status": "DEVELOPMENT_COMPARISON_COMPLETE",
+  "scope": "Repository prepared X_train/y_train plus X_development/y_development; not the large Drive archives.",
+  "supersedes": "magnitude_last3months_split_v1",
+  "user_authorization": "User has separate fresh data for testing and requests proceeding without a fixed repository holdout.",
+  "repository_rows": 48096,
+  "repository_role": "Walk-forward development; all supplied rows eligible as chronology permits. Original absent purge rows are not reconstructed.",
+  "fixed_repository_holdout": null,
+  "target": "Absolute endpoint 48-hour log return in log basis points",
+  "metric": "MAE",
+  "cadence_minutes": 30,
+  "validation_policy": {
+    "method": "expanding walk-forward",
+    "purge": "Training label_end strictly before first validation decision_time",
+    "preprocessing": "Fit admission, preprocessing and model using each fold training data only",
+    "selection": "Repository out-of-fold results may select candidate settings; classify these as development evidence",
+    "fold_dates": [
+      [
+        "2024-01-01T00:00:00Z",
+        "2024-04-01T00:00:00Z"
+      ],
+      [
+        "2024-04-01T00:00:00Z",
+        "2024-07-01T00:00:00Z"
+      ],
+      [
+        "2024-07-01T00:00:00Z",
+        "2024-10-01T00:00:00Z"
+      ],
+      [
+        "2024-10-01T00:00:00Z",
+        "2025-01-22T00:30:00Z"
+      ]
+    ],
+    "earlier_validation_rows": "May enter later training folds only after their labels mature",
+    "retraining": "At each of four registered window starts; quarterly through October 2024, with last window extending to latest supplied row."
+  },
+  "benchmark_policy": {
+    "earlier_folds": "Refit baseline architecture and training median within each fold; full-training frozen coefficients cannot serve as historical forecasts before their fitting cutoff",
+    "same_rows": "Compare paired losses on identical timestamps",
+    "historical_MAE": 182.03697721076213,
+    "historical_MAE_usage": "Reference only; not a threshold on a new walk-forward population",
+    "fresh_test": "Evaluate frozen MP0004 and final candidate on identical eligible fresh rows; register any separately refitted comparator before test access"
+  },
+  "fresh_test": {
+    "source": "User reports separate fresh data; location and dates not yet supplied",
+    "access_status": "NOT_OPENED",
+    "use": "Final assessment after freezing features, tuning, transformations and evaluation policy",
+    "boundary": "Verify overlap and label-end separation using metadata before reading outcomes",
+    "current_priority": "Deferred at user request; not accessed."
+  },
+  "compatibility": "New experiment protocol supersedes old train/development restrictions for this work only. Original playground CONTRACT.json and scorer remain unchanged; original scoreboard eligibility does not apply to a model trained on former development labels.",
+  "fit_budget": 20,
+  "new_fits": 20,
+  "next_step": "Keep the pair as comparator; diagnose saved out-of-fold errors before registering any further fit-budget extension.",
+  "run_config": "run_config.json",
+  "runner": "walkforward.py",
+  "followup_config": "residual_config.json",
+  "comparison_summary": "comparison_summary.json"
+}

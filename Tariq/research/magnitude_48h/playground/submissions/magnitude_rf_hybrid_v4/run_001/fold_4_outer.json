@@ -1,0 +1,16 @@
+{
+  "preprocessing": {
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+      "median": 0.922,
+      "center": 0.8736460598943042,
+      "scale": 0.10203348344259523
+    },
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+      "median": 0.663,
+      "center": 0.6366490428655315,
+      "scale": 0.16194716913271362
+    }
+  },
+  "weight": 0.0,
+  "training_rows": 42575
+}

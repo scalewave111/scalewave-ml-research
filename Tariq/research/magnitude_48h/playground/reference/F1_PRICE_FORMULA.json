@@ -1,0 +1,9 @@
+{
+  "physical_id": "f066",
+  "feature_id": "price.cross_venue.trade_vwap.v1",
+  "active_in_accepted_binding": "True",
+  "unit": "quote_per_base",
+  "formula": "total_trade_quote_volume / total_trade_base_volume",
+  "inputs": "[\"total_trade_quote_volume\", \"total_trade_base_volume\"]",
+  "validity": "[\"source row is structurally valid\", \"total recorded trade base volume is positive\"]"
+}

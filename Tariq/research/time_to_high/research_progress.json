@@ -1,0 +1,35 @@
+{
+  "current_target": "time_to_high_min",
+  "updated_goal": "Allow multiple specialist models and test connected prediction systems; one shared model is optional, not required. Connections must be trained using chronological out-of-sample upstream predictions.",
+  "last_colab_run": {
+    "evidence": "User-pasted output; remote WORKER_CHECK.json not independently fetched locally.",
+    "status": "PASS_WORKER_EQUIVALENCE",
+    "fits": 42,
+    "threads_seconds": 105.81872487200053,
+    "processes_seconds": 109.74834588199974,
+    "prediction_digests_and_saved_scores_match": true,
+    "decision": "Retain threads; separate processes were slower in this comparison."
+  },
+  "current_step": "All-ten-horizon staged time_to_high_min screen completed; saved score receipts verified.",
+  "next": "Review the small shorter-horizon gains and longer-horizon losses; prepare time_to_low_min with its own baselines and staged contract.",
+  "reserve_excluded": true,
+  "full_screen_authorized": false,
+  "horizon_scope_authorized": 15,
+  "all_horizons_launch_authorized": false,
+  "report_location": "Results/time_to_high_min locally; Timing_Research_Reports in Drive after run",
+  "parallel_horizon_prepared": {
+    "horizon_minutes": 60,
+    "notebook": "Time_To_High_1h_Screen.ipynb",
+    "private_drive_folder": "Timing_1h_Run",
+    "status": "Ready for user Colab execution; 15m unchanged",
+    "requires_15m_results": false
+  },
+  "latest_issue": "Source modifiedTime-only changes halted startup; reported source IDs/names/sizes/MD5 unchanged.",
+  "deadline_plan": "target_deadline_plan.json",
+  "next_target_start_deadline_IST": "2026-11-17 14:00",
+  "original_15m_status": "Paused by user after flow completed (85 features reported); preserve verified uploaded fits and cache months.",
+  "all_horizons_staged_authorized": true,
+  "completion_preference": "Aim around 2026-11-17 10:00 IST, no clock-based cutoff; actual completion uncertain.",
+  "staged_results_folder": "https://drive.google.com/drive/folders/1-Ly5SHesR7s2xd9eftlxlVCvsmOyJHlI",
+  "staged_verification": "Results/staged/verification.json"
+}

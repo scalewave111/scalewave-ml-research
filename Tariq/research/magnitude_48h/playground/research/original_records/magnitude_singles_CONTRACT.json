@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-10-31T09:57:17.665628+00:00",
+  "target": "abs(r), log bps",
+  "units": "log bps",
+  "horizon_hours": 48,
+  "split": {
+    "cutoff_utc": "2024-01-01T00:00:00Z",
+    "training_rule": "t+48h < cutoff",
+    "evaluation_rule": "t >= cutoff",
+    "purge_rule": "t < cutoff and t+48h >= cutoff",
+    "training_n": 29615,
+    "purged_n": 96,
+    "evaluation_n": 18481,
+    "training_first_origin": "2022-04-22 00:30:00+00:00",
+    "training_last_origin": "2023-12-29 23:30:00+00:00",
+    "evaluation_first_origin": "2024-01-01 00:00:00+00:00",
+    "evaluation_last_origin": "2025-01-22 00:00:00+00:00"
+  },
+  "population": {
+    "symbol": "BTCUSDT",
+    "cadence_minutes": 30,
+    "UTC_phase_minutes": 0,
+    "valid_rows": 48192,
+    "exact_flat_rows": 0,
+    "unavailable_sampled_rows_excluded": 192
+  },
+  "baseline_median": 161.46183882158175,
+  "baseline_development_MAE": 187.83107169705042,
+  "candidates": "All 256 input-qualified fields from prior label-blind timing/coverage/history/replay audit; all 522 accounted for. No selection using extreme improvements or magnitude development outcomes.",
+  "qualification_reuse": "Same feature values, decision timestamps and valid target population. Inherited full-source availability and prior-only history checks plus bounded numerical replays. Provisional source certification limitations remain.",
+  "model": "Conditional median regression: minimize sum(abs(y - (b0+b1*Z+b2*M))) over the original training rows; no penalty, interactions or tuning",
+  "preprocessing": "Training median-fill finite X; training mean and population std of filled X; unscaled missing flag M. Reuse verified standalone preprocessing constants and independently rebuild them.",
+  "prediction": "max(0,b0+b1*Z+b2*M); fixed nonnegative projection because magnitude is nonnegative. Save raw and clipped prediction diagnostics.",
+  "objective": "MAE, matched to the training-median baseline; RMSE/mean baseline is a separate unrun track",
+  "implementation": "Sparse linear program min sum(u+v), B*beta+u-v=y, beta free, u/v>=0, B=[1,Z,M]; scipy linprog highs-ipm",
+  "solver_options": {
+    "primal_feasibility_tolerance": 1e-07,
+    "dual_feasibility_tolerance": 1e-07,
+    "ipm_optimality_tolerance": 1e-08
+  },
+  "certificate": "Persist dual lambda. Check |lambda|<=1, B.T@lambda\u22480 and primal loss\u2248y.T@lambda. Normalized dual stationarity <=1e-6; mean duality gap <=1e-5 log bps. Independent replay verifies every model without extra fits.",
+  "fit_budget": 256,
+  "no_retries": "Record any failed fit, no changed settings; preserve every requested outcome",
+  "monthly": "Same 13 development months and original rows; report missing/present errors and prediction variation",
+  "uncertainty": "Paired 7d/14d blocks, 2000 draws, seed48+days; nominal intervals and centered max-standardized simultaneous 95% bands across all fitted features",
+  "labels": "NO_MAE_GAIN if MAE>=M0; otherwise EXPLORATORY_MAE_GAIN unless majority months better, both simultaneous upper bounds<0, and nonconstant development prediction, then DEVELOPMENT_MAGNITUDE_LEAD",
+  "concentration": "For top score and any development leads: fixed March, March+August, and largest one/two contribution-month exclusions; diagnostic only",
+  "flat_predictions": "Flag constant development X or forecasts; improved constant error can reflect a historical level shift, not within-period discrimination.",
+  "next_stage": "This run completes baseline replay and standalone stage. Only qualified magnitude evidence determines any later controlled addition; no automatic interaction/tree expansion.",
+  "exposure": "Previously exposed development, no verified untouched holdout; simultaneous bands do not undo earlier research exposure.",
+  "baseline_contract_sha256": "e2e5c4ae51c3b1ebf61d5d876cb4d035fcee2d77015cf36b96d2e255f3876437",
+  "qualification_source_manifest_sha256": "d617abbf8600f9bfe396d48d13b56f832e4bf5ee5dc6dc0605afc449166c9548",
+  "script_sha256": "f5cb842d100118e549d2fcc2a05034fc39d0afb896f37db54cd062a8a1ffb911",
+  "software": {
+    "scipy": "1.17.0",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3"
+  },
+  "solver_reference": "https://docs.scipy.org/doc/scipy/reference/optimize.linprog-highs-ipm.html"
+}

@@ -1,0 +1,19 @@
+ensemble_context_flow_flow_activity_percentile__5m: PROMOTE
+Previous benchmark: 180.81520672728772
+Candidate MAE: 180.79851809782613
+Candidate Spearman IC: 0.07852651265983954
+One additional context feature in RF only. Fixed seeds 48/17/91 equally averaged; incumbent per-fold depth, leaf size, bootstrap samples and 128 trees per seed unchanged. Earlier validation chooses blend weight on original grid. Same target, rows and temporal purges. Adaptive development; fresh data untouched.
+Selected settings: [{"fold": 1, "variant": "ensemble", "weight": 0.5, "MAE": 153.36043436757004, "depth": 5, "leaf": 64, "max_samples": 16384, "seeds": [48, 17, 91]}, {"fold": 2, "variant": "ensemble", "weight": 0.5, "MAE": 209.28962980606767, "depth": 5, "leaf": 64, "max_samples": 16384, "seeds": [48, 17, 91]}, {"fold": 3, "variant": "ensemble", "weight": 0.25, "MAE": 153.97158571622793, "depth": 5, "leaf": 128, "max_samples": 4096, "seeds": [48, 17, 91]}, {"fold": 4, "variant": "ensemble", "weight": 0.0, "MAE": 193.99331532699136, "depth": 3, "leaf": 128, "max_samples": 4096, "seeds": [48, 17, 91]}]
+7 raw features, four quarterly periods, 18,481 rows, strict label-end purges.
+New fits: 24; selections: 4; cumulative counted steps: 1288.
+Candidate and retained model independently replayed. Unused generated models pruned.
+Repeated development selection; fresh data not accessed. No global optimum established.
+
+MODEL RECIPE
+Raw RF features: F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value, F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value, F4Z__flow__flow_activity_percentile__1h__value, F4Z__liquidation__venue_fragmentation_percentile__1h__value, F4Z__liquidation__liq_temporal_concentration_percentile__1h__value, F4Z__flow__flow_activity_percentile__15m__value, F4Z__flow__flow_activity_percentile__5m__value
+Liquidation model uses the original anchor pair. Three equally averaged 128-tree forests; settings in selections above.
+Quarterly expanding history, earlier three-month blend validation, strict label-end purges.
+Training-only preprocessing. Adaptive development; separate fresh data not accessed.
+Replay dependencies: retained v2 outer pair cards and v4 inner pair cards.
+
+Current per-period depth, leaf and bootstrap settings are listed in selected settings above.

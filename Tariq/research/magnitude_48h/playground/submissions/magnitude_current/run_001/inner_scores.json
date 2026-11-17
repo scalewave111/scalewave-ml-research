@@ -1,0 +1,98 @@
+[
+  {
+    "fold": 1,
+    "variant": "ensemble",
+    "weight": 0.0,
+    "MAE": 158.41797140738385
+  },
+  {
+    "fold": 1,
+    "variant": "ensemble",
+    "weight": 0.1,
+    "MAE": 157.14804064501593
+  },
+  {
+    "fold": 1,
+    "variant": "ensemble",
+    "weight": 0.25,
+    "MAE": 155.48761906420194
+  },
+  {
+    "fold": 1,
+    "variant": "ensemble",
+    "weight": 0.5,
+    "MAE": 153.36043436757004
+  },
+  {
+    "fold": 2,
+    "variant": "ensemble",
+    "weight": 0.0,
+    "MAE": 214.10278956317583
+  },
+  {
+    "fold": 2,
+    "variant": "ensemble",
+    "weight": 0.1,
+    "MAE": 212.92778411733858
+  },
+  {
+    "fold": 2,
+    "variant": "ensemble",
+    "weight": 0.25,
+    "MAE": 211.30598951727055
+  },
+  {
+    "fold": 2,
+    "variant": "ensemble",
+    "weight": 0.5,
+    "MAE": 209.28962980606767
+  },
+  {
+    "fold": 3,
+    "variant": "ensemble",
+    "weight": 0.0,
+    "MAE": 154.7415943741043
+  },
+  {
+    "fold": 3,
+    "variant": "ensemble",
+    "weight": 0.1,
+    "MAE": 154.30423764962654
+  },
+  {
+    "fold": 3,
+    "variant": "ensemble",
+    "weight": 0.25,
+    "MAE": 153.97158571622793
+  },
+  {
+    "fold": 3,
+    "variant": "ensemble",
+    "weight": 0.5,
+    "MAE": 154.26713579756913
+  },
+  {
+    "fold": 4,
+    "variant": "ensemble",
+    "weight": 0.0,
+    "MAE": 193.99331532699136
+  },
+  {
+    "fold": 4,
+    "variant": "ensemble",
+    "weight": 0.1,
+    "MAE": 194.1727129427618
+  },
+  {
+    "fold": 4,
+    "variant": "ensemble",
+    "weight": 0.25,
+    "MAE": 194.5338702897852
+  },
+  {
+    "fold": 4,
+    "variant": "ensemble",
+    "weight": 0.5,
+    "MAE": 195.34081327955937
+  }
+]

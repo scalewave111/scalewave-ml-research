@@ -1,0 +1,14 @@
+MODEL COMPARISON COMPLETE - VERIFIED
+
+incumbent: MAE 180.798518098; Spearman 0.078526513; improvement +0.000000000 log bps
+hgb:standalone: MAE 190.930859321; Spearman -0.021986797; improvement -10.132341223 log bps
+hgb:blend: MAE 182.438712497; Spearman 0.028754838; improvement -1.640194399 log bps
+nn:standalone: MAE 182.879953612; Spearman 0.047580689; improvement -2.081435514 log bps
+nn:blend: MAE 181.981899814; Spearman 0.050371221; improvement -1.183381717 log bps
+
+Best challenger: nn:blend
+Beats incumbent: False
+Completed fits: 75
+Incumbent model and registry remain unchanged. Winning challenger retained for review if better.
+Unused model files pruned; compact evidence retained. Fresh data untouched.
+This is development performance; further independent confirmation is needed.

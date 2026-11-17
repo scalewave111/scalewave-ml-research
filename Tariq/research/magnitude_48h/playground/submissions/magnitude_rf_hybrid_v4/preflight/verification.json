@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "target_values_loaded": false,
+  "hashes": {
+    "data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "submissions\\magnitude_rf_hybrid_v4\\config.json": "26136a0a2a41e04442e4757fc0693d6e27e908422a8b051cceb710fb5ec1e6cc",
+    "submissions\\magnitude_walkforward_v2\\walkforward.py": "043223b11338d00445b964c6f620365120de1218686724193ee775366434db69",
+    "submissions\\magnitude_walkforward_v2\\run_001\\oof_predictions.parquet": "a7b8bdb45fb468f356e42ecc51eaef4fc5adfdc9a50131161192d267ac714186",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_1_pair.json": "2fa0d81eb2e9db432a858326ab2094b6144b6571b7b90f1713e505da8dec0930",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_2_pair.json": "b35a72a0883228f44d561c27596aeb493c7e08507b6b59b2dfda12b7383fec3b",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_3_pair.json": "22d6f25196d2dd8f3c89e13422d23072480f8febddd6792f0d43e28dd8cb6cbf",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_4_pair.json": "6148ae525893474d48d8e6daffe4dfaeb53f839b9ad838d3104c7bf61a75630a"
+  }
+}
