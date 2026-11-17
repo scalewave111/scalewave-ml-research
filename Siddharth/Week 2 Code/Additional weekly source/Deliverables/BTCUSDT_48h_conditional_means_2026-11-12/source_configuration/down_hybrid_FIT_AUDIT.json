@@ -1,0 +1,50 @@
+[
+  {
+    "issue": "2024-01-01 00:00:00+00:00",
+    "up_rows": 14979,
+    "down_rows": 14636,
+    "up_epochs": 2,
+    "down_rf_weight": 0.25,
+    "replay_passed": true,
+    "up_max_label_end": "2023-12-31 23:30:00+00:00",
+    "down_max_label_end": "2023-12-31 15:30:00+00:00",
+    "missing_up_sequence_slots": 2256,
+    "model_sha256": "bae594eb53618d84c016168d2457e5fffb250bfc2aeca2678bb498396ea42e6b"
+  },
+  {
+    "issue": "2024-04-01 00:00:00+00:00",
+    "up_rows": 17556,
+    "down_rows": 16235,
+    "up_epochs": 0,
+    "down_rf_weight": 0.25,
+    "replay_passed": true,
+    "up_max_label_end": "2024-03-31 23:30:00+00:00",
+    "down_max_label_end": "2024-03-31 07:30:00+00:00",
+    "missing_up_sequence_slots": 0,
+    "model_sha256": "51cd4dcb1b37adef2f152a69522d9b5df27d7eda6525b09699b85e542f49cffa"
+  },
+  {
+    "issue": "2024-07-01 00:00:00+00:00",
+    "up_rows": 19466,
+    "down_rows": 18693,
+    "up_epochs": 8,
+    "down_rf_weight": 0.0,
+    "replay_passed": true,
+    "up_max_label_end": "2024-06-30 23:30:00+00:00",
+    "down_max_label_end": "2024-06-30 12:30:00+00:00",
+    "missing_up_sequence_slots": 0,
+    "model_sha256": "8e2c5d0516cd752ce5aaeaa7eddbf9e90267ffa9543d05a8904ea4c763faaf2c"
+  },
+  {
+    "issue": "2024-10-01 00:00:00+00:00",
+    "up_rows": 21886,
+    "down_rows": 20689,
+    "up_epochs": 1,
+    "down_rf_weight": 0.0,
+    "replay_passed": true,
+    "up_max_label_end": "2024-09-29 22:00:00+00:00",
+    "down_max_label_end": "2024-09-30 23:30:00+00:00",
+    "missing_up_sequence_slots": 0,
+    "model_sha256": "607893ba8d9f030f6072f95ced8d8958e57daad1016c6ab8662774447a0f8fe4"
+  }
+]

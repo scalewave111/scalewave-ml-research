@@ -1,0 +1,40 @@
+{
+  "preprocessing": {
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+      "median": 0.8280000000000001,
+      "center": 0.8283333465613716,
+      "scale": 0.10235579026833701
+    },
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+      "median": 0.552,
+      "center": 0.5694010079765071,
+      "scale": 0.15684037504024115
+    }
+  },
+  "intercept": 169.30244964835683,
+  "coefficients": [
+    52.736313849577954,
+    -5.902700553618729,
+    -5.975209392055051,
+    21.100955822062524
+  ],
+  "weight_scores": [
+    {
+      "weight": 0.0,
+      "MAE": 158.41797140738385
+    },
+    {
+      "weight": 0.1,
+      "MAE": 157.53119369747816
+    },
+    {
+      "weight": 0.25,
+      "MAE": 156.33215154136448
+    },
+    {
+      "weight": 0.5,
+      "MAE": 154.62520218369662
+    }
+  ],
+  "chosen_weight": 0.5
+}

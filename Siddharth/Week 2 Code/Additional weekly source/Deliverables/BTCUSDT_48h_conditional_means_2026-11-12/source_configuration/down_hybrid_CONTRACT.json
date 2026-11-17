@@ -1,0 +1,47 @@
+{
+  "status": "STARTED",
+  "symbol": "BTCUSDT",
+  "horizon_hours": 48,
+  "units": "ordinary bps; percent = bps/100; DOWN mean magnitude stored positive",
+  "target": "Conditional average absolute endpoint return separately on UP and DOWN rows",
+  "up_model": "8 features + missing flags; 48 half-hour snapshots; GRU16 + softplus; MSE loss",
+  "up_selection": "MSE on preceding first two validation months; max24 epochs, patience5; training-mean initialization",
+  "down_model": "Ridge alpha1 + squared-error RF128, depth3, leaf128, bootstrap4096; nonnegative blend",
+  "down_selection": "Row-weighted validation MSE across cutoffs 9/6/3 months before issuance; RF weights 0/.1/.25/.5",
+  "features": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__1h__value",
+    "PRICE__vol_ratio_4h_24h",
+    "PRICE__realized_vol_168h",
+    "F4Z__liquidation__venue_breadth_percentile__1h__value",
+    "F4Z__funding__funding_persistence_percentile__5m__value",
+    "F4Z__basis__basis_level_rz__1h__value"
+  ],
+  "seed": 48,
+  "starts": [
+    "2024-01-01 00:00:00+00:00",
+    "2024-04-01 00:00:00+00:00",
+    "2024-07-01 00:00:00+00:00",
+    "2024-10-01 00:00:00+00:00"
+  ],
+  "training_rule": "label_end strictly earlier than each fit cutoff; side filter uses matured labels",
+  "formula": "p_up * up_mean_bps - p_down * down_mean_magnitude_bps",
+  "direction_run": "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\experiments\\direction_v45_style_v1\\20261112T045009318177Z",
+  "direction_retrained": false,
+  "direction_max_training_label_end": "2023-12-31 23:30:00+00:00",
+  "direction_pipeline_sha256": "8a9276f1d03fb940bd5bad391bde3948662d2e688d000e4b8f8d714ca3185fac",
+  "direction_exact_v45": false,
+  "probability_sum_error_before_correction": 6.000000007944095e-08,
+  "prepared_sha256": "0c685149828b405efb7155d8cade830e0cd51cd7da8bd3002fd513103325a486",
+  "direction_sha256": "29748fed052c61f0786feb12b175297fbd6f14942644d72f60c8a130f72f6d15",
+  "source_sha256": "a57a34452f0001759e129a816dd4717654f498ad6d33bc1b89ae02e7927f0bd8",
+  "limitation": "Mean-targeting loss does not guarantee calibrated conditional means. Historical exposed evaluation; no automatic winner selection.",
+  "versions": {
+    "numpy": "2.1.1",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.6.0",
+    "torch": "2.5.1",
+    "joblib": "1.4.2"
+  }
+}

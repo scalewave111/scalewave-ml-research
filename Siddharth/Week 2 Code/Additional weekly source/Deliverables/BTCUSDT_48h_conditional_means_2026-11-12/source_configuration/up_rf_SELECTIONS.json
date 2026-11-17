@@ -1,0 +1,218 @@
+[
+  {
+    "issue": "2024-01-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 76881.8174529578,
+    "model_file": "2024-01_UP_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-01-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "four",
+    "validation_mse_bps2": 79176.52915999289,
+    "model_file": "2024-01_UP_rf_four.joblib"
+  },
+  {
+    "issue": "2024-01-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "selected",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 76881.8174529578,
+    "model_file": "2024-01_UP_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-01-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 33768.956339573204,
+    "model_file": "2024-01_DOWN_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-01-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "four",
+    "validation_mse_bps2": 35292.052614864595,
+    "model_file": "2024-01_DOWN_rf_four.joblib"
+  },
+  {
+    "issue": "2024-01-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "selected",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 33768.956339573204,
+    "model_file": "2024-01_DOWN_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-04-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "four",
+    "validation_mse_bps2": 103432.4718667103,
+    "model_file": "2024-04_UP_mlp_four.joblib"
+  },
+  {
+    "issue": "2024-04-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "four",
+    "validation_mse_bps2": 105641.85370637609,
+    "model_file": "2024-04_UP_rf_four.joblib"
+  },
+  {
+    "issue": "2024-04-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "selected",
+    "family": "mlp",
+    "pack": "four",
+    "validation_mse_bps2": 103432.4718667103,
+    "model_file": "2024-04_UP_mlp_four.joblib"
+  },
+  {
+    "issue": "2024-04-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "five",
+    "validation_mse_bps2": 50143.11771326759,
+    "model_file": "2024-04_DOWN_mlp_five.joblib"
+  },
+  {
+    "issue": "2024-04-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "eight",
+    "validation_mse_bps2": 46778.43346552322,
+    "model_file": "2024-04_DOWN_rf_eight.joblib"
+  },
+  {
+    "issue": "2024-04-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "selected",
+    "family": "rf",
+    "pack": "eight",
+    "validation_mse_bps2": 46778.43346552322,
+    "model_file": "2024-04_DOWN_rf_eight.joblib"
+  },
+  {
+    "issue": "2024-07-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 47929.45566253099,
+    "model_file": "2024-07_UP_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-07-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "four",
+    "validation_mse_bps2": 49663.86084735102,
+    "model_file": "2024-07_UP_rf_four.joblib"
+  },
+  {
+    "issue": "2024-07-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "selected",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 47929.45566253099,
+    "model_file": "2024-07_UP_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-07-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 50643.54157300022,
+    "model_file": "2024-07_DOWN_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-07-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "four",
+    "validation_mse_bps2": 52523.293605923114,
+    "model_file": "2024-07_DOWN_rf_four.joblib"
+  },
+  {
+    "issue": "2024-07-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "selected",
+    "family": "mlp",
+    "pack": "eight",
+    "validation_mse_bps2": 50643.54157300022,
+    "model_file": "2024-07_DOWN_mlp_eight.joblib"
+  },
+  {
+    "issue": "2024-10-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "five",
+    "validation_mse_bps2": 63578.22879635029,
+    "model_file": "2024-10_UP_mlp_five.joblib"
+  },
+  {
+    "issue": "2024-10-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "eight",
+    "validation_mse_bps2": 65597.54975210155,
+    "model_file": "2024-10_UP_rf_eight.joblib"
+  },
+  {
+    "issue": "2024-10-01 00:00:00+00:00",
+    "side": "UP",
+    "policy": "selected",
+    "family": "mlp",
+    "pack": "five",
+    "validation_mse_bps2": 63578.22879635029,
+    "model_file": "2024-10_UP_mlp_five.joblib"
+  },
+  {
+    "issue": "2024-10-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "mlp",
+    "family": "mlp",
+    "pack": "four",
+    "validation_mse_bps2": 89616.95406121078,
+    "model_file": "2024-10_DOWN_mlp_four.joblib"
+  },
+  {
+    "issue": "2024-10-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "rf",
+    "family": "rf",
+    "pack": "four",
+    "validation_mse_bps2": 99369.20972707379,
+    "model_file": "2024-10_DOWN_rf_four.joblib"
+  },
+  {
+    "issue": "2024-10-01 00:00:00+00:00",
+    "side": "DOWN",
+    "policy": "selected",
+    "family": "mlp",
+    "pack": "four",
+    "validation_mse_bps2": 89616.95406121078,
+    "model_file": "2024-10_DOWN_mlp_four.joblib"
+  }
+]

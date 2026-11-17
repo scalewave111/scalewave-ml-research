@@ -1,0 +1,78 @@
+{
+  "status": "COMPLETE",
+  "comparison": [
+    {
+      "procedure": "current",
+      "log_loss": 0.6893547637358126,
+      "Brier": 0.24810038250766053,
+      "delta_log_loss": 0.0,
+      "delta_Brier": 0.0,
+      "periods_better": 0
+    },
+    {
+      "procedure": "selected",
+      "log_loss": 0.6893481462436503,
+      "Brier": 0.24809701727429065,
+      "delta_log_loss": -6.617492162352967e-06,
+      "delta_Brier": -3.3652333698841463e-06,
+      "periods_better": 2
+    },
+    {
+      "procedure": "head",
+      "log_loss": 0.6893422178845662,
+      "Brier": 0.24809410298065518,
+      "delta_log_loss": -1.2545851246437145e-05,
+      "delta_Brier": -6.2795270053539465e-06,
+      "periods_better": 3
+    },
+    {
+      "procedure": "all",
+      "log_loss": 0.689354153788584,
+      "Brier": 0.24809997104250142,
+      "delta_log_loss": -6.099472286136276e-07,
+      "delta_Brier": -4.114651591113905e-07,
+      "periods_better": 1
+    }
+  ],
+  "seeds": [
+    {
+      "procedure": "s48",
+      "log_loss": 0.6895970762855866,
+      "Brier": 0.24822047630168345,
+      "delta_log_loss": 0.0002423125497740264,
+      "delta_Brier": 0.00012009379402291853,
+      "periods_better": 0
+    },
+    {
+      "procedure": "s148",
+      "log_loss": 0.6892124345909971,
+      "Brier": 0.24802962723070385,
+      "delta_log_loss": -0.00014232914481548953,
+      "delta_Brier": -7.075527695668549e-05,
+      "periods_better": 1
+    },
+    {
+      "procedure": "s248",
+      "log_loss": 0.6892440157414306,
+      "Brier": 0.24804546454904886,
+      "delta_log_loss": -0.0001107479943820433,
+      "delta_Brier": -5.49179586116777e-05,
+      "periods_better": 2
+    }
+  ],
+  "passes_gate": true,
+  "development_scored": true,
+  "both_development_metrics_improved": true,
+  "development_result": {
+    "MAE": 182.03697721076213,
+    "log_loss": 0.6839275337763734,
+    "Brier": 0.2454357690142012
+  },
+  "previous_frozen": {
+    "MAE": 182.03697721076213,
+    "log_loss": 0.6839391462047304,
+    "Brier": 0.24544145058651534
+  },
+  "new_fits": 24,
+  "cumulative_fits": 3394
+}

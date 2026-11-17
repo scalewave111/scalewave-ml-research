@@ -1,0 +1,95 @@
+{
+  "status": "VERIFIED",
+  "experiment": "ensemble_context_flow_flow_activity_percentile__5m",
+  "metrics": {
+    "incumbent": {
+      "MAE": 180.81520672728772,
+      "Spearman_IC": 0.07795173134982929
+    },
+    "prediction": {
+      "MAE": 180.79851809782613,
+      "Spearman_IC": 0.07852651265983954
+    }
+  },
+  "selected_settings": [
+    {
+      "fold": 1,
+      "variant": "ensemble",
+      "weight": 0.5,
+      "MAE": 153.36043436757004,
+      "depth": 5,
+      "leaf": 64,
+      "max_samples": 16384,
+      "seeds": [
+        48,
+        17,
+        91
+      ]
+    },
+    {
+      "fold": 2,
+      "variant": "ensemble",
+      "weight": 0.5,
+      "MAE": 209.28962980606767,
+      "depth": 5,
+      "leaf": 64,
+      "max_samples": 16384,
+      "seeds": [
+        48,
+        17,
+        91
+      ]
+    },
+    {
+      "fold": 3,
+      "variant": "ensemble",
+      "weight": 0.25,
+      "MAE": 153.97158571622793,
+      "depth": 5,
+      "leaf": 128,
+      "max_samples": 4096,
+      "seeds": [
+        48,
+        17,
+        91
+      ]
+    },
+    {
+      "fold": 4,
+      "variant": "ensemble",
+      "weight": 0.0,
+      "MAE": 193.99331532699136,
+      "depth": 3,
+      "leaf": 128,
+      "max_samples": 4096,
+      "seeds": [
+        48,
+        17,
+        91
+      ]
+    }
+  ],
+  "rows": 18481,
+  "new_model_fits": 24,
+  "new_selection_steps": 4,
+  "cumulative_counted_steps": 1288,
+  "nominal_intervals": [
+    {
+      "block_days": 7,
+      "delta_MAE": -0.01668862946154859,
+      "interval": [
+        -0.0394839469141168,
+        0.00180014740508962
+      ]
+    },
+    {
+      "block_days": 14,
+      "delta_MAE": -0.01668862946154859,
+      "interval": [
+        -0.0458072526384302,
+        0.004107166072312214
+      ]
+    }
+  ],
+  "interpretation": "One additional context feature in RF only. Fixed seeds 48/17/91 equally averaged; incumbent per-fold depth, leaf size, bootstrap samples and 128 trees per seed unchanged. Earlier validation chooses blend weight on original grid. Same target, rows and temporal purges. Adaptive development; fresh data untouched."
+}

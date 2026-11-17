@@ -1,0 +1,70 @@
+{
+  "run_id": "direction_finetune_v45",
+  "rows": 18481,
+  "candidate": {
+    "MAE": 182.03697721076213,
+    "log_loss": 0.6839275337763734,
+    "Brier": 0.2454357690142012
+  },
+  "frozen_pair": {
+    "MAE": 182.03697721076213,
+    "log_loss": 0.6849584812656719,
+    "Brier": 0.2459248328234847
+  },
+  "M0": {
+    "MAE": 187.83107169705042,
+    "log_loss": 0.6920228537053011,
+    "Brier": 0.2494378609603519
+  },
+  "delta_vs_pair": {
+    "MAE": -1.8300868038623868e-16,
+    "log_loss": -0.0010309474892984997,
+    "Brier": -0.0004890638092835476
+  },
+  "magnitude_average_win": false,
+  "direction_average_win": true,
+  "months_better_pair": {
+    "MAE": 0,
+    "log_loss": 8,
+    "Brier": 8
+  },
+  "nominal_paired_block_intervals": [
+    {
+      "metric": "MAE",
+      "block_days": 7,
+      "low": -5.798886210285147e-16,
+      "high": 2.3259251538429955e-16
+    },
+    {
+      "metric": "log_loss",
+      "block_days": 7,
+      "low": -0.008540658791491768,
+      "high": 0.00585998380889634
+    },
+    {
+      "metric": "Brier",
+      "block_days": 7,
+      "low": -0.0041722876519077355,
+      "high": 0.0028996969435306653
+    },
+    {
+      "metric": "MAE",
+      "block_days": 14,
+      "low": -5.572413279108388e-16,
+      "high": 1.9174683546936624e-16
+    },
+    {
+      "metric": "log_loss",
+      "block_days": 14,
+      "low": -0.008727390971638077,
+      "high": 0.006454157246742033
+    },
+    {
+      "metric": "Brier",
+      "block_days": 14,
+      "low": -0.004277262641149511,
+      "high": 0.003166877789198674
+    }
+  ],
+  "interpretation": "Development comparison only. Average win is not promotion. Intervals do not correct team-wide or prior adaptive selection. Metadata is self-declared; code/lineage review required."
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "copied_files": 660,
+  "copies_byte_identical": true,
+  "inspected_originals_unchanged": 708,
+  "reports": [
+    {
+      "week": "1",
+      "pages": 167,
+      "intro_pages": 4,
+      "bookmarks": 14,
+      "rendered_review_pages": 17,
+      "source_page_text_and_geometry": "all matched"
+    },
+    {
+      "week": "2",
+      "pages": 799,
+      "intro_pages": 5,
+      "bookmarks": 24,
+      "rendered_review_pages": 28,
+      "source_page_text_and_geometry": "all matched"
+    },
+    {
+      "week": "3",
+      "pages": 591,
+      "intro_pages": 4,
+      "bookmarks": 13,
+      "rendered_review_pages": 16,
+      "source_page_text_and_geometry": "all matched"
+    }
+  ],
+  "training_or_inference_executed": false,
+  "raw_datasets_revalidated": false,
+  "visual_review": "All 13 new summary/contents pages and first page of all 48 source PDFs inspected across 7 contact sheets; no new clipping or overlap observed. Original oversized feature matrix retained alongside readable version."
+}

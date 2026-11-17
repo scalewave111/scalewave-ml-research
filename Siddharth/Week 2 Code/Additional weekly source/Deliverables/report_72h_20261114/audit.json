@@ -1,0 +1,114 @@
+[
+  {
+    "experiment": "Price feature follow-up",
+    "path": "excursion_pipeline_72h_v1/20261113T111815030467Z/price_followup/20261113T113500606206Z",
+    "prediction_sha256": "714a84f7ae6dc3fffcd830614d5bd6d1c843ce63352710cf0c668ae3fce9be51",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Tuned original trees",
+    "path": "excursion_tuning_72h_v1/20261113T120003142401Z",
+    "prediction_sha256": "052ae36bad8ccb1584babb16b28cab9dff65c816f9287ac93cee06e23c648444",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Rolling median policy",
+    "path": "rolling_medians_72h_v1/20261113T121450890192Z",
+    "prediction_sha256": "3024296deee004974b7f4d143ed6a9b2489a237f110eadf8b5f192977dd54018",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Original neural MLP",
+    "path": "excursion_neural_72h_v1/20261113T123304519186Z",
+    "prediction_sha256": "10539b8684b2fe5f4def00a447fcccd06d1a67ca1d84a4f9f0358acaafb41b9c",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Fresh long-feature search",
+    "path": "long_features_72h_v1/20261114T074315743848Z",
+    "prediction_sha256": "1d46c7381ba9c2319b6976896b84ce9b9c9b7af073fe1bbc45d43a0a20a8c068",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Compact trees",
+    "path": "compact_trees_72h_v1/20261114T080702116226Z",
+    "prediction_sha256": "ba009a5dee0231343a6babe082ae6c046ed481d11aa7bbbeaa4337b5cc80b02b",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Transformed spline and ExtraTrees",
+    "path": "transformed_models_72h_v1/20261114T085824921737Z",
+    "prediction_sha256": "018f555ce9d5f2e3c2b44f482f4102b2aa8476be5a27497f84292060c1072316",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Guarded residual and sizing models",
+    "path": "guarded_down_72h_v1/20261114T112121591551Z",
+    "prediction_sha256": "388fb2b044fc722a7c0987825fdc5333bf1bed43c4ba7a45aa7e81b43d230b8b",
+    "rows": 18385,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Quarterly anchor residual tree",
+    "path": "quarterly_anchor_down_72h_v1/20261114T113416293003Z",
+    "prediction_sha256": "80d6bc78b2e9e47586f143f5a84478919139a3f408e9dca261f5823e39c7e431",
+    "rows": 18385,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Fast market HGB",
+    "path": "market_state_down_72h_fast_v1/20261114T120044967681Z",
+    "prediction_sha256": "b0ae9026c205f9d0c8cac6bddc3a0f915cf51e7164873e0d81237b01f300705d",
+    "rows": 18385,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Focused market HGB",
+    "path": "focused_hgb_both_72h_v1/20261114T121742176686Z",
+    "prediction_sha256": "ff686266c0556dc1c11b67c10cbbcee375b2bc299f7ea418ad5b359bd33b08a6",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Best-model residual calibration",
+    "path": "best_models_calibration_72h_v1/20261114T122359645306Z",
+    "prediction_sha256": "ddabc0f40189cd5c5ab9d4d28825c6c0aa10115f8535722fe0d91cc464f52992",
+    "rows": 36770,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "Market MLP and GRU search",
+    "path": "neural_market_down_72h_v1/20261114T123111032438Z",
+    "prediction_sha256": "00a157d8e9947fb674e5d5aa9c057154fc9781baab74cd5f8570deb721002985",
+    "rows": 18385,
+    "hash_verified": true,
+    "reported_replay": true
+  },
+  {
+    "experiment": "UP market GRU search",
+    "path": "gru_market_up_72h_v1/20261114T123538599800Z",
+    "prediction_sha256": "385bd571522c81acc3139fcfda3067f066a83f4a6fffec0ee2020b3121d92f46",
+    "rows": 18385,
+    "hash_verified": true,
+    "reported_replay": true
+  }
+]

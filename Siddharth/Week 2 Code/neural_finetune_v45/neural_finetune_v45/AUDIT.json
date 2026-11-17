@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "replayed_models": 24,
+  "warm_start_hashes_checked": true,
+  "output_only_hidden_weights_unchanged": true,
+  "training_only_preprocessing_recomputed": true,
+  "chronological_purge_verified": true,
+  "ledger_reconciled": true,
+  "frozen_unchanged": true
+}

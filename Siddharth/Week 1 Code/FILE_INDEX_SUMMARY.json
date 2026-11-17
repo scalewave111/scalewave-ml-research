@@ -1,0 +1,32 @@
+{
+  "generated_at_utc": "2026-11-04T13:24:19.484402+00:00",
+  "root": "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 1\\Code",
+  "file_count": 1997,
+  "scope": "All files enumerated recursively, including hidden files; no ignore filters; directory symlinks not followed; archives not expanded; contents not read.",
+  "by_top_level": {
+    "(root)": 120,
+    "__pycache__": 51,
+    "experiments": 1686,
+    "output": 9,
+    "tmp": 131
+  },
+  "by_extension": {
+    ".pt": 990,
+    ".json": 294,
+    ".joblib": 237,
+    ".py": 155,
+    ".csv": 125,
+    ".pyc": 96,
+    ".txt": 53,
+    ".ipynb": 20,
+    ".png": 10,
+    "(none)": 5,
+    ".pdf": 4,
+    ".log": 3,
+    ".md": 2,
+    ".exe": 1,
+    ".ijg": 1,
+    ".dll": 1
+  },
+  "traversal_errors": []
+}

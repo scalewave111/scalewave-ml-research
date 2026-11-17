@@ -1,0 +1,17 @@
+{
+  "feature": "F4Z__liquidation__liq_activity_severity_active_severity_percentile__4h__value",
+  "observed_rows": 48096,
+  "sampling": "30-minute prepared observations, gaps break episodes",
+  "definition": "Observed crossing from <=0.75 into (0.75,0.99), then first >=0.99 before returning <=0.75",
+  "start_episodes": 1038,
+  "reached_099": 68,
+  "fell_back": 968,
+  "censored_episodes": 2,
+  "direct_jumps_to_099_excluded": 2,
+  "unobserved_entry_above_075_after_gap": 2,
+  "priced_hits": 68,
+  "mean_signed_return_bps": -7.100753012556295,
+  "median_signed_return_bps": -28.02223587453946,
+  "mean_absolute_return_bps": 306.83293092748454,
+  "mean_minutes_to_099": 191.02941176470588
+}

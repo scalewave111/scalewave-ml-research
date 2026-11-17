@@ -1,0 +1,43 @@
+{
+  "version": "TEAM_48H_PLAYGROUND_V1",
+  "asset": "BTCUSDT",
+  "horizon_minutes": 2880,
+  "cadence_minutes": 30,
+  "objectives": [
+    "magnitude: conditional median absolute endpoint log return; MAE",
+    "direction: probability endpoint log return >0; log loss and Brier"
+  ],
+  "target_return": "10000*ln(P[t+48h]/P[t]); historical canonical f066 reference price; exact saved population preserved",
+  "training_rows": 29615,
+  "purge_rows": 96,
+  "development_rows": 18481,
+  "cutoff": "2024-01-01T00:00:00Z",
+  "inner_folds": [
+    [
+      "2023-04-01T00:00:00Z",
+      "2023-07-01T00:00:00Z"
+    ],
+    [
+      "2023-07-01T00:00:00Z",
+      "2023-10-01T00:00:00Z"
+    ],
+    [
+      "2023-10-01T00:00:00Z",
+      "2024-01-01T00:00:00Z"
+    ]
+  ],
+  "purge": "training label_end strictly before first validation origin; original training mask limits final fold",
+  "input_universe": "522 masked F4Z fields; per-training-fold >=1000 usable varied readings as initial admission; full-train 384",
+  "initial_fit_budget_per_member": 20,
+  "team_members": 4,
+  "team_fit_budget": 80,
+  "scoring_probability_clip": 1e-15,
+  "no_feature_constants": {
+    "magnitude": 161.46183882158175,
+    "p_up": 0.5057909842984973
+  },
+  "development_status": "PREVIOUSLY_EXPOSED_NOT_HOLDOUT",
+  "acceptance": "average win flags are development screening only; direction must lower both log loss and Brier; report monthly and nominal paired uncertainty; no automatic alpha/promotion",
+  "baseline_replay_fits": 0,
+  "preprocessing": "challenger-specific but training-only; preserve every development origin; unavailable Y never imputed"
+}

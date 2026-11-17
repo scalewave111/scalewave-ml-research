@@ -1,0 +1,20 @@
+{
+  "conditional_mean_predictions.csv": "8a22bdb599dae38c8fba8b13490fc3fde666b253e20ff68712e1bbdb969ba5a3",
+  "export_conditional_mean_handoff.py": "489d6c1ae8eee43da1b335238f9411ee63c533f2dc82ca5e197f9eac7f757c08",
+  "export_configuration.json": "3b821b9198d1c301c59204c6460d5521a925127d0d4b179cb4cbb76048307e46",
+  "missing_predictions.csv": "5f042f74bafdf8b5c5d21583b24e0bd49d75cea0090fa845fe6e06865923cbf8",
+  "README.txt": "2c02e2ff2dc9c2e14f804b1ccadc2587bdfc4a667766f106d4c9a6e60b80fa3f",
+  "source_configuration/canonical_return_features.py": "fc82eb82d056eb842d77c8be5869f2b2d3c305c6bdcfc9afac7f479bd5f913df",
+  "source_configuration/down_hybrid_COMPLETE.json": "9c8c1b42d750e581d8828983a70fee1c7af1aa3201f09aca8cd2784b74959f74",
+  "source_configuration/down_hybrid_CONTRACT.json": "83f8f25c6068d99ded94987139c8ba27933ec16d44294255281d302e833bad3f",
+  "source_configuration/down_hybrid_FIT_AUDIT.json": "f1f36ccefb613b8459ed30ccf00b85cba286ea18513cd9ad50aa4cfe25c007a8",
+  "source_configuration/original_target_CONTRACT.json": "34f1bfdfdd5862947a23723ab81acfba93d98ba0241487e20eaa566ed6e29ac4",
+  "source_configuration/up_rf_COMPLETE.json": "7a55add6b8dbb5e234653e0ba33c9ea05ff096c3da04a98c8c370034f1e5fc54",
+  "source_configuration/up_rf_CONTRACT.json": "1347629720cdcb1d0dfc875b0310ef75974afede062bf29d46e6c97e188285c7",
+  "source_configuration/up_rf_FIT_AUDIT.json": "6ed79f326059d3bd9b266b06c3b052320f73198ff2ff10dc1814382a12352c44",
+  "source_configuration/up_rf_SELECTIONS.json": "fbadb77f4804e32e5cfc7f4bbf63aa6e8b73da66d9dc1ab0c918494c5e88d510",
+  "training_refit_ledger.csv": "3045fb8f410a362d3fc2d6d2ccf4195ae625d9090f5f035a58066d705a493672",
+  "training_scripts/fit_conditional_48h_mean_features.py": "a86597d2bb410cb2192e9143bafe7f7d4e16686a703d349a8e486fb79e80a63b",
+  "training_scripts/fit_conditional_means_signed_48h.py": "a57a34452f0001759e129a816dd4717654f498ad6d33bc1b89ae02e7927f0bd8",
+  "training_scripts/fit_mlp_rf_conditional_means_48h.py": "be7525b16da44427da5bf5c9d5429e2a3b0fadbaa932ab5c9532e1aba607cdda"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "rows": 18481,
+  "folds": 4,
+  "training_performed": true,
+  "direction_retrained": false,
+  "saved_model_replay_passed": true,
+  "contract_sha256": "83f8f25c6068d99ded94987139c8ba27933ec16d44294255281d302e833bad3f",
+  "prediction_sha256": "ed889ac783630a985a6b21c82dfa4f49d659577a7236af98eace2cbf1e8aa48b"
+}
