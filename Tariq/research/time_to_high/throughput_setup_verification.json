@@ -1,0 +1,26 @@
+{
+  "status": "PASS_LOCAL_SYNTHETIC_CHECKS_REAL_CACHE_BENCHMARK_PENDING",
+  "checks": [
+    "existing screen runner synthetic ingestion/purge/cache tests passed",
+    "five synthetic equivalence cases: exact predictions, scores, selection and fallback",
+    "two concurrent fit tasks",
+    "immutable ordered bounded checkpoint snapshots",
+    "upload failure propagation",
+    "self-contained notebook syntax and embedded source validation"
+  ],
+  "sha256": {
+    "screen_runner.py": "e584210af02adb15168245cd13e2cb6603eed882069cb75cd877d29122a6821b",
+    "screen_throughput.py": "29fd33d96055bc3fe20829806211d34333ec4e0be12fb676c9bb37d4d0f5ed7b",
+    "test_screen_throughput.py": "32323ef8dfa457ee4e21517d3c009352732086812186d30ca16cb054bd09be22",
+    "build_throughput_notebook.py": "9785d736a531d79880c4ecf8c103bf8b5167e9ca56f7af90efd01c4cd182b457",
+    "Time_To_High_Throughput_Check.ipynb": "d0d9f8e64ba0142057f9f1623dfb947f8faff903084bcc423b5a7b0750629083"
+  },
+  "pilot_declared_runner_sha256": "25ae53d6a34e1695381372f46bcd26298428c341517336f3096e6d9815b172f0",
+  "reference_matches_pilot_notebook_code": true,
+  "historical_hash_discrepancy": "Current reference content differs from declared historical hash; no automatic identity migration. Remote check must reproduce saved pilot scores.",
+  "real_data_fits_run_locally": 0,
+  "colab_check_max_fits": 42,
+  "full_screen_authorized": false,
+  "research_results_modified": false,
+  "next": "Run Time_To_High_Throughput_Check.ipynb in Colab; review THROUGHPUT_CHECK.json before any full expansion."
+}

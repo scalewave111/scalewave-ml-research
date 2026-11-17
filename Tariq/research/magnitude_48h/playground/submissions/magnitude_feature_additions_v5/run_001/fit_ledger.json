@@ -1,0 +1,290 @@
+[
+  {
+    "fit_number": 1,
+    "fold": 1,
+    "candidate": "variance_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:26.633546+00:00"
+  },
+  {
+    "fit_number": 2,
+    "fold": 1,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:31.163455+00:00"
+  },
+  {
+    "fit_number": 3,
+    "fold": 1,
+    "candidate": "variance_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:31.209815+00:00"
+  },
+  {
+    "fit_number": 4,
+    "fold": 1,
+    "candidate": "flow_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:36.269764+00:00"
+  },
+  {
+    "fit_number": 5,
+    "fold": 1,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:40.992021+00:00"
+  },
+  {
+    "fit_number": 6,
+    "fold": 1,
+    "candidate": "flow_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:41.009756+00:00"
+  },
+  {
+    "fit_number": 7,
+    "fold": 1,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:45.920234+00:00"
+  },
+  {
+    "fit_number": 8,
+    "fold": 1,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:50.023610+00:00"
+  },
+  {
+    "fit_number": 9,
+    "fold": 1,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:50.043608+00:00"
+  },
+  {
+    "fit_number": 10,
+    "fold": 2,
+    "candidate": "variance_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:54.303025+00:00"
+  },
+  {
+    "fit_number": 11,
+    "fold": 2,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:59.591726+00:00"
+  },
+  {
+    "fit_number": 12,
+    "fold": 2,
+    "candidate": "variance_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:27:59.612732+00:00"
+  },
+  {
+    "fit_number": 13,
+    "fold": 2,
+    "candidate": "flow_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:05.378731+00:00"
+  },
+  {
+    "fit_number": 14,
+    "fold": 2,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:10.772112+00:00"
+  },
+  {
+    "fit_number": 15,
+    "fold": 2,
+    "candidate": "flow_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:10.792547+00:00"
+  },
+  {
+    "fit_number": 16,
+    "fold": 2,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:16.399718+00:00"
+  },
+  {
+    "fit_number": 17,
+    "fold": 2,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:21.005508+00:00"
+  },
+  {
+    "fit_number": 18,
+    "fold": 2,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:21.025803+00:00"
+  },
+  {
+    "fit_number": 19,
+    "fold": 3,
+    "candidate": "variance_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:25.609014+00:00"
+  },
+  {
+    "fit_number": 20,
+    "fold": 3,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:31.484850+00:00"
+  },
+  {
+    "fit_number": 21,
+    "fold": 3,
+    "candidate": "variance_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:31.505729+00:00"
+  },
+  {
+    "fit_number": 22,
+    "fold": 3,
+    "candidate": "flow_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:37.649440+00:00"
+  },
+  {
+    "fit_number": 23,
+    "fold": 3,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:43.687829+00:00"
+  },
+  {
+    "fit_number": 24,
+    "fold": 3,
+    "candidate": "flow_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:43.713829+00:00"
+  },
+  {
+    "fit_number": 25,
+    "fold": 3,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:49.850616+00:00"
+  },
+  {
+    "fit_number": 26,
+    "fold": 3,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:54.349312+00:00"
+  },
+  {
+    "fit_number": 27,
+    "fold": 3,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:54.373308+00:00"
+  },
+  {
+    "fit_number": 28,
+    "fold": 4,
+    "candidate": "variance_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:28:58.850956+00:00"
+  },
+  {
+    "fit_number": 29,
+    "fold": 4,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:05.388034+00:00"
+  },
+  {
+    "fit_number": 30,
+    "fold": 4,
+    "candidate": "variance_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:05.414284+00:00"
+  },
+  {
+    "fit_number": 31,
+    "fold": 4,
+    "candidate": "flow_rz_4h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:11.324348+00:00"
+  },
+  {
+    "fit_number": 32,
+    "fold": 4,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:17.358331+00:00"
+  },
+  {
+    "fit_number": 33,
+    "fold": 4,
+    "candidate": "flow_rz_4h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:17.382211+00:00"
+  },
+  {
+    "fit_number": 34,
+    "fold": 4,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:23.510100+00:00"
+  },
+  {
+    "fit_number": 35,
+    "fold": 4,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:28.525399+00:00"
+  },
+  {
+    "fit_number": 36,
+    "fold": 4,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T07:29:28.550038+00:00"
+  }
+]

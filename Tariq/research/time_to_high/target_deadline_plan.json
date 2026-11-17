@@ -1,0 +1,30 @@
+{
+  "status": "SUPERSEDED_BY_USER_CONTINUOUS_STAGED_RUN",
+  "recorded_at_utc": "2026-11-16T11:05:48Z",
+  "timezone": "Asia/Calcutta",
+  "next_target_start_deadline": "2026-11-17T14:00:00+05:30",
+  "current_target_training_cutoff": null,
+  "verification_and_report_window": null,
+  "next_target_setup_window": null,
+  "current_target": "time_to_high_min",
+  "next_target": "time_to_low_min",
+  "scope": "Deadline-limited first research pass; aim for all ten horizons, but report any untested/incomplete work explicitly. No exhaustive or optimality claim.",
+  "preserve": [
+    "All uploaded pilot/current-run fit receipts",
+    "Original baselines and sources",
+    "Chronological evaluation and identical rows",
+    "Training-only preprocessing and strict label-end purging",
+    "Final-six-month reserve exclusion"
+  ],
+  "method_change": "Cheaper predefined broad screen and tightly bounded shortlist evaluation, chosen using earlier data only; implementation and runtime budget still to be specified.",
+  "execution_constraints": [
+    "No full individual-tree search across all horizons under this deadline",
+    "No assumption of uninterrupted Colab Pro overnight execution",
+    "One active horizon/runtime workload at a time while Drive quota remains a concern",
+    "Codex cannot stop the already running Colab notebook automatically; new deadline controls require revised code"
+  ],
+  "deliverable": "Verified provisional matrix and visual report distinguishing baseline-only, tested, partial and untested candidates; retain reusable caches and start next-target setup by 13:00 IST.",
+  "new_real_data_run_launched": false,
+  "latest_user_instruction": "Let unified staged notebook fully run; tomorrow 10am is approximate, do not stop for the clock.",
+  "next_target_start_deadline_is_guaranteed": false
+}

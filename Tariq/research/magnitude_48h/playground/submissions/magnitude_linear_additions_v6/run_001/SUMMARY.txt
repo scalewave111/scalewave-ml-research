@@ -1,0 +1,18 @@
+MEDIAN-REGRESSION FEATURE ADDITIONS: VERIFIED RESULTS
+Same 48-hour target, same 18,481 scoring rows, same four quarterly outer windows.
+One feature added to the liquidation median regression in each experiment.
+RF models unchanged. Blend weights selected by MAE using earlier three-month inner validation.
+Strict label-end purging and training-only preprocessing; fresh test not accessed.
+
+             model        MAE  MAE_delta_vs_incumbent  Spearman_IC  Pearson_IC
+  incumbent_hybrid 181.523868                0.000000     0.077377    0.044004
+flow_percentile_1h 181.783494                0.259626     0.084478    0.054044
+    variance_rz_4h 182.880572                1.356704     0.073056    0.040246
+        flow_rz_4h 183.012566                1.488698     0.067886    0.033585
+
+Selected RF weights by fold: {"flow_percentile_1h": {"1": 0.5, "2": 0.5, "3": 0.25, "4": 0.0}, "variance_rz_4h": {"1": 0.5, "2": 0.5, "3": 0.5, "4": 0.5}, "flow_rz_4h": {"1": 0.5, "2": 0.5, "3": 0.5, "4": 0.5}}
+Decision: NO_PROMOTION; benchmark MAE 181.5238678328609
+24 model fits plus 12 historical blend selections. No additional tuning or combinations.
+Spearman is diagnostic only. Nominal block intervals do not account for adaptive experiment selection.
+See RESULT.json for paired 7-/14-day block intervals and monthly improvement counts.
+Other horizons require matching labels, cached RF models, fold dates and separate benchmarks.

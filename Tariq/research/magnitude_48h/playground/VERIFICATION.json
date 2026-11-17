@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "benchmark_replay": "both targets",
+  "independent_metrics": {
+    "MAE": 182.03697721076213,
+    "log_loss": 0.6849584812656719,
+    "Brier": 0.2459248328234847
+  },
+  "baseline_replay_is_not_win": true,
+  "invalid_submissions_rejected": [
+    "missing_row",
+    "reordered",
+    "duplicate",
+    "nonfinite",
+    "probability",
+    "negative_magnitude"
+  ],
+  "new_fits": 0,
+  "test_scratch": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\tmp\\team48h_verify_6d474qx_",
+  "scope": "Prepared data and scoring implementation; not upstream exchange reconstruction or unseen confirmation"
+}

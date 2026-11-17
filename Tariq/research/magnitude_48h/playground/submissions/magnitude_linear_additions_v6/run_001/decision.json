@@ -1,0 +1,33 @@
+{
+  "decision": "NO_PROMOTION",
+  "lowest_MAE_model": "incumbent_hybrid",
+  "criterion": "Verified same-row MAE only; Spearman tracked without a promotion gate.",
+  "previous_benchmark": {
+    "experiment": "magnitude_rf_hybrid_v4",
+    "prediction_file": "submissions/magnitude_rf_hybrid_v4/run_001/predictions.parquet",
+    "prediction_column": "selected_blend",
+    "MAE": 181.5238678328609,
+    "verification": "submissions/magnitude_rf_hybrid_v4/run_001/verification.json",
+    "prediction_sha256": "d205be577fd17ecc9f71630fc733612704168789e29b511b8641173166964ccb",
+    "Spearman_IC": 0.07737672515285152,
+    "Pearson_IC": 0.04400400482390407,
+    "IC_verification": "submissions/magnitude_ic_audit_v1/results/RESULT.json"
+  },
+  "candidate_scores": {
+    "flow_percentile_1h": 181.78349428946552,
+    "variance_rz_4h": 182.88057185964513,
+    "flow_rz_4h": 183.01256563379206
+  },
+  "verification": "submissions\\magnitude_linear_additions_v6\\run_001\\verification.json",
+  "current_benchmark": {
+    "experiment": "magnitude_rf_hybrid_v4",
+    "prediction_file": "submissions/magnitude_rf_hybrid_v4/run_001/predictions.parquet",
+    "prediction_column": "selected_blend",
+    "MAE": 181.5238678328609,
+    "verification": "submissions/magnitude_rf_hybrid_v4/run_001/verification.json",
+    "prediction_sha256": "d205be577fd17ecc9f71630fc733612704168789e29b511b8641173166964ccb",
+    "Spearman_IC": 0.07737672515285152,
+    "Pearson_IC": 0.04400400482390407,
+    "IC_verification": "submissions/magnitude_ic_audit_v1/results/RESULT.json"
+  }
+}

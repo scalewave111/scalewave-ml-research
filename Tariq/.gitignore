@@ -1,0 +1,25 @@
+# Private input data, caches and local environments
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.matplotlib/
+.validation/
+/research/feature_exploration/Reports/
+**/data/
+**/Data/
+**/cache/
+**/caches/
+*.zip
+*.pkl
+*.joblib
+!research/magnitude_48h/playground/submissions/magnitude_current/run_001/fold_*_selected.joblib
+*.parquet
+!research/magnitude_48h/playground/submissions/magnitude_current/run_001/predictions.parquet
+.env
+.env.*
+*credentials*.json
+*token*.json
+*.pem
+*.key

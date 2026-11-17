@@ -1,0 +1,7 @@
+{
+  "deadline_local": "2026-11-04T18:00:00+05:30",
+  "experiment": "rf_depth7_extension",
+  "endpoint": "Complete registered depth extension; promote only verified lower MAE, audit retained winner, document diminishing returns and limitations, prune failed/superseded output files.",
+  "claim_limit": "No finite experiment set proves global optimality or that no further experiment can improve MAE.",
+  "fresh_test": "Deferred and untouched."
+}

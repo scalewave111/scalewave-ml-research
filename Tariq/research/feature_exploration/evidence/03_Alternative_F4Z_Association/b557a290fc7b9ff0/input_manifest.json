@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "NON_EXTREME",
+    "path": "C:\\ScaleWave\\Reports\\F4Z_Notebook_Verification\\Data\\BTCUSDT_signed_return_between_minus500_and_plus500_20261027_101854_1aefb791.parquet",
+    "size_bytes": 1568561,
+    "mtime_ns": 1793361200304796000,
+    "rows": 9398,
+    "schema_sha256": "6f8ef10c2d357fe7a3bb48c8ec946d22dbe65c6588209bcca21bfb92e5359b64"
+  },
+  {
+    "dataset": "EXTREME",
+    "path": "C:\\ScaleWave\\Reports\\F4Z_Notebook_Verification\\Data\\BTCUSDT_signed_return_above_500_or_below_minus500_20261027_093028_e1453352.parquet",
+    "size_bytes": 461991,
+    "mtime_ns": 1793361200334807300,
+    "rows": 2675,
+    "schema_sha256": "6f8ef10c2d357fe7a3bb48c8ec946d22dbe65c6588209bcca21bfb92e5359b64"
+  }
+]

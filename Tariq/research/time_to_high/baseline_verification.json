@@ -1,0 +1,22 @@
+{
+  "status": "PASS_RECEIPT_CONSISTENCY",
+  "source_drive_file_id": "1Xbf_ZqzmvxfWs1h7Iz_L5yd88Vv_K8RT",
+  "result_sha256": "75d1caf13677e8ab146a52712424bc922afef94d87add1db4953ee264a1d8c6e",
+  "checks": [
+    "local contract equals remote contract",
+    "identity fingerprint",
+    "local notebook runner fingerprint",
+    "all ten horizons complete",
+    "270 partition hashes match supplied release manifest",
+    "allowed month names only",
+    "latest outcomes before reserve",
+    "recorded strict fold label maturity",
+    "weighted pooled scores recomputed from fold metrics",
+    "v2 mean extension: original ten-horizon receipts unchanged except added mean scores",
+    "three baseline weighted score arithmetic"
+  ],
+  "limits": "Receipt and code verification; raw data and per-row predictions were not independently replayed locally. Full archives not downloaded.",
+  "new_model_fits": 0,
+  "reserved_partitions_read_reported": 0,
+  "contract_version": "time_high_btc_stage1_v2_mean"
+}

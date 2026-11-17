@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "synthetic_features": 16,
+  "reported_features": 10,
+  "checks": [
+    "full notebook execution",
+    "decimal Parquet conversion",
+    "nullable validity flags",
+    "late availability exclusion",
+    "constant/invalid feature rejection",
+    "chronological alignment",
+    "learning-band independence from future feature values",
+    "frozen rank after validation",
+    "CSV interval replay"
+  ],
+  "limitation": "Original company Parquet datasets are not present locally; full-scale Colab runtime not measured."
+}

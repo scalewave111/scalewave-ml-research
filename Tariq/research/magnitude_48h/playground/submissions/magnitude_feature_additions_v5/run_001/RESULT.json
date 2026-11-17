@@ -1,0 +1,85 @@
+{
+  "status": "COMPLETE_PENDING_REPLAY_VERIFICATION",
+  "horizon_minutes": 2880,
+  "rows": 18481,
+  "pooled_MAE": {
+    "refitted_pair": 181.97660210071422,
+    "incumbent_hybrid": 181.5238678328609,
+    "variance_rz_4h": 182.21974423665827,
+    "flow_rz_4h": 182.22018736416666,
+    "flow_percentile_1h": 181.55855346445884
+  },
+  "lowest_development_MAE": "incumbent_hybrid",
+  "selected_forest_weights": {
+    "variance_rz_4h": {
+      "1": 0.5,
+      "2": 0.1,
+      "3": 0.1,
+      "4": 0.0
+    },
+    "flow_rz_4h": {
+      "1": 0.5,
+      "2": 0.1,
+      "3": 0.1,
+      "4": 0.0
+    },
+    "flow_percentile_1h": {
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.25,
+      "4": 0.0
+    }
+  },
+  "months_better_incumbent": {
+    "variance_rz_4h": 3,
+    "flow_rz_4h": 3,
+    "flow_percentile_1h": 5
+  },
+  "nominal_paired_intervals": [
+    {
+      "candidate": "variance_rz_4h",
+      "block_days": 7,
+      "mean_delta": 0.6958764037973796,
+      "low": -0.9716719537686479,
+      "high": 2.493439978411728
+    },
+    {
+      "candidate": "variance_rz_4h",
+      "block_days": 14,
+      "mean_delta": 0.6958764037973796,
+      "low": -0.7985152618554122,
+      "high": 2.2830017705434975
+    },
+    {
+      "candidate": "flow_rz_4h",
+      "block_days": 7,
+      "mean_delta": 0.6963195313057315,
+      "low": -0.961595597944799,
+      "high": 2.4863844371966572
+    },
+    {
+      "candidate": "flow_rz_4h",
+      "block_days": 14,
+      "mean_delta": 0.6963195313057315,
+      "low": -0.7230431295610475,
+      "high": 2.2290008474776273
+    },
+    {
+      "candidate": "flow_percentile_1h",
+      "block_days": 7,
+      "mean_delta": 0.034685631597918896,
+      "low": -0.026045047207771316,
+      "high": 0.09946974158198488
+    },
+    {
+      "candidate": "flow_percentile_1h",
+      "block_days": 14,
+      "mean_delta": 0.034685631597918896,
+      "low": -0.022469810238534137,
+      "high": 0.10937923787500542
+    }
+  ],
+  "new_fits_including_weight_selection": 36,
+  "cumulative_fits_including_weight_selection": 91,
+  "interpretation": "Adaptive development feature comparison. Fixed pair anchors; one added RF feature per candidate. Lower MAE may update the scoreboard only after verification, not establish independent confirmation. Fresh test not accessed."
+}

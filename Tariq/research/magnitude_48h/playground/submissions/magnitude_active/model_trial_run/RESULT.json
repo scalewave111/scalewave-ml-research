@@ -1,0 +1,1035 @@
+{
+  "status": "VERIFIED",
+  "input_hashes": {
+    "submissions\\magnitude_active\\run_model_comparison.py": "a70323be405794ca6bd67d3c625d48ecca750539a5291fbcf45d539644fc895b",
+    "submissions\\magnitude_active\\model_trial_helpers.py": "f2d9129f7979eb5c0b2450cdaa844c8d83f7d42fe8fddff599fed84177addf36",
+    "submissions\\magnitude_active\\feature_experiment.py": "b29883be29c255ebf58c9e1b8ea613173e619cd63bcf09ef609648b1919a3982",
+    "submissions\\magnitude_current\\run_001\\config.json": "ba77b1814c1c28461280393b6309c45bb3182ea42453d99b46f270c796254a88",
+    "submissions\\magnitude_current\\run_001\\predictions.parquet": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner.json": "86d0d82c2d9187e582a29b542e0b84c94242b5a7164e69906634fe232c8be623",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner.json": "34af2e8f882121d8b091bad5326e4618b79ab5b97ec0749f3db199debf7bc049",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner.json": "c49ca067bee5c419be19f678e660231c923daa23c475908f9007de70349bedfe",
+    "submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner.json": "b8eb85d76ad7ff71d4bc0d664a59d56ab50deb2beb221a1c870b3ebd8bbb7b21",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_1_pair.json": "2fa0d81eb2e9db432a858326ab2094b6144b6571b7b90f1713e505da8dec0930",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_2_pair.json": "b35a72a0883228f44d561c27596aeb493c7e08507b6b59b2dfda12b7383fec3b",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_3_pair.json": "22d6f25196d2dd8f3c89e13422d23072480f8febddd6792f0d43e28dd8cb6cbf",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_4_pair.json": "6148ae525893474d48d8e6daffe4dfaeb53f839b9ad838d3104c7bf61a75630a"
+  },
+  "scores": {
+    "incumbent": {
+      "MAE": 180.79851809782613,
+      "Spearman_IC": 0.07852651265983954
+    },
+    "hgb:standalone": {
+      "MAE": 190.930859320845,
+      "Spearman_IC": -0.02198679700426986
+    },
+    "hgb:blend": {
+      "MAE": 182.43871249699856,
+      "Spearman_IC": 0.02875483755048242
+    },
+    "nn:standalone": {
+      "MAE": 182.87995361193103,
+      "Spearman_IC": 0.04758068897280772
+    },
+    "nn:blend": {
+      "MAE": 181.98189981448135,
+      "Spearman_IC": 0.050371220569045555
+    }
+  },
+  "fold_scores": {
+    "1": {
+      "incumbent": {
+        "MAE": 210.5216785216693,
+        "Spearman_IC": 0.12326795883067737
+      },
+      "hgb:standalone": {
+        "MAE": 224.16331315461278,
+        "Spearman_IC": -0.016933822330109653
+      },
+      "hgb:blend": {
+        "MAE": 217.48178227829504,
+        "Spearman_IC": -0.0176627638563639
+      },
+      "nn:standalone": {
+        "MAE": 215.93750602046362,
+        "Spearman_IC": 0.015233864506565562
+      },
+      "nn:blend": {
+        "MAE": 215.20859732182996,
+        "Spearman_IC": 0.012284353600878558
+      }
+    },
+    "2": {
+      "incumbent": {
+        "MAE": 153.14414734401697,
+        "Spearman_IC": 0.13855220702364235
+      },
+      "hgb:standalone": {
+        "MAE": 155.3440909189007,
+        "Spearman_IC": 0.09933089397888129
+      },
+      "hgb:blend": {
+        "MAE": 153.04917817756692,
+        "Spearman_IC": 0.14686827021920804
+      },
+      "nn:standalone": {
+        "MAE": 155.76942897715793,
+        "Spearman_IC": 0.08184782665465803
+      },
+      "nn:blend": {
+        "MAE": 153.9133525914502,
+        "Spearman_IC": 0.09795749055679767
+      }
+    },
+    "3": {
+      "incumbent": {
+        "MAE": 195.57448528968092,
+        "Spearman_IC": -0.004892216506345142
+      },
+      "hgb:standalone": {
+        "MAE": 201.2725817155921,
+        "Spearman_IC": -0.14874780131072057
+      },
+      "hgb:blend": {
+        "MAE": 195.79950674843403,
+        "Spearman_IC": -0.03228033822283862
+      },
+      "nn:standalone": {
+        "MAE": 195.73626418519433,
+        "Spearman_IC": 0.08466461898109347
+      },
+      "nn:blend": {
+        "MAE": 195.17846626502458,
+        "Spearman_IC": 0.11402748606031379
+      }
+    },
+    "4": {
+      "incumbent": {
+        "MAE": 167.63101192321784,
+        "Spearman_IC": 0.006178338200544946
+      },
+      "hgb:standalone": {
+        "MAE": 184.99628153404942,
+        "Spearman_IC": -0.10613198746204201
+      },
+      "hgb:blend": {
+        "MAE": 167.63101192321784,
+        "Spearman_IC": 0.006178338200544946
+      },
+      "nn:standalone": {
+        "MAE": 168.21146333062364,
+        "Spearman_IC": 0.008491400805222385
+      },
+      "nn:blend": {
+        "MAE": 167.67460489710035,
+        "Spearman_IC": -0.006482043727821372
+      }
+    }
+  },
+  "folds": {
+    "hgb:1": {
+      "selection": {
+        "standalone": {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 157.59871756976165
+        },
+        "blend": {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 154.73602734517652
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 157.4014839337533
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 156.14735963367534
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 155.20608247410607
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 157.8564471032728
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 157.23014906444453
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 155.76706349425615
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 154.73602734517652
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 157.59871756976165
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.8440000000000001,
+          "center": 0.8392569306094886,
+          "scale": 0.10434972465280914
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.5760000000000001,
+          "center": 0.5901491811581968,
+          "scale": 0.1642033361542177
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.49600000000000005,
+          "center": 0.49536383589397265,
+          "scale": 0.28327483176461227
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.501,
+          "center": 0.500399425966571,
+          "scale": 0.2778617291199838
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.502,
+          "center": 0.5010155495525916,
+          "scale": 0.27727645756833036
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48100000000000004,
+          "center": 0.48498284653047447,
+          "scale": 0.2919574832352944
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.465,
+          "center": 0.47042846530474414,
+          "scale": 0.29979931439406493
+        }
+      },
+      "outer_training_rows": 29615,
+      "inner_training_rows": 25199,
+      "outer_max_label_end": "2023-12-31 23:30:00+00:00",
+      "inner_max_label_end": "2023-09-30 23:30:00+00:00",
+      "inner_validation_start": "2023-10-01 00:00:00+00:00",
+      "outer_validation_start": "2024-01-01 00:00:00+00:00"
+    },
+    "nn:1": {
+      "selection": {
+        "standalone": {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 150.94876929309436
+        },
+        "blend": {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 153.3204659056908
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 157.19807656243964
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 155.54045275987286
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 153.3204659056908
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 150.94876929309436
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 158.0944696181255
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 157.66195636126653
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 157.06086119871205
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 156.45210092201557
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.8440000000000001,
+          "center": 0.8392569306094886,
+          "scale": 0.10434972465280914
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.5760000000000001,
+          "center": 0.5901491811581968,
+          "scale": 0.1642033361542177
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.49600000000000005,
+          "center": 0.49536383589397265,
+          "scale": 0.28327483176461227
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.501,
+          "center": 0.500399425966571,
+          "scale": 0.2778617291199838
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.502,
+          "center": 0.5010155495525916,
+          "scale": 0.27727645756833036
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48100000000000004,
+          "center": 0.48498284653047447,
+          "scale": 0.2919574832352944
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.465,
+          "center": 0.47042846530474414,
+          "scale": 0.29979931439406493
+        }
+      },
+      "outer_training_rows": 29615,
+      "inner_training_rows": 25199,
+      "outer_max_label_end": "2023-12-31 23:30:00+00:00",
+      "inner_max_label_end": "2023-09-30 23:30:00+00:00",
+      "inner_validation_start": "2023-10-01 00:00:00+00:00",
+      "outer_validation_start": "2024-01-01 00:00:00+00:00"
+    },
+    "hgb:2": {
+      "selection": {
+        "standalone": {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 216.80690752101512
+        },
+        "blend": {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 213.72542026103676
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 213.87974792057113
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 213.72542026103676
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 214.01826543339365
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 216.80690752101512
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 213.94591394718165
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 214.17830720476346
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 215.69415890789276
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 221.72505844230372
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.8800000000000001,
+          "center": 0.855315439022225,
+          "scale": 0.10646634083085682
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.617,
+          "center": 0.6145320351572906,
+          "scale": 0.17020863875564737
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.506,
+          "center": 0.5027241277263177,
+          "scale": 0.2840988675842526
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.506,
+          "center": 0.5030230830694565,
+          "scale": 0.27879323596078176
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.49800000000000005,
+          "center": 0.4981206090379096,
+          "scale": 0.27919736875065215
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48300000000000004,
+          "center": 0.48636468290373175,
+          "scale": 0.29230945082203513
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.463,
+          "center": 0.46948216980852886,
+          "scale": 0.30038068085614855
+        }
+      },
+      "outer_training_rows": 33791,
+      "inner_training_rows": 29615,
+      "outer_max_label_end": "2024-03-31 23:30:00+00:00",
+      "inner_max_label_end": "2023-12-31 23:30:00+00:00",
+      "inner_validation_start": "2024-01-01 00:00:00+00:00",
+      "outer_validation_start": "2024-04-01 00:00:00+00:00"
+    },
+    "nn:2": {
+      "selection": {
+        "standalone": {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 210.93809844615853
+        },
+        "blend": {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 211.92081922866055
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 213.73460288565175
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 213.23188103660564
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 212.5052212464262
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 211.53477528813784
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 213.57510957118745
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 212.87048099059703
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 211.92081922866055
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 210.93809844615853
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.8800000000000001,
+          "center": 0.855315439022225,
+          "scale": 0.10646634083085682
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.617,
+          "center": 0.6145320351572906,
+          "scale": 0.17020863875564737
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.506,
+          "center": 0.5027241277263177,
+          "scale": 0.2840988675842526
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.506,
+          "center": 0.5030230830694565,
+          "scale": 0.27879323596078176
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.49800000000000005,
+          "center": 0.4981206090379096,
+          "scale": 0.27919736875065215
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48300000000000004,
+          "center": 0.48636468290373175,
+          "scale": 0.29230945082203513
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.463,
+          "center": 0.46948216980852886,
+          "scale": 0.30038068085614855
+        }
+      },
+      "outer_training_rows": 33791,
+      "inner_training_rows": 29615,
+      "outer_max_label_end": "2024-03-31 23:30:00+00:00",
+      "inner_max_label_end": "2023-12-31 23:30:00+00:00",
+      "inner_validation_start": "2024-01-01 00:00:00+00:00",
+      "outer_validation_start": "2024-04-01 00:00:00+00:00"
+    },
+    "hgb:3": {
+      "selection": {
+        "standalone": {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 156.9676367933916
+        },
+        "blend": {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 154.00756688124926
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 154.31686102720252
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 154.0160418893802
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 154.25020054648115
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 156.9676367933916
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 154.25400932021907
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 154.00756688124926
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 154.55600358475996
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 158.95534547681137
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.916,
+          "center": 0.8656805209780132,
+          "scale": 0.10461741658596321
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.643,
+          "center": 0.6267319636258812,
+          "scale": 0.1661830440293277
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.49600000000000005,
+          "center": 0.49472596242039885,
+          "scale": 0.28595652288440027
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.49700000000000005,
+          "center": 0.49731240336486815,
+          "scale": 0.28035363164899535
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.504,
+          "center": 0.5038122068188369,
+          "scale": 0.2804162367897833
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48000000000000004,
+          "center": 0.4843487512775493,
+          "scale": 0.2932550675208207
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.461,
+          "center": 0.4681453654445872,
+          "scale": 0.30109818289644924
+        }
+      },
+      "outer_training_rows": 38159,
+      "inner_training_rows": 33791,
+      "outer_max_label_end": "2024-06-30 23:30:00+00:00",
+      "inner_max_label_end": "2024-03-31 23:30:00+00:00",
+      "inner_validation_start": "2024-04-01 00:00:00+00:00",
+      "outer_validation_start": "2024-07-01 00:00:00+00:00"
+    },
+    "nn:3": {
+      "selection": {
+        "standalone": {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 154.06426681207964
+        },
+        "blend": {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 154.17324566210823
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 154.60319767830094
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 154.4269379409579
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 154.2091994764816
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 154.1131054704598
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 154.59529148249788
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 154.40668870088797
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 154.17324566210823
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 154.06426681207964
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.916,
+          "center": 0.8656805209780132,
+          "scale": 0.10461741658596321
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.643,
+          "center": 0.6267319636258812,
+          "scale": 0.1661830440293277
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.49600000000000005,
+          "center": 0.49472596242039885,
+          "scale": 0.28595652288440027
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.49700000000000005,
+          "center": 0.49731240336486815,
+          "scale": 0.28035363164899535
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.504,
+          "center": 0.5038122068188369,
+          "scale": 0.2804162367897833
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48000000000000004,
+          "center": 0.4843487512775493,
+          "scale": 0.2932550675208207
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.461,
+          "center": 0.4681453654445872,
+          "scale": 0.30109818289644924
+        }
+      },
+      "outer_training_rows": 38159,
+      "inner_training_rows": 33791,
+      "outer_max_label_end": "2024-06-30 23:30:00+00:00",
+      "inner_max_label_end": "2024-03-31 23:30:00+00:00",
+      "inner_validation_start": "2024-04-01 00:00:00+00:00",
+      "outer_validation_start": "2024-07-01 00:00:00+00:00"
+    },
+    "hgb:4": {
+      "selection": {
+        "standalone": {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 201.5402699038789
+        },
+        "blend": {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 194.35275242481228
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 195.08744229056938
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 196.646575740686
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 201.5402699038789
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 194.3468246310066
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 195.17870392261287
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 197.13456949845994
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 204.43565249952678
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.922,
+          "center": 0.8736460598943042,
+          "scale": 0.10203348344259523
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.663,
+          "center": 0.6366490428655315,
+          "scale": 0.16194716913271362
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.49900000000000005,
+          "center": 0.49687372871403407,
+          "scale": 0.28602155321903033
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.501,
+          "center": 0.49946891368173824,
+          "scale": 0.28109921181762904
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.503,
+          "center": 0.5024844862008221,
+          "scale": 0.28139990931187475
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48000000000000004,
+          "center": 0.48458529653552557,
+          "scale": 0.29308290394485254
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.46,
+          "center": 0.4676028890193776,
+          "scale": 0.30119460228392414
+        }
+      },
+      "outer_training_rows": 42575,
+      "inner_training_rows": 38159,
+      "outer_max_label_end": "2024-09-30 23:30:00+00:00",
+      "inner_max_label_end": "2024-06-30 23:30:00+00:00",
+      "inner_validation_start": "2024-07-01 00:00:00+00:00",
+      "outer_validation_start": "2024-10-01 00:00:00+00:00"
+    },
+    "nn:4": {
+      "selection": {
+        "standalone": {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 192.6775379457221
+        },
+        "blend": {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 193.08615011848246
+        }
+      },
+      "inner_scores": [
+        {
+          "setting": 0,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "setting": 0,
+          "weight": 0.1,
+          "MAE": 193.77993517640647
+        },
+        {
+          "setting": 0,
+          "weight": 0.25,
+          "MAE": 193.52268462098795
+        },
+        {
+          "setting": 0,
+          "weight": 0.5,
+          "MAE": 193.2199244844828
+        },
+        {
+          "setting": 0,
+          "weight": 1.0,
+          "MAE": 192.97623583375957
+        },
+        {
+          "setting": 1,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "setting": 1,
+          "weight": 0.1,
+          "MAE": 193.7609693304607
+        },
+        {
+          "setting": 1,
+          "weight": 0.25,
+          "MAE": 193.46283541198375
+        },
+        {
+          "setting": 1,
+          "weight": 0.5,
+          "MAE": 193.08615011848246
+        },
+        {
+          "setting": 1,
+          "weight": 1.0,
+          "MAE": 192.6775379457221
+        }
+      ],
+      "outer_preprocessing": {
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value": {
+          "median": 0.922,
+          "center": 0.8736460598943042,
+          "scale": 0.10203348344259523
+        },
+        "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value": {
+          "median": 0.663,
+          "center": 0.6366490428655315,
+          "scale": 0.16194716913271362
+        },
+        "F4Z__flow__flow_activity_percentile__1h__value": {
+          "median": 0.49900000000000005,
+          "center": 0.49687372871403407,
+          "scale": 0.28602155321903033
+        },
+        "F4Z__liquidation__venue_fragmentation_percentile__1h__value": {
+          "median": 0.501,
+          "center": 0.49946891368173824,
+          "scale": 0.28109921181762904
+        },
+        "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value": {
+          "median": 0.503,
+          "center": 0.5024844862008221,
+          "scale": 0.28139990931187475
+        },
+        "F4Z__flow__flow_activity_percentile__15m__value": {
+          "median": 0.48000000000000004,
+          "center": 0.48458529653552557,
+          "scale": 0.29308290394485254
+        },
+        "F4Z__flow__flow_activity_percentile__5m__value": {
+          "median": 0.46,
+          "center": 0.4676028890193776,
+          "scale": 0.30119460228392414
+        }
+      },
+      "outer_training_rows": 42575,
+      "inner_training_rows": 38159,
+      "outer_max_label_end": "2024-09-30 23:30:00+00:00",
+      "inner_max_label_end": "2024-06-30 23:30:00+00:00",
+      "inner_validation_start": "2024-07-01 00:00:00+00:00",
+      "outer_validation_start": "2024-10-01 00:00:00+00:00"
+    }
+  },
+  "best_candidate": "nn:blend",
+  "beats_incumbent": false,
+  "retained_model_files": [],
+  "rows": 18481,
+  "completed_fits": 75,
+  "verification": "Train-only preprocessing and strict label-end purges; inner-only parameter, epoch and blend selection; saved outer models reloaded; exact timestamps and targets; immutable source/data hashes.",
+  "interpretation": "Adaptive development comparison, not fresh confirmation. Incumbent and its registry are unchanged. Retained winning challenger needs review/integration before promotion.",
+  "nominal_block_intervals": [
+    {
+      "days": 7,
+      "delta_MAE": 1.183381716655209,
+      "interval": [
+        -0.4555327300017,
+        3.0037356029283693
+      ],
+      "caution": "Not adjusted for repeated research selection."
+    },
+    {
+      "days": 14,
+      "delta_MAE": 1.183381716655209,
+      "interval": [
+        -0.19727962728014886,
+        2.746372267300094
+      ],
+      "caution": "Not adjusted for repeated research selection."
+    }
+  ]
+}

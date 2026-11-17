@@ -1,0 +1,58 @@
+{
+  "hypothesis": "Adding 4h variance allows a compact depth-2 median XGBoost to improve magnitude predictions beyond liquidation inputs alone and the refitted additive pair.",
+  "validation_windows": [
+    [
+      "2024-01-01T00:00:00Z",
+      "2024-04-01T00:00:00Z"
+    ],
+    [
+      "2024-04-01T00:00:00Z",
+      "2024-07-01T00:00:00Z"
+    ],
+    [
+      "2024-07-01T00:00:00Z",
+      "2024-10-01T00:00:00Z"
+    ],
+    [
+      "2024-10-01T00:00:00Z",
+      "2025-01-22T00:30:00Z"
+    ]
+  ],
+  "features": {
+    "pair": [
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+    ],
+    "pair_variance": [
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value",
+      "F4Z__volatility__realized_variance_level_percentile__4h__value"
+    ]
+  },
+  "xgb": {
+    "objective": "reg:quantileerror",
+    "quantile_alpha": 0.5,
+    "eval_metric": "mae",
+    "tree_method": "hist",
+    "n_estimators": 200,
+    "learning_rate": 0.03,
+    "max_depth": 2,
+    "min_child_weight": 100,
+    "reg_lambda": 100,
+    "reg_alpha": 0,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "max_bin": 64,
+    "random_state": 48,
+    "n_jobs": 4
+  },
+  "settings_status": "Fixed starting choices, not previously established optimal settings. No hyperparameter grid or early stopping. Native NaN handling for XGBoost; no future imputation.",
+  "pair_control": "Unregularized median regression on fold-standardized, fold-median-imputed values and missing flags; refitted architecture, not the frozen MP0004 coefficients.",
+  "selection": "Lowest pooled per-row out-of-fold MAE among the two XGBoost candidates; exact ties favor pair-only. Report failure if it does not beat both controls. Monthly and block diagnostics do not trigger further unregistered search.",
+  "fit_budget": 20,
+  "walkforward_fits": 16,
+  "reserved_final_fits": 3,
+  "failure_reserve": 1,
+  "final_refits": "Reserved for selected XGBoost, refitted pair and training median after fresh-test timestamp metadata confirms allowed fitting cutoff. Not automatically executed.",
+  "fresh_test_policy": "Do not read fresh test targets until procedure and evaluation rules frozen."
+}

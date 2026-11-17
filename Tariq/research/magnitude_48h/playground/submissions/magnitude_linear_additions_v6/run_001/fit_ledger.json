@@ -1,0 +1,290 @@
+[
+  {
+    "fit_number": 1,
+    "fold": 1,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:54:24.572641+00:00"
+  },
+  {
+    "fit_number": 2,
+    "fold": 1,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:54:40.704998+00:00"
+  },
+  {
+    "fit_number": 3,
+    "fold": 1,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:54:40.764792+00:00"
+  },
+  {
+    "fit_number": 4,
+    "fold": 1,
+    "candidate": "variance_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:55:02.826312+00:00"
+  },
+  {
+    "fit_number": 5,
+    "fold": 1,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:55:18.698597+00:00"
+  },
+  {
+    "fit_number": 6,
+    "fold": 1,
+    "candidate": "variance_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:55:18.716779+00:00"
+  },
+  {
+    "fit_number": 7,
+    "fold": 1,
+    "candidate": "flow_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:55:48.127139+00:00"
+  },
+  {
+    "fit_number": 8,
+    "fold": 1,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:56:08.589331+00:00"
+  },
+  {
+    "fit_number": 9,
+    "fold": 1,
+    "candidate": "flow_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:56:08.608617+00:00"
+  },
+  {
+    "fit_number": 10,
+    "fold": 2,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:56:36.906614+00:00"
+  },
+  {
+    "fit_number": 11,
+    "fold": 2,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:57:05.423236+00:00"
+  },
+  {
+    "fit_number": 12,
+    "fold": 2,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:57:05.444204+00:00"
+  },
+  {
+    "fit_number": 13,
+    "fold": 2,
+    "candidate": "variance_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:57:44.182713+00:00"
+  },
+  {
+    "fit_number": 14,
+    "fold": 2,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:58:11.527444+00:00"
+  },
+  {
+    "fit_number": 15,
+    "fold": 2,
+    "candidate": "variance_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:58:11.558417+00:00"
+  },
+  {
+    "fit_number": 16,
+    "fold": 2,
+    "candidate": "flow_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:58:48.094829+00:00"
+  },
+  {
+    "fit_number": 17,
+    "fold": 2,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:59:14.085326+00:00"
+  },
+  {
+    "fit_number": 18,
+    "fold": 2,
+    "candidate": "flow_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:59:14.109118+00:00"
+  },
+  {
+    "fit_number": 19,
+    "fold": 3,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T11:59:47.882224+00:00"
+  },
+  {
+    "fit_number": 20,
+    "fold": 3,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:00:22.308120+00:00"
+  },
+  {
+    "fit_number": 21,
+    "fold": 3,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:00:22.330118+00:00"
+  },
+  {
+    "fit_number": 22,
+    "fold": 3,
+    "candidate": "variance_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:01:07.684700+00:00"
+  },
+  {
+    "fit_number": 23,
+    "fold": 3,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:01:41.049384+00:00"
+  },
+  {
+    "fit_number": 24,
+    "fold": 3,
+    "candidate": "variance_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:01:41.070547+00:00"
+  },
+  {
+    "fit_number": 25,
+    "fold": 3,
+    "candidate": "flow_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:02:23.855370+00:00"
+  },
+  {
+    "fit_number": 26,
+    "fold": 3,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:02:56.550159+00:00"
+  },
+  {
+    "fit_number": 27,
+    "fold": 3,
+    "candidate": "flow_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:02:56.569157+00:00"
+  },
+  {
+    "fit_number": 28,
+    "fold": 4,
+    "candidate": "flow_percentile_1h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:03:38.316778+00:00"
+  },
+  {
+    "fit_number": 29,
+    "fold": 4,
+    "candidate": "flow_percentile_1h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:04:17.773199+00:00"
+  },
+  {
+    "fit_number": 30,
+    "fold": 4,
+    "candidate": "flow_percentile_1h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:04:17.795749+00:00"
+  },
+  {
+    "fit_number": 31,
+    "fold": 4,
+    "candidate": "variance_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:05:08.037793+00:00"
+  },
+  {
+    "fit_number": 32,
+    "fold": 4,
+    "candidate": "variance_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:05:46.877753+00:00"
+  },
+  {
+    "fit_number": 33,
+    "fold": 4,
+    "candidate": "variance_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:05:46.899266+00:00"
+  },
+  {
+    "fit_number": 34,
+    "fold": 4,
+    "candidate": "flow_rz_4h",
+    "name": "inner_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:06:34.766245+00:00"
+  },
+  {
+    "fit_number": 35,
+    "fold": 4,
+    "candidate": "flow_rz_4h",
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:07:13.509132+00:00"
+  },
+  {
+    "fit_number": 36,
+    "fold": 4,
+    "candidate": "flow_rz_4h",
+    "name": "outer_linear",
+    "status": "completed",
+    "time_utc": "2026-11-03T12:07:13.532090+00:00"
+  }
+]

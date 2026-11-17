@@ -1,0 +1,114 @@
+[
+  {
+    "fit_number": 1,
+    "fold": 1,
+    "name": "inner_pair",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:00.121136+00:00"
+  },
+  {
+    "fit_number": 2,
+    "fold": 1,
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:13.782607+00:00"
+  },
+  {
+    "fit_number": 3,
+    "fold": 1,
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:16.311225+00:00"
+  },
+  {
+    "fit_number": 4,
+    "fold": 1,
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:16.374281+00:00"
+  },
+  {
+    "fit_number": 5,
+    "fold": 2,
+    "name": "inner_pair",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:18.963825+00:00"
+  },
+  {
+    "fit_number": 6,
+    "fold": 2,
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:38.844949+00:00"
+  },
+  {
+    "fit_number": 7,
+    "fold": 2,
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:41.396294+00:00"
+  },
+  {
+    "fit_number": 8,
+    "fold": 2,
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:41.448268+00:00"
+  },
+  {
+    "fit_number": 9,
+    "fold": 3,
+    "name": "inner_pair",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:45:44.169250+00:00"
+  },
+  {
+    "fit_number": 10,
+    "fold": 3,
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:46:09.322221+00:00"
+  },
+  {
+    "fit_number": 11,
+    "fold": 3,
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:46:12.102053+00:00"
+  },
+  {
+    "fit_number": 12,
+    "fold": 3,
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:46:12.153058+00:00"
+  },
+  {
+    "fit_number": 13,
+    "fold": 4,
+    "name": "inner_pair",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:46:14.914981+00:00"
+  },
+  {
+    "fit_number": 14,
+    "fold": 4,
+    "name": "inner_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:46:47.989488+00:00"
+  },
+  {
+    "fit_number": 15,
+    "fold": 4,
+    "name": "weight_selection",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:46:50.600610+00:00"
+  },
+  {
+    "fit_number": 16,
+    "fold": 4,
+    "name": "outer_forest",
+    "status": "completed",
+    "time_utc": "2026-11-03T06:46:50.653997+00:00"
+  }
+]

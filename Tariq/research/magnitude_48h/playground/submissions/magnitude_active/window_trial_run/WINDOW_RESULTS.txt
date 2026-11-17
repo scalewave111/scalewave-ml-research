@@ -1,0 +1,9 @@
+WINDOW COMPARISON COMPLETE - VERIFIED
+Incumbent MAE: 180.798518098
+6 months: MAE 184.404897543; Spearman -0.032282594; improvement -3.606379445
+12 months: MAE 182.791630566; Spearman 0.025069108; improvement -1.993112468
+18 months: MAE 182.436987375; Spearman 0.032157041; improvement -1.638469277
+Winning window retained: None
+Completed fits: 27
+Current model unchanged. Fixed pair and blend weights; bootstrap sizes capped for short histories.
+Losing binaries/predictions removed; compact scores retained. Fresh data untouched.

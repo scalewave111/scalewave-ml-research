@@ -1,0 +1,252 @@
+{
+  "experiment": "tuned_flow_context_pairs",
+  "benchmark_mae": 181.06650820557817,
+  "features": {
+    "price_range_1h": "F4Z__price__price_excursion_range_percentile__1h__value",
+    "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value",
+    "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value"
+  },
+  "candidates": [
+    [
+      "venue_fragmentation_1h",
+      "temporal_concentration_1h"
+    ],
+    [
+      "venue_fragmentation_1h",
+      "price_range_1h"
+    ]
+  ],
+  "grid_depths": [
+    2,
+    3,
+    5
+  ],
+  "grid_leaves": [
+    64,
+    128,
+    256
+  ],
+  "prior_counted_steps": 638,
+  "maximum_new_model_fits": 80,
+  "selection_steps": 8,
+  "stopping_rule": "Only the two announced context pairs; retain current liquidation pair plus flow in RF, no triple or added tuning.",
+  "retention": "Reuse active output; only one temporary leader; discard failed models after replay.",
+  "training_admission": [
+    {
+      "fold": 1,
+      "role": "inner",
+      "feature": "price_range_1h",
+      "rows": 25199,
+      "valid": 23199,
+      "coverage_pct": 92.06317711020279,
+      "unique": 1001
+    },
+    {
+      "fold": 1,
+      "role": "inner",
+      "feature": "temporal_concentration_1h",
+      "rows": 25199,
+      "valid": 22523,
+      "coverage_pct": 89.38053097345133,
+      "unique": 1140
+    },
+    {
+      "fold": 1,
+      "role": "inner",
+      "feature": "venue_fragmentation_1h",
+      "rows": 25199,
+      "valid": 22523,
+      "coverage_pct": 89.38053097345133,
+      "unique": 1168
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "feature": "price_range_1h",
+      "rows": 29615,
+      "valid": 27615,
+      "coverage_pct": 93.24666554111093,
+      "unique": 1001
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "feature": "temporal_concentration_1h",
+      "rows": 29615,
+      "valid": 26880,
+      "coverage_pct": 90.76481512746919,
+      "unique": 1143
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "feature": "venue_fragmentation_1h",
+      "rows": 29615,
+      "valid": 26880,
+      "coverage_pct": 90.76481512746919,
+      "unique": 1171
+    },
+    {
+      "fold": 2,
+      "role": "inner",
+      "feature": "price_range_1h",
+      "rows": 29615,
+      "valid": 27615,
+      "coverage_pct": 93.24666554111093,
+      "unique": 1001
+    },
+    {
+      "fold": 2,
+      "role": "inner",
+      "feature": "temporal_concentration_1h",
+      "rows": 29615,
+      "valid": 26880,
+      "coverage_pct": 90.76481512746919,
+      "unique": 1143
+    },
+    {
+      "fold": 2,
+      "role": "inner",
+      "feature": "venue_fragmentation_1h",
+      "rows": 29615,
+      "valid": 26880,
+      "coverage_pct": 90.76481512746919,
+      "unique": 1171
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "feature": "price_range_1h",
+      "rows": 33791,
+      "valid": 31789,
+      "coverage_pct": 94.07534550619988,
+      "unique": 1001
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "feature": "temporal_concentration_1h",
+      "rows": 33791,
+      "valid": 31051,
+      "coverage_pct": 91.89133201148235,
+      "unique": 1145
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "feature": "venue_fragmentation_1h",
+      "rows": 33791,
+      "valid": 31051,
+      "coverage_pct": 91.89133201148235,
+      "unique": 1173
+    },
+    {
+      "fold": 3,
+      "role": "inner",
+      "feature": "price_range_1h",
+      "rows": 33791,
+      "valid": 31789,
+      "coverage_pct": 94.07534550619988,
+      "unique": 1001
+    },
+    {
+      "fold": 3,
+      "role": "inner",
+      "feature": "temporal_concentration_1h",
+      "rows": 33791,
+      "valid": 31051,
+      "coverage_pct": 91.89133201148235,
+      "unique": 1145
+    },
+    {
+      "fold": 3,
+      "role": "inner",
+      "feature": "venue_fragmentation_1h",
+      "rows": 33791,
+      "valid": 31051,
+      "coverage_pct": 91.89133201148235,
+      "unique": 1173
+    },
+    {
+      "fold": 3,
+      "role": "outer",
+      "feature": "price_range_1h",
+      "rows": 38159,
+      "valid": 36157,
+      "coverage_pct": 94.75353127702508,
+      "unique": 1001
+    },
+    {
+      "fold": 3,
+      "role": "outer",
+      "feature": "temporal_concentration_1h",
+      "rows": 38159,
+      "valid": 35402,
+      "coverage_pct": 92.77496789748159,
+      "unique": 1145
+    },
+    {
+      "fold": 3,
+      "role": "outer",
+      "feature": "venue_fragmentation_1h",
+      "rows": 38159,
+      "valid": 35402,
+      "coverage_pct": 92.77496789748159,
+      "unique": 1174
+    },
+    {
+      "fold": 4,
+      "role": "inner",
+      "feature": "price_range_1h",
+      "rows": 38159,
+      "valid": 36157,
+      "coverage_pct": 94.75353127702508,
+      "unique": 1001
+    },
+    {
+      "fold": 4,
+      "role": "inner",
+      "feature": "temporal_concentration_1h",
+      "rows": 38159,
+      "valid": 35402,
+      "coverage_pct": 92.77496789748159,
+      "unique": 1145
+    },
+    {
+      "fold": 4,
+      "role": "inner",
+      "feature": "venue_fragmentation_1h",
+      "rows": 38159,
+      "valid": 35402,
+      "coverage_pct": 92.77496789748159,
+      "unique": 1174
+    },
+    {
+      "fold": 4,
+      "role": "outer",
+      "feature": "price_range_1h",
+      "rows": 42575,
+      "valid": 40573,
+      "coverage_pct": 95.29770992366412,
+      "unique": 1001
+    },
+    {
+      "fold": 4,
+      "role": "outer",
+      "feature": "temporal_concentration_1h",
+      "rows": 42575,
+      "valid": 39812,
+      "coverage_pct": 93.51027598355843,
+      "unique": 1145
+    },
+    {
+      "fold": 4,
+      "role": "outer",
+      "feature": "venue_fragmentation_1h",
+      "rows": 42575,
+      "valid": 39812,
+      "coverage_pct": 93.51027598355843,
+      "unique": 1174
+    }
+  ]
+}

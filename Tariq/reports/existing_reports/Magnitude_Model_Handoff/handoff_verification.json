@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "rows": 18481,
+  "MAE": 180.79851809782613,
+  "Spearman_IC": 0.07852651265983954,
+  "training_fits": 0,
+  "archive_sha256": "31f29d8390b3e1119d785f77bfb19b71123cc9273b525db7575f7569ddc65813",
+  "archive_bytes": 2292816,
+  "pdf_pages": 3,
+  "original_replay": {
+    "status": "PASS",
+    "rows": 18481,
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "new_fits": 0
+  }
+}

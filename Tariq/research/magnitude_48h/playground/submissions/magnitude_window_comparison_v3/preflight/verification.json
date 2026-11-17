@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "target_values_loaded": false,
+  "hashes": {
+    "data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "submissions\\magnitude_window_comparison_v3\\config.json": "ab11813faa8c6bc869dc3c44675396a587163faf8f9bca523622c8dbee518955",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_1_pair.json": "2fa0d81eb2e9db432a858326ab2094b6144b6571b7b90f1713e505da8dec0930",
+    "submissions\\magnitude_walkforward_v2\\run_001\\fold_3_pair.json": "22d6f25196d2dd8f3c89e13422d23072480f8febddd6792f0d43e28dd8cb6cbf"
+  },
+  "folds": 7,
+  "histories": 3,
+  "rows_per_history": 18481,
+  "planned_new_fits": 19
+}

@@ -1,0 +1,1040 @@
+{
+  "scope": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions",
+  "authorization": "User explicitly requested analysis and immediate cleanup of superseded experiment outputs.",
+  "before_submission_bytes": 136907437,
+  "delete": [
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\preflight\\split_ledger.csv",
+      "bytes": 20711571
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_percentile_1h_inner.joblib",
+      "bytes": 161345
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_percentile_1h_inner.json",
+      "bytes": 1220
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 127094
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_percentile_1h_outer.joblib",
+      "bytes": 168977
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_percentile_1h_outer.json",
+      "bytes": 926
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_percentile_1h_predictions.parquet",
+      "bytes": 146459
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_rz_4h_inner.joblib",
+      "bytes": 174449
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_rz_4h_inner.json",
+      "bytes": 1206
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 124071
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_rz_4h_outer.joblib",
+      "bytes": 179345
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_rz_4h_outer.json",
+      "bytes": 911
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_flow_rz_4h_predictions.parquet",
+      "bytes": 148468
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_variance_rz_4h_inner.joblib",
+      "bytes": 172865
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_variance_rz_4h_inner.json",
+      "bytes": 1237
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 125062
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_variance_rz_4h_outer.joblib",
+      "bytes": 178913
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_variance_rz_4h_outer.json",
+      "bytes": 943
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_1_variance_rz_4h_predictions.parquet",
+      "bytes": 151323
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_percentile_1h_inner.joblib",
+      "bytes": 168977
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_percentile_1h_inner.json",
+      "bytes": 1234
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 112493
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_percentile_1h_outer.joblib",
+      "bytes": 170417
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_percentile_1h_outer.json",
+      "bytes": 897
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_percentile_1h_predictions.parquet",
+      "bytes": 158219
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_rz_4h_inner.joblib",
+      "bytes": 179345
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_rz_4h_inner.json",
+      "bytes": 1218
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 112403
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_rz_4h_outer.joblib",
+      "bytes": 177473
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_rz_4h_outer.json",
+      "bytes": 896
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_flow_rz_4h_predictions.parquet",
+      "bytes": 164335
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_variance_rz_4h_inner.joblib",
+      "bytes": 178913
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_variance_rz_4h_inner.json",
+      "bytes": 1250
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 113634
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_variance_rz_4h_outer.joblib",
+      "bytes": 177329
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_variance_rz_4h_outer.json",
+      "bytes": 929
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_2_variance_rz_4h_predictions.parquet",
+      "bytes": 161931
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_percentile_1h_inner.joblib",
+      "bytes": 170417
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_percentile_1h_inner.json",
+      "bytes": 1204
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 120690
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_percentile_1h_outer.joblib",
+      "bytes": 172577
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_percentile_1h_outer.json",
+      "bytes": 901
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_percentile_1h_predictions.parquet",
+      "bytes": 162145
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_rz_4h_inner.joblib",
+      "bytes": 177473
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_rz_4h_inner.json",
+      "bytes": 1202
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 122968
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_rz_4h_outer.joblib",
+      "bytes": 177041
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_rz_4h_outer.json",
+      "bytes": 881
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_flow_rz_4h_predictions.parquet",
+      "bytes": 166505
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_variance_rz_4h_inner.joblib",
+      "bytes": 177329
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_variance_rz_4h_inner.json",
+      "bytes": 1235
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 122159
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_variance_rz_4h_outer.joblib",
+      "bytes": 178193
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_variance_rz_4h_outer.json",
+      "bytes": 916
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_3_variance_rz_4h_predictions.parquet",
+      "bytes": 162406
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_percentile_1h_inner.joblib",
+      "bytes": 172577
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_percentile_1h_inner.json",
+      "bytes": 1206
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 124569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_percentile_1h_outer.joblib",
+      "bytes": 173153
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_percentile_1h_outer.json",
+      "bytes": 901
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_percentile_1h_predictions.parquet",
+      "bytes": 172143
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_rz_4h_inner.joblib",
+      "bytes": 177041
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_rz_4h_inner.json",
+      "bytes": 1189
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 126389
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_rz_4h_outer.joblib",
+      "bytes": 174161
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_rz_4h_outer.json",
+      "bytes": 884
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_flow_rz_4h_predictions.parquet",
+      "bytes": 175289
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_variance_rz_4h_inner.joblib",
+      "bytes": 178193
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_variance_rz_4h_inner.json",
+      "bytes": 1224
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 124003
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_variance_rz_4h_outer.joblib",
+      "bytes": 173441
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_variance_rz_4h_outer.json",
+      "bytes": 918
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_4_variance_rz_4h_predictions.parquet",
+      "bytes": 174713
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\predictions.parquet",
+      "bytes": 982561
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_last3months_split_v1\\split_ledger.csv",
+      "bytes": 4057102
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\__pycache__\\feature_experiment.cpython-310.pyc",
+      "bytes": 14272
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\__pycache__\\finalize.cpython-310.pyc",
+      "bytes": 4399
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\__pycache__\\verify_linear.cpython-310.pyc",
+      "bytes": 6301
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\preflight\\split_ledger.csv",
+      "bytes": 20711571
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_percentile_1h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_percentile_1h_inner.json",
+      "bytes": 1433
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 130737
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_percentile_1h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_percentile_1h_outer.json",
+      "bytes": 1136
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_percentile_1h_predictions.parquet",
+      "bytes": 170134
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_rz_4h_inner.json",
+      "bytes": 1417
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 130842
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_rz_4h_outer.json",
+      "bytes": 1122
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_flow_rz_4h_predictions.parquet",
+      "bytes": 170406
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_variance_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_variance_rz_4h_inner.json",
+      "bytes": 1444
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 130801
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_variance_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_variance_rz_4h_outer.json",
+      "bytes": 1154
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_1_variance_rz_4h_predictions.parquet",
+      "bytes": 170366
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_percentile_1h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_percentile_1h_inner.json",
+      "bytes": 1442
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 124123
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_percentile_1h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_percentile_1h_outer.json",
+      "bytes": 1107
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_percentile_1h_predictions.parquet",
+      "bytes": 176271
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_rz_4h_inner.json",
+      "bytes": 1430
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 124259
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_rz_4h_outer.json",
+      "bytes": 1110
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_flow_rz_4h_predictions.parquet",
+      "bytes": 176479
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_variance_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_variance_rz_4h_inner.json",
+      "bytes": 1462
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 124235
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_variance_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_variance_rz_4h_outer.json",
+      "bytes": 1141
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_2_variance_rz_4h_predictions.parquet",
+      "bytes": 176479
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_percentile_1h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_percentile_1h_inner.json",
+      "bytes": 1416
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 129273
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_percentile_1h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_percentile_1h_outer.json",
+      "bytes": 1110
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_percentile_1h_predictions.parquet",
+      "bytes": 179747
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_rz_4h_inner.json",
+      "bytes": 1418
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 129377
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_rz_4h_outer.json",
+      "bytes": 1092
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_flow_rz_4h_predictions.parquet",
+      "bytes": 179939
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_variance_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_variance_rz_4h_inner.json",
+      "bytes": 1447
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 129377
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_variance_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_variance_rz_4h_outer.json",
+      "bytes": 1128
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_3_variance_rz_4h_predictions.parquet",
+      "bytes": 179939
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_percentile_1h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_percentile_1h_inner.json",
+      "bytes": 1417
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_percentile_1h_inner_predictions.parquet",
+      "bytes": 132256
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_percentile_1h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_percentile_1h_outer.json",
+      "bytes": 1110
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_percentile_1h_predictions.parquet",
+      "bytes": 218035
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_rz_4h_inner.json",
+      "bytes": 1400
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_rz_4h_inner_predictions.parquet",
+      "bytes": 132352
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_rz_4h_outer.json",
+      "bytes": 1093
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_flow_rz_4h_predictions.parquet",
+      "bytes": 218531
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_variance_rz_4h_inner.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_variance_rz_4h_inner.json",
+      "bytes": 1433
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_variance_rz_4h_inner_predictions.parquet",
+      "bytes": 132352
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_variance_rz_4h_outer.joblib",
+      "bytes": 569
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_variance_rz_4h_outer.json",
+      "bytes": 1128
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_4_variance_rz_4h_predictions.parquet",
+      "bytes": 218471
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\predictions.parquet",
+      "bytes": 1133529
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\preflight\\split_ledger.csv",
+      "bytes": 20711571
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\__pycache__\\walkforward.cpython-310.pyc",
+      "bytes": 9391
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\preflight\\fold_ledger.csv",
+      "bytes": 10030177
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_1_predictions.parquet",
+      "bytes": 112673
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_1_xgb_pair.json",
+      "bytes": 145893
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_1_xgb_pair_variance.json",
+      "bytes": 148308
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_2_predictions.parquet",
+      "bytes": 120347
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_2_xgb_pair.json",
+      "bytes": 147177
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_2_xgb_pair_variance.json",
+      "bytes": 148205
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_3_predictions.parquet",
+      "bytes": 119970
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_3_xgb_pair.json",
+      "bytes": 147721
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_3_xgb_pair_variance.json",
+      "bytes": 148314
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_4_predictions.parquet",
+      "bytes": 139567
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_4_xgb_pair.json",
+      "bytes": 146414
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_4_xgb_pair_variance.json",
+      "bytes": 148393
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\all_predictions.parquet",
+      "bytes": 727973
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_1_model.json",
+      "bytes": 53485
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_1_predictions.parquet",
+      "bytes": 142009
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_2_model.json",
+      "bytes": 53556
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_2_predictions.parquet",
+      "bytes": 152348
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_3_model.json",
+      "bytes": 53549
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_3_predictions.parquet",
+      "bytes": 152775
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_4_model.json",
+      "bytes": 53594
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_4_predictions.parquet",
+      "bytes": 174263
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\preflight\\fold_ledger.csv",
+      "bytes": 37345081
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_1_expanding.json",
+      "bytes": 796
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_1_expanding.parquet",
+      "bytes": 74158
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_1_rolling_12month.json",
+      "bytes": 707
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_1_rolling_12month.parquet",
+      "bytes": 74188
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_1_rolling_6month.json",
+      "bytes": 729
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_1_rolling_6month.parquet",
+      "bytes": 74183
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_2_expanding.json",
+      "bytes": 757
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_2_expanding.parquet",
+      "bytes": 70988
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_2_rolling_12month.json",
+      "bytes": 719
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_2_rolling_12month.parquet",
+      "bytes": 71018
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_2_rolling_6month.json",
+      "bytes": 729
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_2_rolling_6month.parquet",
+      "bytes": 71013
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_3_expanding.json",
+      "bytes": 731
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_3_expanding.parquet",
+      "bytes": 77562
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_3_rolling_12month.json",
+      "bytes": 705
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_3_rolling_12month.parquet",
+      "bytes": 77592
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_3_rolling_6month.json",
+      "bytes": 719
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_3_rolling_6month.parquet",
+      "bytes": 77587
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_4_expanding.json",
+      "bytes": 771
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_4_expanding.parquet",
+      "bytes": 77518
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_4_rolling_12month.json",
+      "bytes": 719
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_4_rolling_12month.parquet",
+      "bytes": 77548
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_4_rolling_6month.json",
+      "bytes": 719
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_4_rolling_6month.parquet",
+      "bytes": 77543
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_5_expanding.json",
+      "bytes": 729
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_5_expanding.parquet",
+      "bytes": 75522
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_5_rolling_12month.json",
+      "bytes": 730
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_5_rolling_12month.parquet",
+      "bytes": 75552
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_5_rolling_6month.json",
+      "bytes": 731
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_5_rolling_6month.parquet",
+      "bytes": 75547
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_6_expanding.json",
+      "bytes": 729
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_6_expanding.parquet",
+      "bytes": 70375
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_6_rolling_12month.json",
+      "bytes": 733
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_6_rolling_12month.parquet",
+      "bytes": 70405
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_6_rolling_6month.json",
+      "bytes": 719
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_6_rolling_6month.parquet",
+      "bytes": 70400
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_7_expanding.json",
+      "bytes": 731
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_7_expanding.parquet",
+      "bytes": 28039
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_7_rolling_12month.json",
+      "bytes": 719
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_7_rolling_12month.parquet",
+      "bytes": 28069
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_7_rolling_6month.json",
+      "bytes": 716
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_7_rolling_6month.parquet",
+      "bytes": 28064
+    },
+    {
+      "path": "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\predictions.parquet",
+      "bytes": 921201
+    }
+  ],
+  "preserved_hashes": {
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_benchmark_registry.json": "868d01aae76ecd082079f2d5b862661c4cfae144c2a8e04150e019071a4bf7c7",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\config.json": "c651f1db2f59d132fe5533b170176437af43e80ffff18dd2e61a3244fa54b996",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\decision.json": "3aaaf78ade37aab9031c12b9033a2ade491ae37015a5415a997115b1d6deb175",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\feature_experiment.py": "56472881abc76eb29cd7035c2f5216b5aee9e431901466f66cae02c4fab3a2d2",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\REPEATABLE_PROCESS.txt": "ea42dc9f22ccef5bc576c7d59b67d17c3dcfa774b27d5cc7373b633f1e49bf7b",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\verify_features.py": "d69abf28cf2ae1e73ca62d0cee41821acd6299e4b52650420b345822640991f6",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\preflight\\admission.csv": "72eb2f18e407366ee80445abe5321a0c8d46d68fdcbdaff7e9b450e66cae5d06",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\preflight\\split_summary.csv": "b683782e21e001cc77b2ec0f066c6794be327b92f84858df3adec8f1a03486e9",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\preflight\\verification.json": "0d7e1acb16765b9c90cf0357a0965b9d491f297d91e8d4dedc8512f5f4972298",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\config.json": "c651f1db2f59d132fe5533b170176437af43e80ffff18dd2e61a3244fa54b996",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\environment.json": "0fdb004329ead6ec9c58154feaca52f1812274431ecbdf047da249570286a8da",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fit_ledger.json": "096062b4b770952ad6a4af18ceaeab3ee0d42ec158e2c354da8b3446d3217d3d",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\fold_MAE.csv": "d4779913489dd4d8ea362b2f86381aac82134ffdbbe2da0a6b49797c725ba5be",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\missingness_diagnostics.csv": "5aa4bb78bf6a69cb33aa02b562640dc626b65f8f255f9f34febf3c677d858c9b",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\monthly_MAE.csv": "c264bf2a078ee3613573069dae655ba6866997320f64b35e1183a921a58d1fe1",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\RESULT.json": "24c544b389fd5f7004339c54f8945b4b95652bd262da7e8dbd07a1c9dcf6df53",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_feature_additions_v5\\run_001\\verification.json": "2cc950dc3b2c58622def3229ca385f42caa444322335ba13b4739695a26b0646",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_ic_audit_v1\\calculate_ic.py": "2e1f9a468a9a44ba12036ba2b044da091dc3324988ad30a2e839babfc4975530",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_ic_audit_v1\\results\\fold_metrics.csv": "fae5cb178496730de441f7a7559b2b8b682cdc17e09b1d7eb863d89a9ea73d61",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_ic_audit_v1\\results\\monthly_metrics.csv": "4d4b284209599618a926a0cc239e1443628639a785bf660ff8d7ecf95d390025",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_ic_audit_v1\\results\\overall_metrics.csv": "2f129a5eefabe9d5fe1955559c02412f96a8c17c8ae9854bdabfbe9e91f4f6cf",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_ic_audit_v1\\results\\RESULT.json": "2ba2a342f7ab19736da281ec7197fe0ae1b42920c96f2ea3b28f2ab97e3bca9a",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_last3months_split_v1\\split_contract.json": "d6105aff5fff7c0c42db0209080401d2ed474b5fb21131d13d54f1685900dbf6",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\config.json": "ca08863e1fca7af4ba09d4b216587c922bac54b222424d82ad360f90aded3ed1",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\feature_experiment.py": "427ebf07bf1b3a301aa4b256c9ce9f33bf1a69ae3da7aa68d24885c8b1e18f1c",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\finalize.py": "370b431a3cd6392664cc8dfe75002a5bfe505823b857bbbad07a6aa3875f427a",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\verify_linear.py": "23d4dc0e9b765f63e682e9c89404b0b1613ed65d349a6d9f703b0a97ce9b247d",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\preflight\\admission.csv": "355fe4ce45451f209230198c2c3cc17b185d142877fcb43d95eb9c4e58b25b8e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\preflight\\split_summary.csv": "b683782e21e001cc77b2ec0f066c6794be327b92f84858df3adec8f1a03486e9",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\preflight\\verification.json": "c401e19d4bf08901def5252e00c132ec7b5fc7e9629fcdf76ee47d02966690a6",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\comparison.csv": "0d8a99c1a10972b70ba06052462cc128dfe11f4f790ff141e9068ed840de8183",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\config.json": "77e5c14839f6b7f64876d219d602310ba2aca3760af6b972f45846cc48384cf1",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\decision.json": "44dd2ea092ae7de00945ae39bef8c90fa28740978065f3e62f6c1924582ed3f3",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\environment.json": "0fdb004329ead6ec9c58154feaca52f1812274431ecbdf047da249570286a8da",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fit_ledger.json": "32a5e29a4ad25b6e027b9854e8fadd88519364ec6abd89f174012313c31aad5e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\fold_MAE.csv": "9f6d4156077d510864cfcb803b9d74e2ada306edf6528a28b9c8b77139f7bed9",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\missingness_diagnostics.csv": "7e424f25b268f45a8855e16aa60c522d64e23fb3f61a106d520ec05613a75c64",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\monthly_MAE.csv": "338d2a9a8547cbc9fdd1756fe6e9e4aea373358cb9e8b1b675cd3cebbe612a60",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\period_metrics.csv": "540320c4b6a1bb3c7c61fd4010e5eedba942f94beec8c28a47d1e793a11c256e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\RESULT.json": "5b3f4f39376f93a891d804d3b3f91db262d69f8cee4c722505f149bfbc50d66e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\SUMMARY.txt": "9d7e0a0447375759176d51099385b2ede6e0526480a05ce6fb9b860ea62e975a",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_linear_additions_v6\\run_001\\verification.json": "37b5c261439859f5d4c68d11ad2a730fe07a816b2281fc7a923685970589f4ea",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\config.json": "26136a0a2a41e04442e4757fc0693d6e27e908422a8b051cceb710fb5ec1e6cc",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\hybrid.py": "7765fc1bd20d368e2be18070cb8c46ad0a1946d746111b40c447e89857656c16",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\verify_hybrid.py": "7f91a435ea09be3a706b0f6a6ee9cf07c5c583b017a335c97d57cf71eb5b4e3f",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\preflight\\split_summary.csv": "59493ffda1b88c2750b5ba4a4b8608ea30fc5e7404e7482f64719c36850496a8",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\preflight\\verification.json": "6672333458eddb5b95604264a0bb0cf8975a0096b2adbb9312266ae826797241",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\config.json": "26136a0a2a41e04442e4757fc0693d6e27e908422a8b051cceb710fb5ec1e6cc",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\environment.json": "0fdb004329ead6ec9c58154feaca52f1812274431ecbdf047da249570286a8da",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fit_ledger.json": "92275e33258830a781da2e2949a539eef7f084943d556c25c8fbdefee202a4f1",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner.json": "86d0d82c2d9187e582a29b542e0b84c94242b5a7164e69906634fe232c8be623",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner_forest.joblib": "d591d2ca3388e157a68a7e03777e06f80e7cfb77b13a690024fa2f1047823a3d",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_inner_predictions.parquet": "a2416f879c5578e0b831c7d326ae5d1cee8a9bbd6e79291c7d930e802b9d672a",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_outer.json": "d340f08259021169bb17a09c79de03c7d78be99bff845404ec279c07cf0f1e37",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_outer_forest.joblib": "49f2b1fa8ab121e9de4e6d0781d1303b900b37c1468f64789415f3c2b221dfb3",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_1_predictions.parquet": "ecc8b98da8946b8f5fb47b8ced053c6711484937b5f908de32f09c7fc9d55c8a",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner.json": "34af2e8f882121d8b091bad5326e4618b79ab5b97ec0749f3db199debf7bc049",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner_forest.joblib": "49f2b1fa8ab121e9de4e6d0781d1303b900b37c1468f64789415f3c2b221dfb3",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_inner_predictions.parquet": "fa8fbcde50bfce922f603d7f9f28a50caf99b8c3c36beaaba8fd535f83b7314a",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_outer.json": "b0acbd1c171277aaa9d425971163c9ff0f3d02e994f61715e6d7ec2ca368d37b",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_outer_forest.joblib": "2d70f639556e7b3cda99529730b0e76cd2e2a10180e734e6b90d00f559342625",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_2_predictions.parquet": "1d2c5cc2fdbd70d2118541b468af965d52b651030921e5ef6b51cc3027229dad",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner.json": "c49ca067bee5c419be19f678e660231c923daa23c475908f9007de70349bedfe",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner_forest.joblib": "2d70f639556e7b3cda99529730b0e76cd2e2a10180e734e6b90d00f559342625",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_inner_predictions.parquet": "4857b0b34a182885cf3a61cfa72fc090ebe84e0c77fef50093336f75d09d8f53",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_outer.json": "05ecd99b08566e6c948f7283046a759d2423eb3f41f49f2f8cac32a6783cb868",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_outer_forest.joblib": "8d4d048d055556a9bff47b12acb919b0423dcd05d32ff6dc56cc5c37fd30498f",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_3_predictions.parquet": "f63d0c2f0911e00df4c4c075e8f88c95e845bf20706146550554db668434ef24",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner.json": "b8eb85d76ad7ff71d4bc0d664a59d56ab50deb2beb221a1c870b3ebd8bbb7b21",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner_forest.joblib": "8d4d048d055556a9bff47b12acb919b0423dcd05d32ff6dc56cc5c37fd30498f",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_inner_predictions.parquet": "6a9e0c3c52cdd2879e96c8b8823847f1e7dfd1c0b0de7912504698fa3338efe7",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_outer.json": "95ad19e065b9e88976bc94cd66f3f66bfceb864c19bd1732de62dda9bbd8b176",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_outer_forest.joblib": "09491e69373b994ca48bcf58987d33309eecc66c0ab551daeb27620a6c3db859",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_4_predictions.parquet": "62193de65985b9d4e6ff0aa482f39e7f95799734fec17998d68b3e45e282c5c7",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\fold_MAE.csv": "da49f63cba78712f0f8c2ae9eeaec9d31036b8f3c1a94b470608b59b706f9cac",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\monthly_MAE.csv": "189d279c1ac4d24dac4771a84504e722f5e367f550671986bd17a0b38b6e276e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\predictions.parquet": "d205be577fd17ecc9f71630fc733612704168789e29b511b8641173166964ccb",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\RESULT.json": "5b56e15cee8367bc1f86279632509fc239fecf1090c8b395f5e5ddce811eecb6",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_rf_hybrid_v4\\run_001\\verification.json": "68d3ce288f068f77f00a474ae8a7ced9006a6663100ffcdeb79356b2fede7407",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\comparison_summary.json": "bc694869c46bef9cb5af307ff72cc6c7d95156c6752ea50541b0396a1b4d410b",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\experiment_contract.json": "6d7971d5ad2fc0ddf6a68062bf6f4069a41eb607bd9e3ec66c49552248d91e80",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\residual_config.json": "34bb07a6bda1146fb7fad9f8407a5a7cfc0975b31ecb1d608712dd75889c7c5d",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\residual_followup.py": "8a0bbb8cff9e1962be5d42f461e13983e79a8e0e838bcaa4c1db71a9ed7044cd",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_config.json": "99102d823c3b14f5a8219c715f3d32ee340bfa0cd66da3b32a8567aafc53a244",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\verify_run.py": "5bcc9b9133b4af3a0d3332e7d1a3ac554e332174e232182179eac74d4b8ca09c",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\walkforward.py": "043223b11338d00445b964c6f620365120de1218686724193ee775366434db69",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\preflight\\feature_admission.csv": "28e9a4156b3f6701e197537f6f99ea83d1a22ecaf5201479a362148c734b4894",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\preflight\\fold_summary.csv": "6948c9a140e2d86e53915ea3a5c6146c99555c61c9cb5528cf0af11a235d54a5",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\preflight\\verification.json": "1f6a7ad3b359524372b044a99ddf4b7511e5256e857a19288809b7ce4a89aeab",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\environment.json": "cea02004d7ac8dbe8b29f86a529e76cfd8f127ad18d7e0cf58535694d4fe399e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fit_ledger.json": "8e4e1f6ff27d56d7a35877f1c2fdb25c75e5d4c941d43f0e8df67c2a35fffb51",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_1_pair.json": "2fa0d81eb2e9db432a858326ab2094b6144b6571b7b90f1713e505da8dec0930",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_2_pair.json": "b35a72a0883228f44d561c27596aeb493c7e08507b6b59b2dfda12b7383fec3b",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_3_pair.json": "22d6f25196d2dd8f3c89e13422d23072480f8febddd6792f0d43e28dd8cb6cbf",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_4_pair.json": "6148ae525893474d48d8e6daffe4dfaeb53f839b9ad838d3104c7bf61a75630a",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\fold_MAE.csv": "bfaf99d6cc51b438dda8eb662e94573d7687cb7c8ad4f8cf48e5d4de97612c0f",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\monthly_MAE.csv": "037aa2a9035fe7eec84e4584c8c16821f3cd7e380cfa9e14379e36546612de44",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\oof_predictions.parquet": "a7b8bdb45fb468f356e42ecc51eaef4fc5adfdc9a50131161192d267ac714186",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\RESULT.json": "0a87f87e238124f64b6f85233689d55944e17b827bb17221f7415ebb9f1da9be",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\runner_sha256.txt": "23cfd4a14d60692b845f8d4dd11f95b68f1331c6a3f76b2ae44ac83ecc3af28b",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\run_config.json": "99102d823c3b14f5a8219c715f3d32ee340bfa0cd66da3b32a8567aafc53a244",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_001\\verification.json": "8d8bdeeeb8fb5e6933620bbba9a8e365ae68ff86f939725d0afaace05bb618da",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fit_ledger.json": "4fb59aee69a9cf298702fbad09f705cc1229e3228f77110c8173a7c4d8417383",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\fold_MAE.csv": "408c958bc6fa5776e517605fa6064e292107780af39e053183550874b6f89dcb",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\monthly_MAE.csv": "7650083e99b9a33376cc6480eedbcf7ce9870dfa90a03169827cf7c9953c61cb",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\registered_config.json": "34bb07a6bda1146fb7fad9f8407a5a7cfc0975b31ecb1d608712dd75889c7c5d",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_walkforward_v2\\run_002_residual\\RESULT.json": "ab1a13b50bf191c7a79b7bcbff965c1ba85a21267dfae775120c385ceaf9e4fc",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\compare_windows.py": "cc09d3f3d274d460ebfa36ce33ffc1066d0831f1bdb71c3f43d65ce37ab25438",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\config.json": "ab11813faa8c6bc869dc3c44675396a587163faf8f9bca523622c8dbee518955",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\verify_results.py": "5fceebd7416538d77e74dd1a1ddf48e8ec2821b82d702b7d7f04ba3c7b939b75",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\preflight\\fold_summary.csv": "9126474f9964ce79388017271be02a083c8e22e1c26748353939faea8a7ca6ff",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\preflight\\verification.json": "69dd39e0be54ec8e4ee90b8a045139cd55359a8859536db9cac2f292736926e5",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\config.json": "ab11813faa8c6bc869dc3c44675396a587163faf8f9bca523622c8dbee518955",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\environment.json": "1af0320bf0e56403d8cc2b8c1b13b20811eca33bb10cce8aa4f46603b513b8ea",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fit_ledger.json": "0f242bec0bcaf702c94036a3cd53b2e594ad5dc090b3b9ffe5944cdbb5a3bcdd",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\fold_MAE.csv": "87710ef52b181c6d246f99cf593aeb807cb9df12e58ebc870cb0c9325f01b8d5",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\monthly_MAE.csv": "d8d7d279ea516e0efb2fb25e2fbe11683dcc7b9af711153e5700417a79ea13b2",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\RESULT.json": "a333d7cb9f8ff7fed0a0c032ff1837bd28f68ef5affa6f83fbc27a85ae5518b8",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\magnitude_window_comparison_v3\\run_001\\verification.json": "5699fa0af7777b4b1b92d9a3531758cca4efd9c2c5cc524de5046fee74643e8d",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_01\\experiments.csv": "36672cece32c94f415fef7cc7c35bed702b61a602e6749c331d7bb036a2f0f52",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_01\\replay_metadata.json": "fd67dba2c462b1c9a787453c5816f873eeb4448d26a91283d8b2537affd5863c",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_01\\submission_template.json": "80923137ba0618eed38291521d3deb91cfffb30173f18fd256177a3920c72944",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_02\\experiments.csv": "36672cece32c94f415fef7cc7c35bed702b61a602e6749c331d7bb036a2f0f52",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_02\\replay_metadata.json": "a82a90d32566abd49a7756a4986f6b6e49c68734a2aa637a1e639226669a1a3c",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_02\\submission_template.json": "2e8a1af581b5586436d2115b98f8d299598d0ac83ca58e6429ec197ee8ab63be",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_03\\experiments.csv": "36672cece32c94f415fef7cc7c35bed702b61a602e6749c331d7bb036a2f0f52",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_03\\replay_metadata.json": "534c8ca8ef8ff83141b085cc716952fcd2040b50a73e8c2e62f2bb2a75ed8858",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_03\\submission_template.json": "0a1e66969a3fc3fbb317bf518eefcd77563564cbdc9c635755fa146a86752c53",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_04\\experiments.csv": "36672cece32c94f415fef7cc7c35bed702b61a602e6749c331d7bb036a2f0f52",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_04\\replay_metadata.json": "ae9a940c90564ae23161ea2b1250e018a2d18d7319a9c970b562b0b2e964bc2c",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\submissions\\member_04\\submission_template.json": "68bfc6867e1efe1818d9737a5ca9920fbda085d14d5c3f30bbcbc14a9152b5d8",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\data\\feature_dictionary_and_admission.csv": "fc4bbce3b7c12ae13c7970919013a41bb88bc3cca6e389e67ad04245661ab662",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\data\\split_ledger.csv": "61a21745834c89b005e340fb2a3d16b66662735798f3774ef57dfbfb030eb9fe",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\benchmarks\\development_predictions.parquet": "c21e50be2792aaf2d6ee7e87854e441632a5191d74c074550ac7a4ba33643770",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\benchmarks\\frozen_models.json": "c22d387efa33c8ae72fb71c5b55327bc71d6416ed85b53932307f159e52596c7",
+    "C:\\ScaleWave\\Team 48_H\\TEAM_48H_PLAYGROUND_V1\\TEAM_48H_PLAYGROUND_V1\\benchmarks\\scores.json": "721114cb0e4443e72cc444fff3b5f6ddd74f5ee7f0dbe16612d541f80dc561de"
+  },
+  "retention": "Current hybrid v4 and required v2 pair anchors/OOF kept. Original datasets and benchmarks kept. Losing model binaries and row-level predictions removed; scripts, configs, metrics and historical verification receipts kept.",
+  "planned_reclaimed_bytes": 132757440,
+  "status": "COMPLETE_VERIFIED",
+  "reclaimed_bytes": 132757440,
+  "post_cleanup_verification": {
+    "all_preserved_hashes_unchanged": true,
+    "current_hybrid_replay": "PASS",
+    "MAE": 181.5238678328609,
+    "Spearman_IC": 0.07737672515285152,
+    "rows": 18481
+  }
+}

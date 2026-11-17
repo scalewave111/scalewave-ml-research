@@ -1,0 +1,65 @@
+{
+  "actual_market_to_model_delay": "Not measurable from supplied prepared files: no per-feature event/publication/receipt/computation timestamps.",
+  "schema_evidence": {
+    "data/X_train.parquet": {
+      "columns": 523,
+      "timestamp_fields": [
+        "pyarrow.Field<decision_time: timestamp[ns, tz=UTC]>"
+      ],
+      "availability_fields": [],
+      "metadata_keys": [
+        "pandas"
+      ]
+    },
+    "data/X_development.parquet": {
+      "columns": 523,
+      "timestamp_fields": [
+        "pyarrow.Field<decision_time: timestamp[ns, tz=UTC]>"
+      ],
+      "availability_fields": [],
+      "metadata_keys": [
+        "pandas"
+      ]
+    }
+  },
+  "current_features": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value",
+    "F4Z__flow__flow_activity_percentile__1h__value",
+    "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+    "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value",
+    "F4Z__flow__flow_activity_percentile__15m__value",
+    "F4Z__flow__flow_activity_percentile__5m__value"
+  ],
+  "training_preprocessing_verified": true,
+  "label_purges_verified": true,
+  "original_predictions_replayed": true,
+  "sensitivity": [
+    {
+      "delay_minutes": 0,
+      "rows": 18481,
+      "MAE": 180.79851809782613,
+      "unavailable_snapshot_rows": 0
+    },
+    {
+      "delay_minutes": 30,
+      "rows": 18481,
+      "MAE": 180.80960018228848,
+      "unavailable_snapshot_rows": 2
+    },
+    {
+      "delay_minutes": 60,
+      "rows": 18481,
+      "MAE": 180.8216574441018,
+      "unavailable_snapshot_rows": 4
+    },
+    {
+      "delay_minutes": 120,
+      "rows": 18481,
+      "MAE": 180.85608202695047,
+      "unavailable_snapshot_rows": 8
+    }
+  ],
+  "limitations": "Hypothetical older-input stress test, not measured latency or a leakage test. Exact timestamp lookup; absent snapshots use saved training imputation. Models, targets, all evaluation rows and preprocessing fixed; no refitting. Thirty-minute sampling cannot test seconds or one-minute delays.",
+  "new_fits": 0
+}

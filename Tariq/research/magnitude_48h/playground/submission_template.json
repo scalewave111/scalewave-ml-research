@@ -1,0 +1,16 @@
+{
+  "member": "member_01",
+  "run_id": "CHANGE_ME",
+  "hypothesis": "WRITE BEFORE FITTING",
+  "features": [],
+  "fit_count": 0,
+  "selection_method": "WRITE training-only fold selection method",
+  "training_cutoff": "2024-01-01T00:00:00Z",
+  "development_used_for_fitting": false,
+  "artifacts": {
+    "code": "PATH",
+    "model": "PATH",
+    "environment": "PATH",
+    "replay_command": "COMMAND"
+  }
+}

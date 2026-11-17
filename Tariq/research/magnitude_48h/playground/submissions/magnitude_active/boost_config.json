@@ -1,0 +1,123 @@
+{
+  "version": "xgb_direct_and_residual",
+  "authorization": "User authorized direct MAE boosting then residual correction with current five features, identical walk-forward folds and earlier-only selection.",
+  "horizon_minutes": 2880,
+  "target_column": "magnitude_log_bps",
+  "label_end_column": "label_end",
+  "data_parts": [
+    {
+      "X": "data/X_train.parquet",
+      "y": "data/y_train.parquet"
+    },
+    {
+      "X": "data/X_development.parquet",
+      "y": "data/y_development.parquet"
+    }
+  ],
+  "anchor_features": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+  ],
+  "additions": {
+    "flow": "F4Z__flow__flow_activity_percentile__1h__value",
+    "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+    "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value"
+  },
+  "change_scope": "Only RF gains listed PDF features; liquidation pair and nine-setting nested tuning protocol unchanged.",
+  "validation_windows": [
+    [
+      "2024-01-01T00:00:00Z",
+      "2024-04-01T00:00:00Z"
+    ],
+    [
+      "2024-04-01T00:00:00Z",
+      "2024-07-01T00:00:00Z"
+    ],
+    [
+      "2024-07-01T00:00:00Z",
+      "2024-10-01T00:00:00Z"
+    ],
+    [
+      "2024-10-01T00:00:00Z",
+      "2025-01-22T00:30:00Z"
+    ]
+  ],
+  "inner_validation_months": 3,
+  "minimum_valid_training": 1000,
+  "forest": {
+    "n_estimators": 128,
+    "criterion": "absolute_error",
+    "max_depth": 3,
+    "min_samples_leaf": 128,
+    "max_features": 1.0,
+    "bootstrap": true,
+    "max_samples": 4096,
+    "n_jobs": 4,
+    "random_state": 48
+  },
+  "forest_weights": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+  "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+  "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+  "anchor_horizon_minutes": 2880,
+  "benchmark_horizon_minutes": 2880,
+  "benchmark_predictions": "submissions/magnitude_current/run_001/predictions.parquet",
+  "benchmark_column": "prediction",
+  "benchmark_mae": 181.0610241130761,
+  "new_fit_budget": 28,
+  "prior_fit_count": 756,
+  "fit_accounting": "36 inner RF fits and 4 selected outer RF fits plus 4 joint selections per candidate.",
+  "promotion_rule": "Promote only verified lower same-row MAE. Track Spearman only. Keep compact history and discard losing model/prediction artifacts after verification.",
+  "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+  "stopping_rule": "Only direct and residual boosting; 24 inner and four selected outer fits per approach. No further tuning based on outer results.",
+  "fresh_data": "Deferred; not accessed.",
+  "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment.",
+  "grid_depths": [
+    2,
+    3,
+    5
+  ],
+  "grid_leaves": [
+    64,
+    128,
+    256
+  ],
+  "selection_rule": "Lowest inner blend MAE; tie: lower RF weight, then incumbent settings, then shallower depth, then larger leaf.",
+  "boost": {
+    "objective": "reg:absoluteerror",
+    "eval_metric": "mae",
+    "tree_method": "hist",
+    "learning_rate": 0.05,
+    "min_child_weight": 128,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.0,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "max_bin": 256,
+    "random_state": 48,
+    "n_jobs": 4,
+    "verbosity": 0
+  },
+  "boost_depths": [
+    2,
+    3
+  ],
+  "boost_trees": [
+    100,
+    300,
+    600
+  ],
+  "strengths": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "residual_definition": "Training target minus in-sample training-only liquidation pair prediction; no outer targets used. Retain signed corrections; clip only final magnitude to nonnegative."
+}

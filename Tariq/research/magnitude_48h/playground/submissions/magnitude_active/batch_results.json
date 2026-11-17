@@ -1,0 +1,2642 @@
+{
+  "plan": {
+    "experiment": "tuned_flow_context_pairs",
+    "benchmark_mae": 181.06650820557817,
+    "features": {
+      "price_range_1h": "F4Z__price__price_excursion_range_percentile__1h__value",
+      "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value",
+      "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value"
+    },
+    "candidates": [
+      [
+        "venue_fragmentation_1h",
+        "temporal_concentration_1h"
+      ],
+      [
+        "venue_fragmentation_1h",
+        "price_range_1h"
+      ]
+    ],
+    "grid_depths": [
+      2,
+      3,
+      5
+    ],
+    "grid_leaves": [
+      64,
+      128,
+      256
+    ],
+    "prior_counted_steps": 638,
+    "maximum_new_model_fits": 80,
+    "selection_steps": 8,
+    "stopping_rule": "Only the two announced context pairs; retain current liquidation pair plus flow in RF, no triple or added tuning.",
+    "retention": "Reuse active output; only one temporary leader; discard failed models after replay.",
+    "training_admission": [
+      {
+        "fold": 1,
+        "role": "inner",
+        "feature": "price_range_1h",
+        "rows": 25199,
+        "valid": 23199,
+        "coverage_pct": 92.06317711020279,
+        "unique": 1001
+      },
+      {
+        "fold": 1,
+        "role": "inner",
+        "feature": "temporal_concentration_1h",
+        "rows": 25199,
+        "valid": 22523,
+        "coverage_pct": 89.38053097345133,
+        "unique": 1140
+      },
+      {
+        "fold": 1,
+        "role": "inner",
+        "feature": "venue_fragmentation_1h",
+        "rows": 25199,
+        "valid": 22523,
+        "coverage_pct": 89.38053097345133,
+        "unique": 1168
+      },
+      {
+        "fold": 1,
+        "role": "outer",
+        "feature": "price_range_1h",
+        "rows": 29615,
+        "valid": 27615,
+        "coverage_pct": 93.24666554111093,
+        "unique": 1001
+      },
+      {
+        "fold": 1,
+        "role": "outer",
+        "feature": "temporal_concentration_1h",
+        "rows": 29615,
+        "valid": 26880,
+        "coverage_pct": 90.76481512746919,
+        "unique": 1143
+      },
+      {
+        "fold": 1,
+        "role": "outer",
+        "feature": "venue_fragmentation_1h",
+        "rows": 29615,
+        "valid": 26880,
+        "coverage_pct": 90.76481512746919,
+        "unique": 1171
+      },
+      {
+        "fold": 2,
+        "role": "inner",
+        "feature": "price_range_1h",
+        "rows": 29615,
+        "valid": 27615,
+        "coverage_pct": 93.24666554111093,
+        "unique": 1001
+      },
+      {
+        "fold": 2,
+        "role": "inner",
+        "feature": "temporal_concentration_1h",
+        "rows": 29615,
+        "valid": 26880,
+        "coverage_pct": 90.76481512746919,
+        "unique": 1143
+      },
+      {
+        "fold": 2,
+        "role": "inner",
+        "feature": "venue_fragmentation_1h",
+        "rows": 29615,
+        "valid": 26880,
+        "coverage_pct": 90.76481512746919,
+        "unique": 1171
+      },
+      {
+        "fold": 2,
+        "role": "outer",
+        "feature": "price_range_1h",
+        "rows": 33791,
+        "valid": 31789,
+        "coverage_pct": 94.07534550619988,
+        "unique": 1001
+      },
+      {
+        "fold": 2,
+        "role": "outer",
+        "feature": "temporal_concentration_1h",
+        "rows": 33791,
+        "valid": 31051,
+        "coverage_pct": 91.89133201148235,
+        "unique": 1145
+      },
+      {
+        "fold": 2,
+        "role": "outer",
+        "feature": "venue_fragmentation_1h",
+        "rows": 33791,
+        "valid": 31051,
+        "coverage_pct": 91.89133201148235,
+        "unique": 1173
+      },
+      {
+        "fold": 3,
+        "role": "inner",
+        "feature": "price_range_1h",
+        "rows": 33791,
+        "valid": 31789,
+        "coverage_pct": 94.07534550619988,
+        "unique": 1001
+      },
+      {
+        "fold": 3,
+        "role": "inner",
+        "feature": "temporal_concentration_1h",
+        "rows": 33791,
+        "valid": 31051,
+        "coverage_pct": 91.89133201148235,
+        "unique": 1145
+      },
+      {
+        "fold": 3,
+        "role": "inner",
+        "feature": "venue_fragmentation_1h",
+        "rows": 33791,
+        "valid": 31051,
+        "coverage_pct": 91.89133201148235,
+        "unique": 1173
+      },
+      {
+        "fold": 3,
+        "role": "outer",
+        "feature": "price_range_1h",
+        "rows": 38159,
+        "valid": 36157,
+        "coverage_pct": 94.75353127702508,
+        "unique": 1001
+      },
+      {
+        "fold": 3,
+        "role": "outer",
+        "feature": "temporal_concentration_1h",
+        "rows": 38159,
+        "valid": 35402,
+        "coverage_pct": 92.77496789748159,
+        "unique": 1145
+      },
+      {
+        "fold": 3,
+        "role": "outer",
+        "feature": "venue_fragmentation_1h",
+        "rows": 38159,
+        "valid": 35402,
+        "coverage_pct": 92.77496789748159,
+        "unique": 1174
+      },
+      {
+        "fold": 4,
+        "role": "inner",
+        "feature": "price_range_1h",
+        "rows": 38159,
+        "valid": 36157,
+        "coverage_pct": 94.75353127702508,
+        "unique": 1001
+      },
+      {
+        "fold": 4,
+        "role": "inner",
+        "feature": "temporal_concentration_1h",
+        "rows": 38159,
+        "valid": 35402,
+        "coverage_pct": 92.77496789748159,
+        "unique": 1145
+      },
+      {
+        "fold": 4,
+        "role": "inner",
+        "feature": "venue_fragmentation_1h",
+        "rows": 38159,
+        "valid": 35402,
+        "coverage_pct": 92.77496789748159,
+        "unique": 1174
+      },
+      {
+        "fold": 4,
+        "role": "outer",
+        "feature": "price_range_1h",
+        "rows": 42575,
+        "valid": 40573,
+        "coverage_pct": 95.29770992366412,
+        "unique": 1001
+      },
+      {
+        "fold": 4,
+        "role": "outer",
+        "feature": "temporal_concentration_1h",
+        "rows": 42575,
+        "valid": 39812,
+        "coverage_pct": 93.51027598355843,
+        "unique": 1145
+      },
+      {
+        "fold": 4,
+        "role": "outer",
+        "feature": "venue_fragmentation_1h",
+        "rows": 42575,
+        "valid": 39812,
+        "coverage_pct": 93.51027598355843,
+        "unique": 1174
+      }
+    ]
+  },
+  "results": [
+    {
+      "features": [
+        "venue_fragmentation_1h",
+        "temporal_concentration_1h"
+      ],
+      "config": {
+        "version": "tuned_flow_plus_venue_fragmentation_1h_temporal_concentration_1h",
+        "authorization": "User authorized venue fragmentation plus temporal concentration, and venue fragmentation plus price range, on top of pair plus flow with unchanged nested tuning.",
+        "horizon_minutes": 2880,
+        "target_column": "magnitude_log_bps",
+        "label_end_column": "label_end",
+        "data_parts": [
+          {
+            "X": "data/X_train.parquet",
+            "y": "data/y_train.parquet"
+          },
+          {
+            "X": "data/X_development.parquet",
+            "y": "data/y_development.parquet"
+          }
+        ],
+        "anchor_features": [
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+        ],
+        "additions": {
+          "flow": "F4Z__flow__flow_activity_percentile__1h__value",
+          "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+          "temporal_concentration_1h": "F4Z__liquidation__liq_temporal_concentration_percentile__1h__value"
+        },
+        "change_scope": "Only RF gains listed PDF features; liquidation pair and nine-setting nested tuning protocol unchanged.",
+        "validation_windows": [
+          [
+            "2024-01-01T00:00:00Z",
+            "2024-04-01T00:00:00Z"
+          ],
+          [
+            "2024-04-01T00:00:00Z",
+            "2024-07-01T00:00:00Z"
+          ],
+          [
+            "2024-07-01T00:00:00Z",
+            "2024-10-01T00:00:00Z"
+          ],
+          [
+            "2024-10-01T00:00:00Z",
+            "2025-01-22T00:30:00Z"
+          ]
+        ],
+        "inner_validation_months": 3,
+        "minimum_valid_training": 1000,
+        "forest": {
+          "n_estimators": 128,
+          "criterion": "absolute_error",
+          "max_depth": 3,
+          "min_samples_leaf": 128,
+          "max_features": 1.0,
+          "bootstrap": true,
+          "max_samples": 4096,
+          "n_jobs": 4,
+          "random_state": 48
+        },
+        "forest_weights": [
+          0.0,
+          0.1,
+          0.25,
+          0.5
+        ],
+        "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+        "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+        "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+        "anchor_horizon_minutes": 2880,
+        "benchmark_horizon_minutes": 2880,
+        "benchmark_predictions": "submissions/magnitude_current/run_001/predictions.parquet",
+        "benchmark_column": "prediction",
+        "benchmark_mae": 181.06650820557817,
+        "new_fit_budget": 40,
+        "prior_fit_count": 638,
+        "fit_accounting": "36 inner RF fits and 4 selected outer RF fits plus 4 joint selections per candidate.",
+        "promotion_rule": "Promote only verified lower same-row MAE. Track Spearman only. Keep compact history and discard losing model/prediction artifacts after verification.",
+        "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+        "stopping_rule": "Only the two announced context pairs; retain current liquidation pair plus flow in RF, no triple or added tuning.",
+        "fresh_data": "Deferred; not accessed.",
+        "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment.",
+        "grid_depths": [
+          2,
+          3,
+          5
+        ],
+        "grid_leaves": [
+          64,
+          128,
+          256
+        ],
+        "selection_rule": "Lowest inner blend MAE; tie: lower RF weight, then incumbent settings, then shallower depth, then larger leaf."
+      },
+      "result": {
+        "status": "VERIFIED",
+        "experiment": "tuned_flow_plus_venue_fragmentation_1h_temporal_concentration_1h",
+        "metrics": {
+          "incumbent": {
+            "MAE": 181.06650820557817,
+            "Spearman_IC": 0.0700806284070547
+          },
+          "prediction": {
+            "MAE": 181.0610241130761,
+            "Spearman_IC": 0.07195947735301861
+          }
+        },
+        "selected_settings": [
+          {
+            "fold": 1,
+            "depth": 5,
+            "leaf": 64,
+            "weight": 0.5,
+            "MAE": 154.8813344325218
+          },
+          {
+            "fold": 2,
+            "depth": 5,
+            "leaf": 128,
+            "weight": 0.5,
+            "MAE": 210.63306284011784
+          },
+          {
+            "fold": 3,
+            "depth": 5,
+            "leaf": 128,
+            "weight": 0.25,
+            "MAE": 153.937474656124
+          },
+          {
+            "fold": 4,
+            "depth": 3,
+            "leaf": 128,
+            "weight": 0.0,
+            "MAE": 193.99331532699136
+          }
+        ],
+        "rows": 18481,
+        "new_model_fits": 40,
+        "new_selection_steps": 4,
+        "cumulative_counted_steps": 682,
+        "nominal_intervals": [
+          {
+            "block_days": 7,
+            "delta_MAE": -0.005484092502071273,
+            "interval": [
+              -0.05429585859106654,
+              0.04049000338125158
+            ]
+          },
+          {
+            "block_days": 14,
+            "delta_MAE": -0.005484092502071273,
+            "interval": [
+              -0.05610943452148298,
+              0.04554021214783134
+            ]
+          }
+        ],
+        "interpretation": "Adaptive development experiment; earlier inner MAE selects depth, leaf and blend jointly. No fresh test accessed. No outer-period grid cherry-picking."
+      },
+      "verification": {
+        "status": "PASS",
+        "checks": [
+          "strict label-end purges",
+          "input hashes",
+          "exact rows and target values",
+          "train-only preprocessing",
+          "all inner scores replayed using individual trees",
+          "earlier-data-only settings/weight selection",
+          "selected outer models replayed",
+          "MAE and Spearman checks"
+        ],
+        "rows": 18481,
+        "new_verification_fits": 0
+      },
+      "inner_scores": [
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 157.881787333837
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 157.14979735115335
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 156.13925152485334
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 157.8546692632299
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 157.0852120455103
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 156.019543837023
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 157.87007299638597
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 157.1435961599668
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 156.16835011055304
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 157.6965190707137
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 156.75840157399603
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 155.5396608388541
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 157.62535487328233
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 156.56018709366228
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 155.07295783824293
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 157.7004521167518
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 156.74907225979084
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.46372336606882
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 157.41989749022707
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 156.19601159290247
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 154.8813344325218
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 157.71623513148774
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 156.87079884477623
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 155.97765698399363
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 157.72167204114317
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 156.80379300306058
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.56919865587173
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 213.98061351463943
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 213.80408735336925
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 213.53840373851682
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 213.98875892940214
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 213.82469536854182
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 213.58097135589233
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 213.9773479850678
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 213.79943936251078
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 213.54436399983703
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 213.68841347018474
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 213.08339403772527
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 212.18739487517277
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 213.7259804630541
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 213.17524341351097
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 212.36993753763863
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 213.7615913698524
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 213.2895070762101
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 212.66469325224188
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 213.29123584019922
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 212.14633448948874
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 210.65072225500415
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 213.312924641448
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 212.19444312880904
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 210.63306284011784
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 213.60081204276773
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 212.91779437342038
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 211.9896511161778
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 154.71890904163052
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 154.71893069184944
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 154.80987116571038
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 154.73102574145526
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 154.7518781871264
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 154.8868394534335
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 154.75006306844801
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 154.80151533683045
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 154.99761129742907
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 154.6443837213536
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 154.59602728842728
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 154.8229254996319
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 154.63615910663472
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 154.5914777532082
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 154.88848261822488
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 154.64545353934375
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 154.63137527067727
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.0611952196036
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 154.33485034986867
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 154.0550854055161
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 154.36796822386478
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 154.27742884354885
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 153.937474656124
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 154.29794132589063
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 154.527606344427
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 154.4764937622958
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.10398509359024
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 194.16581445795367
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 194.4834839815937
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 195.1389492377972
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 194.16393691517254
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 194.48039859104563
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 195.1388128619957
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 194.1525870856136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 194.45588437973973
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 195.09814919453677
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 194.15288890334443
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 194.49119982277625
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 195.25730145059262
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 194.1804040702297
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 194.55490107404708
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 195.39163681845224
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 194.15798286698328
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 194.51652917119344
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 195.35236615990897
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 194.33967334396982
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 195.1129039589856
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 196.8819050935043
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 194.36653453401667
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 195.11156885443467
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 196.78929008546203
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 194.19945159271717
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 194.66472927475039
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 195.77998605154156
+        }
+      ],
+      "fold_MAE_csv": "fold,incumbent,prediction\n1,211.91537989659966,211.90619237767748\n2,152.72036193400888,152.79371645521002\n3,195.7669507739603,195.68033053362927\n4,167.63101192321784,167.63101192321784\n",
+      "monthly_MAE_csv": "decision_time,incumbent,prediction\n2024-01,177.95976537460933,177.7902201349503\n2024-02,229.93330018965517,230.0851181412268\n2024-03,230.19484064429247,230.1960645287676\n2024-04,183.64268903815653,183.70654472084848\n2024-05,161.32964881824802,161.4725418807196\n2024-06,112.90177171614745,112.91276858321167\n2024-07,194.9855382605111,194.89620035060526\n2024-08,239.05540814997997,238.99279723823153\n2024-09,151.8430044159708,151.734382794665\n2024-10,132.88760015196692,132.88760015196692\n2024-11,225.4410402057594,225.4410402057594\n2024-12,149.12483268585953,149.12483268585953\n2025-01,163.65574006390236,163.65574006390236\n",
+      "decision": "NEW_BATCH_LEADER"
+    },
+    {
+      "features": [
+        "venue_fragmentation_1h",
+        "price_range_1h"
+      ],
+      "config": {
+        "version": "tuned_flow_plus_venue_fragmentation_1h_price_range_1h",
+        "authorization": "User authorized venue fragmentation plus temporal concentration, and venue fragmentation plus price range, on top of pair plus flow with unchanged nested tuning.",
+        "horizon_minutes": 2880,
+        "target_column": "magnitude_log_bps",
+        "label_end_column": "label_end",
+        "data_parts": [
+          {
+            "X": "data/X_train.parquet",
+            "y": "data/y_train.parquet"
+          },
+          {
+            "X": "data/X_development.parquet",
+            "y": "data/y_development.parquet"
+          }
+        ],
+        "anchor_features": [
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+          "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+        ],
+        "additions": {
+          "flow": "F4Z__flow__flow_activity_percentile__1h__value",
+          "venue_fragmentation_1h": "F4Z__liquidation__venue_fragmentation_percentile__1h__value",
+          "price_range_1h": "F4Z__price__price_excursion_range_percentile__1h__value"
+        },
+        "change_scope": "Only RF gains listed PDF features; liquidation pair and nine-setting nested tuning protocol unchanged.",
+        "validation_windows": [
+          [
+            "2024-01-01T00:00:00Z",
+            "2024-04-01T00:00:00Z"
+          ],
+          [
+            "2024-04-01T00:00:00Z",
+            "2024-07-01T00:00:00Z"
+          ],
+          [
+            "2024-07-01T00:00:00Z",
+            "2024-10-01T00:00:00Z"
+          ],
+          [
+            "2024-10-01T00:00:00Z",
+            "2025-01-22T00:30:00Z"
+          ]
+        ],
+        "inner_validation_months": 3,
+        "minimum_valid_training": 1000,
+        "forest": {
+          "n_estimators": 128,
+          "criterion": "absolute_error",
+          "max_depth": 3,
+          "min_samples_leaf": 128,
+          "max_features": 1.0,
+          "bootstrap": true,
+          "max_samples": 4096,
+          "n_jobs": 4,
+          "random_state": 48
+        },
+        "forest_weights": [
+          0.0,
+          0.1,
+          0.25,
+          0.5
+        ],
+        "source_hybrid_config": "submissions/magnitude_rf_hybrid_v4/config.json",
+        "anchor_profile": "submissions/magnitude_rf_hybrid_v4/run_001",
+        "outer_pair_profile": "submissions/magnitude_walkforward_v2/run_001",
+        "anchor_horizon_minutes": 2880,
+        "benchmark_horizon_minutes": 2880,
+        "benchmark_predictions": "submissions/magnitude_current/run_001/predictions.parquet",
+        "benchmark_column": "prediction",
+        "benchmark_mae": 181.06650820557817,
+        "new_fit_budget": 40,
+        "prior_fit_count": 682,
+        "fit_accounting": "36 inner RF fits and 4 selected outer RF fits plus 4 joint selections per candidate.",
+        "promotion_rule": "Promote only verified lower same-row MAE. Track Spearman only. Keep compact history and discard losing model/prediction artifacts after verification.",
+        "selection_exposure": "PDF ranking and previous model results were inspected. Feature selection is historical development selection, not untouched confirmation.",
+        "stopping_rule": "Only the two announced context pairs; retain current liquidation pair plus flow in RF, no triple or added tuning.",
+        "fresh_data": "Deferred; not accessed.",
+        "horizon_reuse": "Target horizon, label-end column, input paths, folds and benchmark are explicit. Other horizons require matching target labels and separately generated/verified pair anchors and benchmark predictions. Never reuse 48h target/model artifacts for another horizon; no other horizons run in this experiment.",
+        "grid_depths": [
+          2,
+          3,
+          5
+        ],
+        "grid_leaves": [
+          64,
+          128,
+          256
+        ],
+        "selection_rule": "Lowest inner blend MAE; tie: lower RF weight, then incumbent settings, then shallower depth, then larger leaf."
+      },
+      "result": {
+        "status": "VERIFIED",
+        "experiment": "tuned_flow_plus_venue_fragmentation_1h_price_range_1h",
+        "metrics": {
+          "incumbent": {
+            "MAE": 181.06650820557817,
+            "Spearman_IC": 0.0700806284070547
+          },
+          "prediction": {
+            "MAE": 181.42053648752136,
+            "Spearman_IC": 0.06094768572288592
+          }
+        },
+        "selected_settings": [
+          {
+            "fold": 1,
+            "depth": 3,
+            "leaf": 128,
+            "weight": 0.5,
+            "MAE": 155.0587928505152
+          },
+          {
+            "fold": 2,
+            "depth": 5,
+            "leaf": 128,
+            "weight": 0.5,
+            "MAE": 210.83106460905083
+          },
+          {
+            "fold": 3,
+            "depth": 5,
+            "leaf": 128,
+            "weight": 0.25,
+            "MAE": 153.92859531732938
+          },
+          {
+            "fold": 4,
+            "depth": 3,
+            "leaf": 128,
+            "weight": 0.0,
+            "MAE": 193.99331532699136
+          }
+        ],
+        "rows": 18481,
+        "new_model_fits": 40,
+        "new_selection_steps": 4,
+        "cumulative_counted_steps": 726,
+        "nominal_intervals": [
+          {
+            "block_days": 7,
+            "delta_MAE": 0.3540282819431829,
+            "interval": [
+              -0.14091322229625267,
+              0.9373980263855228
+            ]
+          },
+          {
+            "block_days": 14,
+            "delta_MAE": 0.3540282819431829,
+            "interval": [
+              -0.18183644026066084,
+              1.115294305521967
+            ]
+          }
+        ],
+        "interpretation": "Adaptive development experiment; earlier inner MAE selects depth, leaf and blend jointly. No fresh test accessed. No outer-period grid cherry-picking."
+      },
+      "verification": {
+        "status": "PASS",
+        "checks": [
+          "strict label-end purges",
+          "input hashes",
+          "exact rows and target values",
+          "train-only preprocessing",
+          "all inner scores replayed using individual trees",
+          "earlier-data-only settings/weight selection",
+          "selected outer models replayed",
+          "MAE and Spearman checks"
+        ],
+        "rows": 18481,
+        "new_verification_fits": 0
+      },
+      "inner_scores": [
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 157.88888059183293
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 157.16671374933995
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 156.17085777577293
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 157.86114419883015
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 157.10061127312855
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 156.04842904246567
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 157.88223561703606
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 157.17290376703522
+        },
+        {
+          "fold": 1,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 156.22610179345506
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 157.692813454958
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 156.73934024079304
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 155.45890676586805
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 157.62331386710323
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 156.5508660901999
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 155.0587928505152
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 157.70615888221133
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 156.76841500998142
+        },
+        {
+          "fold": 1,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.52257050726217
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 157.4604767903604
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 156.3061354591149
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 155.10369119828775
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 157.70062435365554
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 156.8336270152083
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 155.89019036921235
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 158.41797140738385
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 157.74944525457346
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 156.88067693852136
+        },
+        {
+          "fold": 1,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.75387515263245
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 213.9804515210011
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 213.80368236927347
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 213.53759377032523
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 213.9885223066991
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 213.8241038117842
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 213.57978824237713
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 213.97774718014725
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 213.80060363281066
+        },
+        {
+          "fold": 2,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 213.54679090938674
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 213.6993373456537
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 213.1103875911862
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 212.23742427207017
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 213.7356592550563
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 213.19957390000138
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 212.41793436851867
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 213.77518982365962
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 213.32645349079505
+        },
+        {
+          "fold": 2,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 212.73904476493846
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 213.3363280536324
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 212.2557783852854
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 210.84366673300622
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 213.35137861029284
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 212.29536328802362
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 210.83106460905083
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 214.10278956317583
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 213.6376660132032
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 213.01394611228793
+        },
+        {
+          "fold": 2,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 212.20095955128957
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 154.718325429317
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 154.71740297253135
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 154.8068599616494
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 154.7296005477316
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 154.74829548797206
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 154.87949950373098
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 154.74931267191369
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 154.79966838136184
+        },
+        {
+          "fold": 3,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 154.99390394432314
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 154.63510870493062
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 154.57262056275957
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 154.78285169984744
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 154.62778104316675
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 154.5686714810555
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 154.84947909550058
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 154.64487417285733
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 154.62944158557113
+        },
+        {
+          "fold": 3,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.0552156297562
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 154.33445556904314
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 154.0621786944769
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 154.3891599649004
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 154.27068076008118
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 153.92859531732938
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 154.262848210761
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 154.7415943741043
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 154.52333745011194
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 154.46530905682076
+        },
+        {
+          "fold": 3,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 155.0747019760048
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 194.16738295316853
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 194.4876219707385
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 195.14754607901975
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 194.1656205822642
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 194.48468981107325
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 195.1480238316974
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 194.15394481537663
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 194.45934809683848
+        },
+        {
+          "fold": 4,
+          "depth": 2,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 195.1057371401755
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 194.16875415734216
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 194.53968197918087
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 195.3530532511156
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 194.19201034469302
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 194.59477237352638
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 195.4659570830438
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 194.1596834580159
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 194.5191770976156
+        },
+        {
+          "fold": 4,
+          "depth": 3,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 195.34769552429375
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.1,
+          "MAE": 194.3375679989637
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.25,
+          "MAE": 195.1025033569186
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 64,
+          "weight": 0.5,
+          "MAE": 196.84721796522788
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.1,
+          "MAE": 194.36173261110548
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.25,
+          "MAE": 195.11310640382894
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 128,
+          "weight": 0.5,
+          "MAE": 196.79376522307848
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.0,
+          "MAE": 193.99331532699136
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.1,
+          "MAE": 194.20886626186692
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.25,
+          "MAE": 194.68789512437755
+        },
+        {
+          "fold": 4,
+          "depth": 5,
+          "leaf": 256,
+          "weight": 0.5,
+          "MAE": 195.81929321039513
+        }
+      ],
+      "fold_MAE_csv": "fold,incumbent,prediction\n1,211.91537989659966,213.5340012169286\n2,152.72036193400888,152.7478081490315\n3,195.7669507739603,195.65557426375378\n4,167.63101192321784,167.63101192321784\n",
+      "monthly_MAE_csv": "decision_time,incumbent,prediction\n2024-01,177.95976537460933,177.81222518575225\n2024-02,229.93330018965517,234.14688356299408\n2024-03,230.19484064429247,231.10646566281025\n2024-04,183.64268903815653,183.44917925997547\n2024-05,161.32964881824802,161.92099238054863\n2024-06,112.90177171614745,112.56747999885309\n2024-07,194.9855382605111,194.9802439995417\n2024-08,239.05540814997997,239.01406107906942\n2024-09,151.8430044159708,151.54964582761343\n2024-10,132.88760015196692,132.88760015196692\n2024-11,225.4410402057594,225.4410402057594\n2024-12,149.12483268585953,149.12483268585953\n2025-01,163.65574006390236,163.65574006390236\n",
+      "decision": "NO_PROMOTION"
+    }
+  ],
+  "best_MAE": 181.0610241130761,
+  "counted_steps": 726
+}

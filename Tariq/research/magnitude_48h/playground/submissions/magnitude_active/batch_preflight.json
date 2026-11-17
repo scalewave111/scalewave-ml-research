@@ -1,0 +1,232 @@
+{
+  "status": "PASS",
+  "plan_id": "seven_feature_variance_price_basis_funding_2026_11_06",
+  "benchmark_mae": 180.79851809782613,
+  "base_features": 7,
+  "coverage": [
+    {
+      "fold": 1,
+      "role": "inner",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 25021,
+      "unique": 25021
+    },
+    {
+      "fold": 1,
+      "role": "inner",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 24699,
+      "unique": 24699
+    },
+    {
+      "fold": 1,
+      "role": "inner",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 23199,
+      "unique": 22141
+    },
+    {
+      "fold": 1,
+      "role": "inner",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 23467,
+      "unique": 80
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 29435,
+      "unique": 29435
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 29115,
+      "unique": 29115
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 27615,
+      "unique": 26367
+    },
+    {
+      "fold": 1,
+      "role": "outer",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 27607,
+      "unique": 80
+    },
+    {
+      "fold": 2,
+      "role": "inner",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 29435,
+      "unique": 29435
+    },
+    {
+      "fold": 2,
+      "role": "inner",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 29115,
+      "unique": 29115
+    },
+    {
+      "fold": 2,
+      "role": "inner",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 27615,
+      "unique": 26367
+    },
+    {
+      "fold": 2,
+      "role": "inner",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 27607,
+      "unique": 80
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 33610,
+      "unique": 33610
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 33290,
+      "unique": 33290
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 31791,
+      "unique": 30371
+    },
+    {
+      "fold": 2,
+      "role": "outer",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 31522,
+      "unique": 80
+    },
+    {
+      "fold": 3,
+      "role": "inner",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 33610,
+      "unique": 33610
+    },
+    {
+      "fold": 3,
+      "role": "inner",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 33290,
+      "unique": 33290
+    },
+    {
+      "fold": 3,
+      "role": "inner",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 31791,
+      "unique": 30371
+    },
+    {
+      "fold": 3,
+      "role": "inner",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 31522,
+      "unique": 80
+    },
+    {
+      "fold": 3,
+      "role": "outer",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 37978,
+      "unique": 37978
+    },
+    {
+      "fold": 3,
+      "role": "outer",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 37658,
+      "unique": 37658
+    },
+    {
+      "fold": 3,
+      "role": "outer",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 36159,
+      "unique": 34565
+    },
+    {
+      "fold": 3,
+      "role": "outer",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 35617,
+      "unique": 82
+    },
+    {
+      "fold": 4,
+      "role": "inner",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 37978,
+      "unique": 37978
+    },
+    {
+      "fold": 4,
+      "role": "inner",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 37658,
+      "unique": 37658
+    },
+    {
+      "fold": 4,
+      "role": "inner",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 36159,
+      "unique": 34565
+    },
+    {
+      "fold": 4,
+      "role": "inner",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 35617,
+      "unique": 82
+    },
+    {
+      "fold": 4,
+      "role": "outer",
+      "feature": "volatility_realized_variance_level_rz__5m",
+      "valid": 42394,
+      "unique": 42394
+    },
+    {
+      "fold": 4,
+      "role": "outer",
+      "feature": "price_price_excursion_range_rz__15m",
+      "valid": 42074,
+      "unique": 42074
+    },
+    {
+      "fold": 4,
+      "role": "outer",
+      "feature": "basis_basis_range_rz__1h",
+      "valid": 40575,
+      "unique": 38757
+    },
+    {
+      "fold": 4,
+      "role": "outer",
+      "feature": "funding_funding_persistence_percentile__5m",
+      "valid": 39757,
+      "unique": 93
+    }
+  ]
+}

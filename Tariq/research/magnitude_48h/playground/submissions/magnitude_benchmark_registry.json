@@ -1,0 +1,693 @@
+{
+  "status": "ACTIVE_DEVELOPMENT_BENCHMARK",
+  "horizon_minutes": 2880,
+  "target": "absolute endpoint log return in log basis points",
+  "evaluation_start": "2024-01-01T00:00:00Z",
+  "evaluation_end_inclusive": "2025-01-22T00:00:00Z",
+  "rows": 18481,
+  "current": {
+    "experiment": "ensemble_context_flow_flow_activity_percentile__5m",
+    "prediction_file": "submissions/magnitude_current/run_001/predictions.parquet",
+    "prediction_column": "prediction",
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "Pearson_IC": 0.06533420578948929,
+    "verification": "submissions/magnitude_current/run_001/verification.json",
+    "IC_verification": "submissions/magnitude_current/run_001/verification.json",
+    "prediction_sha256": "2276dedafc41851bb5f4e3af6fdbafbe797784ce63f62237dc213408ffc88ade",
+    "replay_script": "submissions/magnitude_current/replay.py"
+  },
+  "history": [
+    {
+      "model": "frozen_MP0004",
+      "MAE": 182.03697721076213,
+      "Spearman_IC": 0.03025442548026061,
+      "Pearson_IC": 0.051755413412708826
+    },
+    {
+      "model": "walkforward_refitted_pair",
+      "MAE": 181.97660210071422,
+      "Spearman_IC": 0.027241073957620092,
+      "Pearson_IC": 0.03587420658053796
+    },
+    {
+      "model": "selected_pair_RF_hybrid",
+      "MAE": 181.5238678328609,
+      "Spearman_IC": 0.07737672515285152,
+      "Pearson_IC": 0.04400400482390407
+    },
+    {
+      "model": "rf_depth_leaf_tuning",
+      "MAE": 181.13846791233013,
+      "Spearman_IC": 0.06814772435805158,
+      "Pearson_IC": 0.04289594603712146
+    },
+    {
+      "model": "tuned_pdf_flow",
+      "MAE": 181.06650820557817,
+      "Spearman_IC": 0.0700806284070547,
+      "Pearson_IC": 0.0457430055433068
+    },
+    {
+      "model": "tuned_flow_plus_venue_fragmentation_1h_temporal_concentration_1h",
+      "MAE": 181.0610241130761,
+      "Spearman_IC": 0.07195947735301861,
+      "Pearson_IC": 0.04600680362284926
+    },
+    {
+      "model": "rf_bootstrap_size",
+      "MAE": 180.89120445756495,
+      "Spearman_IC": 0.07347771657743142,
+      "Pearson_IC": 0.05463995166659974
+    },
+    {
+      "model": "rf_bootstrap_16384_extension",
+      "MAE": 180.87738581427703,
+      "Spearman_IC": 0.07583203436248488,
+      "Pearson_IC": 0.06043914566199844
+    },
+    {
+      "model": "rf_leaf_after_bootstrap",
+      "MAE": 180.86314075140652,
+      "Spearman_IC": 0.07623424191635585,
+      "Pearson_IC": 0.06117687909614349
+    },
+    {
+      "model": "rf_three_seed_average",
+      "MAE": 180.82053308956776,
+      "Spearman_IC": 0.07690384610046537,
+      "Pearson_IC": 0.06432661164168062
+    },
+    {
+      "model": "ensemble_context_flow_flow_activity_percentile__15m",
+      "MAE": 180.81520672728772,
+      "Spearman_IC": 0.07795173134982929,
+      "Pearson_IC": 0.06442071162260175
+    },
+    {
+      "model": "ensemble_context_flow_flow_activity_percentile__5m",
+      "MAE": 180.79851809782613,
+      "Spearman_IC": 0.07852651265983954,
+      "Pearson_IC": 0.06533420578948929
+    }
+  ],
+  "rule": "Only verified lower MAE on identical target/timestamp population promotes the development benchmark. Track Spearman IC without optimizing it or requiring improvement. New horizons/populations need separate benchmarks.",
+  "evaluated_experiments": [
+    {
+      "experiment": "magnitude_feature_additions_v5",
+      "decision": "NO_PROMOTION",
+      "candidate_scores": {
+        "variance_rz_4h": 182.21974423665827,
+        "flow_rz_4h": 182.22018736416666,
+        "flow_percentile_1h": 181.55855346445884
+      },
+      "verification": "submissions/magnitude_feature_additions_v5/run_001/verification.json",
+      "new_fits_including_weight_selection": 36
+    },
+    {
+      "experiment": "magnitude_linear_additions_v6",
+      "decision": "NO_PROMOTION",
+      "candidate_scores": {
+        "flow_percentile_1h": 181.78349428946552,
+        "variance_rz_4h": 182.88057185964513,
+        "flow_rz_4h": 183.01256563379206
+      },
+      "verification": "submissions\\magnitude_linear_additions_v6\\run_001\\verification.json",
+      "new_fits_including_weight_selection": 36
+    },
+    {
+      "experiment": "rf_complementary_families",
+      "decision": "NO_PROMOTION",
+      "candidate_scores": {
+        "basis_range_percentile_1h": 181.5562939080615,
+        "liquidation_severity_rz_1h": 181.53887920963015,
+        "price_range_percentile_4h": 182.2220729047614
+      },
+      "Spearman_IC": {
+        "basis_range_percentile_1h": 0.07701469252666104,
+        "liquidation_severity_rz_1h": 0.07621449231604614,
+        "price_range_percentile_4h": 0.03590143273652126
+      },
+      "new_fits_including_weight_selection": 36,
+      "verification_status": "PASS before intentional artifact pruning",
+      "result_location": "submissions/experiment_history.json (rf_complementary_families entry)"
+    },
+    {
+      "experiment": "rf_depth_leaf_tuning",
+      "decision": "PROMOTE",
+      "MAE": 181.13846791233013,
+      "Spearman_IC": 0.06814772435805158,
+      "new_model_fits": 35,
+      "new_selection_steps": 4,
+      "verification": "submissions/magnitude_current/run_001/verification.json"
+    },
+    {
+      "experiment": "tuned_pdf_severity",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.11302053206578,
+      "Spearman_IC": 0.07101574811287906,
+      "features": [
+        "severity"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_pdf_basis",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.1387519690439,
+      "Spearman_IC": 0.07232695684411516,
+      "features": [
+        "basis"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_pdf_flow",
+      "decision": "PROMOTE",
+      "MAE": 181.06650820557817,
+      "Spearman_IC": 0.0700806284070547,
+      "features": [
+        "flow"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_pdf_severity_basis",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.098644827816,
+      "Spearman_IC": 0.0729457077030626,
+      "features": [
+        "severity",
+        "basis"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_pdf_severity_flow",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.1063732395263,
+      "Spearman_IC": 0.07057750710126304,
+      "features": [
+        "severity",
+        "flow"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_pdf_basis_flow",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.1192275964416,
+      "Spearman_IC": 0.071515348707443,
+      "features": [
+        "basis",
+        "flow"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "fine_blend_grid",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.1231753562583,
+      "Spearman_IC": 0.06747918874125476,
+      "new_model_fits": 32,
+      "new_selection_steps": 4,
+      "verification_status": "All inner scores and outer replay PASS before losing-artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "volatility_regime_blend",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.1642390018016,
+      "Spearman_IC": 0.06587265062150494,
+      "new_model_fits": 0,
+      "new_selection_steps": 4,
+      "verification_status": "PASS; candidate predictions pruned",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_flow_plus_price_range_1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.11679510587655,
+      "Spearman_IC": 0.06729715198110553,
+      "features": [
+        "price_range_1h"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_flow_plus_temporal_concentration_1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.08838935968998,
+      "Spearman_IC": 0.07208567822163887,
+      "features": [
+        "temporal_concentration_1h"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_flow_plus_venue_fragmentation_1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.06716694622455,
+      "Spearman_IC": 0.07067190236995244,
+      "features": [
+        "venue_fragmentation_1h"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_flow_plus_venue_fragmentation_1h_temporal_concentration_1h",
+      "decision": "PROMOTE",
+      "MAE": 181.0610241130761,
+      "Spearman_IC": 0.07195947735301861,
+      "features": [
+        "venue_fragmentation_1h",
+        "temporal_concentration_1h"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "tuned_flow_plus_venue_fragmentation_1h_price_range_1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.42053648752136,
+      "Spearman_IC": 0.06094768572288592,
+      "features": [
+        "venue_fragmentation_1h",
+        "price_range_1h"
+      ],
+      "new_model_fits": 40,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional losing-model pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "rf_recency_weighting",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.0610241130761,
+      "Spearman_IC": 0.07195947735301861,
+      "new_model_fits": 8,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before pruning; uniform weights selected in every fold",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "rf_depth7_extension",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.10500360745613,
+      "Spearman_IC": 0.06431967682100391,
+      "new_model_fits": 14,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before failed-artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "xgb_mae_direct",
+      "decision": "NO_PROMOTION",
+      "MAE": 182.4238072634937,
+      "Spearman_IC": 0.02688986396308387,
+      "new_model_fits": 28,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "xgb_mae_residual",
+      "decision": "NO_PROMOTION",
+      "MAE": 183.2270625207759,
+      "Spearman_IC": 0.004706927131156544,
+      "new_model_fits": 28,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "rf_bootstrap_size",
+      "decision": "PROMOTE",
+      "MAE": 180.89120445756495,
+      "Spearman_IC": 0.07347771657743142,
+      "new_model_fits": 10,
+      "new_selection_steps": 4,
+      "verification_status": "PASS; selected models retained",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "rf_bootstrap_16384_extension",
+      "decision": "PROMOTE",
+      "MAE": 180.87738581427703,
+      "Spearman_IC": 0.07583203436248488,
+      "new_model_fits": 10,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before authorized pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "rf_leaf_after_bootstrap",
+      "decision": "PROMOTE",
+      "MAE": 180.86314075140652,
+      "Spearman_IC": 0.07623424191635585,
+      "new_model_fits": 13,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before authorized pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "rf_three_seed_average",
+      "decision": "PROMOTE",
+      "MAE": 180.82053308956776,
+      "Spearman_IC": 0.07690384610046537,
+      "new_model_fits": 16,
+      "new_selection_steps": 12,
+      "verification_status": "PASS before authorized pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_variance_rz_4h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.9956285119756,
+      "Spearman_IC": 0.03586501263112636,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_price_range_1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.85817369385333,
+      "Spearman_IC": 0.07340639360363052,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_basis_range_1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.82415698848715,
+      "Spearman_IC": 0.07664556734344728,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_basis_level_rz_1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.12473146327568,
+      "Spearman_IC": 0.06034406291492719,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_funding_persistence_15m",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.21246688093277,
+      "Spearman_IC": 0.06837131013503361,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_vol_shock_concentration_5m",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.82422936778661,
+      "Spearman_IC": 0.07706492164419307,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional artifact pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_flow_flow_activity_percentile__15m",
+      "decision": "PROMOTE",
+      "MAE": 180.81520672728772,
+      "Spearman_IC": 0.07795173134982929,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before authorized pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_liquidation_venue_breadth_percentile__1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.1971703914071,
+      "Spearman_IC": 0.07032548417244198,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_liquidation_cross_asset_liq_activity_raw_active_severity_rz__1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.83090717493843,
+      "Spearman_IC": 0.07635565292702157,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.89535819078594,
+      "Spearman_IC": 0.07015638025963018,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_flow_flow_activity_percentile__5m",
+      "decision": "PROMOTE",
+      "MAE": 180.79851809782613,
+      "Spearman_IC": 0.07852651265983954,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before authorized pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_price_price_excursion_range_rz__1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.8350396497946,
+      "Spearman_IC": 0.07530784624288916,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_basis_basis_range_percentile__4h",
+      "decision": "NO_PROMOTION",
+      "MAE": 182.00970156257645,
+      "Spearman_IC": 0.021219964316193007,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__15m",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.80543778379962,
+      "Spearman_IC": 0.08028501055573824,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__5m",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.80313507585643,
+      "Spearman_IC": 0.07914913385025726,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_price_price_excursion_range_rz__15m",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.80897698464625,
+      "Spearman_IC": 0.07897134903505203,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_basis_basis_range_rz__1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.809325732056,
+      "Spearman_IC": 0.07780894962445861,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_funding_funding_persistence_percentile__5m",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.96069981584893,
+      "Spearman_IC": 0.07540306433967081,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_liquidation_liq_activity_severity_active_severity_rz__4h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.99073612786447,
+      "Spearman_IC": 0.03400699771052037,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_flow_flow_activity_rz__1h",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.81313053234356,
+      "Spearman_IC": 0.07858423565750063,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_price_price_excursion_range_rz__5m",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.8038890272105,
+      "Spearman_IC": 0.07907169090800446,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_liquidation_venue_breadth_percentile__15m",
+      "decision": "NO_PROMOTION",
+      "MAE": 180.92990502488826,
+      "Spearman_IC": 0.07835580822762654,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_volatility_realized_variance_level_rz__12h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.44985445504696,
+      "Spearman_IC": 0.05144728242526365,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_price_price_excursion_range_rz__12h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.43256287526418,
+      "Spearman_IC": 0.0566413464747852,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_basis_basis_range_rz__12h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.5432675984845,
+      "Spearman_IC": 0.04942473965940329,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    },
+    {
+      "experiment": "ensemble_context_liquidation_liq_temporal_concentration_percentile__12h",
+      "decision": "NO_PROMOTION",
+      "MAE": 181.50392718242117,
+      "Spearman_IC": 0.05217482156866046,
+      "new_model_fits": 24,
+      "new_selection_steps": 4,
+      "verification_status": "PASS before intentional pruning",
+      "details": "submissions/experiment_history.json"
+    }
+  ],
+  "previous_promotion_rule": "Both verified lower MAE AND higher pooled Spearman IC are required on identical target/timestamp population. Spearman is the user-confirmed IC evaluation metric. New horizons/populations need separate benchmarks.",
+  "metric_policy": {
+    "IC_definition": "Spearman rank correlation (average ranks) between predictions and actual absolute target; tracked diagnostic, not an optimization objective",
+    "aggregation": "Pooled across exact 18481 original evaluation rows, not mean monthly/fold IC",
+    "primary_metrics": {
+      "MAE": "lower"
+    },
+    "diagnostic_metrics": {
+      "Spearman_IC": "track only; no promotion requirement",
+      "Pearson_IC": "diagnostic only"
+    },
+    "numerical_tolerance": 1e-12,
+    "undefined_IC": "Report as undefined with reason; never replace with zero. Does not by itself block MAE-based promotion.",
+    "target": "Magnitude versus magnitude, not signed returns",
+    "promotion": "MAE < incumbent MAE - tolerance; same rows/horizon and verified replay. IC improvement is not required.",
+    "significance": "No iid correlation p-value claims for overlapping labels. Metric improvements do not establish independent confirmation."
+  },
+  "round_closure": {
+    "date_local": "2026-11-04",
+    "deadline_local": "18:00 Asia/Calcutta",
+    "status": "SUPERSEDED_BY_USER_REQUEST_TO_CONTINUE",
+    "reason": "Depth extension failed; recent changes provide no improvement or tiny gains. Retain verified best development model and stop automatic experiment expansion.",
+    "global_optimality_proven": false,
+    "fresh_test_status": "Untouched; independent confirmation pending",
+    "cumulative_counted_steps": 756,
+    "final_replay": "PASS",
+    "completed_local": "2026-11-04T14:19:19+05:30"
+  },
+  "research_status": "PRIORITY_FEATURE_BATCH_COMPLETE; NO_RUNNING_EXPERIMENTS",
+  "cumulative_counted_steps": 1624,
+  "execution_benchmarks": [
+    {
+      "experiment": "cpu_workers_4_vs_8_2026_11_05",
+      "new_model_fits": 2,
+      "new_model_selection_steps": 0,
+      "selected_n_jobs": 8,
+      "evidence": "submissions/magnitude_active/execution_benchmark.json",
+      "status": "PASS; identical trees and canonical predictions; no model artifacts saved"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "package_files": 447,
+  "package_bytes": 35794666,
+  "decimal_MB": 35.795,
+  "MiB": 34.136,
+  "largest_file": "research/time_to_high/Results/staged/horizon_12000m.json",
+  "largest_file_bytes": 2350753,
+  "summary_pdf_bytes": 99094,
+  "excludes": "Git metadata, local validation previews, ignored inputs/caches/environments",
+  "archive_created": false,
+  "git_lfs_needed_for_current_files": false,
+  "note": "A repository is a folder, not one file. Initial commit adds Git object storage; no duplicate ZIP required."
+}

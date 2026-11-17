@@ -1,0 +1,9 @@
+{
+  "python": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+  "runtime_dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.0"
+  },
+  "optional_training_libraries": "Install and pin your own model library in your submitted environment; frozen replay/scorer require only listed runtime packages."
+}

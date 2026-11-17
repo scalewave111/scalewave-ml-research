@@ -1,0 +1,27 @@
+{
+  "prepared_X": {
+    "source": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\research_runtime\\cache\\f4z_screen_03654c8e3f395f55\\sampled_X.parquet",
+    "sha256": "da589968f0f359f266a1ae488f3e4db4024769934e929062f56970f8462a42f4"
+  },
+  "population": {
+    "source": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\REPEATABLE PLAN\\NEW\\2026-10-31\\48H_DIRECTION_MAGNITUDE_BASELINES\\20261031T074545_034469Z\\population_and_splits.parquet",
+    "sha256": "be1868304f88518040b7e1b9c759d77d5ac0b7685389745e114d6bf177e9aeea"
+  },
+  "original_archives": [
+    {
+      "path": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\Team Handoffs\\Handoff 1_F4_f4Z.zip",
+      "bytes": 15600742757,
+      "full_archive_rehash_during_packaging": false
+    },
+    {
+      "path": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\Team Handoffs\\HANDOFF_2_CANONICAL_XY_V1_1.zip",
+      "bytes": 3033662926,
+      "full_archive_rehash_during_packaging": false
+    }
+  ],
+  "original_benchmark_runs": {
+    "magnitude": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\REPEATABLE PLAN\\48H_ML\\magnitude\\pair_tournaments\\top20_20261031T100905_374149Z",
+    "direction": "C:\\Users\\REDACTED_USER\\Desktop\\MFT ML\\REPEATABLE PLAN\\48H_ML\\REPEATABLE PLAN dir\\48H_ML\\direction\\pair_tournaments\\direction_additive_20261031T112454_940677Z"
+  },
+  "notes": "Prepared X invalidity masks inherited. No upstream rebuild. Historical direction ties absent. Source reference includes withheld dates, but no withheld data included. Original reports preserve original source paths; use bundled overview/tables for portable navigation."
+}

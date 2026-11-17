@@ -1,0 +1,7 @@
+{
+  "feature": "f4z__flow__synthetic_13_rz__1h__value",
+  "family": "flow",
+  "parent_sensor": "synthetic_13",
+  "lookbacks": "1h",
+  "status": "constant_learning_feature"
+}

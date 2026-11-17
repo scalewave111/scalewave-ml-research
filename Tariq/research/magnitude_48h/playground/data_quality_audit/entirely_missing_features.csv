@@ -1,0 +1,43 @@
+feature,family,measurement,lookback,valid_training,unique_training,admitted_full_training,train_missing,train_missing_percent,development_missing,development_missing_percent,combined_missing,combined_missing_percent,entirely_missing
+F4Z__funding__funding_change_percentile__1d__value,funding,funding_change_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_change_rz__1d__value,funding,funding_change_rz,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_level_percentile__1d__value,funding,funding_level_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_level_rz__1d__value,funding,funding_level_rz,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_path_retention_percentile__12h__value,funding,funding_path_retention_percentile,12h,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_path_retention_percentile__1d__value,funding,funding_path_retention_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_persistence_percentile__1d__value,funding,funding_persistence_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_range_percentile__1d__value,funding,funding_range_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__funding__funding_range_rz__1d__value,funding,funding_range_rz,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_acceleration_rz__5m__1d__value,liquidation,liq_acceleration_rz,5m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_percentile__15m__1d__value,liquidation,liq_fast_slow_lift_percentile,15m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_percentile__1h__1d__value,liquidation,liq_fast_slow_lift_percentile,1h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_percentile__5m__12h__value,liquidation,liq_fast_slow_lift_percentile,5m / 12h,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_percentile__5m__1d__value,liquidation,liq_fast_slow_lift_percentile,5m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_rz__15m__1d__value,liquidation,liq_fast_slow_lift_rz,15m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_rz__1h__1d__value,liquidation,liq_fast_slow_lift_rz,1h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_rz__5m__12h__value,liquidation,liq_fast_slow_lift_rz,5m / 12h,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__liquidation__liq_fast_slow_lift_rz__5m__1d__value,liquidation,liq_fast_slow_lift_rz,5m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_percentile__12h__1d__value,volatility,range_expansion_percentile,12h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_percentile__15m__1d__value,volatility,range_expansion_percentile,15m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_percentile__1h__1d__value,volatility,range_expansion_percentile,1h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_percentile__4h__1d__value,volatility,range_expansion_percentile,4h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_percentile__5m__1d__value,volatility,range_expansion_percentile,5m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_rz__12h__1d__value,volatility,range_expansion_rz,12h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_rz__15m__1d__value,volatility,range_expansion_rz,15m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_rz__1h__1d__value,volatility,range_expansion_rz,1h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_rz__4h__1d__value,volatility,range_expansion_rz,4h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__range_expansion_rz__5m__1d__value,volatility,range_expansion_rz,5m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__realized_variance_level_percentile__1d__value,volatility,realized_variance_level_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__realized_variance_level_rz__1d__value,volatility,realized_variance_level_rz,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_percentile__12h__1d__value,volatility,vol_acceleration_percentile,12h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_percentile__15m__1d__value,volatility,vol_acceleration_percentile,15m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_percentile__1h__1d__value,volatility,vol_acceleration_percentile,1h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_percentile__4h__1d__value,volatility,vol_acceleration_percentile,4h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_percentile__5m__1d__value,volatility,vol_acceleration_percentile,5m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_rz__12h__1d__value,volatility,vol_acceleration_rz,12h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_rz__15m__1d__value,volatility,vol_acceleration_rz,15m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_rz__1h__1d__value,volatility,vol_acceleration_rz,1h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_rz__4h__1d__value,volatility,vol_acceleration_rz,4h / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_acceleration_rz__5m__1d__value,volatility,vol_acceleration_rz,5m / 1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_shock_concentration_percentile__1d__value,volatility,vol_shock_concentration_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True
+F4Z__volatility__vol_shock_recency_percentile__1d__value,volatility,vol_shock_recency_percentile,1d,0,0,False,29615,100.0,18481,100.0,48096,100.0,True

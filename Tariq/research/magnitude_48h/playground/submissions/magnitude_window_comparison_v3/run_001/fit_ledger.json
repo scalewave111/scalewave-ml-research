@@ -1,0 +1,135 @@
+[
+  {
+    "fit_number": 1,
+    "fold": 1,
+    "history": "rolling_12month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:22:39.790565+00:00"
+  },
+  {
+    "fit_number": 2,
+    "fold": 1,
+    "history": "rolling_6month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:22:48.654526+00:00"
+  },
+  {
+    "fit_number": 3,
+    "fold": 2,
+    "history": "expanding",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:22:50.872096+00:00"
+  },
+  {
+    "fit_number": 4,
+    "fold": 2,
+    "history": "rolling_12month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:23:21.615933+00:00"
+  },
+  {
+    "fit_number": 5,
+    "fold": 2,
+    "history": "rolling_6month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:23:31.310724+00:00"
+  },
+  {
+    "fit_number": 6,
+    "fold": 3,
+    "history": "expanding",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:23:33.524743+00:00"
+  },
+  {
+    "fit_number": 7,
+    "fold": 3,
+    "history": "rolling_12month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:24:09.623762+00:00"
+  },
+  {
+    "fit_number": 8,
+    "fold": 3,
+    "history": "rolling_6month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:24:18.678763+00:00"
+  },
+  {
+    "fit_number": 9,
+    "fold": 4,
+    "history": "rolling_12month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:24:20.944470+00:00"
+  },
+  {
+    "fit_number": 10,
+    "fold": 4,
+    "history": "rolling_6month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:24:30.361371+00:00"
+  },
+  {
+    "fit_number": 11,
+    "fold": 5,
+    "history": "expanding",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:24:32.613337+00:00"
+  },
+  {
+    "fit_number": 12,
+    "fold": 5,
+    "history": "rolling_12month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:25:23.936740+00:00"
+  },
+  {
+    "fit_number": 13,
+    "fold": 5,
+    "history": "rolling_6month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:25:33.485259+00:00"
+  },
+  {
+    "fit_number": 14,
+    "fold": 6,
+    "history": "expanding",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:25:36.025258+00:00"
+  },
+  {
+    "fit_number": 15,
+    "fold": 6,
+    "history": "rolling_12month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:26:34.693033+00:00"
+  },
+  {
+    "fit_number": 16,
+    "fold": 6,
+    "history": "rolling_6month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:26:43.701008+00:00"
+  },
+  {
+    "fit_number": 17,
+    "fold": 7,
+    "history": "expanding",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:26:46.140008+00:00"
+  },
+  {
+    "fit_number": 18,
+    "fold": 7,
+    "history": "rolling_12month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:27:52.646599+00:00"
+  },
+  {
+    "fit_number": 19,
+    "fold": 7,
+    "history": "rolling_6month",
+    "status": "completed",
+    "time_utc": "2026-11-02T12:28:02.454596+00:00"
+  }
+]

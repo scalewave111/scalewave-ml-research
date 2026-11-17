@@ -1,0 +1,56 @@
+{
+  "version": "magnitude_rf_hybrid_v4",
+  "authorization": "User requested a new hybrid of our refitted pair and RandomForest, independent of teammate implementation.",
+  "hypothesis": "A shallow MAE-split random forest can supply complementary nonlinear predictions to the refitted liquidation pair.",
+  "features": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+  ],
+  "validation_windows": [
+    [
+      "2024-01-01T00:00:00Z",
+      "2024-04-01T00:00:00Z"
+    ],
+    [
+      "2024-04-01T00:00:00Z",
+      "2024-07-01T00:00:00Z"
+    ],
+    [
+      "2024-07-01T00:00:00Z",
+      "2024-10-01T00:00:00Z"
+    ],
+    [
+      "2024-10-01T00:00:00Z",
+      "2025-01-22T00:30:00Z"
+    ]
+  ],
+  "training_history": "Expanding; same previously verified quarterly outer pair models are reused.",
+  "forest": {
+    "n_estimators": 128,
+    "criterion": "absolute_error",
+    "max_depth": 3,
+    "min_samples_leaf": 128,
+    "max_features": 1.0,
+    "bootstrap": true,
+    "max_samples": 4096,
+    "n_jobs": 4,
+    "random_state": 48
+  },
+  "forest_notes": "Average of median-valued leaves, not an exact ensemble conditional median. Random bootstrap samples use past training rows only and are not used for validation. Fixed 4096 samples/tree bounds runtime; no hyperparameter search.",
+  "preprocessing": "Training-only median fill, center, scale and missing flags; same two inputs as pair.",
+  "fixed_forest_weight": 0.1,
+  "forest_weight_candidates": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "primary_candidate": "selected_blend",
+  "secondary_candidate": "fixed_blend",
+  "weight_selection": "For each outer fold, fit pair and forest before the prior 3-calendar-month validation interval, purge labels at both boundaries, then choose lowest inner MAE; exact ties favor smaller forest weight. Refit outer forest on all matured outer training labels and reuse corresponding outer pair. No outer labels select weights.",
+  "new_fit_budget": 16,
+  "fit_accounting": "4 inner pair + 4 inner forest + 4 outer forest + 4 scalar blend selections. 4 saved outer pair fits reused. Previous session fits 39; planned cumulative 55.",
+  "metric": "MAE on original identical 18481 development origins",
+  "fresh_test": "Deferred and not accessed.",
+  "stopping_rule": "Complete these two preregistered hybrid policies and report all results; no development-optimized blend sweep or further automatic search."
+}

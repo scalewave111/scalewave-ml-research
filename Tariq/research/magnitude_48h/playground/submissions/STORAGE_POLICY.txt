@@ -1,0 +1,30 @@
+CURRENT RETENTION AND REUSE POLICY
+
+Current best: magnitude_current (ensemble_context_flow_flow_activity_percentile__5m), MAE 180.79851809782613.
+Only v4 inner pair cards and configuration remain live dependencies. Superseded v4 forests and predictions, and v2 OOF predictions, have been pruned.
+Its selected-model artifacts, required magnitude_walkforward_v2 outer pair cards,
+v4 inner pair cards, and reusable source scripts are retained for replay and future comparisons.
+
+Superseded experiment model binaries, fold model cards, and row-level predictions
+were removed at the user's request. Repeated generated split/fold CSV ledgers and
+Python caches were removed. Compact configs, score tables, result JSONs, historical
+verification receipts, and source scripts remain in their original locations.
+Original data, supplied archives, benchmarks and reference documents were retained.
+
+storage_cleanup.json records removed paths, bytes, preserved hashes and the
+successful post-cleanup incumbent replay. experiment_history.json is a compact
+index; individual retained RESULT.json files provide the original detailed scores.
+
+Historical verification receipts refer to verification performed before pruning.
+Losing experiments can no longer be replayed directly without regenerating outputs.
+Their runners intentionally refuse existing output directories; do not bypass this
+by creating endlessly numbered experiment folders. For the next experiment, use
+one reusable active output directory and configure the runner accordingly, retaining
+compact history before replacing generated results. Never delete active incumbent
+dependencies as part of reusing that directory.
+
+Promotion remains based only on lower verified same-population MAE. Spearman IC
+is tracked. Verify a replacement before replacing the incumbent; remove superseded
+large artifacts afterward. Avoid redundant full-row CSV split ledgers.
+
+Latest cleanup: retired v4 model binaries and predictions plus v2 OOF predictions removed. Current replay and tuning rely on current RF artifacts and retained pair cards. Historical full-run verifiers require regenerating pruned artifacts.

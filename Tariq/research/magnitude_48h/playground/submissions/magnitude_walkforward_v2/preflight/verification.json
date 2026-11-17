@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "new_fits": 0,
+  "target_values_loaded": false,
+  "fresh_test_accessed": false,
+  "input_hashes": {
+    "data\\X_train.parquet": "8a9ba7e3dea4526afbfaffcd4892a5cbe44bf5e768bf31b9d66b5d6351f63c58",
+    "data\\X_development.parquet": "2d5595e30e60c86cdccec3498b3fb40028ecfa9a0d896574dfa362607fc0558e",
+    "data\\y_train.parquet": "7fe21516abe2420edd4338599cd9888c6644a5afb14d3f7818fc72e5bea54f07",
+    "data\\y_development.parquet": "1f60d121d47d01866d2835a72d2da413cc36ecb3aedca260e1d2e7f5b6da0f1e",
+    "run_config.json": "99102d823c3b14f5a8219c715f3d32ee340bfa0cd66da3b32a8567aafc53a244"
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_rows": 29615,
+      "validation_rows": 4272,
+      "purged_rows_present": 0,
+      "validation_first": "2024-01-01 00:00:00+00:00",
+      "validation_last": "2024-03-31 23:30:00+00:00",
+      "latest_training_label_end": "2023-12-31 23:30:00+00:00"
+    },
+    {
+      "fold": 2,
+      "train_rows": 33791,
+      "validation_rows": 4368,
+      "purged_rows_present": 96,
+      "validation_first": "2024-04-01 00:00:00+00:00",
+      "validation_last": "2024-06-30 23:30:00+00:00",
+      "latest_training_label_end": "2024-03-31 23:30:00+00:00"
+    },
+    {
+      "fold": 3,
+      "train_rows": 38159,
+      "validation_rows": 4416,
+      "purged_rows_present": 96,
+      "validation_first": "2024-07-01 00:00:00+00:00",
+      "validation_last": "2024-09-30 23:30:00+00:00",
+      "latest_training_label_end": "2024-06-30 23:30:00+00:00"
+    },
+    {
+      "fold": 4,
+      "train_rows": 42575,
+      "validation_rows": 5425,
+      "purged_rows_present": 96,
+      "validation_first": "2024-10-01 00:00:00+00:00",
+      "validation_last": "2025-01-22 00:00:00+00:00",
+      "latest_training_label_end": "2024-09-30 23:30:00+00:00"
+    }
+  ]
+}

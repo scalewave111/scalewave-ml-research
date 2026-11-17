@@ -1,0 +1,64 @@
+REPEATABLE MAGNITUDE RESEARCH PROCESS
+
+Current experiment: magnitude_feature_additions_v5, 48-hour target.
+This process is reusable; its performance has not been established at other horizons.
+
+1. Pin an experiment profile before fitting.
+   Specify asset, decision cadence, endpoint-price authority, target units,
+   target horizon in minutes, exact X/Y files, target column, label_end column,
+   fold dates, features, model settings, inner-selection rule and fit budget.
+   Preserve source hashes and all attempted experiments, including failures.
+
+2. Establish a separate benchmark for each horizon and scored population.
+   A score of 181.523868 belongs to the current 48-hour population only.
+   Build and verify the pair anchor forecasts and nested inner-pair forecasts
+   for that horizon first. Supply their artifact paths in the profile.
+   Do not relabel or reuse 48-hour model forecasts for a different target.
+
+3. Verify data and availability.
+   The current export already masks invalid features; upstream timing is inherited,
+   not independently rebuilt here. The target horizon must match label_end minus
+   decision_time. Check input/target keys, finite targets and fold-specific feature
+   admission. Do not remove difficult evaluation rows or impute missing targets.
+
+4. Apply nested chronological evaluation.
+   Each outer model uses training labels with label_end < validation start.
+   Each inner model obeys the same strict boundary rule. Therefore the purge
+   follows the chosen target horizon and actual label endpoints, not a fixed
+   number of rows. Fit transforms on that fold's training data only.
+   Choose blend weights inside earlier inner validation; never on the outer period.
+
+5. Change one element at a time.
+   Here the pair remains fixed and exactly one candidate feature is added to RF.
+   Model parameters, folds, weight grid and metrics remain unchanged. For a new
+   model family or other features, register a new bounded profile and hypothesis.
+
+6. Save, replay and compare.
+   Save every model, transformation, weight choice, forecast and attempted fit.
+   Score incumbent and challenger on identical timestamps and target values.
+   Report pooled MAE and Spearman rank IC, plus Pearson correlation as a diagnostic.
+   Use average ranks for ties and identical magnitude target/forecast rows.
+   Include monthly/fold metrics, missingness diagnostics, and paired
+   7-/14-day calendar-block uncertainty. These block sizes must be reconsidered
+   for substantially longer horizons or different dependence structures.
+
+7. Update the development benchmark only after verification.
+   Require verified lower same-population MAE to update the scoreboard,
+   preserving the incumbent and its history otherwise.
+   Optimize MAE only. Track Spearman IC without requiring it to improve.
+   Current MAE threshold: 181.5238678328609.
+   Current diagnostic Spearman IC: 0.07737672515285152.
+   Pearson diagnostic: 0.04400400482390407. Report undefined IC with its reason;
+   it does not by itself block MAE-based promotion.
+   Numerical promotion is separate from statistical confidence or
+   untouched-data confirmation.
+   Do not automatically launch more fits after a winner or a failure.
+
+Commands (run from this experiment directory before outputs exist):
+   python feature_experiment.py preflight
+   python feature_experiment.py run
+   python verify_features.py
+Scripts intentionally refuse to overwrite existing output directories.
+Create a new sibling experiment version for a new profile; retain all evidence.
+
+Fresh independent test work is deferred at the user's request.

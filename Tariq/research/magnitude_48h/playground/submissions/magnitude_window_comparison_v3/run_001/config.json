@@ -1,0 +1,55 @@
+{
+  "version": "magnitude_window_comparison_v3",
+  "authorization": "User approved all-history, 12-month and 6-month training windows with 2-month predictions. New bounded budget extends prior exhausted 20 fits.",
+  "features": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value"
+  ],
+  "training_histories": {
+    "expanding": null,
+    "rolling_12month": 12,
+    "rolling_6month": 6
+  },
+  "validation_windows": [
+    [
+      "2024-01-01T00:00:00Z",
+      "2024-03-01T00:00:00Z"
+    ],
+    [
+      "2024-03-01T00:00:00Z",
+      "2024-05-01T00:00:00Z"
+    ],
+    [
+      "2024-05-01T00:00:00Z",
+      "2024-07-01T00:00:00Z"
+    ],
+    [
+      "2024-07-01T00:00:00Z",
+      "2024-09-01T00:00:00Z"
+    ],
+    [
+      "2024-09-01T00:00:00Z",
+      "2024-11-01T00:00:00Z"
+    ],
+    [
+      "2024-11-01T00:00:00Z",
+      "2025-01-01T00:00:00Z"
+    ],
+    [
+      "2025-01-01T00:00:00Z",
+      "2025-01-22T00:30:00Z"
+    ]
+  ],
+  "window_definition": "Rolling lower bound is validation start minus calendar training months, inclusive. Training label_end must be strictly before validation start. This excludes approximately final 48 hours inside each nominal training window.",
+  "model": "Same unregularized median regression on standardized values plus missing flags, QuantileRegressor(alpha=0, quantile=0.5, solver=highs). Training-only median imputation/scaling.",
+  "cached_expanding_models": {
+    "1": 1,
+    "4": 3
+  },
+  "new_fit_budget": 19,
+  "fit_accounting": "21 model/window combinations minus 2 identical cached expanding fits = 19 new fits; session cumulative 39 including earlier 20. Failures count; no unregistered retries.",
+  "selection": "Lowest pooled MAE on identical 18481 development origins. Compare against frozen MP0004, original 3-month expanding schedule and 2-month expanding control.",
+  "last_window": "Partial final window 2025-01-01 through 2025-01-22 inclusive; retained for exact population equality.",
+  "fresh_data": "Deferred, not accessed",
+  "stopping_rule": "Run only registered histories; preserve all results and diagnose uncertainty. No further automatic search."
+}

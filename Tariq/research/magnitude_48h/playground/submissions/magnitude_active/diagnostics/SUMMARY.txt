@@ -1,0 +1,30 @@
+ERROR DIAGNOSIS AND RF RECENCY WEIGHTING: VERIFIED, NO PROMOTION
+
+Current MAE: 181.0610241130761; Spearman IC: 0.07195947735301861.
+Hybrid MAE minus liquidation-pair MAE by period:
+Period 1: -3.280672 (better)
+Period 2: -1.381575 (better)
+Period 3: +0.708549 (worse)
+Period 4: 0 (RF weight is zero)
+Pooled diagnostic groups use tertile cutoffs fitted on each outer training fold.
+Low-volatility rows: hybrid improves on pair by about 2.986 MAE.
+High-volatility rows: hybrid worsens versus pair by about 0.158 MAE.
+Low-flow-activity rows: hybrid improves by about 2.808 MAE.
+High-flow-activity rows: hybrid worsens by about 0.359 MAE.
+These are descriptive associations on repeatedly used development rows, not
+validated switching rules. Mean negative residuals alone do not establish
+miscalibration of an MAE/median-targeting model; median residuals were also recorded.
+Full period and condition diagnostics are in diagnostics/error_metrics.csv.
+
+Controlled follow-up: keep all eligible history and compare uniform RF sample
+weights against exponential half-lives of 180 and 365 days. Weights are positive,
+normalized to mean one, and computed from training decision ages at each cutoff.
+RF features and per-period tree depth/leaf settings held fixed to the incumbent.
+Half-life and blend weight selected only on earlier inner validation data.
+Uniform weighting selected in all four periods; blend weights stay [0.5,0.5,0.25,0].
+The selected strategy therefore reproduces current predictions to floating-point
+precision: MAE 181.0610241130761; Spearman IC 0.07195947735301861.
+Weighted options were not selected; no weighted outer forests needed fitting.
+8 new inner model fits and 4 selections; 738 cumulative counted steps.
+All age weights, source hashes, inner score replays and outer forecasts verified.
+Fresh test not accessed. Current model kept; unsuccessful/duplicate artifacts removed.

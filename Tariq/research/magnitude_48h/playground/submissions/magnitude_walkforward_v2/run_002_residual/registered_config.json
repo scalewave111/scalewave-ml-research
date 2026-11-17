@@ -1,0 +1,34 @@
+{
+  "hypothesis": "A small additive tree correction to the fitted liquidation pair may preserve its useful level and slopes while capturing remaining nonlinear context.",
+  "registered_before_followup_fits": true,
+  "selection_exposure": "Initial 16-fit results were inspected. This is an adaptive development experiment.",
+  "inputs": [
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+    "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value",
+    "F4Z__volatility__realized_variance_level_percentile__4h__value"
+  ],
+  "training_target": "Magnitude minus same-fold training-fitted pair forecast. Pair control reused without additional fitting; residual labels never use validation outcomes.",
+  "prediction": "max(0, same-fold pair prediction + residual XGBoost prediction)",
+  "xgb": {
+    "objective": "reg:quantileerror",
+    "quantile_alpha": 0.5,
+    "eval_metric": "mae",
+    "tree_method": "hist",
+    "n_estimators": 100,
+    "learning_rate": 0.03,
+    "max_depth": 1,
+    "min_child_weight": 100,
+    "reg_lambda": 100,
+    "reg_alpha": 0,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "max_bin": 64,
+    "random_state": 48,
+    "n_jobs": 4,
+    "base_score": 0.0
+  },
+  "new_fits": 4,
+  "total_budget_after": 20,
+  "budget_change": "Reallocate the 3 final-refit slots and 1 failure reserve to 4 development fits, consistent with user deferring fresh test work. No final model refit in this budget.",
+  "stopping_rule": "Run these four fits only, report results including failure; no further model search within this budget."
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "fold": 1,
+    "role": "inner",
+    "seed": 48,
+    "rows": 25199,
+    "max_label_end": "2023-09-30 23:30:00+00:00",
+    "cutoff": "2023-10-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 1,
+    "role": "inner",
+    "seed": 17,
+    "rows": 25199,
+    "max_label_end": "2023-09-30 23:30:00+00:00",
+    "cutoff": "2023-10-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 1,
+    "role": "inner",
+    "seed": 91,
+    "rows": 25199,
+    "max_label_end": "2023-09-30 23:30:00+00:00",
+    "cutoff": "2023-10-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 1,
+    "role": "outer",
+    "seed": 48,
+    "rows": 29615,
+    "max_label_end": "2023-12-31 23:30:00+00:00",
+    "cutoff": "2024-01-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 1,
+    "role": "outer",
+    "seed": 17,
+    "rows": 29615,
+    "max_label_end": "2023-12-31 23:30:00+00:00",
+    "cutoff": "2024-01-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 1,
+    "role": "outer",
+    "seed": 91,
+    "rows": 29615,
+    "max_label_end": "2023-12-31 23:30:00+00:00",
+    "cutoff": "2024-01-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 2,
+    "role": "inner",
+    "seed": 48,
+    "rows": 29615,
+    "max_label_end": "2023-12-31 23:30:00+00:00",
+    "cutoff": "2024-01-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 2,
+    "role": "inner",
+    "seed": 17,
+    "rows": 29615,
+    "max_label_end": "2023-12-31 23:30:00+00:00",
+    "cutoff": "2024-01-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 2,
+    "role": "inner",
+    "seed": 91,
+    "rows": 29615,
+    "max_label_end": "2023-12-31 23:30:00+00:00",
+    "cutoff": "2024-01-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 2,
+    "role": "outer",
+    "seed": 48,
+    "rows": 33791,
+    "max_label_end": "2024-03-31 23:30:00+00:00",
+    "cutoff": "2024-04-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 2,
+    "role": "outer",
+    "seed": 17,
+    "rows": 33791,
+    "max_label_end": "2024-03-31 23:30:00+00:00",
+    "cutoff": "2024-04-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 2,
+    "role": "outer",
+    "seed": 91,
+    "rows": 33791,
+    "max_label_end": "2024-03-31 23:30:00+00:00",
+    "cutoff": "2024-04-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 3,
+    "role": "inner",
+    "seed": 48,
+    "rows": 33791,
+    "max_label_end": "2024-03-31 23:30:00+00:00",
+    "cutoff": "2024-04-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 3,
+    "role": "inner",
+    "seed": 17,
+    "rows": 33791,
+    "max_label_end": "2024-03-31 23:30:00+00:00",
+    "cutoff": "2024-04-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 3,
+    "role": "inner",
+    "seed": 91,
+    "rows": 33791,
+    "max_label_end": "2024-03-31 23:30:00+00:00",
+    "cutoff": "2024-04-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 3,
+    "role": "outer",
+    "seed": 48,
+    "rows": 38159,
+    "max_label_end": "2024-06-30 23:30:00+00:00",
+    "cutoff": "2024-07-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 3,
+    "role": "outer",
+    "seed": 17,
+    "rows": 38159,
+    "max_label_end": "2024-06-30 23:30:00+00:00",
+    "cutoff": "2024-07-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 3,
+    "role": "outer",
+    "seed": 91,
+    "rows": 38159,
+    "max_label_end": "2024-06-30 23:30:00+00:00",
+    "cutoff": "2024-07-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 4,
+    "role": "inner",
+    "seed": 48,
+    "rows": 38159,
+    "max_label_end": "2024-06-30 23:30:00+00:00",
+    "cutoff": "2024-07-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 4,
+    "role": "inner",
+    "seed": 17,
+    "rows": 38159,
+    "max_label_end": "2024-06-30 23:30:00+00:00",
+    "cutoff": "2024-07-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 4,
+    "role": "inner",
+    "seed": 91,
+    "rows": 38159,
+    "max_label_end": "2024-06-30 23:30:00+00:00",
+    "cutoff": "2024-07-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 4,
+    "role": "outer",
+    "seed": 48,
+    "rows": 42575,
+    "max_label_end": "2024-09-30 23:30:00+00:00",
+    "cutoff": "2024-10-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 4,
+    "role": "outer",
+    "seed": 17,
+    "rows": 42575,
+    "max_label_end": "2024-09-30 23:30:00+00:00",
+    "cutoff": "2024-10-01 00:00:00+00:00",
+    "status": "completed"
+  },
+  {
+    "fold": 4,
+    "role": "outer",
+    "seed": 91,
+    "rows": 42575,
+    "max_label_end": "2024-09-30 23:30:00+00:00",
+    "cutoff": "2024-10-01 00:00:00+00:00",
+    "status": "completed"
+  }
+]
