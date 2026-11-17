@@ -1,0 +1,51 @@
+{
+  "exported_at_utc": "2026-11-12T07:12:21Z",
+  "policy_id": "UP_RF_MEAN__DOWN_HYBRID_MEAN_V1",
+  "freeze_status": "Fixed export of retrospective walk-forward predictions; family pairing selected after historical evaluation, not prospective/live freeze",
+  "target": "conditional mean ordinary 48-hour endpoint return",
+  "model_estimates_not_calibration_guarantee": true,
+  "reference_price": "historical canonical f066 reference price; exchange/price type unresolved from inspected source contract",
+  "schema": [
+    "timestamp_utc",
+    "symbol",
+    "horizon_hours",
+    "mean_return_if_up_bps",
+    "mean_return_if_down_bps"
+  ],
+  "up_source_column": "UP_rf_mean_bps",
+  "down_source_column": "down_mean_magnitude_bps",
+  "transform": "UP copied exactly; DOWN positive ordinary-bps magnitude negated; no unit conversion of predictions",
+  "missing_policy": "Blank, never replaced by zero; no baseline fallback",
+  "requested_first_utc": "2024-01-01T00:00:00Z",
+  "requested_last_utc": "2025-01-22T23:30:00Z",
+  "cadence_minutes": 30,
+  "exported_grid_rows": 18624,
+  "complete_prediction_rows": 18481,
+  "missing_rows": 143,
+  "first_complete_timestamp_utc": "2024-01-01T00:00:00Z",
+  "last_complete_timestamp_utc": "2025-01-22T00:00:00Z",
+  "source_population_rows": 18481,
+  "source_first_utc": "2024-01-01T00:00:00Z",
+  "source_last_utc": "2025-01-22T00:00:00Z",
+  "source_runs": {
+    "up": "mlp_rf_conditional_means_48h_v1/20261112T064753697944Z",
+    "down": "conditional_means_signed_48h_v1/20261112T063535834150Z"
+  },
+  "source_predictions_sha256": {
+    "up": "d21085717cacdabdfcc77aeda839ae55425e4d55382b18aaa89916965addcdb5",
+    "down": "ed889ac783630a985a6b21c82dfa4f49d659577a7236af98eace2cbf1e8aa48b"
+  },
+  "checks": {
+    "source_completion_and_hashes": true,
+    "exact_source_timestamp_alignment": true,
+    "model_hashes": true,
+    "source_replay_audits_checked": true,
+    "cutoff_purge": true,
+    "five_column_schema": true,
+    "unique_regular_grid": true,
+    "csv_roundtrip": true,
+    "every_available_value_matches_source": true,
+    "future_outcomes_used_for_export": false
+  },
+  "execution": "Export and validation only; no fitting, prediction rerun, baseline filling or market-data fetch"
+}

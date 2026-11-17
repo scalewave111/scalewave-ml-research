@@ -1,0 +1,365 @@
+[
+  {
+    "week": "1",
+    "report": "Week 1 Report/November_Week_1_Consolidated_Report.pdf",
+    "total_pages": 167,
+    "intro_pages": 4,
+    "source_reports": [
+      {
+        "week": "1",
+        "source": "Week 1/Report/D6__DR-Report-by-Alphasense-10-26-2026-14-54 (3).pdf",
+        "source_pages": 67,
+        "consolidated_start_page": 5,
+        "sha256": "d08be6e1f85902362c732aca61638cfdfe4e2cc36e0faea7113462f205ea9719"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/D8__DR-Report-by-Alphasense-10-28-2026-03-04.pdf",
+        "source_pages": 43,
+        "consolidated_start_page": 72,
+        "sha256": "cf4c8658e730035436288bf10f556c22ac872cd16ae90ab4d224da7a218cdc63"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/MISSING_VALUES_REPORT_X_Y_TIMESTAMPS.pdf",
+        "source_pages": 3,
+        "consolidated_start_page": 115,
+        "sha256": "79d4c92d7e86fee6f19def1f5dd24b7517eb4c3b7a4147076e7175447763e6fb"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_1h_Models_Ranked_MAE_IC_2026-11-11.pdf",
+        "source_pages": 6,
+        "consolidated_start_page": 118,
+        "sha256": "5a7b4888c602107c7a85ae87aa543fbb2048ad61bdb37c3d45582b39c8ea3e78"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_48h_Features_and_Model_Results_2026-11-05_Ranked.pdf",
+        "source_pages": 7,
+        "consolidated_start_page": 124,
+        "sha256": "235267a1fe91c6f44ee55132c8acb895c5b3df8afa166ea98294f0e7382a5efc"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_4h_Models_Ranked_MAE_IC_2026-11-11.pdf",
+        "source_pages": 8,
+        "consolidated_start_page": 131,
+        "sha256": "4be2832b4e88976c7f943abba088f4d104ab4f35d2c2364b3dfe3eb528d2ed66"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_4h_Simple_Results_and_Rankings_2026-11-05.pdf",
+        "source_pages": 3,
+        "consolidated_start_page": 139,
+        "sha256": "c2cfbd472be4f29df3c85d06963635e2d0c140c88fb45a998dd0533fe5aab9bc"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_4h_Todays_Work_2026-11-06_Ranked.pdf",
+        "source_pages": 4,
+        "consolidated_start_page": 142,
+        "sha256": "f85e7d1f1b7de252759b59eb1a63e34bd814ee9d352484ea53d7575dca129d39"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_Direction_and_Magnitude_Simple_Forecast_Report.pdf",
+        "source_pages": 2,
+        "consolidated_start_page": 146,
+        "sha256": "0c3585bbd653fd6c646f8f359512a603cd070325a4c95ca885bfcd3ed6b73853"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_Hybrid_Magnitude_Report.pdf",
+        "source_pages": 4,
+        "consolidated_start_page": 148,
+        "sha256": "dcebe42dc9e7c3c5368ee8a3fb643b6ec5814304a12a96f185c35618b2c75b1c"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_Model_Results_Ranked.pdf",
+        "source_pages": 6,
+        "consolidated_start_page": 152,
+        "sha256": "76ac7fc9c21a7a0a60070cd21368917e487d51156ff5f489294f495e751d8607"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/ScaleWave_Simple_Model_Results_2026-11-04.pdf",
+        "source_pages": 2,
+        "consolidated_start_page": 158,
+        "sha256": "aa725f5a74574e0193b78f29c1f02e93ed1f51dc6bb53a69d64b1f5985c42465"
+      },
+      {
+        "week": "1",
+        "source": "Week 1/Report/Top 20 \u2014 MAGNITUDE (all horizons, stationary).pdf",
+        "source_pages": 8,
+        "consolidated_start_page": 160,
+        "sha256": "ad47d7ec26e7ddbad708c2fe12451f4ab867b5d10b64dbaed658c358ee8b0d32"
+      }
+    ],
+    "copied_files": 157
+  },
+  {
+    "week": "2",
+    "report": "Week 2 Report/November_Week_2_Consolidated_Report.pdf",
+    "total_pages": 799,
+    "intro_pages": 5,
+    "source_reports": [
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_120h_Models_Features_Rankings_2026-11-14.pdf",
+        "source_pages": 50,
+        "consolidated_start_page": 6,
+        "sha256": "50889dc92a85448f46a0220360a407c68cf4f2db92ecd07fb470848333da82ef"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_200h_Models_Features_Rankings_2026-11-14.pdf",
+        "source_pages": 55,
+        "consolidated_start_page": 56,
+        "sha256": "2edcf54eeb01fa2506920eabef31b9ce8d53e6aed8dbc8e9cac01a0c69ae8164"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_300h_Models_Features_Rankings_2026-11-14.pdf",
+        "source_pages": 66,
+        "consolidated_start_page": 111,
+        "sha256": "1367a99e0be847dcef3a31fb1b39a4a79ab2fb2c4ae41aa387a4d3161a399642"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_48H_Direction_Frozen_Baseline_Report.pdf",
+        "source_pages": 6,
+        "consolidated_start_page": 177,
+        "sha256": "34f797076bbcc52488b1b41e1ed86569c4e66e2d0d3e2827b222fb8c01eb915c"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_48h_Magnitude_Results_Simple.pdf",
+        "source_pages": 3,
+        "consolidated_start_page": 183,
+        "sha256": "ffe06bd6fb332778dd3d8ce70a2ac4bb4dc976083d0b694b66983ca649b666ee"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_72h_Models_Features_Rankings_2026-11-14.pdf",
+        "source_pages": 40,
+        "consolidated_start_page": 186,
+        "sha256": "532668d81048bff345fc665341caeda081a9ece2d0daac5abc1e296c08ff945c"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_All_Horizons_MAE_Models_and_Features_2026-11-14.pdf",
+        "source_pages": 66,
+        "consolidated_start_page": 226,
+        "sha256": "3af5b95a18336f68209896b1d65a2e67ece5239aaeae7559d10d8731e84f9fbb"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_All_Horizons_MAE_Models_and_Features_READABLE_2026-11-14.pdf",
+        "source_pages": 311,
+        "consolidated_start_page": 292,
+        "sha256": "d343b75312c4a3470cd4fe64124e85c3810069cae361bdd3dc2e06b04e10bdbf"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/BTC_magnitude_up_down.pdf",
+        "source_pages": 2,
+        "consolidated_start_page": 603,
+        "sha256": "d19cd57e407f5d59b0f41358947f6f1c5811dbf9e6d9cc6efda2c6e34403c4fe"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/ScaleWave_All_Models_Architecture_Hyperparameters.pdf",
+        "source_pages": 14,
+        "consolidated_start_page": 605,
+        "sha256": "9090f06da5753c59bfc417d6dac567e94c94381eb3d5117b4fd2772b333afdc3"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/ScaleWave_Combined_Forecast_Analysis_2026-11-11.pdf",
+        "source_pages": 11,
+        "consolidated_start_page": 619,
+        "sha256": "8e7a6611d11da18bd7a171d07248729dbb27213ac2a5f9846197ba236cb908e7"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/ScaleWave_Hybrid_Magnitude_Report.pdf",
+        "source_pages": 4,
+        "consolidated_start_page": 630,
+        "sha256": "0aa95b5be060861ca446d7f176c91f36576abc390ec8c11d04d5da914842dd84"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/ScaleWave_ML_to_Trade_Master_Framework_2026-11-11 (1).pdf",
+        "source_pages": 5,
+        "consolidated_start_page": 634,
+        "sha256": "b1ee99d3e353e2989c122a25de36bb7cffc26e2fc17a1c2c90bc42b1e9a9c12c"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/ScaleWave_Model_Building_Methods.pdf",
+        "source_pages": 6,
+        "consolidated_start_page": 639,
+        "sha256": "b507f59de4de9e058cb6e70e26e6585580eb09c840c250adff1188e433d4bfcb"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/ScaleWave_Separate_Approaches_Consolidated_Report_2026-11-11.pdf",
+        "source_pages": 16,
+        "consolidated_start_page": 645,
+        "sha256": "1f3296e26068f7528a38809dfbb466a67eda84f8746e6c8829b398b5fe6a3f1e"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/ScaleWave_Team_Progress_Features_and_Methods_2026-11-11.pdf",
+        "source_pages": 6,
+        "consolidated_start_page": 661,
+        "sha256": "033133e888fc9619b9e80a2e345944d9d3bb2dc2fe14dbb682f4003f3146ada9"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/output/pdf/BTC_15m_Complete_Models_Features_and_Rankings_2026-11-13.pdf",
+        "source_pages": 25,
+        "consolidated_start_page": 667,
+        "sha256": "970500b23abc683833792da7a1525b6e95d520e2b930a195877209c7442ebec0"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/output/pdf/BTC_48h_Excursion_Models_Features_Rankings_2026-11-13.pdf",
+        "source_pages": 17,
+        "consolidated_start_page": 692,
+        "sha256": "c5aaefa15cded0a9f09221253fe73c9ce10c68eec259d2a86870fd8b673804c5"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/output/pdf/BTC_4h_Excursion_Models_Features_and_Results_2026-11-13.pdf",
+        "source_pages": 36,
+        "consolidated_start_page": 709,
+        "sha256": "e2f10944bb193c1a8e9d7095f5fe09712683156bd6be18fca720b7f01f89bd9f"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/output/pdf/ScaleWave_16h_Excursion_Models_Report.pdf",
+        "source_pages": 17,
+        "consolidated_start_page": 745,
+        "sha256": "8e40ae03c5271ee084f63d16c157128a8ea9fcb5555c6cdadf12d948c5379567"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/output/pdf/ScaleWave_1h_Excursion_Models_Report.pdf",
+        "source_pages": 11,
+        "consolidated_start_page": 762,
+        "sha256": "5b6364bf582a04baa2109b676065f2237940870176fe9bade618372ba2aaba22"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/output/pdf/ScaleWave_1h_Tuned_Models_Report.pdf",
+        "source_pages": 12,
+        "consolidated_start_page": 773,
+        "sha256": "bbd82a8a31f8aee5ce3242a127bd445df6310dd8548ea94340d027354a66f93e"
+      },
+      {
+        "week": "2",
+        "source": "Week 2/Report/output/pdf/ScaleWave_8h_Excursion_Models_Report.pdf",
+        "source_pages": 15,
+        "consolidated_start_page": 785,
+        "sha256": "8f24de7edb343b555882c7edb13901de35eaa284e872c8e23947bd7c3ff6068b"
+      }
+    ],
+    "copied_files": 390
+  },
+  {
+    "week": "3",
+    "report": "Week 3 Report/November_Week_3_Consolidated_Report.pdf",
+    "total_pages": 591,
+    "intro_pages": 4,
+    "source_reports": [
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_120h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 19,
+        "consolidated_start_page": 5,
+        "sha256": "e8dab00d169aad61ac73f1d729d2d2a422562bc6ec1f5f50a452d3e0c96a0565"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_15m_Direction_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 62,
+        "consolidated_start_page": 24,
+        "sha256": "7eafb1092d3841c325673efab3b5235a8c9b07897d2d7a2c138b96e4583d7b6d"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_15m_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 69,
+        "consolidated_start_page": 86,
+        "sha256": "dfc9752bb41579f079f5cc180038019334face1ff8ef6aace32e990927159a1d"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_16h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 53,
+        "consolidated_start_page": 155,
+        "sha256": "28f49dde107038c3a7c1b8b745bcc91b3c2fef9a26c0628db0a01ac4f8b9d0c5"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_1h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 52,
+        "consolidated_start_page": 208,
+        "sha256": "1d744d88a4d431d57e3a917ad929bbc3776d922e917f75e1ae9a18f30cc81a33"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_200h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 33,
+        "consolidated_start_page": 260,
+        "sha256": "d6fb057043e069a5a7b39fc65920eb08c4f8482ebc49bcbe5e374e1c3480971c"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_300h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 21,
+        "consolidated_start_page": 293,
+        "sha256": "c325911275bd626fa8367e0591c94c771e46a2878c7418526dc4e02cc14943b6"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_48h_Direction_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 51,
+        "consolidated_start_page": 314,
+        "sha256": "c0b7f8b1b5157ea01dcbd7597fdebd58f48ae247e02119e1816b644a2311d145"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_48h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 25,
+        "consolidated_start_page": 365,
+        "sha256": "48f3936f06f677840de4ef579a60ff37e9e564f0c587ecb45587e4a5b25abf53"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_4h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 79,
+        "consolidated_start_page": 390,
+        "sha256": "34fd19169c6b1116d4e71b25b2f8f97bf4822099fe1be6682e5b549900e7a093"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_72h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 43,
+        "consolidated_start_page": 469,
+        "sha256": "b61c4257d779f762c6d68d2768375b25624d5cb766e0647fb5e0e7f7794cfeac"
+      },
+      {
+        "week": "3",
+        "source": "Week 3/Report/BTC_8h_Net_Magnitude_Models_Features_Rankings_2026-11-16.pdf",
+        "source_pages": 80,
+        "consolidated_start_page": 512,
+        "sha256": "48472c5bc3875982179cc71714150d020db97f298dd4331d434b53672f3f3a45"
+      }
+    ],
+    "copied_files": 113
+  }
+]

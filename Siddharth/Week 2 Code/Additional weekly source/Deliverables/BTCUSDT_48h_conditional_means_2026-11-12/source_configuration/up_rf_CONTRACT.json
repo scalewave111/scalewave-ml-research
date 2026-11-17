@@ -1,0 +1,60 @@
+{
+  "task": "Learn separate UP/DOWN conditional mean magnitude models and combine with frozen direction",
+  "units": "ordinary bps, percent=bps/100; both conditional magnitude outputs positive",
+  "target": "abs(10000*expm1(signed_return_log_bps/10000)); positive/negative historical sides",
+  "packs": {
+    "four": [
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value",
+      "PRICE__vol_ratio_4h_24h",
+      "F4Z__liquidation__venue_breadth_percentile__1h__value"
+    ],
+    "five": [
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value",
+      "PRICE__vol_ratio_4h_24h",
+      "F4Z__liquidation__venue_breadth_percentile__1h__value",
+      "PRICE__realized_vol_168h"
+    ],
+    "eight": [
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__15m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__5m__value",
+      "F4Z__liquidation__cross_asset_liq_activity_raw_historical_active_rate__1h__value",
+      "PRICE__vol_ratio_4h_24h",
+      "PRICE__realized_vol_168h",
+      "F4Z__liquidation__venue_breadth_percentile__1h__value",
+      "F4Z__funding__funding_persistence_percentile__5m__value",
+      "F4Z__basis__basis_level_rz__1h__value"
+    ]
+  },
+  "seeds": [
+    48,
+    149,
+    250
+  ],
+  "horizon_hours": 48,
+  "symbol": "BTCUSDT",
+  "mlp": "Ridge alpha1 frozen skip + 8/4 SiLU correction, dropout .05, AdamW .001, MSE, 3 seeds; up to48 epochs, patience8",
+  "rf": "128 trees, squared_error, depth3, leaf128, bootstrap4096, seed48; standalone RF, not hybrid",
+  "selection": "Per side/fold, earlier validation MSE selects epochs and 4/5/8 pack for each family; then selects MLP versus RF. Tie: fewer features, then name.",
+  "validation": "First two months after issue minus3 months; training label_end strictly before inner cutoff; validation label_end before issue",
+  "outer": "Four quarterly expanding fits; all training label_end strictly before issue",
+  "constant_fallback": false,
+  "baseline_role": "Benchmarks only; not candidates for model selection",
+  "direction_run": "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\experiments\\direction_v45_style_v1\\20261112T045009318177Z",
+  "direction_max_training_label_end": "2023-12-31 23:30:00+00:00",
+  "reference_run": "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\experiments\\conditional_means_signed_48h_v1\\20261112T063535834150Z",
+  "direction_retrained": false,
+  "input_hashes": {
+    "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 1\\Code\\experiments\\eight_feature_exhaustive_v1\\prepared.joblib": "0c685149828b405efb7155d8cade830e0cd51cd7da8bd3002fd513103325a486",
+    "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\experiments\\direction_v45_style_v1\\20261112T045009318177Z\\development_predictions.csv": "29748fed052c61f0786feb12b175297fbd6f14942644d72f60c8a130f72f6d15",
+    "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\experiments\\conditional_means_signed_48h_v1\\20261112T063535834150Z\\signed_return_predictions.csv": "ed889ac783630a985a6b21c82dfa4f49d659577a7236af98eace2cbf1e8aa48b"
+  },
+  "source_hashes": {
+    "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\fit_mlp_rf_conditional_means_48h.py": "be7525b16da44427da5bf5c9d5429e2a3b0fadbaa932ab5c9532e1aba607cdda",
+    "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\fit_conditional_48h_mean_features.py": "a86597d2bb410cb2192e9143bafe7f7d4e16686a703d349a8e486fb79e80a63b",
+    "C:\\Users\\Siddh\\Desktop\\ML\\November\\Week 2\\Code\\fit_conditional_means_signed_48h.py": "a57a34452f0001759e129a816dd4717654f498ad6d33bc1b89ae02e7927f0bd8"
+  },
+  "probability_sum_error_before_correction": 6.000000007944095e-08,
+  "limitation": "New experiment on historically exposed data. Mean objective does not guarantee accuracy/calibration. No test-based automatic promotion or significance claim."
+}

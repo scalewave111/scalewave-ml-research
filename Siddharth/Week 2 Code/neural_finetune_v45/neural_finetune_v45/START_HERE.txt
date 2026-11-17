@@ -1,0 +1,70 @@
+NEURAL FINE-TUNING — COMPLETED EXPERIMENT
+
+The fixed fine-tuned candidate lowered both development metrics slightly.
+The previous frozen baseline remains unchanged. This candidate is saved separately.
+
+SAME DEVELOPMENT ROWS (18,481)
+                         Log loss          Brier
+Previous frozen          0.6839391462      0.2454414506
+Fine-tuned candidate     0.6839275338      0.2454357690
+Reduction                0.0000116124      0.0000056816
+
+The improvement is very small. It is not an accuracy percentage or trading return.
+Repeated use of these historical periods makes the result exploratory, not fresh
+confirmation. No claim of statistical significance or future superiority is made.
+
+WHAT CHANGED
+We started from the saved 32-epoch neural weights instead of training new networks
+from scratch. The logistic base, input admission, missing-value handling, scaling,
+network architecture, correction bound and 75/25 prediction blend were retained.
+
+Branch A: update only the final output layer; hidden-layer weights remain fixed.
+Branch B: update all neural layers gently.
+Each branch uses three original seeds and 16 additional epochs, learning rate
+0.0003, AdamW weight decay0.01, full batches, gradient clipping1. Dropout is disabled
+during fine-tuning to keep the small updates stable. The loss combines binary
+cross-entropy, Brier loss and a penalty for departing from the original correction.
+
+The candidate is the equal average of both branches and all three seeds. This
+combination was fixed before training. We did not select whichever branch or seed
+looked best afterward. The model still limits the neural logit correction to0.15*tanh.
+
+CHRONOLOGICAL VALIDATION (13,104 DIFFERENT ROWS)
+                         Log loss          Brier
+Frozen-style reference   0.6893547637      0.2481003825
+Fine-tuned candidate     0.6893481462      0.2480970173
+
+Both metrics improved in two of three chronological periods. Two of the three
+single-seed, two-branch averages beat the three-seed reference on both pooled
+metrics. This is a comparison against the ensemble reference, not a matched-seed
+causal attribution of fine-tuning. The pooled candidate uses all seeds throughout.
+
+Head-only fine-tuning improved both scores in all three periods as a diagnostic;
+it was not substituted for the registered combined candidate. Development was
+scored only for the registered candidate, after it passed the fixed gate.
+
+CHECKS AND FIT ACCOUNTING
+18 chronological fine-tuning fits, followed by6 final fits:24 total new fits.
+Member ledger cumulative STARTED count:3394. This is the local recorded count,
+not a claim of complete global research history.
+All24 saved models replayed. Source checkpoint hashes were verified. Training-only
+preprocessing was independently recomputed. Outcome maturity was checked before
+each validation period. Frozen artifacts and the portable handoff remained unchanged.
+The model uses no new source data. Upstream normalization reference history and
+actual publication evidence remain unresolved.
+
+FILES
+RESULT.json: exact scores, branch/seed diagnostics and acceptance decision.
+FINE_TUNING_RESULTS.xlsx: chronological results and comparisons.
+PERIOD_RESULTS.csv: period-by-period metrics.
+registration.json: settings, fixed selection rule and protected hashes.
+AUDIT.json: verification results.
+final_pipeline.json and models/: replayable final candidate and fold checkpoints.
+predictions.csv and score/: development predictions and common scorer output.
+replay.py: no-fit prediction command; requires the existing workspace dependencies.
+FREEZE.json: separate candidate snapshot with file hashes.
+
+DECISION
+Keep the prior frozen baseline intact and retain this slightly better exploratory
+candidate for comparison on genuinely new data. The targets0.65 and0.50 were not
+reached. Do not present this tiny improvement as a major modeling breakthrough.
