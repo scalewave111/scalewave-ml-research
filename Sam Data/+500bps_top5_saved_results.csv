@@ -1,0 +1,6 @@
+"rank","column","large_up_mean","smaller_move_mean","standardized_difference","non_null_large_up_n","non_null_smaller_move_n","evidence"
+"1","f4z__basis__basis_persistence_percentile__12h__value","0.435975","0.643485","-0.702586","2429","6068","Saved notebook cell 11; exploratory association; raw data not rerun"
+"2","f4z__liquidation__liq_side_pressure_rz__12h__value","0.493981","-0.025395","0.651843","2429","6068","Saved notebook cell 11; exploratory association; raw data not rerun"
+"3","f4z__basis__basis_persistence_percentile__1h__value","0.428667","0.557771","-0.645878","4479","12000","Saved notebook cell 11; exploratory association; raw data not rerun"
+"4","f4z__liquidation__liq_side_pressure_percentile__12h__value","0.669027","0.490856","0.640325","2429","6068","Saved notebook cell 11; exploratory association; raw data not rerun"
+"5","f4z__basis__basis_persistence_percentile__4h__value","0.481877","0.595201","-0.430822","3421","10000","Saved notebook cell 11; exploratory association; raw data not rerun"

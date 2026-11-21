@@ -1,0 +1,33 @@
+{
+  "status": "raw_data_required_for_full_analysis_and_model_selection",
+  "evidence": "Existing notebook outputs only; no fresh data scan or training performed",
+  "total_saved_rows": 1445759,
+  "target_from_connected_research_review": "BTCUSDT signed_return_log_bps > 500, horizon_minutes=2880",
+  "positive_event_fraction_descriptive_only": 0.08681391573561015,
+  "always_negative_accuracy_descriptive_only": 0.9131860842643899,
+  "constant_full_population_probability_brier_descriptive_only": 0.07927725977026052,
+  "warning": "Full-population rates are descriptive, not out-of-sample forecasts. Fit probability baselines on earlier mature training labels only. Log bps are not exactly simple-return percent.",
+  "saved_direction_model": {
+    "population": "large moves only",
+    "test_accuracy": 0.4837,
+    "test_balanced_accuracy": 0.5271,
+    "test_roc_auc": 0.5081,
+    "test_average_precision": 0.6989,
+    "test_positive_prevalence": 0.6739827134116733,
+    "majority_test_accuracy": 0.674
+  },
+  "required_inputs": [
+    "BTCUSDT_signed_return_above_500_or_below_minus500_20261027_093028_e1453352.parquet",
+    "BTCUSDT_signed_return_between_minus500_and_plus500_20261027_101854_1aefb791.parquet",
+    "HANDOFF_2_CANONICAL_XY_V1_1.zip"
+  ],
+  "evaluation_design": [
+    "Combine both outcome buckets; validate schema, unique keys, label status, horizon, label semantics and source coverage.",
+    "Audit all columns and rows for missingness, validity masks, availability timestamps and duplicates; do not impute invalid labels.",
+    "Preserve valid zeros and distinguish inactive versus invalid feature states using the dictionary.",
+    "Use expanding chronological folds; every fitting label must mature before assessment starts. Fit preprocessing and feature selection within training only.",
+    "Compare training event prevalence, price-only logistic, broader regularized logistic and bounded shallow boosting on identical eligible rows.",
+    "Select by development Brier score with log loss, average precision, calibration, coverage and paired time-block uncertainty.",
+    "Treat previously inspected dates as retrospective evidence, not a fresh holdout."
+  ]
+}

@@ -1,0 +1,318 @@
+=== Saved notebook cell 4; not rerun ===
+
+DATASET 1
+File size (GB): 0.468
+Total rows: 222183
+Total columns: 3202
+Row groups: 132
+
+DATASET 2
+File size (GB): 2.155
+Total rows: 1223576
+Total columns: 3202
+Row groups: 177
+
+SCHEMA COMPARISON
+Same column names: True
+
+Columns only in Dataset 1:
+[]
+
+Columns only in Dataset 2:
+[]
+
+
+=== Saved notebook cell 6; not rerun ===
+
+
+=======================================================
+LARGE_MOVES
+
+Signed return statistics:
+count    222183.000000
+mean         80.543094
+std         839.459388
+min       -3030.949992
+1%        -2015.569218
+10%        -944.457987
+25%        -653.735989
+50%         529.637855
+75%         717.550070
+90%         988.221975
+99%        1486.605696
+max        2584.306536
+Name: signed_return, dtype: float64
+
+Sample signed_return values:
+[508.55620474682894, 518.7007851077465, 508.91079580287703, 514.3145260503101, 523.6631145716065, 525.5041410544097, 509.94609623404824, 501.84273944742193, 508.96337577860567, 512.3639804479138]
+
+Direction counts:
+direction
+ 1.0    125512
+-1.0     96671
+Name: count, dtype: int64
+
+Label status counts:
+label_status
+VALID    222183
+Name: count, dtype: int64
+
+Horizon counts:
+horizon_minutes
+2880    222183
+Name: count, dtype: int64
+
+=======================================================
+SMALLER_MOVES
+
+Signed return statistics:
+count    1.223576e+06
+mean     7.859002e+00
+std      2.180311e+02
+min     -4.999996e+02
+1%      -4.675243e+02
+10%     -2.883412e+02
+25%     -1.364073e+02
+50%      7.738965e+00
+75%      1.495639e+02
+90%      3.049003e+02
+99%      4.761968e+02
+max      4.999979e+02
+Name: signed_return, dtype: float64
+
+Sample signed_return values:
+[-260.0885729028657, -225.14066489591238, -216.28846023168515, -202.5468876967891, -212.47923593781832, -212.0877262344111, -225.03422602359112, -227.66360469556807, -232.57361808075444, -233.99498816074862]
+
+Direction counts:
+direction
+ 1.0    632544
+-1.0    591032
+Name: count, dtype: int64
+
+Label status counts:
+label_status
+VALID    1223576
+Name: count, dtype: int64
+
+Horizon counts:
+horizon_minutes
+2880    1223576
+Name: count, dtype: int64
+
+
+=== Saved notebook cell 9; not rerun ===
+
+Number of observations in each category:
+
+Bitcoin fell more than 5%: 96,671
+Bitcoin stayed within ±5%: 1,223,576
+Bitcoin rose more than 5%: 125,512
+
+
+<Figure size 1000x500 with 1 Axes>
+
+=== Saved notebook cell 11; not rerun ===
+
+Sampled large-move rows: 9962
+Sampled smaller-move rows: 12500
+Shared features: 522
+
+TOP 20 FEATURES: LARGE UP vs SMALLER MOVES
+
+
+                                               feature       family  \
+25   f4z__basis__basis_persistence_percentile__12h_...        basis   
+231  f4z__liquidation__liq_side_pressure_rz__12h__v...  liquidation   
+27   f4z__basis__basis_persistence_percentile__1h__...        basis   
+226  f4z__liquidation__liq_side_pressure_percentile...  liquidation   
+28   f4z__basis__basis_persistence_percentile__4h__...        basis   
+85    f4z__flow__flow_cvd_slope_percentile__12h__value         flow   
+95     f4z__flow__flow_pressure_percentile__12h__value         flow   
+100            f4z__flow__flow_pressure_rz__12h__value         flow   
+10      f4z__basis__basis_level_percentile__12h__value        basis   
+90            f4z__flow__flow_cvd_slope_rz__12h__value         flow   
+256            f4z__oi__leverage_unwind_rz__12h__value           oi   
+189  f4z__liquidation__liq_activity_severity_active...  liquidation   
+251    f4z__oi__leverage_unwind_percentile__12h__value           oi   
+16              f4z__basis__basis_level_rz__15m__value        basis   
+133  f4z__funding__funding_level_percentile__15m__v...      funding   
+286  f4z__price__price_acceleration_percentile__4h_...        price   
+194  f4z__liquidation__liq_activity_severity_active...  liquidation   
+137         f4z__funding__funding_level_rz__15m__value      funding   
+311  f4z__price__price_excursion_range_percentile__...        price   
+284  f4z__price__price_acceleration_percentile__1h_...        price   
+
+     mean_group_a  mean_group_b  standardized_difference  valid_n_a  \
+25       0.435975      0.643485                -0.702586       2429   
+231      0.493981     -0.025395                 0.651843       2429   
+27       0.428667      0.557771                -0.645878       4479   
+226      0.669027      0.490856                 0.640325       2429   
+28       0.481877      0.595201                -0.430822       3421   
+85       0.584991      0.460658                 0.405213       2429   
+95       0.587632      0.467347                 0.404760       2429   
+100      0.337507     -0.061914                 0.388447       2429   
+10       0.688240      0.580965                 0.355898       2429   
+90       0.486629     -0.273949                 0.352274       2429   
+256      0.314535      0.015138                 0.344954       2429   
+189      0.635975      0.535799                 0.343195       2429   
+251      0.576795      0.496667                 0.331872       2429   
+16      -0.343059      0.138006                -0.328866       4918   
+133      0.456750      0.549442                -0.319915       4910   
+286      0.394984      0.477451                -0.311063       2429   
+194      0.305957     -0.027679                 0.310654       2429   
+137     -0.150465      0.424395                -0.302249       3514   
+311      0.555086      0.468288                 0.297668       2429   
+284      0.418474      0.499555                -0.294883       2429   
+
+     valid_n_b  abs_difference  
+25        6068        0.702586  
+231       6068        0.651843  
+27       12000        0.645878  
+226       6068        0.640325  
+28       10000        0.430822  
+85        6068        0.405213  
+95        6068        0.404760  
+100       6068        0.388447  
+10        6068        0.355898  
+90        6068        0.352274  
+256       6068        0.344954  
+189       6068        0.343195  
+251       6068        0.331872  
+16       12087        0.328866  
+133      12024        0.319915  
+286       6068        0.311063  
+194       6068        0.310654  
+137      10361        0.302249  
+311       6068        0.297668  
+284       6068        0.294883  
+
+
+TOP 20 FEATURES: LARGE DOWN vs SMALLER MOVES
+
+
+                                               feature       family  \
+199  f4z__liquidation__liq_activity_severity_histor...  liquidation   
+200  f4z__liquidation__liq_activity_severity_histor...  liquidation   
+168  f4z__liquidation__cross_asset_liq_activity_raw...  liquidation   
+202  f4z__liquidation__liq_activity_severity_histor...  liquidation   
+167  f4z__liquidation__cross_asset_liq_activity_raw...  liquidation   
+169  f4z__liquidation__cross_asset_liq_activity_raw...  liquidation   
+28   f4z__basis__basis_persistence_percentile__4h__...        basis   
+25   f4z__basis__basis_persistence_percentile__12h_...        basis   
+10      f4z__basis__basis_level_percentile__12h__value        basis   
+13       f4z__basis__basis_level_percentile__4h__value        basis   
+137         f4z__funding__funding_level_rz__15m__value      funding   
+346  f4z__volatility__realized_variance_level_perce...   volatility   
+311  f4z__price__price_excursion_range_percentile__...        price   
+244  f4z__liquidation__venue_breadth_percentile__4h...  liquidation   
+80         f4z__flow__flow_confirmation_rz__12h__value         flow   
+189  f4z__liquidation__liq_activity_severity_active...  liquidation   
+18               f4z__basis__basis_level_rz__4h__value        basis   
+38               f4z__basis__basis_range_rz__4h__value        basis   
+27   f4z__basis__basis_persistence_percentile__1h__...        basis   
+15              f4z__basis__basis_level_rz__12h__value        basis   
+
+     mean_group_a  mean_group_b  standardized_difference  valid_n_a  \
+199      0.904839      0.820845                 0.927062       5044   
+200      0.996510      0.983242                 0.841850       4368   
+168      0.999162      0.989932                 0.834682       4368   
+202      0.651104      0.554081                 0.757354       5044   
+167      0.927143      0.857535                 0.735650       5044   
+169      0.715951      0.611813                 0.696852       5044   
+28       0.464937      0.595201                -0.583141       2926   
+25       0.494462      0.643485                -0.517809       2476   
+10       0.729069      0.580965                 0.486142       2476   
+13       0.616126      0.491461                 0.415422       2926   
+137     -0.363242      0.424395                -0.398273       3182   
+346      0.365168      0.471289                -0.390988       2476   
+311      0.361789      0.468288                -0.375171       2476   
+244      0.526941      0.480918                 0.362943       2926   
+80       0.079488      0.583500                -0.357346       2476   
+189      0.439650      0.535799                -0.346389       2476   
+18       1.696472      0.836103                 0.344791       2926   
+38       0.370944     -0.111427                 0.341117       2926   
+27       0.489234      0.557771                -0.329122       4368   
+15       2.521032      1.669328                 0.321225       2476   
+
+     valid_n_b  abs_difference  
+199      12087        0.927062  
+200      12000        0.841850  
+168      12000        0.834682  
+202      12500        0.757354  
+167      12087        0.735650  
+169      12500        0.696852  
+28       10000        0.583141  
+25        6068        0.517809  
+10        6068        0.486142  
+13       10000        0.415422  
+137      10361        0.398273  
+346       5890        0.390988  
+311       6068        0.375171  
+244      10000        0.362943  
+80        6068        0.357346  
+189       6068        0.346389  
+18       10000        0.344791  
+38       10000        0.341117  
+27       12000        0.329122  
+15        6068        0.321225  
+
+
+FEATURE FAMILY RANKING: LARGE UP vs SMALLER MOVES
+
+
+                 mean    median  count
+family                                
+basis        0.146840  0.084463     40
+liquidation  0.121069  0.103222     94
+price        0.114669  0.083048     45
+funding      0.104558  0.063665     32
+volatility   0.096248  0.089537     60
+flow         0.096034  0.047141     85
+oi           0.085157  0.045088     30
+
+
+FEATURE FAMILY RANKING: LARGE DOWN vs SMALLER MOVES
+
+
+                 mean    median  count
+family                                
+basis        0.138026  0.060383     40
+liquidation  0.137599  0.072568     94
+volatility   0.114173  0.125953     60
+funding      0.106891  0.072180     32
+price        0.088718  0.073190     45
+flow         0.077480  0.062861     85
+oi           0.056705  0.035816     30
+
+=== Saved notebook cell 39; not rerun ===
+
+TRAIN: 154271 2022-04-26 17:25:00+00:00 to 2024-03-18 05:10:00+00:00
+VALIDATION: 31867 2024-03-22 21:12:00+00:00 to 2024-08-04 15:55:00+00:00
+TEST: 30891 2024-08-12 07:21:00+00:00 to 2025-01-20 01:59:00+00:00
+
+BASELINE — TEST
+Accuracy: 0.674
+Balanced accuracy: 0.5
+
+LOGISTIC REGRESSION — VALIDATION
+Accuracy: 0.5119
+Balanced accuracy: 0.5093
+Average precision: 0.4813
+ROC-AUC: 0.5146
+
+LOGISTIC REGRESSION — TEST
+Accuracy: 0.4837
+Balanced accuracy: 0.5271
+Average precision: 0.6989
+ROC-AUC: 0.5081
+
+Classification report:
+              precision    recall  f1-score   support
+
+    Downward       0.35      0.65      0.45     10071
+      Upward       0.70      0.40      0.51     20820
+
+    accuracy                           0.48     30891
+   macro avg       0.53      0.53      0.48     30891
+weighted avg       0.59      0.48      0.49     30891
+

@@ -1,0 +1,4 @@
+class,rows,fraction,provenance
+down_below_minus500,96671,0.06686522442537103,saved_evidence.txt; raw data not rerun
+between_minus500_and_plus500,1223576,0.8463208598390188,saved_evidence.txt; raw data not rerun
+up_above_plus500,125512,0.08681391573561015,saved_evidence.txt; raw data not rerun
