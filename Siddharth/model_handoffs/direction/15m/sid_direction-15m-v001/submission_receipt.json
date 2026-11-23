@@ -1,0 +1,20 @@
+{
+  "model_version": "sid_direction-15m-v001",
+  "handoff_commit": "45ae925bc43be6994a1ccf14fe89a63b46749f11",
+  "experiment": "BTC_15M_TEAM",
+  "run_id": "0ebda7049d094e34a2737e899adeaa94",
+  "run_link": "https://scalewave.tailf4ff21.ts.net/#/experiments/2/runs/0ebda7049d094e34a2737e899adeaa94",
+  "artifact_uri": "mlflow-artifacts:/2/0ebda7049d094e34a2737e899adeaa94/artifacts",
+  "verified_artifact_sha256": {
+    "README.md": "cbc6aaf4d06faf1e0f61af8fee7144ed8172938317312ed0a5286fa8dbc52e3d",
+    "predict.py": "8e78d75f7df88a99dbc61809dba8693a71e6eb1cc6ae272eafb9ed08f6ba21c4",
+    "manifest.json": "2772b077cfa22c27bce052bfd5fedf35dd9fa8fb709d8be9009577c4e2c4ec81",
+    "requirements.txt": "84a019c3280d354a1d3504d54f74eebcecd5bb8f2c9a9526d0c2a014c9786c08",
+    "example_input.json": "0ce05c8205470c2207108555d037425bc80e79b1ec2e4a06b6d787b0667873d8",
+    "expected_output.json": "f754a463a6a5c91b70b687af64afa6bb91633247ce267941f2d773be8adf782e",
+    "evaluation.json": "02896c8c1e4df2b2a93a0a184af50c06804d0f40634abc12ed53325a6c883ce6",
+    "boost.joblib": "07b13849cb47c9db90fde4e4894cfade523b740a7a745ec0cb09714bb382839c",
+    "ridge.joblib": "43e47d21c3bdd17b33d2a654f7a45cc8ce692e566d3d48d36e36a942f61ef91b",
+    "pattern_rules.csv": "2551c2a6b33c450e2aa4ed2512905d709ec9ae65d24f802351cf3f397dad7d75"
+  }
+}
