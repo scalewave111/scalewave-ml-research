@@ -39,11 +39,7 @@
       "sha256": "2551c2a6b33c450e2aa4ed2512905d709ec9ae65d24f802351cf3f397dad7d75"
     }
   ],
-  "additional_files": [
-    "feature_schema.json",
-    "FEATURES.md",
-    "replay_io.py"
-  ],
+  "additional_files": [],
   "limitations": [
     "Quarterly walk-forward evaluation reuses a historical calendar examined in model selection. Evaluation ends 2025-01-23 23:30 UTC. Current market performance is unverified.",
     "Primary comparison covers successive historical fitted checkpoints. The included frozen January 2025 checkpoint is scored separately below.",
