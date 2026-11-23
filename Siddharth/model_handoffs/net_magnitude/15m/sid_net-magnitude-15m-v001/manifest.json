@@ -1,0 +1,47 @@
+{
+  "model_version": "sid_net-magnitude-15m-v001",
+  "owner": "Sid",
+  "symbol": "BTCUSDT",
+  "target": "net-magnitude",
+  "horizon": "15m",
+  "python_version": "3.12.5",
+  "training_cutoff_utc": "2025-01-01T00:00:00Z",
+  "latest_training_label_end_utc": "2024-12-31T23:46:00Z",
+  "training_data_reference": {
+    "archive": "HANDOFF_4_ML_RESEARCH_V1_MINUTE.zip",
+    "catalog_sha256": {
+      "X_FILES.json": "927743edc6cc56480b5762702e05b63f754e753384a465ff04c8074f759429f7",
+      "Y_FILES.json": "03a6ecb1b7332cb2cd36c08be5815b4358a4eaacc374dbd1fc29e80f317b48c5",
+      "BINDING_TRANSITIONS.json": "2c3d1807aaf39b1d17d17cfadd76dfda4a34e74d819a2fb5088eea88ed4e874f"
+    }
+  },
+  "source_code_commit": null,
+  "source_provenance": "Original research Git commit unavailable. The following content hashes identify inspected source files. Record verified Git provenance with the owner before formal submission.",
+  "source_sha256": {
+    "fit_15m_market_conditional_means.py": "3a64dcaab95606d0b32f64e0ad445b02d1f583b90540706aca632c1dc9e737e7",
+    "forecast_16h_market_band.py": "b236bf5d2a8d6563277c74dfacae201bd4b658da857b2662b9b49cb993a30139",
+    "search_15m_magnitude_models.py": "42192129fb61a2d18c2984b50a5b855e9da61af332ace36382ff7a2b596d7704",
+    "improve_15m_magnitude_blend.py": "ebdae89ed4eea2a0b3e466091e6669865753bfb72a74f8b93fcb20b640f93d68"
+  },
+  "checkpoint_lineage": "Report/improved_15m_magnitude_20261123T093755Z/last_quarter_models.joblib (byte-identical to magnitude.joblib).",
+  "target_definition": "Expected absolute 15-minute simple return in basis points: 10000 * abs(price(t+16min)/price(t+1min)-1), using the archived BTC minute reference price.",
+  "output_units": "simple basis points",
+  "preprocessing": "Ordered features, fitted imputers, scaler, regressors, tree weight and multiplier are embedded. Upstream adjusted volatility scale is supplied as log_scale.",
+  "artifacts": [
+    {
+      "file": "magnitude.joblib",
+      "sha256": "65ccc3b0c226bb59765b032939b639701c656849b9f2960c0fcc82ba9d09bfcb"
+    }
+  ],
+  "additional_files": [
+    "feature_schema.json",
+    "FEATURES.md",
+    "replay_io.py"
+  ],
+  "limitations": [
+    "Quarterly walk-forward evaluation reuses a historical calendar examined in model selection. Evaluation ends 2025-01-23 23:30 UTC. Current market performance is unverified.",
+    "Primary comparison covers successive historical fitted checkpoints. The included frozen January 2025 checkpoint is scored separately below.",
+    "Integration requires the upstream causal feature pipeline and data availability checks. No execution, live feed or quarterly retraining is included.",
+    "Individual move sizes are noisy. In the matched evaluation, 5822 of 23088 were within 25% of actual size."
+  ]
+}

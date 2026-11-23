@@ -1,0 +1,7 @@
+{
+  "model_version": "sid_net-magnitude-15m-v001",
+  "symbol": "BTCUSDT",
+  "horizon": "15m",
+  "forecast_time_utc": "2025-01-01T00:00:00+00:00",
+  "net_magnitude_bps": 13.62263264074617
+}

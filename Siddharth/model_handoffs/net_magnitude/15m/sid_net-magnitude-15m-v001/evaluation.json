@@ -1,0 +1,83 @@
+{
+  "primary_metric": "mae",
+  "baseline_name": "Prior 12-month median absolute execution return",
+  "model_score": 11.279951074792436,
+  "baseline_score": 12.611610448429666,
+  "model_rmse_bps": 19.064255830168122,
+  "baseline_rmse_bps": 23.137020963342636,
+  "row_count": 23088,
+  "score_units": "basis points",
+  "same_evaluation_rows": true,
+  "evaluation_start_utc": "2023-10-01T00:00:00+00:00",
+  "evaluation_end_utc": "2025-01-23T23:30:00+00:00",
+  "split_and_label_end_policy": "Quarterly forward tests. Training labels must have become available before each fit cutoff. Compared with a trailing historical baseline on identical timestamps.",
+  "tuning_and_selection_exposure": "Hyperparameters and weights selected on earlier 75-day validation blocks. Feature designs compared on the historical calendar.",
+  "quarterly_results": [
+    {
+      "issue_utc": "2023-10-01 00:00:00+00:00",
+      "rows": 4416,
+      "model_score": 9.328341311281742,
+      "baseline_score": 10.412994405341525,
+      "model_rmse_bps": 18.56591117671411,
+      "baseline_rmse_bps": 21.329553787965835
+    },
+    {
+      "issue_utc": "2024-01-01 00:00:00+00:00",
+      "rows": 4368,
+      "model_score": 12.627929988131722,
+      "baseline_score": 14.693827044211552,
+      "model_rmse_bps": 20.783597271143446,
+      "baseline_rmse_bps": 26.689042533979645
+    },
+    {
+      "issue_utc": "2024-04-01 00:00:00+00:00",
+      "rows": 4368,
+      "model_score": 10.671740588280855,
+      "baseline_score": 12.066908137517995,
+      "model_rmse_bps": 17.78334843765172,
+      "baseline_rmse_bps": 21.28353562689309
+    },
+    {
+      "issue_utc": "2024-07-01 00:00:00+00:00",
+      "rows": 4416,
+      "model_score": 11.92849079430515,
+      "baseline_score": 13.280225183521482,
+      "model_rmse_bps": 19.49593964982502,
+      "baseline_rmse_bps": 24.102073496371943
+    },
+    {
+      "issue_utc": "2024-10-01 00:00:00+00:00",
+      "rows": 4416,
+      "model_score": 11.57449071392688,
+      "baseline_score": 12.361549719378633,
+      "model_rmse_bps": 17.655520092227743,
+      "baseline_rmse_bps": 20.838657863972887
+    },
+    {
+      "issue_utc": "2025-01-01 00:00:00+00:00",
+      "rows": 1104,
+      "model_score": 12.387162831580468,
+      "baseline_score": 13.64864990430648,
+      "model_rmse_bps": 22.236445528139207,
+      "baseline_rmse_bps": 26.53786618561817
+    }
+  ],
+  "frozen_checkpoint_test": {
+    "issue_utc": "2025-01-01 00:00:00+00:00",
+    "rows": 1104,
+    "model_score": 12.387162831580468,
+    "baseline_score": 13.64864990430648,
+    "model_rmse_bps": 22.236445528139207,
+    "baseline_rmse_bps": 26.53786618561817
+  },
+  "replay_tolerance": {
+    "absolute": 1e-08,
+    "relative": 1e-08
+  },
+  "known_limitations": [
+    "Quarterly walk-forward evaluation reuses a historical calendar examined in model selection. Evaluation ends 2025-01-23 23:30 UTC. Current market performance is unverified.",
+    "Primary comparison covers successive historical fitted checkpoints. The included frozen January 2025 checkpoint is scored separately below.",
+    "Integration requires the upstream causal feature pipeline and data availability checks. No execution, live feed or quarterly retraining is included.",
+    "Individual move sizes are noisy. In the matched evaluation, 5822 of 23088 were within 25% of actual size."
+  ]
+}

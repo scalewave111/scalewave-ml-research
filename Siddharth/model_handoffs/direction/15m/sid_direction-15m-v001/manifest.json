@@ -1,0 +1,53 @@
+{
+  "model_version": "sid_direction-15m-v001",
+  "owner": "Sid",
+  "symbol": "BTCUSDT",
+  "target": "direction",
+  "horizon": "15m",
+  "python_version": "3.12.5",
+  "training_cutoff_utc": "2025-01-01T00:00:00Z",
+  "latest_training_label_end_utc": "2024-12-31T23:45:00Z",
+  "training_data_reference": {
+    "archive": "HANDOFF_4_ML_RESEARCH_V1_MINUTE.zip",
+    "catalog_sha256": {
+      "X_FILES.json": "927743edc6cc56480b5762702e05b63f754e753384a465ff04c8074f759429f7",
+      "Y_FILES.json": "03a6ecb1b7332cb2cd36c08be5815b4358a4eaacc374dbd1fc29e80f317b48c5",
+      "BINDING_TRANSITIONS.json": "2c3d1807aaf39b1d17d17cfadd76dfda4a34e74d819a2fb5088eea88ed4e874f"
+    }
+  },
+  "source_code_commit": null,
+  "source_provenance": "Original research Git commit unavailable. The following content hashes identify inspected source files. Record verified Git provenance with the owner before formal submission.",
+  "source_sha256": {
+    "replay_frozen_15m_direction.py": "7f27942aac08dfe3bf3b27663a414281e2f32513ee3d0601127ef6d312fc7da8",
+    "frozen_15m_micro_inputs.py": "e0acc2a839255d92da88211478b7bd7b8dc4986c7f7a64c8552e606ebff6678e"
+  },
+  "checkpoint_lineage": "BTCUSDT_Multihorizon_Research_Handoff_2026-11-21.zip / Rebuilt/short_direction / 15m_2025-01-01, expanding-add_all_short-shallow_boost and last_12m-ridge_short-ridge.",
+  "target_definition": "Probability of a positive native 15-minute BTCUSDT endpoint return from t to t+15. The reported execution-target comparison evaluates the sign from t+1 to t+16.",
+  "output_units": "probability",
+  "preprocessing": "Per-component input order, quantile clipping, fallback, probability transform and fitted estimators are embedded. Upstream feature-leaf rules are in pattern_rules.csv.",
+  "artifacts": [
+    {
+      "file": "boost.joblib",
+      "sha256": "07b13849cb47c9db90fde4e4894cfade523b740a7a745ec0cb09714bb382839c"
+    },
+    {
+      "file": "ridge.joblib",
+      "sha256": "43e47d21c3bdd17b33d2a654f7a45cc8ce692e566d3d48d36e36a942f61ef91b"
+    },
+    {
+      "file": "pattern_rules.csv",
+      "sha256": "2551c2a6b33c450e2aa4ed2512905d709ec9ae65d24f802351cf3f397dad7d75"
+    }
+  ],
+  "additional_files": [
+    "feature_schema.json",
+    "FEATURES.md",
+    "replay_io.py"
+  ],
+  "limitations": [
+    "Quarterly walk-forward evaluation reuses a historical calendar examined in model selection. Evaluation ends 2025-01-23 23:30 UTC. Current market performance is unverified.",
+    "Primary comparison covers successive historical fitted checkpoints. The included frozen January 2025 checkpoint is scored separately below.",
+    "Integration requires the upstream causal feature pipeline and data availability checks. No execution, live feed or quarterly retraining is included.",
+    "Native training sign and one-minute-delayed execution sign can differ."
+  ]
+}

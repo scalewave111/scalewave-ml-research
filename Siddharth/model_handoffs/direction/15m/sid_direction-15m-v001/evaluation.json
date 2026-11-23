@@ -1,0 +1,83 @@
+{
+  "primary_metric": "log_loss",
+  "baseline_name": "Prior 12-month UP frequency",
+  "model_score": 0.6878730327994756,
+  "baseline_score": 0.6931878396133171,
+  "model_accuracy_pct": 53.928447678447675,
+  "baseline_accuracy_pct": 50.05630630630631,
+  "row_count": 23088,
+  "score_units": "dimensionless",
+  "same_evaluation_rows": true,
+  "evaluation_start_utc": "2023-10-01T00:00:00+00:00",
+  "evaluation_end_utc": "2025-01-23T23:30:00+00:00",
+  "split_and_label_end_policy": "Quarterly forward tests. Training labels must have become available before each fit cutoff. Compared with a trailing historical baseline on identical timestamps.",
+  "tuning_and_selection_exposure": "Direction blend chosen after historical comparisons.",
+  "quarterly_results": [
+    {
+      "issue_utc": "2023-10-01 00:00:00+00:00",
+      "rows": 4416,
+      "model_score": 0.6867201930576496,
+      "baseline_score": 0.6930887586803229,
+      "model_accuracy_pct": 54.347826086956516,
+      "baseline_accuracy_pct": 50.63405797101449
+    },
+    {
+      "issue_utc": "2024-01-01 00:00:00+00:00",
+      "rows": 4368,
+      "model_score": 0.6874993064420011,
+      "baseline_score": 0.6931424120277785,
+      "model_accuracy_pct": 54.41849816849816,
+      "baseline_accuracy_pct": 50.206043956043956
+    },
+    {
+      "issue_utc": "2024-04-01 00:00:00+00:00",
+      "rows": 4368,
+      "model_score": 0.6864272836716104,
+      "baseline_score": 0.6934264729623325,
+      "model_accuracy_pct": 54.64743589743589,
+      "baseline_accuracy_pct": 48.67216117216117
+    },
+    {
+      "issue_utc": "2024-07-01 00:00:00+00:00",
+      "rows": 4416,
+      "model_score": 0.68876712447626,
+      "baseline_score": 0.6930894739953541,
+      "model_accuracy_pct": 53.05706521739131,
+      "baseline_accuracy_pct": 50.90579710144928
+    },
+    {
+      "issue_utc": "2024-10-01 00:00:00+00:00",
+      "rows": 4416,
+      "model_score": 0.689704257502314,
+      "baseline_score": 0.6931838745132418,
+      "model_accuracy_pct": 53.555253623188406,
+      "baseline_accuracy_pct": 49.90942028985507
+    },
+    {
+      "issue_utc": "2025-01-01 00:00:00+00:00",
+      "rows": 1104,
+      "model_score": 0.6887819205598514,
+      "baseline_score": 0.6932290634141246,
+      "model_accuracy_pct": 52.44565217391305,
+      "baseline_accuracy_pct": 49.81884057971014
+    }
+  ],
+  "frozen_checkpoint_test": {
+    "issue_utc": "2025-01-01 00:00:00+00:00",
+    "rows": 1104,
+    "model_score": 0.6887819205598514,
+    "baseline_score": 0.6932290634141246,
+    "model_accuracy_pct": 52.44565217391305,
+    "baseline_accuracy_pct": 49.81884057971014
+  },
+  "replay_tolerance": {
+    "absolute": 1e-08,
+    "relative": 1e-08
+  },
+  "known_limitations": [
+    "Quarterly walk-forward evaluation reuses a historical calendar examined in model selection. Evaluation ends 2025-01-23 23:30 UTC. Current market performance is unverified.",
+    "Primary comparison covers successive historical fitted checkpoints. The included frozen January 2025 checkpoint is scored separately below.",
+    "Integration requires the upstream causal feature pipeline and data availability checks. No execution, live feed or quarterly retraining is included.",
+    "Native training sign and one-minute-delayed execution sign can differ."
+  ]
+}
