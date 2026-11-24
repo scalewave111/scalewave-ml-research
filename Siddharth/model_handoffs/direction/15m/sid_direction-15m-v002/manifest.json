@@ -1,0 +1,57 @@
+{
+  "model_version": "sid_direction-15m-v002",
+  "owner": "Sid",
+  "symbol": "BTCUSDT",
+  "horizon": "15m",
+  "target": "direction",
+  "output_key": "p_up",
+  "target_definition": "Probability that the BTCUSDT reference price at t+16 minutes exceeds the reference price at t+1 minute.",
+  "training_cutoff_utc": "2024-10-01T00:00:00Z",
+  "latest_training_label_end_utc": "2024-09-30 23:59:00+00:00",
+  "python_version": "3.12.5",
+  "source_code_commit": null,
+  "source_sha256": {
+    "fit_15m_zip_direction.py": "5ae015181319cbeb32d7bf93c23c76659e781081ed7251b4339386116d006b07",
+    "fit_15m_median_magnitude.py": "6b225104dae9a52440ad361854a531b76b1974fcdf8a811218b777ac8fcb2b87"
+  },
+  "what_changed": "Minute-issued execution-direction classifier combining 65% logistic and 35% shallow boosting with prior-quarter ZIP calibration.",
+  "input_features": [
+    "price_displacement__5m",
+    "price_displacement__15m",
+    "price_displacement__1h",
+    "price_move_retention__5m",
+    "price_move_retention__15m",
+    "price_move_retention__1h",
+    "flow_pressure__5m",
+    "flow_pressure__15m",
+    "flow_pressure__1h",
+    "flow_cvd_slope__5m",
+    "flow_cvd_slope__15m",
+    "flow_cvd_slope__1h",
+    "liq_side_pressure__5m",
+    "liq_side_pressure__15m",
+    "liq_side_pressure__1h",
+    "liq_activity_severity__5m",
+    "liq_activity_severity__15m",
+    "liq_activity_severity__1h",
+    "BTC_return_1m_scaled",
+    "BTC_return_5m_scaled",
+    "BTC_return_15m_scaled",
+    "BTC_return_60m_scaled",
+    "ETH_return_1m_scaled",
+    "ETH_return_5m_scaled",
+    "ETH_return_15m_scaled",
+    "ETH_return_60m_scaled",
+    "btc_eth_relative_15m",
+    "flow_change",
+    "liquidation_change",
+    "weekend"
+  ],
+  "artifacts": [
+    {
+      "file": "direction.joblib",
+      "sha256": "3035966ecf599ffecde86d7b772773267d5edab2689699de0e9ddd0bf053309f"
+    }
+  ],
+  "additional_files": []
+}
