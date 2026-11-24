@@ -1,0 +1,7 @@
+{
+  "model_version": "sid_direction-15m-v002",
+  "symbol": "BTCUSDT",
+  "horizon": "15m",
+  "forecast_time_utc": "2024-10-01T00:00:00+00:00",
+  "p_up": 0.5071603369109142
+}
