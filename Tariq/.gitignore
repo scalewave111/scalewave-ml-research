@@ -6,7 +6,7 @@ __pycache__/
 .ipynb_checkpoints/
 .matplotlib/
 .validation/
-/research/feature_exploration/Reports/
+/feature_exploration/Reports/
 **/data/
 **/Data/
 **/cache/
@@ -14,9 +14,9 @@ __pycache__/
 *.zip
 *.pkl
 *.joblib
-!research/magnitude_48h/playground/submissions/magnitude_current/run_001/fold_*_selected.joblib
+!magnitude_48h/playground/submissions/magnitude_current/run_001/fold_*_selected.joblib
 *.parquet
-!research/magnitude_48h/playground/submissions/magnitude_current/run_001/predictions.parquet
+!magnitude_48h/playground/submissions/magnitude_current/run_001/predictions.parquet
 .env
 .env.*
 *credentials*.json

@@ -1,0 +1,13 @@
+{
+  "scope": "Magnitude-only extract from the historical 2026-11-17 packaging verification; not a fresh model replay",
+  "historical_date": "2026-11-17",
+  "magnitude_inference": {
+    "status": "PASS",
+    "rows": 18481,
+    "MAE": 180.79851809782613,
+    "Spearman_IC": 0.07852651265983954,
+    "new_fits": 0,
+    "method": "Unchanged packaged replay with four SHA-256-verified external prepared inputs"
+  },
+  "reorganization": "Project paths changed; current source hashes checked separately. Time-to-High evidence removed from current checkout."
+}
