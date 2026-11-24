@@ -1,0 +1,18 @@
+{
+  "model_version": "sid_net-magnitude-15m-v002",
+  "handoff_commit": "588c6918c6d2ccb0444fc0bb3f6e1060ebb7d227",
+  "experiment": "BTC_15M_TEAM",
+  "run_id": "8317954297ce44059067e1bac89afeb9",
+  "run_link": "https://scalewave.tailf4ff21.ts.net/#/experiments/2/runs/8317954297ce44059067e1bac89afeb9",
+  "artifact_uri": "mlflow-artifacts:/2/8317954297ce44059067e1bac89afeb9/artifacts",
+  "verified_artifact_sha256": {
+    "README.md": "48ad76c8b2d3d0e64d89ee4012cfc2ae7e556d66112fe8dec854a0e81ca39292",
+    "predict.py": "f9cbc2dbc66af145008665a13e2d4c6440d3c5631e994aabf86b7a2bc88f4e06",
+    "manifest.json": "755ed00db9e65053a687ae91a1853289999d84412c7be8dc6d7ad0ea3ec55e03",
+    "requirements.txt": "8812b111aa3d7b22b50e8cee85c57d781ded8a3b50903475aacb2339b0c04753",
+    "example_input.json": "c8f9a001943acadf0274a4b5cbc5355a408ce1b38d133a8483bdc1447fe34b1c",
+    "expected_output.json": "afed5ae65e6085de205e6dd0075f41a6983735edf23bedd557a2bc420894a45c",
+    "evaluation.json": "c8e39092515eb7103f484748310da3b258d44d860aa9ffb265c43a79644ec6a6",
+    "net-magnitude.joblib": "fdd26af8b6db3a523806190d1391ef45b127c7f4fd57cd602335377f22ef9483"
+  }
+}
