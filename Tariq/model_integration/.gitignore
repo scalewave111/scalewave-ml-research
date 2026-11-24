@@ -1,0 +1,17 @@
+.venv-model/
+.venv-dashboard/
+artifacts/
+.downloads/
+.verification/
+results/
+__pycache__/
+.venv*/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+data/
+*.zip
+*.joblib
+*.pkl
