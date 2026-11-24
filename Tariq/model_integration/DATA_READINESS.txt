@@ -1,0 +1,70 @@
+STEP 1: HISTORICAL INPUT READINESS
+Inspected 24 November 2026. No new model experiment or live trading was run.
+
+Goal
+Prepare a real historical input for each v002 model at the same UTC forecast time,
+run the models and save one traceable combined prediction. This is integration
+verification, not evidence of out-of-sample strategy performance.
+
+Available
+- Verified direction and magnitude v002 packages and fitted model files.
+- Python 3.12.5 model environment.
+- Both predict.py files include build_features functions.
+- Exact expected model inputs are recorded in the submitted manifests.
+- Both checkpoints have training cutoff 2024-10-01 UTC, targets t+1 to t+16.
+
+Data needed
+1. BTC and ETH reference prices on a complete UTC one-minute time grid.
+   Preserve validity flags and publication/availability times. Do not replace the
+   original reference prices with arbitrary exchange close prices.
+2. BTC market features for 5m, 15m and 1h (18 columns total):
+   price_displacement, price_move_retention, flow_pressure, flow_cvd_slope,
+   liq_side_pressure and liq_activity_severity, each suffixed __5m/__15m/__1h.
+   The direction builder accepts these already-calculated market measurements;
+   it does not implement their underlying registry definitions.
+3. Enough earlier history to reproduce the owner's feature initialization.
+   Exponentially weighted statistics depend on their initial history. Magnitude
+   also uses historical same-clock-slot activity and weekday/weekend grouping.
+   A single current price row or a 15-minute slice is insufficient. Use the owner's
+   reference history or agree and verify a warm-up policy before claiming parity.
+4. Source schema/registry mapping and the owner's validity and release guards.
+   In particular, direction permits the origin minute price if already published;
+   magnitude's builder shifts prices by one minute. Preserve each implementation.
+5. Prefer one real reference input/output from the owner at a known timestamp for
+   comparing our feature preparation. Synthetic package examples do not prove that
+   features from raw data are calculated correctly.
+
+Target output contracts
+- Direction: 30 engineered features -> p_up.
+- Magnitude: 27 engineered features plus positive scale_bps -> net_magnitude_bps.
+  scale_bps comes from the magnitude build_features function; do not hard-code the
+  synthetic example's scale of 12 for real data.
+- Formula: (2*p_up - 1) * net_magnitude_bps = predicted_signed_score_bps.
+- Actual return, if checked later, must use BTC reference prices at t+1 and t+16.
+  Keep these future evaluation prices out of the forecast inputs.
+
+Local inspection findings
+- No HANDOFF_4 source directory/archive or PRICE_1m source file was found by filename
+  search inside C:\ScaleWave, including ignored files.
+- Inspected archive listings for BTC_15M_WEEK2.zip, TEAM_48H_PLAYGROUND_V1.zip,
+  Baseline_Reproduction.zip and Deliverables.zip. No directly listed Handoff 4 minute
+  price source was identified. Unrelated research outputs are not substitutes.
+- Nov 23/BTC_15M_WEEK2/BTC_15M_WEEK2/HOW_TO_RUN.md and code/config.py explicitly say
+  the Handoff 4 release and large feature cache are external dependencies.
+- That older bundle contains example paths on D:. These are not confirmed actual
+  locations on this PC. Nothing outside C:\ScaleWave was accessed.
+- The release identity and schema used for v002 still need confirmation from its
+  owner or a supplied data source; similar file names alone are not proof of identity.
+
+Next action
+Locate the owner's dataset or request a reproducible source slice/history and registry
+mapping for one historical forecast. Then inspect its schema, apply source guards,
+run the supplied feature builders and verify one input/output pair.
+
+Storage approach
+Read original data in place where authorized. Do not build the older roughly 7-GB
+research arena merely for this single-row check. Keep only current derived feature
+rows, predictions and a compact provenance/verification receipt. No source datasets
+have been copied, extracted or deleted during this inspection.
+
+Status: WAITING_FOR_SOURCE_DATA_LOCATION_AND_SCHEMA

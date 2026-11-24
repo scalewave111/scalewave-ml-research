@@ -1,0 +1,85 @@
+DEPLOYMENT INSTRUCTIONS FOR TARIQ OR TL - WINDOWS HOST
+
+Status: instructions only. No server installation or deployment has been performed.
+This deploys the development replay/dashboard milestone, not automated trading.
+
+Where it runs and why
+---------------------
+Use a company-controlled machine with adequate memory/disk, data access and reliable
+availability. It may be the SAME computer that hosts MLflow, another company PC,
+or a cloud VM. No particular PC is required. MLflow is the tracking application;
+the Python pipeline and dashboard run as separate processes on the chosen machine.
+Uploading code as an MLflow artifact stores it; it does not install or execute it.
+An MLflow browser login alone does not provide operating-system access.
+These instructions target Windows. Validate an OS-specific setup separately if the
+MLflow host runs Linux; do not assume Windows Python environments are portable.
+
+1. Get the selected code from company GitHub
+------------------------------------------
+Use branch trq until the handoff is reviewed and merged into main. Record the exact
+commit you deploy. From a checkout, the project is Tariq/model_integration.
+Use an existing checkout where possible. If a new clone is needed, put it under
+C:\ScaleWave and use the company's approved GitHub authentication method.
+Open PowerShell and change directory to that model_integration folder.
+Example only (replace with the actual checkout path):
+Set-Location 'C:\ScaleWave\scalewave-ml-research\Tariq\model_integration'
+git rev-parse HEAD
+Do not copy .venv folders from another computer. Do not copy datasets into Git.
+
+2. Create the model environment
+-------------------------------
+Have Python 3.12.5 available through the approved company installation process.
+The path below is a placeholder: replace it with the host's Python executable.
+& 'PATH_TO_PYTHON_3_12_5.exe' --version
+& 'PATH_TO_PYTHON_3_12_5.exe' -m venv .venv-model
+& '.\.venv-model\Scripts\python.exe' -m pip install --no-cache-dir -r packages/v002/direction/requirements.txt
+Both model packages have the same pinned requirements. Reuse this environment.
+The runner checks exact Python and declared dependency versions before inference.
+
+3. Retrieve artifacts from MLflow
+--------------------------------
+Confirm network access to the configured MLflow URL, including Tailscale if needed.
+Reuse an existing environment with mlflow-skinny if one is available. Otherwise:
+& 'PATH_TO_PYTHON_3_12_5.exe' -m venv .venv-mlflow
+& '.\.venv-mlflow\Scripts\python.exe' -m pip install --no-cache-dir mlflow-skinny==3.18.0
+& '.\.venv-mlflow\Scripts\python.exe' download_artifacts.py
+Enter the MLflow username and password at the local prompts. Do not place them in
+Git, a command file or this document. This only downloads selected artifacts and
+checks hashes. It does not modify remote runs. Existing matching files are reused.
+If using an existing client environment, substitute its Python path above.
+
+4. Verify this host
+-------------------
+& '.\.venv-model\Scripts\python.exe' -B -m unittest -v test_pipeline test_monitoring
+& '.\.venv-model\Scripts\python.exe' -B -m unittest discover -s dashboard -p test_dashboard.py
+& '.\.venv-model\Scripts\python.exe' -B pipeline.py --mode replay --model-python '.\.venv-model\Scripts\python.exe'
+Expect REPLAY_PASSED_DEVELOPMENT_ONLY, target alignment MATCH and trading False.
+Expected score: approximately +0.11432498591035122 bps. Stop and diagnose failures;
+do not bypass checks or substitute a newer model run. This is a synthetic example.
+Inspect results/current/result.json and results/current/monitor.json.
+
+5. Start the dashboard locally on the host
+-----------------------------------------
+& '.\.venv-model\Scripts\python.exe' dashboard/launch.py
+The launcher creates/reuses .venv-dashboard using dashboard/requirements.lock.txt.
+Open http://127.0.0.1:8501 ON THE HOST. Keep that terminal running; Ctrl+C stops it.
+This address is not accessible from another PC. The TL should arrange authenticated
+private remote access separately; do not expose an unauthenticated public dashboard.
+After code changes, restart the dashboard process to reload imported modules.
+
+6. Continue implementation; do not schedule the example as a trading pipeline
+----------------------------------------------------------------------------
+Locate the real dataset and schema (DATA_READINESS.txt). Build and verify feature
+preparation before adding scheduling, market-data monitoring or trading execution.
+Define service accounts, startup/restart handling, alert destinations and storage
+retention when operational deployment is approved. MLflow backend/artifact backup
+and pipeline-result backup are separate responsibilities to assign to the TL.
+
+Updating later
+--------------
+Review/test the new Git commit, stop the pipeline/dashboard processes, update the
+checkout and install changed dependencies into the existing environments. Replay
+again before acceptance. Keep the incumbent model until a replacement passes.
+Keep current required artifacts and compact histories; no duplicate environments
+or per-attempt archives. Preserve source data and remote model/version history.
+Rolling back code must also restore its matching model configuration/dependencies.

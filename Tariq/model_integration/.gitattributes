@@ -1,0 +1,2 @@
+# Model package receipts hash exact bytes, including original line endings.
+packages/** -text
