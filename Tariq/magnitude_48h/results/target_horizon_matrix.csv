@@ -1,0 +1,2 @@
+target,horizon_minutes,status,note
+magnitude_log_bps,2880,completed development research,Absolute endpoint log return; separate from 15-minute integration
