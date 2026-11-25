@@ -223,7 +223,7 @@ def monitoring_panel():
             st.plotly_chart(chart_layout(fig,height=330),use_container_width=True,key='monitor_durations')
         st.caption('Model-step duration includes environment verification, inference and output validation. Save runs even after a failure to record it.')
     st.markdown('**Run a monitored replay from the integration folder in PowerShell:**')
-    st.code("& '.\\.venv-model\\Scripts\\python.exe' -B pipeline.py --mode replay --model-python '.\\.venv-model\\Scripts\\python.exe'",language='powershell')
+    st.code("& '.\\.venv-model\\Scripts\\python.exe' -B pipeline/run.py --mode replay --model-python '.\\.venv-model\\Scripts\\python.exe'",language='powershell')
     st.caption('This page never starts a model or sends a trade. Alerts are displayed here only; no external notifications are configured.')
 
 with tabs[4]:

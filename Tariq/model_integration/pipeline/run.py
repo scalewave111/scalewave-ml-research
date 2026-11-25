@@ -12,7 +12,7 @@ import time
 
 from monitoring import Monitor, atomic_json, error_text
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def read(path):
@@ -285,7 +285,7 @@ def run(config, mode, python, output_dir):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--mode', choices=['check', 'reported-example', 'replay'], default='check')
-    parser.add_argument('--config', type=Path, default=ROOT / 'config.json')
+    parser.add_argument('--config', type=Path, default=ROOT / 'config/models.json')
     parser.add_argument('--model-python', default=sys.executable)
     args = parser.parse_args()
     output = ROOT / 'results' / 'current'
