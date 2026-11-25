@@ -6,6 +6,7 @@ The retained development model has MAE **180.798518 log bps**, compared with **1
 
 | Folder | Contents |
 | --- | --- |
+| [feature_exploration](feature_exploration/README.md) | Earlier feature investigations, notebooks, reports and synthetic verification |
 | [playground](playground/README.md) | Research code, experiment history and retained model artifacts |
 | [reports](reports/research_summary.md) | Summary, numerical results and existing handoff reports |
 | [results](results/README.md) | Magnitude experiment registry and milestone scores |
