@@ -13,8 +13,8 @@
       "training_cutoff_utc": "2024-10-01T00:00:00Z",
       "target": "direction",
       "units": "probability",
-      "package_dir": "packages/v002/direction",
-      "artifact_dir": "artifacts/v002/direction",
+      "package_dir": "runtime/packages/v002/direction",
+      "artifact_dir": "runtime/artifacts/v002/direction",
       "output_field": "p_up",
       "target_window": {
         "entry_offset_minutes": 1,
@@ -36,7 +36,8 @@
         "relative": 0
       },
       "replay_tolerance_source": "Submitted README: 1e-8 absolute tolerance",
-      "requires_scale_bps": false
+      "requires_scale_bps": false,
+      "source_dir": "Siddharth/model_handoffs/direction/15m/sid_direction-15m-v002"
     },
     "magnitude": {
       "version": "sid_net-magnitude-15m-v002",
@@ -45,8 +46,8 @@
       "training_cutoff_utc": "2024-10-01T00:00:00Z",
       "target": "net-magnitude",
       "units": "simple basis points",
-      "package_dir": "packages/v002/magnitude",
-      "artifact_dir": "artifacts/v002/magnitude",
+      "package_dir": "runtime/packages/v002/magnitude",
+      "artifact_dir": "runtime/artifacts/v002/magnitude",
       "output_field": "net_magnitude_bps",
       "target_window": {
         "entry_offset_minutes": 1,
@@ -68,9 +69,11 @@
         "relative": 0
       },
       "replay_tolerance_source": "Submitted README: 1e-8 absolute tolerance",
-      "requires_scale_bps": true
+      "requires_scale_bps": true,
+      "source_dir": "Siddharth/model_handoffs/net_magnitude/15m/sid_net-magnitude-15m-v002"
     }
   },
   "require_aligned_pair": true,
-  "package_source_ref": "0bb280de7c924da0d8cc96042556eb42e25f6e38"
+  "package_source_ref": "0bb280de7c924da0d8cc96042556eb42e25f6e38",
+  "source_repository": "scalewave111/scalewave-ml-research"
 }

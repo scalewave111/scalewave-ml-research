@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/research_map.md",
-      "bytes": 516,
-      "sha256": "97f57374bce317bc8b055a797e4813bfcfe862114f601936a19a982e43843d6c"
+      "bytes": 515,
+      "sha256": "c496fa59e1195f1bcf3d930e84ee527aa29dd77faf1e5dafa13f48f54b777ed3"
     },
     {
       "path": "docs/roadmap.md",
@@ -1684,7 +1684,7 @@
     {
       "path": "results/package_size.json",
       "bytes": 228,
-      "sha256": "a382f971e548125d5894de95fa036414d81173821792784e19cf90e0cb55756a"
+      "sha256": "6d65374ada76e1751434272dd2114cf57dcf8240195c4fc6e9f3f3048104bb6b"
     },
     {
       "path": "results/packaging_verification.json",
