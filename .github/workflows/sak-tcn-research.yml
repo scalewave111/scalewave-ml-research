@@ -1,0 +1,38 @@
+name: SAK TCN research tests
+on:
+  push:
+    branches: [codex/sak-tcn-v01-20261127]
+    paths:
+      - 'dates/2026-11-27/DL/SAK_TCN_V01/**'
+      - '.github/workflows/sak-tcn-research.yml'
+  pull_request:
+    paths:
+      - 'dates/2026-11-27/DL/SAK_TCN_V01/**'
+      - '.github/workflows/sak-tcn-research.yml'
+permissions:
+  contents: read
+jobs:
+  synthetic-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: dates/2026-11-27/DL/SAK_TCN_V01
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CPU test dependencies
+        run: |
+          python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements.txt
+      - name: Compile and test synthetic data only
+        run: |
+          python -m compileall -q sak_tcn tests
+          python -m pytest -q --junitxml=test-results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sak-tcn-synthetic-test-results
+          path: dates/2026-11-27/DL/SAK_TCN_V01/test-results.xml

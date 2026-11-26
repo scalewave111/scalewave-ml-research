@@ -1,0 +1,6 @@
+# Only needed by the audited SAK feature adapter; no SAK fitting occurs.
+-r requirements.txt
+catboost==1.2.8
+lightgbm==4.6.0
+scipy==1.15.3
+scikit-learn==1.6.1
