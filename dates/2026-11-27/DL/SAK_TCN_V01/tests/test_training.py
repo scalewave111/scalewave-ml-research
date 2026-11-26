@@ -10,7 +10,7 @@ from sak_tcn.train import digest, fit_fold, replay_fold, score
 
 def test_synthetic_fit_serialization_and_replay(tmp_path):
     torch.set_num_threads(1)
-    index = pd.date_range("2023-05-15", "2023-07-01T01:00Z", freq="min", tz="UTC")
+    index = pd.date_range("2023-05-15T00:00Z", "2023-07-01T01:00Z", freq="min", tz="UTC")
     available = index+pd.Timedelta(minutes=16)
     rng = np.random.default_rng(42)
     x = rng.normal(size=(len(index), 3)).astype("float32")
