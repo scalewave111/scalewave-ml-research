@@ -1,0 +1,111 @@
+{
+  "tests_passed": 11,
+  "checks": [
+    {
+      "check": "exact_examples_all_folds",
+      "rows": 33,
+      "passed": true
+    },
+    {
+      "check": "reordered_input_columns",
+      "passed": true
+    },
+    {
+      "check": "missing_feature",
+      "passed": true
+    },
+    {
+      "check": "timezone_missing",
+      "passed": true
+    },
+    {
+      "check": "duplicate_timestamp",
+      "passed": true
+    },
+    {
+      "check": "unsorted_times",
+      "passed": true
+    },
+    {
+      "check": "non_minute_timestamp",
+      "passed": true
+    },
+    {
+      "check": "h4a_timestamp",
+      "passed": true
+    },
+    {
+      "check": "zero_magnitude_scale",
+      "passed": true
+    },
+    {
+      "check": "infinite_feature",
+      "passed": true
+    },
+    {
+      "check": "missing_features_native_handling",
+      "passed": true,
+      "note": "All-NaN inputs still produce forecasts. A production feed needs a separate completeness/staleness gate."
+    }
+  ],
+  "models_checked": 14,
+  "folds": [
+    {
+      "quarter": "2023Q2",
+      "direction_features": 146,
+      "direction_trees": 160,
+      "magnitude_features": 98,
+      "magnitude_trees": 180,
+      "declared_maturity_pass": true
+    },
+    {
+      "quarter": "2023Q3",
+      "direction_features": 146,
+      "direction_trees": 160,
+      "magnitude_features": 98,
+      "magnitude_trees": 180,
+      "declared_maturity_pass": true
+    },
+    {
+      "quarter": "2023Q4",
+      "direction_features": 146,
+      "direction_trees": 160,
+      "magnitude_features": 98,
+      "magnitude_trees": 180,
+      "declared_maturity_pass": true
+    },
+    {
+      "quarter": "2024Q1",
+      "direction_features": 146,
+      "direction_trees": 160,
+      "magnitude_features": 98,
+      "magnitude_trees": 180,
+      "declared_maturity_pass": true
+    },
+    {
+      "quarter": "2024Q2",
+      "direction_features": 146,
+      "direction_trees": 160,
+      "magnitude_features": 98,
+      "magnitude_trees": 180,
+      "declared_maturity_pass": true
+    },
+    {
+      "quarter": "2024Q3",
+      "direction_features": 146,
+      "direction_trees": 160,
+      "magnitude_features": 98,
+      "magnitude_trees": 180,
+      "declared_maturity_pass": true
+    },
+    {
+      "quarter": "2024Q4",
+      "direction_features": 146,
+      "direction_trees": 160,
+      "magnitude_features": 98,
+      "magnitude_trees": 180,
+      "declared_maturity_pass": true
+    }
+  ],
+  "scope": "Unmodified frozen model interfaces and declared metadata. Actual training splits checked separately on native reconstructed labels."
+}

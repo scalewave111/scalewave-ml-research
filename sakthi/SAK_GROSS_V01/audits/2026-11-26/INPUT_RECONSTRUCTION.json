@@ -1,0 +1,4967 @@
+{
+  "status": "COMPLETE",
+  "feature_contract_fields_matched": 86,
+  "cache_partitions": 986,
+  "cache_rows_covered": 1418400,
+  "shape": [
+    1418400,
+    98
+  ],
+  "calendar_equals_apex_historical_index": true,
+  "native_label_valid_rows": 1418367,
+  "training_input_hash_checks": {
+    "research_compact/X.npy": {
+      "actual": "6aa72ff7749b17536b919ef7d7c0e4a1679d63c698ace7b261479aa963ae366b",
+      "expected": "6aa72ff7749b17536b919ef7d7c0e4a1679d63c698ace7b261479aa963ae366b",
+      "exact_bytes": true
+    },
+    "research_compact/matrix_complete.json": {
+      "actual": "ed85d74d67ad7dcbce56ce36ff92b9fbebb2db68bdaf60a4d6ab0752d7ec009c",
+      "expected": "ed85d74d67ad7dcbce56ce36ff92b9fbebb2db68bdaf60a4d6ab0752d7ec009c",
+      "exact_bytes": true
+    },
+    "research_compact/feature_config.json": {
+      "actual": "d8c006d40f365a956e8debbbfe6503e52a2ef33570fe49f6299d1b847dd997e8",
+      "expected": "d8c006d40f365a956e8debbbfe6503e52a2ef33570fe49f6299d1b847dd997e8",
+      "exact_bytes": true
+    },
+    "research_week2_v2/aligned_panel.parquet": {
+      "actual": "5c144c3d1d07d434f55914203a646f08d7d9af9511489fe3adb852ba3d756a65",
+      "expected": "94e046adce488b4a6ddb41f3934cc937239f4265e87d86b4ebb24481443f98dd",
+      "exact_bytes": false
+    }
+  },
+  "cache_partition_inventory": [
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-22\\part.parquet",
+      "bytes": 4252975,
+      "mtime_ns": 1795354650000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-23\\part.parquet",
+      "bytes": 5240485,
+      "mtime_ns": 1795354654000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-24\\part.parquet",
+      "bytes": 5047508,
+      "mtime_ns": 1795354658000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-25\\part.parquet",
+      "bytes": 5560199,
+      "mtime_ns": 1795354662000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-26\\part.parquet",
+      "bytes": 5455547,
+      "mtime_ns": 1795354666000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-27\\part.parquet",
+      "bytes": 5657606,
+      "mtime_ns": 1795354670000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-28\\part.parquet",
+      "bytes": 5564750,
+      "mtime_ns": 1795354674000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-29\\part.parquet",
+      "bytes": 5500571,
+      "mtime_ns": 1795354678000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-04-30\\part.parquet",
+      "bytes": 5461873,
+      "mtime_ns": 1795354682000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-01\\part.parquet",
+      "bytes": 5498130,
+      "mtime_ns": 1795354686000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-02\\part.parquet",
+      "bytes": 5485672,
+      "mtime_ns": 1795354692000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-03\\part.parquet",
+      "bytes": 5542823,
+      "mtime_ns": 1795354696000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-04\\part.parquet",
+      "bytes": 5800860,
+      "mtime_ns": 1795354700000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-05\\part.parquet",
+      "bytes": 5803391,
+      "mtime_ns": 1795354704000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-06\\part.parquet",
+      "bytes": 6053872,
+      "mtime_ns": 1795354708000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-07\\part.parquet",
+      "bytes": 5712553,
+      "mtime_ns": 1795354712000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-08\\part.parquet",
+      "bytes": 5851196,
+      "mtime_ns": 1795354716000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-09\\part.parquet",
+      "bytes": 6219923,
+      "mtime_ns": 1795354720000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-10\\part.parquet",
+      "bytes": 6240901,
+      "mtime_ns": 1795354724000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-11\\part.parquet",
+      "bytes": 6468747,
+      "mtime_ns": 1795354730000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-12\\part.parquet",
+      "bytes": 6413799,
+      "mtime_ns": 1795354734000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-13\\part.parquet",
+      "bytes": 6245370,
+      "mtime_ns": 1795354738000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-14\\part.parquet",
+      "bytes": 6036629,
+      "mtime_ns": 1795354744000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-15\\part.parquet",
+      "bytes": 5966195,
+      "mtime_ns": 1795354748000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-16\\part.parquet",
+      "bytes": 6060034,
+      "mtime_ns": 1795354752000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-17\\part.parquet",
+      "bytes": 5991824,
+      "mtime_ns": 1795354756000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-18\\part.parquet",
+      "bytes": 6065290,
+      "mtime_ns": 1795354760000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-19\\part.parquet",
+      "bytes": 6060317,
+      "mtime_ns": 1795354764000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-20\\part.parquet",
+      "bytes": 5942454,
+      "mtime_ns": 1795354770000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-21\\part.parquet",
+      "bytes": 5859280,
+      "mtime_ns": 1795354774000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-22\\part.parquet",
+      "bytes": 5756051,
+      "mtime_ns": 1795354778000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-23\\part.parquet",
+      "bytes": 5893248,
+      "mtime_ns": 1795354782000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-24\\part.parquet",
+      "bytes": 5842174,
+      "mtime_ns": 1795354788000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-25\\part.parquet",
+      "bytes": 5913750,
+      "mtime_ns": 1795354792000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-26\\part.parquet",
+      "bytes": 6072043,
+      "mtime_ns": 1795354796000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-27\\part.parquet",
+      "bytes": 5974625,
+      "mtime_ns": 1795354800000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-28\\part.parquet",
+      "bytes": 5555669,
+      "mtime_ns": 1795354804000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-29\\part.parquet",
+      "bytes": 5535599,
+      "mtime_ns": 1795354810000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-30\\part.parquet",
+      "bytes": 5927909,
+      "mtime_ns": 1795354814000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-05-31\\part.parquet",
+      "bytes": 5889216,
+      "mtime_ns": 1795354818000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-01\\part.parquet",
+      "bytes": 5921942,
+      "mtime_ns": 1795354824000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-02\\part.parquet",
+      "bytes": 6112204,
+      "mtime_ns": 1795354828000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-03\\part.parquet",
+      "bytes": 6237280,
+      "mtime_ns": 1795354832000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-04\\part.parquet",
+      "bytes": 5976717,
+      "mtime_ns": 1795354838000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-05\\part.parquet",
+      "bytes": 6123171,
+      "mtime_ns": 1795354842000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-06\\part.parquet",
+      "bytes": 6356916,
+      "mtime_ns": 1795354848000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-07\\part.parquet",
+      "bytes": 6416869,
+      "mtime_ns": 1795354852000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-08\\part.parquet",
+      "bytes": 6392732,
+      "mtime_ns": 1795354856000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-09\\part.parquet",
+      "bytes": 6298946,
+      "mtime_ns": 1795354862000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-10\\part.parquet",
+      "bytes": 6316617,
+      "mtime_ns": 1795354866000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-11\\part.parquet",
+      "bytes": 6264035,
+      "mtime_ns": 1795354870000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-12\\part.parquet",
+      "bytes": 6584448,
+      "mtime_ns": 1795354874000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-13\\part.parquet",
+      "bytes": 6938965,
+      "mtime_ns": 1795354878000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-14\\part.parquet",
+      "bytes": 6777167,
+      "mtime_ns": 1795354884000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-15\\part.parquet",
+      "bytes": 6792927,
+      "mtime_ns": 1795354888000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-16\\part.parquet",
+      "bytes": 6741556,
+      "mtime_ns": 1795354892000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-17\\part.parquet",
+      "bytes": 6535270,
+      "mtime_ns": 1795354898000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-18\\part.parquet",
+      "bytes": 6613625,
+      "mtime_ns": 1795354902000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-19\\part.parquet",
+      "bytes": 6783045,
+      "mtime_ns": 1795354906000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-20\\part.parquet",
+      "bytes": 6784136,
+      "mtime_ns": 1795354912000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-21\\part.parquet",
+      "bytes": 6695653,
+      "mtime_ns": 1795354916000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-22\\part.parquet",
+      "bytes": 6607347,
+      "mtime_ns": 1795354920000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-23\\part.parquet",
+      "bytes": 6473684,
+      "mtime_ns": 1795354926000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-24\\part.parquet",
+      "bytes": 6543516,
+      "mtime_ns": 1795354930000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-25\\part.parquet",
+      "bytes": 6342236,
+      "mtime_ns": 1795354934000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-26\\part.parquet",
+      "bytes": 6337480,
+      "mtime_ns": 1795354938000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-27\\part.parquet",
+      "bytes": 6368182,
+      "mtime_ns": 1795354944000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-28\\part.parquet",
+      "bytes": 6489383,
+      "mtime_ns": 1795354948000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-29\\part.parquet",
+      "bytes": 6466683,
+      "mtime_ns": 1795354952000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-06-30\\part.parquet",
+      "bytes": 6455686,
+      "mtime_ns": 1795354958000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-01\\part.parquet",
+      "bytes": 6531417,
+      "mtime_ns": 1795354962000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-02\\part.parquet",
+      "bytes": 6335602,
+      "mtime_ns": 1795354966000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-03\\part.parquet",
+      "bytes": 6342176,
+      "mtime_ns": 1795354970000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-04\\part.parquet",
+      "bytes": 6525414,
+      "mtime_ns": 1795354976000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-05\\part.parquet",
+      "bytes": 6622634,
+      "mtime_ns": 1795354980000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-06\\part.parquet",
+      "bytes": 6499328,
+      "mtime_ns": 1795354984000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-07\\part.parquet",
+      "bytes": 6414136,
+      "mtime_ns": 1795354988000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-08\\part.parquet",
+      "bytes": 6497657,
+      "mtime_ns": 1795354994000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-09\\part.parquet",
+      "bytes": 6243299,
+      "mtime_ns": 1795354998000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-10\\part.parquet",
+      "bytes": 6239098,
+      "mtime_ns": 1795355002000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-11\\part.parquet",
+      "bytes": 6415412,
+      "mtime_ns": 1795355006000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-12\\part.parquet",
+      "bytes": 6505702,
+      "mtime_ns": 1795355012000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-13\\part.parquet",
+      "bytes": 6601833,
+      "mtime_ns": 1795355016000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-14\\part.parquet",
+      "bytes": 6658134,
+      "mtime_ns": 1795355020000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-15\\part.parquet",
+      "bytes": 6588502,
+      "mtime_ns": 1795355024000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-16\\part.parquet",
+      "bytes": 6450704,
+      "mtime_ns": 1795355030000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-17\\part.parquet",
+      "bytes": 6482526,
+      "mtime_ns": 1795355034000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-18\\part.parquet",
+      "bytes": 6562969,
+      "mtime_ns": 1795355038000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-19\\part.parquet",
+      "bytes": 6584607,
+      "mtime_ns": 1795355044000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-20\\part.parquet",
+      "bytes": 6595275,
+      "mtime_ns": 1795355048000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-21\\part.parquet",
+      "bytes": 6436395,
+      "mtime_ns": 1795355054000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-22\\part.parquet",
+      "bytes": 6425198,
+      "mtime_ns": 1795355058000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-23\\part.parquet",
+      "bytes": 6387163,
+      "mtime_ns": 1795355062000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-24\\part.parquet",
+      "bytes": 6386042,
+      "mtime_ns": 1795355066000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-25\\part.parquet",
+      "bytes": 6448953,
+      "mtime_ns": 1795355070000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-26\\part.parquet",
+      "bytes": 6463518,
+      "mtime_ns": 1795355074000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-27\\part.parquet",
+      "bytes": 6536465,
+      "mtime_ns": 1795355080000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-28\\part.parquet",
+      "bytes": 6490531,
+      "mtime_ns": 1795355084000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-29\\part.parquet",
+      "bytes": 6449323,
+      "mtime_ns": 1795355088000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-30\\part.parquet",
+      "bytes": 6312225,
+      "mtime_ns": 1795355092000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-07-31\\part.parquet",
+      "bytes": 6280731,
+      "mtime_ns": 1795355096000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-01\\part.parquet",
+      "bytes": 6360032,
+      "mtime_ns": 1795355102000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-02\\part.parquet",
+      "bytes": 6507818,
+      "mtime_ns": 1795355106000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-03\\part.parquet",
+      "bytes": 6521132,
+      "mtime_ns": 1795355110000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-04\\part.parquet",
+      "bytes": 6512024,
+      "mtime_ns": 1795355116000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-05\\part.parquet",
+      "bytes": 6408718,
+      "mtime_ns": 1795355120000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-06\\part.parquet",
+      "bytes": 5994281,
+      "mtime_ns": 1795355124000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-07\\part.parquet",
+      "bytes": 6045420,
+      "mtime_ns": 1795355128000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-08\\part.parquet",
+      "bytes": 6340026,
+      "mtime_ns": 1795355132000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-09\\part.parquet",
+      "bytes": 6391433,
+      "mtime_ns": 1795355138000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-10\\part.parquet",
+      "bytes": 6365506,
+      "mtime_ns": 1795355142000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-11\\part.parquet",
+      "bytes": 6439008,
+      "mtime_ns": 1795355146000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-12\\part.parquet",
+      "bytes": 6178054,
+      "mtime_ns": 1795355152000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-13\\part.parquet",
+      "bytes": 6333274,
+      "mtime_ns": 1795355156000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-14\\part.parquet",
+      "bytes": 6450785,
+      "mtime_ns": 1795355160000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-15\\part.parquet",
+      "bytes": 6547242,
+      "mtime_ns": 1795355164000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-16\\part.parquet",
+      "bytes": 6301729,
+      "mtime_ns": 1795355168000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-17\\part.parquet",
+      "bytes": 6339717,
+      "mtime_ns": 1795355174000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-18\\part.parquet",
+      "bytes": 6225676,
+      "mtime_ns": 1795355178000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-19\\part.parquet",
+      "bytes": 6552478,
+      "mtime_ns": 1795355182000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-20\\part.parquet",
+      "bytes": 6352313,
+      "mtime_ns": 1795355186000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-21\\part.parquet",
+      "bytes": 6371425,
+      "mtime_ns": 1795355192000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-22\\part.parquet",
+      "bytes": 6478516,
+      "mtime_ns": 1795355196000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-23\\part.parquet",
+      "bytes": 6548874,
+      "mtime_ns": 1795355200000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-24\\part.parquet",
+      "bytes": 6471328,
+      "mtime_ns": 1795355204000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-25\\part.parquet",
+      "bytes": 6361237,
+      "mtime_ns": 1795355208000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-26\\part.parquet",
+      "bytes": 6431893,
+      "mtime_ns": 1795355212000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-27\\part.parquet",
+      "bytes": 6450183,
+      "mtime_ns": 1795355218000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-28\\part.parquet",
+      "bytes": 6185980,
+      "mtime_ns": 1795355222000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-29\\part.parquet",
+      "bytes": 6451911,
+      "mtime_ns": 1795355226000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-30\\part.parquet",
+      "bytes": 6344834,
+      "mtime_ns": 1795355230000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-08-31\\part.parquet",
+      "bytes": 6482124,
+      "mtime_ns": 1795355236000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-01\\part.parquet",
+      "bytes": 6550366,
+      "mtime_ns": 1795355240000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-02\\part.parquet",
+      "bytes": 6456521,
+      "mtime_ns": 1795355244000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-03\\part.parquet",
+      "bytes": 6076734,
+      "mtime_ns": 1795355248000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-04\\part.parquet",
+      "bytes": 6097732,
+      "mtime_ns": 1795355252000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-05\\part.parquet",
+      "bytes": 6207126,
+      "mtime_ns": 1795355258000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-06\\part.parquet",
+      "bytes": 6376219,
+      "mtime_ns": 1795355262000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-07\\part.parquet",
+      "bytes": 6436269,
+      "mtime_ns": 1795355266000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-08\\part.parquet",
+      "bytes": 6430548,
+      "mtime_ns": 1795355270000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-09\\part.parquet",
+      "bytes": 6575105,
+      "mtime_ns": 1795355276000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-10\\part.parquet",
+      "bytes": 6353133,
+      "mtime_ns": 1795355280000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-11\\part.parquet",
+      "bytes": 6278979,
+      "mtime_ns": 1795355286000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-12\\part.parquet",
+      "bytes": 6452651,
+      "mtime_ns": 1795355290000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-13\\part.parquet",
+      "bytes": 6515570,
+      "mtime_ns": 1795355296000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-14\\part.parquet",
+      "bytes": 6609192,
+      "mtime_ns": 1795355300000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-15\\part.parquet",
+      "bytes": 6636794,
+      "mtime_ns": 1795355304000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-16\\part.parquet",
+      "bytes": 6439883,
+      "mtime_ns": 1795355308000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-17\\part.parquet",
+      "bytes": 6301478,
+      "mtime_ns": 1795355312000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-18\\part.parquet",
+      "bytes": 6388591,
+      "mtime_ns": 1795355318000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-19\\part.parquet",
+      "bytes": 6591872,
+      "mtime_ns": 1795355324000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-20\\part.parquet",
+      "bytes": 6520263,
+      "mtime_ns": 1795355328000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-21\\part.parquet",
+      "bytes": 6506515,
+      "mtime_ns": 1795355332000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-22\\part.parquet",
+      "bytes": 6603897,
+      "mtime_ns": 1795355338000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-23\\part.parquet",
+      "bytes": 6608026,
+      "mtime_ns": 1795355342000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-24\\part.parquet",
+      "bytes": 6321712,
+      "mtime_ns": 1795355346000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-25\\part.parquet",
+      "bytes": 6281920,
+      "mtime_ns": 1795355350000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-26\\part.parquet",
+      "bytes": 6549563,
+      "mtime_ns": 1795355356000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-27\\part.parquet",
+      "bytes": 6470216,
+      "mtime_ns": 1795355360000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-28\\part.parquet",
+      "bytes": 6570126,
+      "mtime_ns": 1795355364000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-29\\part.parquet",
+      "bytes": 6453038,
+      "mtime_ns": 1795355368000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-09-30\\part.parquet",
+      "bytes": 6335984,
+      "mtime_ns": 1795355374000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-01\\part.parquet",
+      "bytes": 5937449,
+      "mtime_ns": 1795355378000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-02\\part.parquet",
+      "bytes": 6111966,
+      "mtime_ns": 1795355382000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-03\\part.parquet",
+      "bytes": 6280086,
+      "mtime_ns": 1795355386000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-04\\part.parquet",
+      "bytes": 6223126,
+      "mtime_ns": 1795355390000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-05\\part.parquet",
+      "bytes": 6324697,
+      "mtime_ns": 1795355396000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-06\\part.parquet",
+      "bytes": 6574011,
+      "mtime_ns": 1795355400000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-07\\part.parquet",
+      "bytes": 6573003,
+      "mtime_ns": 1795355406000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-08\\part.parquet",
+      "bytes": 6491101,
+      "mtime_ns": 1795355410000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-09\\part.parquet",
+      "bytes": 6435082,
+      "mtime_ns": 1795355416000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-10\\part.parquet",
+      "bytes": 6523442,
+      "mtime_ns": 1795355424000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-11\\part.parquet",
+      "bytes": 6506196,
+      "mtime_ns": 1795355428000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-12\\part.parquet",
+      "bytes": 6332908,
+      "mtime_ns": 1795355432000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-13\\part.parquet",
+      "bytes": 6755212,
+      "mtime_ns": 1795355438000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-14\\part.parquet",
+      "bytes": 6819926,
+      "mtime_ns": 1795355444000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-15\\part.parquet",
+      "bytes": 6291397,
+      "mtime_ns": 1795355448000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-16\\part.parquet",
+      "bytes": 6338347,
+      "mtime_ns": 1795355454000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-17\\part.parquet",
+      "bytes": 6621916,
+      "mtime_ns": 1795355458000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-18\\part.parquet",
+      "bytes": 6638371,
+      "mtime_ns": 1795355462000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-19\\part.parquet",
+      "bytes": 6507367,
+      "mtime_ns": 1795355468000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-20\\part.parquet",
+      "bytes": 6605603,
+      "mtime_ns": 1795355472000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-21\\part.parquet",
+      "bytes": 6560352,
+      "mtime_ns": 1795355478000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-22\\part.parquet",
+      "bytes": 6263652,
+      "mtime_ns": 1795355484000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-23\\part.parquet",
+      "bytes": 6493017,
+      "mtime_ns": 1795355492000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-24\\part.parquet",
+      "bytes": 6541020,
+      "mtime_ns": 1795355500000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-25\\part.parquet",
+      "bytes": 6725035,
+      "mtime_ns": 1795355508000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-26\\part.parquet",
+      "bytes": 6974678,
+      "mtime_ns": 1795355514000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-27\\part.parquet",
+      "bytes": 6957181,
+      "mtime_ns": 1795355518000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-28\\part.parquet",
+      "bytes": 6856946,
+      "mtime_ns": 1795355524000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-29\\part.parquet",
+      "bytes": 6984570,
+      "mtime_ns": 1795355530000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-30\\part.parquet",
+      "bytes": 6849501,
+      "mtime_ns": 1795355538000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-10-31\\part.parquet",
+      "bytes": 6807433,
+      "mtime_ns": 1795355542000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-01\\part.parquet",
+      "bytes": 6725266,
+      "mtime_ns": 1795355548000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-02\\part.parquet",
+      "bytes": 6867826,
+      "mtime_ns": 1795355554000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-03\\part.parquet",
+      "bytes": 6882867,
+      "mtime_ns": 1795355560000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-04\\part.parquet",
+      "bytes": 7088447,
+      "mtime_ns": 1795355566000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-05\\part.parquet",
+      "bytes": 6629425,
+      "mtime_ns": 1795355570000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-06\\part.parquet",
+      "bytes": 6456372,
+      "mtime_ns": 1795355576000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-07\\part.parquet",
+      "bytes": 6681042,
+      "mtime_ns": 1795355582000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-08\\part.parquet",
+      "bytes": 7248765,
+      "mtime_ns": 1795355586000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-09\\part.parquet",
+      "bytes": 7397059,
+      "mtime_ns": 1795355594000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-10\\part.parquet",
+      "bytes": 7402550,
+      "mtime_ns": 1795355600000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-11\\part.parquet",
+      "bytes": 7240453,
+      "mtime_ns": 1795355606000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-12\\part.parquet",
+      "bytes": 6800712,
+      "mtime_ns": 1795355610000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-13\\part.parquet",
+      "bytes": 6828584,
+      "mtime_ns": 1795355616000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-14\\part.parquet",
+      "bytes": 7065029,
+      "mtime_ns": 1795355622000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-15\\part.parquet",
+      "bytes": 7021568,
+      "mtime_ns": 1795355626000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-16\\part.parquet",
+      "bytes": 6837534,
+      "mtime_ns": 1795355630000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-17\\part.parquet",
+      "bytes": 6616417,
+      "mtime_ns": 1795355636000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-18\\part.parquet",
+      "bytes": 6760934,
+      "mtime_ns": 1795355642000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-19\\part.parquet",
+      "bytes": 6257259,
+      "mtime_ns": 1795355646000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-20\\part.parquet",
+      "bytes": 6649566,
+      "mtime_ns": 1795355650000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-21\\part.parquet",
+      "bytes": 6836733,
+      "mtime_ns": 1795355656000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-22\\part.parquet",
+      "bytes": 6952709,
+      "mtime_ns": 1795355662000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-23\\part.parquet",
+      "bytes": 6761577,
+      "mtime_ns": 1795355666000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-24\\part.parquet",
+      "bytes": 6615459,
+      "mtime_ns": 1795355670000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-25\\part.parquet",
+      "bytes": 6572794,
+      "mtime_ns": 1795355676000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-26\\part.parquet",
+      "bytes": 6489030,
+      "mtime_ns": 1795355680000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-27\\part.parquet",
+      "bytes": 6462016,
+      "mtime_ns": 1795355686000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-28\\part.parquet",
+      "bytes": 6631722,
+      "mtime_ns": 1795355690000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-29\\part.parquet",
+      "bytes": 6607668,
+      "mtime_ns": 1795355694000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-11-30\\part.parquet",
+      "bytes": 6671132,
+      "mtime_ns": 1795355700000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-01\\part.parquet",
+      "bytes": 6601748,
+      "mtime_ns": 1795355704000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-02\\part.parquet",
+      "bytes": 6364152,
+      "mtime_ns": 1795355710000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-03\\part.parquet",
+      "bytes": 6147759,
+      "mtime_ns": 1795355714000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-04\\part.parquet",
+      "bytes": 6523284,
+      "mtime_ns": 1795355718000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-05\\part.parquet",
+      "bytes": 6629088,
+      "mtime_ns": 1795355724000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-06\\part.parquet",
+      "bytes": 6561398,
+      "mtime_ns": 1795355728000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-07\\part.parquet",
+      "bytes": 6447210,
+      "mtime_ns": 1795355732000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-08\\part.parquet",
+      "bytes": 6469431,
+      "mtime_ns": 1795355738000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-09\\part.parquet",
+      "bytes": 6360447,
+      "mtime_ns": 1795355742000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-10\\part.parquet",
+      "bytes": 6075772,
+      "mtime_ns": 1795355748000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-11\\part.parquet",
+      "bytes": 6165213,
+      "mtime_ns": 1795355752000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-12\\part.parquet",
+      "bytes": 6507991,
+      "mtime_ns": 1795355758000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-13\\part.parquet",
+      "bytes": 6566213,
+      "mtime_ns": 1795355762000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-14\\part.parquet",
+      "bytes": 6510729,
+      "mtime_ns": 1795355768000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-15\\part.parquet",
+      "bytes": 6512939,
+      "mtime_ns": 1795355772000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-16\\part.parquet",
+      "bytes": 6735720,
+      "mtime_ns": 1795355776000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-17\\part.parquet",
+      "bytes": 6520375,
+      "mtime_ns": 1795355782000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-18\\part.parquet",
+      "bytes": 6293147,
+      "mtime_ns": 1795355786000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-19\\part.parquet",
+      "bytes": 6469954,
+      "mtime_ns": 1795355790000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-20\\part.parquet",
+      "bytes": 6636161,
+      "mtime_ns": 1795355794000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-21\\part.parquet",
+      "bytes": 6423929,
+      "mtime_ns": 1795355800000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-22\\part.parquet",
+      "bytes": 6286750,
+      "mtime_ns": 1795355804000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-23\\part.parquet",
+      "bytes": 6169369,
+      "mtime_ns": 1795355810000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-24\\part.parquet",
+      "bytes": 5822099,
+      "mtime_ns": 1795355814000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-25\\part.parquet",
+      "bytes": 6061666,
+      "mtime_ns": 1795355818000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-26\\part.parquet",
+      "bytes": 6255263,
+      "mtime_ns": 1795355822000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-27\\part.parquet",
+      "bytes": 6289886,
+      "mtime_ns": 1795355832000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-28\\part.parquet",
+      "bytes": 6379845,
+      "mtime_ns": 1795355838000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-29\\part.parquet",
+      "bytes": 6313840,
+      "mtime_ns": 1795355844000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-30\\part.parquet",
+      "bytes": 6186196,
+      "mtime_ns": 1795355850000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2022-12-31\\part.parquet",
+      "bytes": 6008802,
+      "mtime_ns": 1795355854000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-01\\part.parquet",
+      "bytes": 6016988,
+      "mtime_ns": 1795355860000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-02\\part.parquet",
+      "bytes": 6273161,
+      "mtime_ns": 1795355864000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-03\\part.parquet",
+      "bytes": 6419233,
+      "mtime_ns": 1795355870000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-04\\part.parquet",
+      "bytes": 6500424,
+      "mtime_ns": 1795355874000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-05\\part.parquet",
+      "bytes": 6252241,
+      "mtime_ns": 1795355880000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-06\\part.parquet",
+      "bytes": 6476264,
+      "mtime_ns": 1795355884000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-07\\part.parquet",
+      "bytes": 6004147,
+      "mtime_ns": 1795355890000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-08\\part.parquet",
+      "bytes": 6240877,
+      "mtime_ns": 1795355894000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-09\\part.parquet",
+      "bytes": 6756116,
+      "mtime_ns": 1795355902000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-10\\part.parquet",
+      "bytes": 6462735,
+      "mtime_ns": 1795355906000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-11\\part.parquet",
+      "bytes": 6450596,
+      "mtime_ns": 1795355910000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-12\\part.parquet",
+      "bytes": 6674374,
+      "mtime_ns": 1795355918000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-13\\part.parquet",
+      "bytes": 6753914,
+      "mtime_ns": 1795355924000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-14\\part.parquet",
+      "bytes": 6976906,
+      "mtime_ns": 1795355928000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-15\\part.parquet",
+      "bytes": 6716933,
+      "mtime_ns": 1795355934000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-16\\part.parquet",
+      "bytes": 6611002,
+      "mtime_ns": 1795355938000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-17\\part.parquet",
+      "bytes": 6648195,
+      "mtime_ns": 1795355944000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-18\\part.parquet",
+      "bytes": 6675571,
+      "mtime_ns": 1795355948000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-19\\part.parquet",
+      "bytes": 6530874,
+      "mtime_ns": 1795355954000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-20\\part.parquet",
+      "bytes": 6716888,
+      "mtime_ns": 1795355960000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-21\\part.parquet",
+      "bytes": 6838336,
+      "mtime_ns": 1795355964000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-22\\part.parquet",
+      "bytes": 6694295,
+      "mtime_ns": 1795355970000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-23\\part.parquet",
+      "bytes": 6621462,
+      "mtime_ns": 1795355974000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-24\\part.parquet",
+      "bytes": 6555395,
+      "mtime_ns": 1795355980000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-25\\part.parquet",
+      "bytes": 6703526,
+      "mtime_ns": 1795355984000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-26\\part.parquet",
+      "bytes": 6597948,
+      "mtime_ns": 1795355988000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-27\\part.parquet",
+      "bytes": 6601362,
+      "mtime_ns": 1795355994000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-28\\part.parquet",
+      "bytes": 6250304,
+      "mtime_ns": 1795355998000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-29\\part.parquet",
+      "bytes": 6548425,
+      "mtime_ns": 1795356002000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-30\\part.parquet",
+      "bytes": 6640043,
+      "mtime_ns": 1795356006000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-01-31\\part.parquet",
+      "bytes": 6529603,
+      "mtime_ns": 1795356012000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-01\\part.parquet",
+      "bytes": 6507511,
+      "mtime_ns": 1795356016000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-02\\part.parquet",
+      "bytes": 6605702,
+      "mtime_ns": 1795356020000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-03\\part.parquet",
+      "bytes": 6533896,
+      "mtime_ns": 1795356026000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-04\\part.parquet",
+      "bytes": 6241569,
+      "mtime_ns": 1795356030000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-05\\part.parquet",
+      "bytes": 6342535,
+      "mtime_ns": 1795356036000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-06\\part.parquet",
+      "bytes": 6509493,
+      "mtime_ns": 1795356040000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-07\\part.parquet",
+      "bytes": 6515345,
+      "mtime_ns": 1795356044000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-08\\part.parquet",
+      "bytes": 6544371,
+      "mtime_ns": 1795356050000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-09\\part.parquet",
+      "bytes": 6662732,
+      "mtime_ns": 1795356054000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-10\\part.parquet",
+      "bytes": 6585929,
+      "mtime_ns": 1795356058000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-11\\part.parquet",
+      "bytes": 6373443,
+      "mtime_ns": 1795356064000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-12\\part.parquet",
+      "bytes": 6508659,
+      "mtime_ns": 1795356068000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-13\\part.parquet",
+      "bytes": 6668904,
+      "mtime_ns": 1795356074000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-14\\part.parquet",
+      "bytes": 6593591,
+      "mtime_ns": 1795356078000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-15\\part.parquet",
+      "bytes": 6846745,
+      "mtime_ns": 1795356082000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-16\\part.parquet",
+      "bytes": 6885011,
+      "mtime_ns": 1795356088000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-17\\part.parquet",
+      "bytes": 6785262,
+      "mtime_ns": 1795356094000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-18\\part.parquet",
+      "bytes": 6365415,
+      "mtime_ns": 1795356098000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-19\\part.parquet",
+      "bytes": 6560640,
+      "mtime_ns": 1795356102000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-20\\part.parquet",
+      "bytes": 6724236,
+      "mtime_ns": 1795356108000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-21\\part.parquet",
+      "bytes": 6748782,
+      "mtime_ns": 1795356112000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-22\\part.parquet",
+      "bytes": 6782511,
+      "mtime_ns": 1795356116000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-23\\part.parquet",
+      "bytes": 6811587,
+      "mtime_ns": 1795356122000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-24\\part.parquet",
+      "bytes": 6797642,
+      "mtime_ns": 1795356126000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-25\\part.parquet",
+      "bytes": 6568494,
+      "mtime_ns": 1795356130000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-26\\part.parquet",
+      "bytes": 6601675,
+      "mtime_ns": 1795356136000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-27\\part.parquet",
+      "bytes": 6686246,
+      "mtime_ns": 1795356140000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-02-28\\part.parquet",
+      "bytes": 6733489,
+      "mtime_ns": 1795356146000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-01\\part.parquet",
+      "bytes": 6601725,
+      "mtime_ns": 1795356150000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-02\\part.parquet",
+      "bytes": 6564814,
+      "mtime_ns": 1795356154000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-03\\part.parquet",
+      "bytes": 6554176,
+      "mtime_ns": 1795356158000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-04\\part.parquet",
+      "bytes": 6348673,
+      "mtime_ns": 1795356164000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-05\\part.parquet",
+      "bytes": 6358948,
+      "mtime_ns": 1795356170000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-06\\part.parquet",
+      "bytes": 6392350,
+      "mtime_ns": 1795356174000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-07\\part.parquet",
+      "bytes": 6634000,
+      "mtime_ns": 1795356178000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-08\\part.parquet",
+      "bytes": 6676352,
+      "mtime_ns": 1795356186000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-09\\part.parquet",
+      "bytes": 6624834,
+      "mtime_ns": 1795356194000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-10\\part.parquet",
+      "bytes": 7056230,
+      "mtime_ns": 1795356200000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-11\\part.parquet",
+      "bytes": 6915028,
+      "mtime_ns": 1795356206000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-12\\part.parquet",
+      "bytes": 6834456,
+      "mtime_ns": 1795356210000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-13\\part.parquet",
+      "bytes": 7192591,
+      "mtime_ns": 1795356216000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-14\\part.parquet",
+      "bytes": 7118620,
+      "mtime_ns": 1795356222000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-15\\part.parquet",
+      "bytes": 7155199,
+      "mtime_ns": 1795356230000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-16\\part.parquet",
+      "bytes": 6786619,
+      "mtime_ns": 1795356236000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-17\\part.parquet",
+      "bytes": 7068657,
+      "mtime_ns": 1795356240000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-18\\part.parquet",
+      "bytes": 6848782,
+      "mtime_ns": 1795356246000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-19\\part.parquet",
+      "bytes": 6772238,
+      "mtime_ns": 1795356252000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-20\\part.parquet",
+      "bytes": 6991748,
+      "mtime_ns": 1795356258000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-21\\part.parquet",
+      "bytes": 7032717,
+      "mtime_ns": 1795356264000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-22\\part.parquet",
+      "bytes": 6977002,
+      "mtime_ns": 1795356268000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-23\\part.parquet",
+      "bytes": 7008873,
+      "mtime_ns": 1795356274000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-24\\part.parquet",
+      "bytes": 6896352,
+      "mtime_ns": 1795356278000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-25\\part.parquet",
+      "bytes": 6698841,
+      "mtime_ns": 1795356284000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-26\\part.parquet",
+      "bytes": 6750755,
+      "mtime_ns": 1795356290000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-27\\part.parquet",
+      "bytes": 6886663,
+      "mtime_ns": 1795356296000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-28\\part.parquet",
+      "bytes": 6818671,
+      "mtime_ns": 1795356300000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-29\\part.parquet",
+      "bytes": 6851322,
+      "mtime_ns": 1795356304000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-30\\part.parquet",
+      "bytes": 6888228,
+      "mtime_ns": 1795356310000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-03-31\\part.parquet",
+      "bytes": 6850302,
+      "mtime_ns": 1795356314000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-01\\part.parquet",
+      "bytes": 6522413,
+      "mtime_ns": 1795356320000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-02\\part.parquet",
+      "bytes": 6540694,
+      "mtime_ns": 1795356324000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-03\\part.parquet",
+      "bytes": 6877589,
+      "mtime_ns": 1795356330000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-04\\part.parquet",
+      "bytes": 6774856,
+      "mtime_ns": 1795356336000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-05\\part.parquet",
+      "bytes": 6581631,
+      "mtime_ns": 1795356340000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-06\\part.parquet",
+      "bytes": 6670999,
+      "mtime_ns": 1795356346000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-07\\part.parquet",
+      "bytes": 6416784,
+      "mtime_ns": 1795356350000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-08\\part.parquet",
+      "bytes": 6259125,
+      "mtime_ns": 1795356354000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-09\\part.parquet",
+      "bytes": 6393993,
+      "mtime_ns": 1795356360000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-10\\part.parquet",
+      "bytes": 6475959,
+      "mtime_ns": 1795356364000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-11\\part.parquet",
+      "bytes": 6673641,
+      "mtime_ns": 1795356370000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-12\\part.parquet",
+      "bytes": 6756966,
+      "mtime_ns": 1795356374000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-13\\part.parquet",
+      "bytes": 6610508,
+      "mtime_ns": 1795356378000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-14\\part.parquet",
+      "bytes": 6830332,
+      "mtime_ns": 1795356384000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-15\\part.parquet",
+      "bytes": 6382689,
+      "mtime_ns": 1795356388000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-16\\part.parquet",
+      "bytes": 6376903,
+      "mtime_ns": 1795356394000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-17\\part.parquet",
+      "bytes": 6643733,
+      "mtime_ns": 1795356398000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-18\\part.parquet",
+      "bytes": 6843154,
+      "mtime_ns": 1795356404000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-19\\part.parquet",
+      "bytes": 6844551,
+      "mtime_ns": 1795356408000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-20\\part.parquet",
+      "bytes": 6947489,
+      "mtime_ns": 1795356412000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-21\\part.parquet",
+      "bytes": 6731451,
+      "mtime_ns": 1795356418000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-22\\part.parquet",
+      "bytes": 6580105,
+      "mtime_ns": 1795356422000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-23\\part.parquet",
+      "bytes": 6598329,
+      "mtime_ns": 1795356426000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-24\\part.parquet",
+      "bytes": 6692832,
+      "mtime_ns": 1795356432000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-25\\part.parquet",
+      "bytes": 6739830,
+      "mtime_ns": 1795356438000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-26\\part.parquet",
+      "bytes": 6987879,
+      "mtime_ns": 1795356442000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-27\\part.parquet",
+      "bytes": 6994298,
+      "mtime_ns": 1795356450000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-28\\part.parquet",
+      "bytes": 6777295,
+      "mtime_ns": 1795356462000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-29\\part.parquet",
+      "bytes": 6480142,
+      "mtime_ns": 1795356476000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-04-30\\part.parquet",
+      "bytes": 6709439,
+      "mtime_ns": 1795356494000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-01\\part.parquet",
+      "bytes": 6888463,
+      "mtime_ns": 1795356512000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-02\\part.parquet",
+      "bytes": 6680957,
+      "mtime_ns": 1795356528000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-03\\part.parquet",
+      "bytes": 6753650,
+      "mtime_ns": 1795356544000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-04\\part.parquet",
+      "bytes": 6573744,
+      "mtime_ns": 1795356560000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-05\\part.parquet",
+      "bytes": 6712285,
+      "mtime_ns": 1795356578000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-06\\part.parquet",
+      "bytes": 6657867,
+      "mtime_ns": 1795356596000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-07\\part.parquet",
+      "bytes": 6739420,
+      "mtime_ns": 1795356608000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-08\\part.parquet",
+      "bytes": 6992770,
+      "mtime_ns": 1795356624000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-09\\part.parquet",
+      "bytes": 6840394,
+      "mtime_ns": 1795356640000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-10\\part.parquet",
+      "bytes": 6870466,
+      "mtime_ns": 1795356652000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-11\\part.parquet",
+      "bytes": 6780978,
+      "mtime_ns": 1795356664000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-12\\part.parquet",
+      "bytes": 6850121,
+      "mtime_ns": 1795356676000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-13\\part.parquet",
+      "bytes": 6648910,
+      "mtime_ns": 1795356690000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-14\\part.parquet",
+      "bytes": 6489510,
+      "mtime_ns": 1795356696000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-15\\part.parquet",
+      "bytes": 6766254,
+      "mtime_ns": 1795356700000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-16\\part.parquet",
+      "bytes": 6709007,
+      "mtime_ns": 1795356706000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-17\\part.parquet",
+      "bytes": 6712335,
+      "mtime_ns": 1795356710000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-18\\part.parquet",
+      "bytes": 6720156,
+      "mtime_ns": 1795356716000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-19\\part.parquet",
+      "bytes": 6601279,
+      "mtime_ns": 1795356722000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-20\\part.parquet",
+      "bytes": 6276122,
+      "mtime_ns": 1795356726000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-21\\part.parquet",
+      "bytes": 6450442,
+      "mtime_ns": 1795356732000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-22\\part.parquet",
+      "bytes": 6546305,
+      "mtime_ns": 1795356738000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-23\\part.parquet",
+      "bytes": 6480313,
+      "mtime_ns": 1795356742000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-24\\part.parquet",
+      "bytes": 6684490,
+      "mtime_ns": 1795356746000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-25\\part.parquet",
+      "bytes": 6472654,
+      "mtime_ns": 1795356752000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-26\\part.parquet",
+      "bytes": 6433859,
+      "mtime_ns": 1795356756000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-27\\part.parquet",
+      "bytes": 6325927,
+      "mtime_ns": 1795356760000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-28\\part.parquet",
+      "bytes": 6540666,
+      "mtime_ns": 1795356766000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-29\\part.parquet",
+      "bytes": 6543314,
+      "mtime_ns": 1795356770000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-30\\part.parquet",
+      "bytes": 6787656,
+      "mtime_ns": 1795356776000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-05-31\\part.parquet",
+      "bytes": 6618839,
+      "mtime_ns": 1795356780000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-01\\part.parquet",
+      "bytes": 6616110,
+      "mtime_ns": 1795356784000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-02\\part.parquet",
+      "bytes": 6673529,
+      "mtime_ns": 1795356790000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-03\\part.parquet",
+      "bytes": 6249119,
+      "mtime_ns": 1795356794000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-04\\part.parquet",
+      "bytes": 6293171,
+      "mtime_ns": 1795356800000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-05\\part.parquet",
+      "bytes": 6709990,
+      "mtime_ns": 1795356804000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-06\\part.parquet",
+      "bytes": 6935515,
+      "mtime_ns": 1795356808000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-07\\part.parquet",
+      "bytes": 6919672,
+      "mtime_ns": 1795356814000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-08\\part.parquet",
+      "bytes": 6663399,
+      "mtime_ns": 1795356818000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-09\\part.parquet",
+      "bytes": 6586864,
+      "mtime_ns": 1795356824000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-10\\part.parquet",
+      "bytes": 6945893,
+      "mtime_ns": 1795356828000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-11\\part.parquet",
+      "bytes": 6648528,
+      "mtime_ns": 1795356832000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-12\\part.parquet",
+      "bytes": 6656495,
+      "mtime_ns": 1795356838000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-13\\part.parquet",
+      "bytes": 6669068,
+      "mtime_ns": 1795356842000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-14\\part.parquet",
+      "bytes": 6655014,
+      "mtime_ns": 1795356848000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-15\\part.parquet",
+      "bytes": 6873324,
+      "mtime_ns": 1795356856000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-16\\part.parquet",
+      "bytes": 6797511,
+      "mtime_ns": 1795356862000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-17\\part.parquet",
+      "bytes": 6499345,
+      "mtime_ns": 1795356868000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-18\\part.parquet",
+      "bytes": 6505153,
+      "mtime_ns": 1795356874000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-19\\part.parquet",
+      "bytes": 6578338,
+      "mtime_ns": 1795356880000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-20\\part.parquet",
+      "bytes": 6973720,
+      "mtime_ns": 1795356884000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-21\\part.parquet",
+      "bytes": 7061235,
+      "mtime_ns": 1795356890000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-22\\part.parquet",
+      "bytes": 6770183,
+      "mtime_ns": 1795356898000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-23\\part.parquet",
+      "bytes": 6657622,
+      "mtime_ns": 1795356902000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-24\\part.parquet",
+      "bytes": 6600566,
+      "mtime_ns": 1795356910000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-25\\part.parquet",
+      "bytes": 6590217,
+      "mtime_ns": 1795356914000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-26\\part.parquet",
+      "bytes": 6590019,
+      "mtime_ns": 1795356920000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-27\\part.parquet",
+      "bytes": 6559832,
+      "mtime_ns": 1795356926000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-28\\part.parquet",
+      "bytes": 6678515,
+      "mtime_ns": 1795356930000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-29\\part.parquet",
+      "bytes": 6614028,
+      "mtime_ns": 1795356936000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-06-30\\part.parquet",
+      "bytes": 6819305,
+      "mtime_ns": 1795356940000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-01\\part.parquet",
+      "bytes": 6242760,
+      "mtime_ns": 1795356946000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-02\\part.parquet",
+      "bytes": 6295091,
+      "mtime_ns": 1795356952000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-03\\part.parquet",
+      "bytes": 6521918,
+      "mtime_ns": 1795356958000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-04\\part.parquet",
+      "bytes": 6469213,
+      "mtime_ns": 1795356962000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-05\\part.parquet",
+      "bytes": 6486430,
+      "mtime_ns": 1795356968000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-06\\part.parquet",
+      "bytes": 6720977,
+      "mtime_ns": 1795356974000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-07\\part.parquet",
+      "bytes": 6710198,
+      "mtime_ns": 1795356980000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-08\\part.parquet",
+      "bytes": 6415282,
+      "mtime_ns": 1795356986000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-09\\part.parquet",
+      "bytes": 6290842,
+      "mtime_ns": 1795356990000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-10\\part.parquet",
+      "bytes": 6671446,
+      "mtime_ns": 1795356994000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-11\\part.parquet",
+      "bytes": 6619709,
+      "mtime_ns": 1795357000000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-12\\part.parquet",
+      "bytes": 6723981,
+      "mtime_ns": 1795357004000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-13\\part.parquet",
+      "bytes": 6900537,
+      "mtime_ns": 1795357010000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-14\\part.parquet",
+      "bytes": 6753138,
+      "mtime_ns": 1795357014000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-15\\part.parquet",
+      "bytes": 6445826,
+      "mtime_ns": 1795357020000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-16\\part.parquet",
+      "bytes": 6487531,
+      "mtime_ns": 1795357024000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-17\\part.parquet",
+      "bytes": 6661892,
+      "mtime_ns": 1795357028000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-18\\part.parquet",
+      "bytes": 6664337,
+      "mtime_ns": 1795357034000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-19\\part.parquet",
+      "bytes": 6590425,
+      "mtime_ns": 1795357038000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-20\\part.parquet",
+      "bytes": 6736519,
+      "mtime_ns": 1795357042000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-21\\part.parquet",
+      "bytes": 6486452,
+      "mtime_ns": 1795357048000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-22\\part.parquet",
+      "bytes": 6417462,
+      "mtime_ns": 1795357052000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-23\\part.parquet",
+      "bytes": 6276672,
+      "mtime_ns": 1795357058000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-24\\part.parquet",
+      "bytes": 6630373,
+      "mtime_ns": 1795357062000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-25\\part.parquet",
+      "bytes": 6381067,
+      "mtime_ns": 1795357068000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-26\\part.parquet",
+      "bytes": 6559504,
+      "mtime_ns": 1795357072000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-27\\part.parquet",
+      "bytes": 6565462,
+      "mtime_ns": 1795357076000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-28\\part.parquet",
+      "bytes": 6351499,
+      "mtime_ns": 1795357080000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-29\\part.parquet",
+      "bytes": 6200102,
+      "mtime_ns": 1795357086000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-30\\part.parquet",
+      "bytes": 6239842,
+      "mtime_ns": 1795357090000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-07-31\\part.parquet",
+      "bytes": 6380978,
+      "mtime_ns": 1795357094000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-01\\part.parquet",
+      "bytes": 6492014,
+      "mtime_ns": 1795357100000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-02\\part.parquet",
+      "bytes": 6507848,
+      "mtime_ns": 1795357106000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-03\\part.parquet",
+      "bytes": 6495589,
+      "mtime_ns": 1795357112000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-04\\part.parquet",
+      "bytes": 6403515,
+      "mtime_ns": 1795357118000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-05\\part.parquet",
+      "bytes": 6193222,
+      "mtime_ns": 1795357122000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-06\\part.parquet",
+      "bytes": 6066277,
+      "mtime_ns": 1795357128000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-07\\part.parquet",
+      "bytes": 6419536,
+      "mtime_ns": 1795357132000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-08\\part.parquet",
+      "bytes": 6627784,
+      "mtime_ns": 1795357138000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-09\\part.parquet",
+      "bytes": 6607766,
+      "mtime_ns": 1795357142000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-10\\part.parquet",
+      "bytes": 6284033,
+      "mtime_ns": 1795357148000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-11\\part.parquet",
+      "bytes": 6155988,
+      "mtime_ns": 1795357154000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-12\\part.parquet",
+      "bytes": 5934883,
+      "mtime_ns": 1795357160000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-13\\part.parquet",
+      "bytes": 6043808,
+      "mtime_ns": 1795357164000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-14\\part.parquet",
+      "bytes": 6333755,
+      "mtime_ns": 1795357168000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-15\\part.parquet",
+      "bytes": 6323466,
+      "mtime_ns": 1795357174000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-16\\part.parquet",
+      "bytes": 6389285,
+      "mtime_ns": 1795357178000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-17\\part.parquet",
+      "bytes": 6661618,
+      "mtime_ns": 1795357184000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-18\\part.parquet",
+      "bytes": 6903446,
+      "mtime_ns": 1795357188000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-19\\part.parquet",
+      "bytes": 6580966,
+      "mtime_ns": 1795357194000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-20\\part.parquet",
+      "bytes": 6431894,
+      "mtime_ns": 1795357200000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-21\\part.parquet",
+      "bytes": 6571406,
+      "mtime_ns": 1795357206000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-22\\part.parquet",
+      "bytes": 6634784,
+      "mtime_ns": 1795357218000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-23\\part.parquet",
+      "bytes": 6668866,
+      "mtime_ns": 1795357222000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-24\\part.parquet",
+      "bytes": 6739868,
+      "mtime_ns": 1795357232000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-25\\part.parquet",
+      "bytes": 6689860,
+      "mtime_ns": 1795357238000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-26\\part.parquet",
+      "bytes": 6102159,
+      "mtime_ns": 1795357242000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-27\\part.parquet",
+      "bytes": 6171833,
+      "mtime_ns": 1795357248000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-28\\part.parquet",
+      "bytes": 6429307,
+      "mtime_ns": 1795357252000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-29\\part.parquet",
+      "bytes": 6723216,
+      "mtime_ns": 1795357260000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-30\\part.parquet",
+      "bytes": 6694402,
+      "mtime_ns": 1795357266000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-08-31\\part.parquet",
+      "bytes": 6676261,
+      "mtime_ns": 1795357270000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-01\\part.parquet",
+      "bytes": 6608723,
+      "mtime_ns": 1795357276000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-02\\part.parquet",
+      "bytes": 6430376,
+      "mtime_ns": 1795357282000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-03\\part.parquet",
+      "bytes": 6339470,
+      "mtime_ns": 1795357288000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-04\\part.parquet",
+      "bytes": 6843320,
+      "mtime_ns": 1795357294000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-05\\part.parquet",
+      "bytes": 6894116,
+      "mtime_ns": 1795357298000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-06\\part.parquet",
+      "bytes": 7010638,
+      "mtime_ns": 1795357306000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-07\\part.parquet",
+      "bytes": 7080734,
+      "mtime_ns": 1795357310000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-08\\part.parquet",
+      "bytes": 7118937,
+      "mtime_ns": 1795357316000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-09\\part.parquet",
+      "bytes": 6596998,
+      "mtime_ns": 1795357320000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-10\\part.parquet",
+      "bytes": 6791652,
+      "mtime_ns": 1795357324000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-11\\part.parquet",
+      "bytes": 7152327,
+      "mtime_ns": 1795357330000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-12\\part.parquet",
+      "bytes": 7051182,
+      "mtime_ns": 1795357336000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-13\\part.parquet",
+      "bytes": 7107427,
+      "mtime_ns": 1795357342000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-14\\part.parquet",
+      "bytes": 7300815,
+      "mtime_ns": 1795357348000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-15\\part.parquet",
+      "bytes": 7234929,
+      "mtime_ns": 1795357354000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-16\\part.parquet",
+      "bytes": 6947190,
+      "mtime_ns": 1795357360000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-17\\part.parquet",
+      "bytes": 6914436,
+      "mtime_ns": 1795357364000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-18\\part.parquet",
+      "bytes": 7273205,
+      "mtime_ns": 1795357370000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-19\\part.parquet",
+      "bytes": 7378739,
+      "mtime_ns": 1795357374000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-20\\part.parquet",
+      "bytes": 7210113,
+      "mtime_ns": 1795357380000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-21\\part.parquet",
+      "bytes": 7250159,
+      "mtime_ns": 1795357384000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-22\\part.parquet",
+      "bytes": 6930771,
+      "mtime_ns": 1795357390000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-23\\part.parquet",
+      "bytes": 6575791,
+      "mtime_ns": 1795357394000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-24\\part.parquet",
+      "bytes": 6651932,
+      "mtime_ns": 1795357400000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-25\\part.parquet",
+      "bytes": 7033454,
+      "mtime_ns": 1795357404000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-26\\part.parquet",
+      "bytes": 7044608,
+      "mtime_ns": 1795357410000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-27\\part.parquet",
+      "bytes": 7159869,
+      "mtime_ns": 1795357414000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-28\\part.parquet",
+      "bytes": 7382545,
+      "mtime_ns": 1795357420000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-29\\part.parquet",
+      "bytes": 7157684,
+      "mtime_ns": 1795357426000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-09-30\\part.parquet",
+      "bytes": 6917750,
+      "mtime_ns": 1795357430000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-01\\part.parquet",
+      "bytes": 7109717,
+      "mtime_ns": 1795357434000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-02\\part.parquet",
+      "bytes": 7461028,
+      "mtime_ns": 1795357440000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-03\\part.parquet",
+      "bytes": 7268239,
+      "mtime_ns": 1795357444000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-04\\part.parquet",
+      "bytes": 7202372,
+      "mtime_ns": 1795357450000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-05\\part.parquet",
+      "bytes": 7085096,
+      "mtime_ns": 1795357454000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-06\\part.parquet",
+      "bytes": 7273320,
+      "mtime_ns": 1795357462000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-07\\part.parquet",
+      "bytes": 6814121,
+      "mtime_ns": 1795357466000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-08\\part.parquet",
+      "bytes": 7076312,
+      "mtime_ns": 1795357472000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-09\\part.parquet",
+      "bytes": 7088897,
+      "mtime_ns": 1795357476000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-10\\part.parquet",
+      "bytes": 7083298,
+      "mtime_ns": 1795357482000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-11\\part.parquet",
+      "bytes": 7186469,
+      "mtime_ns": 1795357486000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-12\\part.parquet",
+      "bytes": 7155974,
+      "mtime_ns": 1795357492000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-13\\part.parquet",
+      "bytes": 7126133,
+      "mtime_ns": 1795357496000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-14\\part.parquet",
+      "bytes": 6790941,
+      "mtime_ns": 1795357502000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-15\\part.parquet",
+      "bytes": 6978547,
+      "mtime_ns": 1795357506000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-16\\part.parquet",
+      "bytes": 7472829,
+      "mtime_ns": 1795357512000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-17\\part.parquet",
+      "bytes": 7355798,
+      "mtime_ns": 1795357516000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-18\\part.parquet",
+      "bytes": 7328107,
+      "mtime_ns": 1795357522000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-19\\part.parquet",
+      "bytes": 7193490,
+      "mtime_ns": 1795357528000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-20\\part.parquet",
+      "bytes": 7536938,
+      "mtime_ns": 1795357532000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-21\\part.parquet",
+      "bytes": 7423950,
+      "mtime_ns": 1795357538000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-22\\part.parquet",
+      "bytes": 7152378,
+      "mtime_ns": 1795357542000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-23\\part.parquet",
+      "bytes": 7647591,
+      "mtime_ns": 1795357548000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-24\\part.parquet",
+      "bytes": 7633504,
+      "mtime_ns": 1795357554000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-25\\part.parquet",
+      "bytes": 7461640,
+      "mtime_ns": 1795357558000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-26\\part.parquet",
+      "bytes": 7350744,
+      "mtime_ns": 1795357564000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-27\\part.parquet",
+      "bytes": 7188778,
+      "mtime_ns": 1795357570000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-28\\part.parquet",
+      "bytes": 6821106,
+      "mtime_ns": 1795357576000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-29\\part.parquet",
+      "bytes": 6935607,
+      "mtime_ns": 1795357580000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-30\\part.parquet",
+      "bytes": 7137817,
+      "mtime_ns": 1795357586000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-10-31\\part.parquet",
+      "bytes": 7177352,
+      "mtime_ns": 1795357590000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-01\\part.parquet",
+      "bytes": 7290127,
+      "mtime_ns": 1795357596000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-02\\part.parquet",
+      "bytes": 7358137,
+      "mtime_ns": 1795357602000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-03\\part.parquet",
+      "bytes": 7261543,
+      "mtime_ns": 1795357606000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-04\\part.parquet",
+      "bytes": 7023189,
+      "mtime_ns": 1795357612000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-05\\part.parquet",
+      "bytes": 7156827,
+      "mtime_ns": 1795357620000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-06\\part.parquet",
+      "bytes": 7180462,
+      "mtime_ns": 1795357626000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-07\\part.parquet",
+      "bytes": 7228016,
+      "mtime_ns": 1795357632000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-08\\part.parquet",
+      "bytes": 7184133,
+      "mtime_ns": 1795357638000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-09\\part.parquet",
+      "bytes": 7591555,
+      "mtime_ns": 1795357646000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-10\\part.parquet",
+      "bytes": 7491933,
+      "mtime_ns": 1795357650000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-11\\part.parquet",
+      "bytes": 7274795,
+      "mtime_ns": 1795357658000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-12\\part.parquet",
+      "bytes": 7324766,
+      "mtime_ns": 1795357664000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-13\\part.parquet",
+      "bytes": 7443947,
+      "mtime_ns": 1795357668000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-14\\part.parquet",
+      "bytes": 7493442,
+      "mtime_ns": 1795357674000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-15\\part.parquet",
+      "bytes": 7370861,
+      "mtime_ns": 1795357682000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-16\\part.parquet",
+      "bytes": 7547912,
+      "mtime_ns": 1795357688000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-17\\part.parquet",
+      "bytes": 7290608,
+      "mtime_ns": 1795357698000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-18\\part.parquet",
+      "bytes": 6966527,
+      "mtime_ns": 1795357702000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-19\\part.parquet",
+      "bytes": 6900684,
+      "mtime_ns": 1795357710000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-20\\part.parquet",
+      "bytes": 7178632,
+      "mtime_ns": 1795357716000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-21\\part.parquet",
+      "bytes": 7221181,
+      "mtime_ns": 1795357722000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-22\\part.parquet",
+      "bytes": 7291370,
+      "mtime_ns": 1795357728000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-23\\part.parquet",
+      "bytes": 6964305,
+      "mtime_ns": 1795357732000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-24\\part.parquet",
+      "bytes": 7132679,
+      "mtime_ns": 1795357738000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-25\\part.parquet",
+      "bytes": 6767690,
+      "mtime_ns": 1795357746000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-26\\part.parquet",
+      "bytes": 6956579,
+      "mtime_ns": 1795357752000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-27\\part.parquet",
+      "bytes": 7272140,
+      "mtime_ns": 1795357758000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-28\\part.parquet",
+      "bytes": 7238333,
+      "mtime_ns": 1795357762000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-29\\part.parquet",
+      "bytes": 7179734,
+      "mtime_ns": 1795357768000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-11-30\\part.parquet",
+      "bytes": 6960348,
+      "mtime_ns": 1795357772000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-01\\part.parquet",
+      "bytes": 7163733,
+      "mtime_ns": 1795357778000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-02\\part.parquet",
+      "bytes": 7324696,
+      "mtime_ns": 1795357784000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-03\\part.parquet",
+      "bytes": 7247988,
+      "mtime_ns": 1795357790000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-04\\part.parquet",
+      "bytes": 7589045,
+      "mtime_ns": 1795357794000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-05\\part.parquet",
+      "bytes": 7487662,
+      "mtime_ns": 1795357800000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-06\\part.parquet",
+      "bytes": 7416885,
+      "mtime_ns": 1795357804000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-07\\part.parquet",
+      "bytes": 7349832,
+      "mtime_ns": 1795357810000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-08\\part.parquet",
+      "bytes": 7463415,
+      "mtime_ns": 1795357814000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-09\\part.parquet",
+      "bytes": 7444034,
+      "mtime_ns": 1795357820000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-10\\part.parquet",
+      "bytes": 7087106,
+      "mtime_ns": 1795357824000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-11\\part.parquet",
+      "bytes": 7393611,
+      "mtime_ns": 1795357830000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-12\\part.parquet",
+      "bytes": 7175962,
+      "mtime_ns": 1795357834000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-13\\part.parquet",
+      "bytes": 7441921,
+      "mtime_ns": 1795357840000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-14\\part.parquet",
+      "bytes": 7282537,
+      "mtime_ns": 1795357844000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-15\\part.parquet",
+      "bytes": 7282324,
+      "mtime_ns": 1795357850000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-16\\part.parquet",
+      "bytes": 7132685,
+      "mtime_ns": 1795357854000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-17\\part.parquet",
+      "bytes": 7237304,
+      "mtime_ns": 1795357860000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-18\\part.parquet",
+      "bytes": 7360057,
+      "mtime_ns": 1795357866000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-19\\part.parquet",
+      "bytes": 7302643,
+      "mtime_ns": 1795357872000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-20\\part.parquet",
+      "bytes": 7423526,
+      "mtime_ns": 1795357876000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-21\\part.parquet",
+      "bytes": 7524711,
+      "mtime_ns": 1795357882000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-22\\part.parquet",
+      "bytes": 7442290,
+      "mtime_ns": 1795357888000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-23\\part.parquet",
+      "bytes": 7159880,
+      "mtime_ns": 1795357892000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-24\\part.parquet",
+      "bytes": 7449299,
+      "mtime_ns": 1795357898000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-25\\part.parquet",
+      "bytes": 7387247,
+      "mtime_ns": 1795357904000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-26\\part.parquet",
+      "bytes": 7410639,
+      "mtime_ns": 1795357908000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-27\\part.parquet",
+      "bytes": 7371023,
+      "mtime_ns": 1795357914000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-28\\part.parquet",
+      "bytes": 7645838,
+      "mtime_ns": 1795357918000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-29\\part.parquet",
+      "bytes": 7417437,
+      "mtime_ns": 1795357924000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-30\\part.parquet",
+      "bytes": 7337045,
+      "mtime_ns": 1795357930000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2023-12-31\\part.parquet",
+      "bytes": 7497538,
+      "mtime_ns": 1795357934000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-01\\part.parquet",
+      "bytes": 7428728,
+      "mtime_ns": 1795357940000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-02\\part.parquet",
+      "bytes": 7660531,
+      "mtime_ns": 1795357944000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-03\\part.parquet",
+      "bytes": 7547619,
+      "mtime_ns": 1795357950000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-04\\part.parquet",
+      "bytes": 7294434,
+      "mtime_ns": 1795357956000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-05\\part.parquet",
+      "bytes": 7267573,
+      "mtime_ns": 1795357962000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-06\\part.parquet",
+      "bytes": 7064783,
+      "mtime_ns": 1795357968000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-07\\part.parquet",
+      "bytes": 7126337,
+      "mtime_ns": 1795357976000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-08\\part.parquet",
+      "bytes": 7281169,
+      "mtime_ns": 1795357982000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-09\\part.parquet",
+      "bytes": 7194238,
+      "mtime_ns": 1795357988000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-10\\part.parquet",
+      "bytes": 7463574,
+      "mtime_ns": 1795357992000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-11\\part.parquet",
+      "bytes": 7520865,
+      "mtime_ns": 1795357998000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-12\\part.parquet",
+      "bytes": 7623538,
+      "mtime_ns": 1795358002000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-13\\part.parquet",
+      "bytes": 7256420,
+      "mtime_ns": 1795358008000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-14\\part.parquet",
+      "bytes": 7168933,
+      "mtime_ns": 1795358014000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-15\\part.parquet",
+      "bytes": 7214831,
+      "mtime_ns": 1795358018000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-16\\part.parquet",
+      "bytes": 7214838,
+      "mtime_ns": 1795358024000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-17\\part.parquet",
+      "bytes": 7194894,
+      "mtime_ns": 1795358028000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-18\\part.parquet",
+      "bytes": 7268287,
+      "mtime_ns": 1795358038000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-19\\part.parquet",
+      "bytes": 7376325,
+      "mtime_ns": 1795358044000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-20\\part.parquet",
+      "bytes": 6946627,
+      "mtime_ns": 1795358050000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-21\\part.parquet",
+      "bytes": 6714293,
+      "mtime_ns": 1795358058000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-22\\part.parquet",
+      "bytes": 7402163,
+      "mtime_ns": 1795358062000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-23\\part.parquet",
+      "bytes": 7487577,
+      "mtime_ns": 1795358068000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-24\\part.parquet",
+      "bytes": 7286805,
+      "mtime_ns": 1795358074000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-25\\part.parquet",
+      "bytes": 7101987,
+      "mtime_ns": 1795358080000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-26\\part.parquet",
+      "bytes": 7269344,
+      "mtime_ns": 1795358086000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-27\\part.parquet",
+      "bytes": 7023578,
+      "mtime_ns": 1795358092000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-28\\part.parquet",
+      "bytes": 7235607,
+      "mtime_ns": 1795358100000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-29\\part.parquet",
+      "bytes": 7222826,
+      "mtime_ns": 1795358106000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-30\\part.parquet",
+      "bytes": 7291166,
+      "mtime_ns": 1795358112000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-01-31\\part.parquet",
+      "bytes": 7360224,
+      "mtime_ns": 1795358118000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-01\\part.parquet",
+      "bytes": 7230472,
+      "mtime_ns": 1795358122000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-02\\part.parquet",
+      "bytes": 7034254,
+      "mtime_ns": 1795358128000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-03\\part.parquet",
+      "bytes": 6890368,
+      "mtime_ns": 1795358132000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-04\\part.parquet",
+      "bytes": 7049384,
+      "mtime_ns": 1795358138000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-05\\part.parquet",
+      "bytes": 7106248,
+      "mtime_ns": 1795358144000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-06\\part.parquet",
+      "bytes": 7087951,
+      "mtime_ns": 1795358148000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-07\\part.parquet",
+      "bytes": 7193651,
+      "mtime_ns": 1795358154000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-08\\part.parquet",
+      "bytes": 7377239,
+      "mtime_ns": 1795358160000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-09\\part.parquet",
+      "bytes": 7470410,
+      "mtime_ns": 1795358166000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-10\\part.parquet",
+      "bytes": 7170947,
+      "mtime_ns": 1795358172000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-11\\part.parquet",
+      "bytes": 7126573,
+      "mtime_ns": 1795358176000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-12\\part.parquet",
+      "bytes": 7314018,
+      "mtime_ns": 1795358182000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-13\\part.parquet",
+      "bytes": 7364937,
+      "mtime_ns": 1795358188000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-14\\part.parquet",
+      "bytes": 7406232,
+      "mtime_ns": 1795358192000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-15\\part.parquet",
+      "bytes": 7407008,
+      "mtime_ns": 1795358198000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-16\\part.parquet",
+      "bytes": 7293809,
+      "mtime_ns": 1795358202000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-17\\part.parquet",
+      "bytes": 7200026,
+      "mtime_ns": 1795358208000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-18\\part.parquet",
+      "bytes": 7350606,
+      "mtime_ns": 1795358212000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-19\\part.parquet",
+      "bytes": 7468694,
+      "mtime_ns": 1795358218000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-20\\part.parquet",
+      "bytes": 7456489,
+      "mtime_ns": 1795358222000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-21\\part.parquet",
+      "bytes": 7404937,
+      "mtime_ns": 1795358228000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-22\\part.parquet",
+      "bytes": 7411153,
+      "mtime_ns": 1795358234000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-23\\part.parquet",
+      "bytes": 7242865,
+      "mtime_ns": 1795358240000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-24\\part.parquet",
+      "bytes": 7018043,
+      "mtime_ns": 1795358244000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-25\\part.parquet",
+      "bytes": 7230886,
+      "mtime_ns": 1795358248000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-26\\part.parquet",
+      "bytes": 7653541,
+      "mtime_ns": 1795358254000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-27\\part.parquet",
+      "bytes": 7900783,
+      "mtime_ns": 1795358260000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-28\\part.parquet",
+      "bytes": 8042377,
+      "mtime_ns": 1795358264000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-02-29\\part.parquet",
+      "bytes": 8049191,
+      "mtime_ns": 1795358268000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-01\\part.parquet",
+      "bytes": 7881598,
+      "mtime_ns": 1795354594000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-02\\part.parquet",
+      "bytes": 7721321,
+      "mtime_ns": 1795354600000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-03\\part.parquet",
+      "bytes": 7728320,
+      "mtime_ns": 1795354604000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-04\\part.parquet",
+      "bytes": 8015711,
+      "mtime_ns": 1795358274000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-05\\part.parquet",
+      "bytes": 7804100,
+      "mtime_ns": 1795358280000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-06\\part.parquet",
+      "bytes": 7749645,
+      "mtime_ns": 1795358286000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-07\\part.parquet",
+      "bytes": 7908578,
+      "mtime_ns": 1795358292000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-08\\part.parquet",
+      "bytes": 7851827,
+      "mtime_ns": 1795358298000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-09\\part.parquet",
+      "bytes": 7568498,
+      "mtime_ns": 1795358312000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-10\\part.parquet",
+      "bytes": 7796605,
+      "mtime_ns": 1795358324000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-11\\part.parquet",
+      "bytes": 7931109,
+      "mtime_ns": 1795358336000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-12\\part.parquet",
+      "bytes": 7883476,
+      "mtime_ns": 1795358348000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-13\\part.parquet",
+      "bytes": 7830978,
+      "mtime_ns": 1795358362000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-14\\part.parquet",
+      "bytes": 7978608,
+      "mtime_ns": 1795358376000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-15\\part.parquet",
+      "bytes": 8031278,
+      "mtime_ns": 1795358388000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-16\\part.parquet",
+      "bytes": 7913725,
+      "mtime_ns": 1795358404000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-17\\part.parquet",
+      "bytes": 7961004,
+      "mtime_ns": 1795358410000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-18\\part.parquet",
+      "bytes": 7902597,
+      "mtime_ns": 1795358420000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-19\\part.parquet",
+      "bytes": 8067111,
+      "mtime_ns": 1795358432000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-20\\part.parquet",
+      "bytes": 7984162,
+      "mtime_ns": 1795358444000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-21\\part.parquet",
+      "bytes": 7906195,
+      "mtime_ns": 1795358472000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-22\\part.parquet",
+      "bytes": 7690733,
+      "mtime_ns": 1795358492000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-23\\part.parquet",
+      "bytes": 7510245,
+      "mtime_ns": 1795358524000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-24\\part.parquet",
+      "bytes": 7669796,
+      "mtime_ns": 1795358538000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-25\\part.parquet",
+      "bytes": 7890662,
+      "mtime_ns": 1795358558000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-26\\part.parquet",
+      "bytes": 7850397,
+      "mtime_ns": 1795358572000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-27\\part.parquet",
+      "bytes": 7857114,
+      "mtime_ns": 1795358590000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-28\\part.parquet",
+      "bytes": 7807687,
+      "mtime_ns": 1795358604000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-29\\part.parquet",
+      "bytes": 7681498,
+      "mtime_ns": 1795358618000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-30\\part.parquet",
+      "bytes": 7407499,
+      "mtime_ns": 1795358634000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-03-31\\part.parquet",
+      "bytes": 7514899,
+      "mtime_ns": 1795358650000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-01\\part.parquet",
+      "bytes": 7804945,
+      "mtime_ns": 1795358664000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-02\\part.parquet",
+      "bytes": 7772290,
+      "mtime_ns": 1795358676000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-03\\part.parquet",
+      "bytes": 7418683,
+      "mtime_ns": 1795358690000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-04\\part.parquet",
+      "bytes": 7503768,
+      "mtime_ns": 1795358702000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-05\\part.parquet",
+      "bytes": 7402290,
+      "mtime_ns": 1795358714000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-06\\part.parquet",
+      "bytes": 7069713,
+      "mtime_ns": 1795358728000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-07\\part.parquet",
+      "bytes": 7187100,
+      "mtime_ns": 1795358740000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-08\\part.parquet",
+      "bytes": 7604310,
+      "mtime_ns": 1795358754000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-09\\part.parquet",
+      "bytes": 7724972,
+      "mtime_ns": 1795358768000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-10\\part.parquet",
+      "bytes": 7651763,
+      "mtime_ns": 1795358784000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-11\\part.parquet",
+      "bytes": 7672715,
+      "mtime_ns": 1795358798000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-12\\part.parquet",
+      "bytes": 7701625,
+      "mtime_ns": 1795358810000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-13\\part.parquet",
+      "bytes": 7574388,
+      "mtime_ns": 1795358822000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-14\\part.parquet",
+      "bytes": 7620359,
+      "mtime_ns": 1795358834000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-15\\part.parquet",
+      "bytes": 7852002,
+      "mtime_ns": 1795358846000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-16\\part.parquet",
+      "bytes": 7857145,
+      "mtime_ns": 1795358862000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-17\\part.parquet",
+      "bytes": 7856147,
+      "mtime_ns": 1795358874000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-18\\part.parquet",
+      "bytes": 7874066,
+      "mtime_ns": 1795358886000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-19\\part.parquet",
+      "bytes": 7939045,
+      "mtime_ns": 1795358902000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-20\\part.parquet",
+      "bytes": 7639516,
+      "mtime_ns": 1795358914000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-21\\part.parquet",
+      "bytes": 7513254,
+      "mtime_ns": 1795358930000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-22\\part.parquet",
+      "bytes": 7677723,
+      "mtime_ns": 1795358942000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-23\\part.parquet",
+      "bytes": 7642031,
+      "mtime_ns": 1795358970000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-24\\part.parquet",
+      "bytes": 7668894,
+      "mtime_ns": 1795359002000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-25\\part.parquet",
+      "bytes": 7758828,
+      "mtime_ns": 1795359026000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-26\\part.parquet",
+      "bytes": 7588266,
+      "mtime_ns": 1795359048000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-27\\part.parquet",
+      "bytes": 7511429,
+      "mtime_ns": 1795359068000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-28\\part.parquet",
+      "bytes": 7331959,
+      "mtime_ns": 1795359084000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-29\\part.parquet",
+      "bytes": 7633779,
+      "mtime_ns": 1795359100000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-04-30\\part.parquet",
+      "bytes": 7723080,
+      "mtime_ns": 1795359118000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-01\\part.parquet",
+      "bytes": 7852673,
+      "mtime_ns": 1795359134000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-02\\part.parquet",
+      "bytes": 7801304,
+      "mtime_ns": 1795359148000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-03\\part.parquet",
+      "bytes": 7860903,
+      "mtime_ns": 1795359162000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-04\\part.parquet",
+      "bytes": 7646616,
+      "mtime_ns": 1795359172000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-05\\part.parquet",
+      "bytes": 7638365,
+      "mtime_ns": 1795359186000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-06\\part.parquet",
+      "bytes": 7803540,
+      "mtime_ns": 1795359200000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-07\\part.parquet",
+      "bytes": 7710412,
+      "mtime_ns": 1795359210000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-08\\part.parquet",
+      "bytes": 7662409,
+      "mtime_ns": 1795359224000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-09\\part.parquet",
+      "bytes": 7752833,
+      "mtime_ns": 1795359236000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-10\\part.parquet",
+      "bytes": 7589317,
+      "mtime_ns": 1795359250000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-11\\part.parquet",
+      "bytes": 7371290,
+      "mtime_ns": 1795359262000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-12\\part.parquet",
+      "bytes": 7214764,
+      "mtime_ns": 1795359274000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-13\\part.parquet",
+      "bytes": 7769589,
+      "mtime_ns": 1795359286000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-14\\part.parquet",
+      "bytes": 7547329,
+      "mtime_ns": 1795359298000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-15\\part.parquet",
+      "bytes": 7794903,
+      "mtime_ns": 1795359310000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-16\\part.parquet",
+      "bytes": 7758821,
+      "mtime_ns": 1795359322000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-17\\part.parquet",
+      "bytes": 7724537,
+      "mtime_ns": 1795359336000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-18\\part.parquet",
+      "bytes": 7406704,
+      "mtime_ns": 1795359348000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-19\\part.parquet",
+      "bytes": 7486292,
+      "mtime_ns": 1795359394000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-20\\part.parquet",
+      "bytes": 7672592,
+      "mtime_ns": 1795359418000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-21\\part.parquet",
+      "bytes": 7661674,
+      "mtime_ns": 1795359436000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-22\\part.parquet",
+      "bytes": 7423048,
+      "mtime_ns": 1795359462000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-23\\part.parquet",
+      "bytes": 7524301,
+      "mtime_ns": 1795359486000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-24\\part.parquet",
+      "bytes": 7303245,
+      "mtime_ns": 1795359502000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-25\\part.parquet",
+      "bytes": 6987434,
+      "mtime_ns": 1795359520000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-26\\part.parquet",
+      "bytes": 6979701,
+      "mtime_ns": 1795359540000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-27\\part.parquet",
+      "bytes": 7343972,
+      "mtime_ns": 1795359556000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-28\\part.parquet",
+      "bytes": 7339684,
+      "mtime_ns": 1795359568000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-29\\part.parquet",
+      "bytes": 7363222,
+      "mtime_ns": 1795359582000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-30\\part.parquet",
+      "bytes": 7320517,
+      "mtime_ns": 1795359596000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-05-31\\part.parquet",
+      "bytes": 7207874,
+      "mtime_ns": 1795359610000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-01\\part.parquet",
+      "bytes": 6910766,
+      "mtime_ns": 1795359626000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-02\\part.parquet",
+      "bytes": 7117709,
+      "mtime_ns": 1795359640000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-03\\part.parquet",
+      "bytes": 7482755,
+      "mtime_ns": 1795359654000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-04\\part.parquet",
+      "bytes": 7468464,
+      "mtime_ns": 1795359670000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-05\\part.parquet",
+      "bytes": 7523511,
+      "mtime_ns": 1795359684000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-06\\part.parquet",
+      "bytes": 7223277,
+      "mtime_ns": 1795359698000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-07\\part.parquet",
+      "bytes": 7348671,
+      "mtime_ns": 1795359716000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-08\\part.parquet",
+      "bytes": 6843381,
+      "mtime_ns": 1795359728000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-09\\part.parquet",
+      "bytes": 6726257,
+      "mtime_ns": 1795359742000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-10\\part.parquet",
+      "bytes": 6982954,
+      "mtime_ns": 1795359760000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-11\\part.parquet",
+      "bytes": 7385820,
+      "mtime_ns": 1795359774000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-12\\part.parquet",
+      "bytes": 7541033,
+      "mtime_ns": 1795359794000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-13\\part.parquet",
+      "bytes": 7551684,
+      "mtime_ns": 1795359812000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-14\\part.parquet",
+      "bytes": 7538553,
+      "mtime_ns": 1795359828000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-15\\part.parquet",
+      "bytes": 7190448,
+      "mtime_ns": 1795359844000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-16\\part.parquet",
+      "bytes": 7159470,
+      "mtime_ns": 1795359862000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-17\\part.parquet",
+      "bytes": 7581327,
+      "mtime_ns": 1795359880000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-18\\part.parquet",
+      "bytes": 7681497,
+      "mtime_ns": 1795359908000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-19\\part.parquet",
+      "bytes": 7424656,
+      "mtime_ns": 1795359960000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-20\\part.parquet",
+      "bytes": 7503715,
+      "mtime_ns": 1795359980000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-21\\part.parquet",
+      "bytes": 7622148,
+      "mtime_ns": 1795360006000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-22\\part.parquet",
+      "bytes": 7175745,
+      "mtime_ns": 1795360034000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-23\\part.parquet",
+      "bytes": 7180532,
+      "mtime_ns": 1795360058000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-24\\part.parquet",
+      "bytes": 7861678,
+      "mtime_ns": 1795360092000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-25\\part.parquet",
+      "bytes": 7765952,
+      "mtime_ns": 1795360116000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-26\\part.parquet",
+      "bytes": 7625997,
+      "mtime_ns": 1795360140000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-27\\part.parquet",
+      "bytes": 7425415,
+      "mtime_ns": 1795360168000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-28\\part.parquet",
+      "bytes": 7530033,
+      "mtime_ns": 1795360192000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-29\\part.parquet",
+      "bytes": 7082335,
+      "mtime_ns": 1795360218000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-06-30\\part.parquet",
+      "bytes": 7493879,
+      "mtime_ns": 1795360258000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-01\\part.parquet",
+      "bytes": 7584931,
+      "mtime_ns": 1795360288000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-02\\part.parquet",
+      "bytes": 7399547,
+      "mtime_ns": 1795360320000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-03\\part.parquet",
+      "bytes": 7580039,
+      "mtime_ns": 1795360344000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-04\\part.parquet",
+      "bytes": 7848077,
+      "mtime_ns": 1795360368000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-05\\part.parquet",
+      "bytes": 7947123,
+      "mtime_ns": 1795360402000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-06\\part.parquet",
+      "bytes": 7654133,
+      "mtime_ns": 1795360434000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-07\\part.parquet",
+      "bytes": 7597269,
+      "mtime_ns": 1795360464000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-08\\part.parquet",
+      "bytes": 7768802,
+      "mtime_ns": 1795360496000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-09\\part.parquet",
+      "bytes": 7469498,
+      "mtime_ns": 1795360518000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-10\\part.parquet",
+      "bytes": 7434263,
+      "mtime_ns": 1795360538000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-11\\part.parquet",
+      "bytes": 7450813,
+      "mtime_ns": 1795360558000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-12\\part.parquet",
+      "bytes": 7628647,
+      "mtime_ns": 1795360576000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-13\\part.parquet",
+      "bytes": 7490589,
+      "mtime_ns": 1795360588000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-14\\part.parquet",
+      "bytes": 7582578,
+      "mtime_ns": 1795360608000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-15\\part.parquet",
+      "bytes": 7851028,
+      "mtime_ns": 1795360626000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-16\\part.parquet",
+      "bytes": 7746513,
+      "mtime_ns": 1795360648000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-17\\part.parquet",
+      "bytes": 7683215,
+      "mtime_ns": 1795360670000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-18\\part.parquet",
+      "bytes": 7732988,
+      "mtime_ns": 1795360696000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-19\\part.parquet",
+      "bytes": 7615645,
+      "mtime_ns": 1795360724000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-20\\part.parquet",
+      "bytes": 7394070,
+      "mtime_ns": 1795360746000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-21\\part.parquet",
+      "bytes": 7501731,
+      "mtime_ns": 1795360772000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-22\\part.parquet",
+      "bytes": 7614571,
+      "mtime_ns": 1795360800000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-23\\part.parquet",
+      "bytes": 7622587,
+      "mtime_ns": 1795360828000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-24\\part.parquet",
+      "bytes": 7243580,
+      "mtime_ns": 1795360874000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-25\\part.parquet",
+      "bytes": 7494532,
+      "mtime_ns": 1795360900000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-26\\part.parquet",
+      "bytes": 7605808,
+      "mtime_ns": 1795360930000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-27\\part.parquet",
+      "bytes": 7430477,
+      "mtime_ns": 1795360964000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-28\\part.parquet",
+      "bytes": 7323509,
+      "mtime_ns": 1795361000000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-29\\part.parquet",
+      "bytes": 7505307,
+      "mtime_ns": 1795361028000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-30\\part.parquet",
+      "bytes": 7594493,
+      "mtime_ns": 1795361062000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-07-31\\part.parquet",
+      "bytes": 7645952,
+      "mtime_ns": 1795361086000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-01\\part.parquet",
+      "bytes": 7759140,
+      "mtime_ns": 1795361114000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-02\\part.parquet",
+      "bytes": 7725075,
+      "mtime_ns": 1795361146000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-03\\part.parquet",
+      "bytes": 7787692,
+      "mtime_ns": 1795361176000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-04\\part.parquet",
+      "bytes": 7771764,
+      "mtime_ns": 1795361216000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-05\\part.parquet",
+      "bytes": 8233203,
+      "mtime_ns": 1795361248000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-06\\part.parquet",
+      "bytes": 8035012,
+      "mtime_ns": 1795361274000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-07\\part.parquet",
+      "bytes": 7961221,
+      "mtime_ns": 1795361304000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-08\\part.parquet",
+      "bytes": 7943447,
+      "mtime_ns": 1795361334000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-09\\part.parquet",
+      "bytes": 7867219,
+      "mtime_ns": 1795361348000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-10\\part.parquet",
+      "bytes": 7536321,
+      "mtime_ns": 1795361364000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-11\\part.parquet",
+      "bytes": 7667280,
+      "mtime_ns": 1795361376000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-12\\part.parquet",
+      "bytes": 7918236,
+      "mtime_ns": 1795361390000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-13\\part.parquet",
+      "bytes": 7754497,
+      "mtime_ns": 1795361404000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-14\\part.parquet",
+      "bytes": 7750720,
+      "mtime_ns": 1795361422000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-15\\part.parquet",
+      "bytes": 7837076,
+      "mtime_ns": 1795361438000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-16\\part.parquet",
+      "bytes": 7818656,
+      "mtime_ns": 1795361454000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-17\\part.parquet",
+      "bytes": 7526282,
+      "mtime_ns": 1795361470000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-18\\part.parquet",
+      "bytes": 7601306,
+      "mtime_ns": 1795361484000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-19\\part.parquet",
+      "bytes": 7630809,
+      "mtime_ns": 1795361490000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-20\\part.parquet",
+      "bytes": 7758876,
+      "mtime_ns": 1795361496000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-21\\part.parquet",
+      "bytes": 7740177,
+      "mtime_ns": 1795361506000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-22\\part.parquet",
+      "bytes": 7644243,
+      "mtime_ns": 1795361514000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-23\\part.parquet",
+      "bytes": 7781209,
+      "mtime_ns": 1795361522000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-24\\part.parquet",
+      "bytes": 7702185,
+      "mtime_ns": 1795361528000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-25\\part.parquet",
+      "bytes": 7388230,
+      "mtime_ns": 1795361536000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-26\\part.parquet",
+      "bytes": 7710762,
+      "mtime_ns": 1795361546000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-27\\part.parquet",
+      "bytes": 7792319,
+      "mtime_ns": 1795361550000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-28\\part.parquet",
+      "bytes": 7904469,
+      "mtime_ns": 1795361558000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-29\\part.parquet",
+      "bytes": 7735901,
+      "mtime_ns": 1795361562000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-30\\part.parquet",
+      "bytes": 7727892,
+      "mtime_ns": 1795361568000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-08-31\\part.parquet",
+      "bytes": 7294743,
+      "mtime_ns": 1795361572000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-01\\part.parquet",
+      "bytes": 7632937,
+      "mtime_ns": 1795361578000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-02\\part.parquet",
+      "bytes": 7634012,
+      "mtime_ns": 1795361584000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-03\\part.parquet",
+      "bytes": 7622849,
+      "mtime_ns": 1795361590000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-04\\part.parquet",
+      "bytes": 7746971,
+      "mtime_ns": 1795361600000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-05\\part.parquet",
+      "bytes": 7695275,
+      "mtime_ns": 1795361606000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-06\\part.parquet",
+      "bytes": 7817929,
+      "mtime_ns": 1795361614000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-07\\part.parquet",
+      "bytes": 7526000,
+      "mtime_ns": 1795361624000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-08\\part.parquet",
+      "bytes": 7561294,
+      "mtime_ns": 1795361630000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-09\\part.parquet",
+      "bytes": 7826221,
+      "mtime_ns": 1795361636000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-10\\part.parquet",
+      "bytes": 7755351,
+      "mtime_ns": 1795361644000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-11\\part.parquet",
+      "bytes": 7768904,
+      "mtime_ns": 1795361650000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-12\\part.parquet",
+      "bytes": 7682008,
+      "mtime_ns": 1795361658000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-13\\part.parquet",
+      "bytes": 7681197,
+      "mtime_ns": 1795361664000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-14\\part.parquet",
+      "bytes": 7411141,
+      "mtime_ns": 1795361670000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-15\\part.parquet",
+      "bytes": 7499379,
+      "mtime_ns": 1795361682000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-16\\part.parquet",
+      "bytes": 7763135,
+      "mtime_ns": 1795361692000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-17\\part.parquet",
+      "bytes": 7845279,
+      "mtime_ns": 1795361698000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-18\\part.parquet",
+      "bytes": 7817715,
+      "mtime_ns": 1795361704000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-19\\part.parquet",
+      "bytes": 7885201,
+      "mtime_ns": 1795361710000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-20\\part.parquet",
+      "bytes": 7810119,
+      "mtime_ns": 1795361716000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-21\\part.parquet",
+      "bytes": 7385634,
+      "mtime_ns": 1795361722000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-22\\part.parquet",
+      "bytes": 7497938,
+      "mtime_ns": 1795361728000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-23\\part.parquet",
+      "bytes": 7692639,
+      "mtime_ns": 1795361734000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-24\\part.parquet",
+      "bytes": 7688228,
+      "mtime_ns": 1795361742000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-25\\part.parquet",
+      "bytes": 7673352,
+      "mtime_ns": 1795361746000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-26\\part.parquet",
+      "bytes": 7721221,
+      "mtime_ns": 1795361754000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-27\\part.parquet",
+      "bytes": 7718405,
+      "mtime_ns": 1795361758000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-28\\part.parquet",
+      "bytes": 7404315,
+      "mtime_ns": 1795361764000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-29\\part.parquet",
+      "bytes": 7411886,
+      "mtime_ns": 1795361770000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-09-30\\part.parquet",
+      "bytes": 7634677,
+      "mtime_ns": 1795361774000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-01\\part.parquet",
+      "bytes": 7762126,
+      "mtime_ns": 1795361780000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-02\\part.parquet",
+      "bytes": 7839666,
+      "mtime_ns": 1795361784000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-03\\part.parquet",
+      "bytes": 7756028,
+      "mtime_ns": 1795361790000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-04\\part.parquet",
+      "bytes": 7759353,
+      "mtime_ns": 1795361796000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-05\\part.parquet",
+      "bytes": 7418625,
+      "mtime_ns": 1795361802000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-06\\part.parquet",
+      "bytes": 7206259,
+      "mtime_ns": 1795361808000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-07\\part.parquet",
+      "bytes": 7718531,
+      "mtime_ns": 1795361814000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-08\\part.parquet",
+      "bytes": 7704780,
+      "mtime_ns": 1795361818000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-09\\part.parquet",
+      "bytes": 7603640,
+      "mtime_ns": 1795361824000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-10\\part.parquet",
+      "bytes": 7690977,
+      "mtime_ns": 1795361830000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-11\\part.parquet",
+      "bytes": 7718313,
+      "mtime_ns": 1795361834000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-12\\part.parquet",
+      "bytes": 7618158,
+      "mtime_ns": 1795361840000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-13\\part.parquet",
+      "bytes": 7519199,
+      "mtime_ns": 1795361846000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-14\\part.parquet",
+      "bytes": 7477547,
+      "mtime_ns": 1795361852000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-15\\part.parquet",
+      "bytes": 7555040,
+      "mtime_ns": 1795361856000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-16\\part.parquet",
+      "bytes": 7555826,
+      "mtime_ns": 1795361862000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-17\\part.parquet",
+      "bytes": 7388941,
+      "mtime_ns": 1795361866000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-18\\part.parquet",
+      "bytes": 7340930,
+      "mtime_ns": 1795361872000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-19\\part.parquet",
+      "bytes": 6982031,
+      "mtime_ns": 1795361878000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-20\\part.parquet",
+      "bytes": 7098389,
+      "mtime_ns": 1795361882000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-21\\part.parquet",
+      "bytes": 7304319,
+      "mtime_ns": 1795361888000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-22\\part.parquet",
+      "bytes": 7299433,
+      "mtime_ns": 1795361892000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-23\\part.parquet",
+      "bytes": 7385283,
+      "mtime_ns": 1795361898000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-24\\part.parquet",
+      "bytes": 7322863,
+      "mtime_ns": 1795361904000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-25\\part.parquet",
+      "bytes": 7562823,
+      "mtime_ns": 1795361910000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-26\\part.parquet",
+      "bytes": 7253403,
+      "mtime_ns": 1795361914000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-27\\part.parquet",
+      "bytes": 7195507,
+      "mtime_ns": 1795361918000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-28\\part.parquet",
+      "bytes": 7454517,
+      "mtime_ns": 1795361924000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-29\\part.parquet",
+      "bytes": 7596081,
+      "mtime_ns": 1795361928000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-30\\part.parquet",
+      "bytes": 7548131,
+      "mtime_ns": 1795361934000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-10-31\\part.parquet",
+      "bytes": 7652764,
+      "mtime_ns": 1795361938000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-01\\part.parquet",
+      "bytes": 7685227,
+      "mtime_ns": 1795361944000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-02\\part.parquet",
+      "bytes": 7409363,
+      "mtime_ns": 1795361950000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-03\\part.parquet",
+      "bytes": 7513188,
+      "mtime_ns": 1795361956000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-04\\part.parquet",
+      "bytes": 7635997,
+      "mtime_ns": 1795361960000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-05\\part.parquet",
+      "bytes": 7674772,
+      "mtime_ns": 1795361968000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-06\\part.parquet",
+      "bytes": 8117465,
+      "mtime_ns": 1795361976000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-07\\part.parquet",
+      "bytes": 7990079,
+      "mtime_ns": 1795361984000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-08\\part.parquet",
+      "bytes": 7854086,
+      "mtime_ns": 1795361990000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-09\\part.parquet",
+      "bytes": 7712084,
+      "mtime_ns": 1795361996000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-10\\part.parquet",
+      "bytes": 8256864,
+      "mtime_ns": 1795362002000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-11\\part.parquet",
+      "bytes": 8303194,
+      "mtime_ns": 1795362008000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-12\\part.parquet",
+      "bytes": 8439172,
+      "mtime_ns": 1795362016000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-13\\part.parquet",
+      "bytes": 8405738,
+      "mtime_ns": 1795362022000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-14\\part.parquet",
+      "bytes": 8273671,
+      "mtime_ns": 1795362028000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-15\\part.parquet",
+      "bytes": 8071156,
+      "mtime_ns": 1795362034000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-16\\part.parquet",
+      "bytes": 8161019,
+      "mtime_ns": 1795362040000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-17\\part.parquet",
+      "bytes": 8135887,
+      "mtime_ns": 1795362048000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-18\\part.parquet",
+      "bytes": 8297752,
+      "mtime_ns": 1795362054000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-19\\part.parquet",
+      "bytes": 8192266,
+      "mtime_ns": 1795362058000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-20\\part.parquet",
+      "bytes": 8018306,
+      "mtime_ns": 1795362064000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-21\\part.parquet",
+      "bytes": 8237632,
+      "mtime_ns": 1795362070000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-22\\part.parquet",
+      "bytes": 8272531,
+      "mtime_ns": 1795362078000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-23\\part.parquet",
+      "bytes": 8086947,
+      "mtime_ns": 1795362084000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-24\\part.parquet",
+      "bytes": 8203820,
+      "mtime_ns": 1795362090000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-25\\part.parquet",
+      "bytes": 8303444,
+      "mtime_ns": 1795362098000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-26\\part.parquet",
+      "bytes": 8302114,
+      "mtime_ns": 1795362106000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-27\\part.parquet",
+      "bytes": 8160049,
+      "mtime_ns": 1795362118000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-28\\part.parquet",
+      "bytes": 8093851,
+      "mtime_ns": 1795362128000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-29\\part.parquet",
+      "bytes": 8144411,
+      "mtime_ns": 1795362138000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-11-30\\part.parquet",
+      "bytes": 7949589,
+      "mtime_ns": 1795362148000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-01\\part.parquet",
+      "bytes": 7959317,
+      "mtime_ns": 1795362156000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-02\\part.parquet",
+      "bytes": 8220893,
+      "mtime_ns": 1795362166000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-03\\part.parquet",
+      "bytes": 8253212,
+      "mtime_ns": 1795362176000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-04\\part.parquet",
+      "bytes": 8300617,
+      "mtime_ns": 1795362186000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-05\\part.parquet",
+      "bytes": 8416732,
+      "mtime_ns": 1795362194000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-06\\part.parquet",
+      "bytes": 8166855,
+      "mtime_ns": 1795362204000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-07\\part.parquet",
+      "bytes": 7845786,
+      "mtime_ns": 1795362212000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-08\\part.parquet",
+      "bytes": 7909084,
+      "mtime_ns": 1795362222000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-09\\part.parquet",
+      "bytes": 8225766,
+      "mtime_ns": 1795362232000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-10\\part.parquet",
+      "bytes": 7966695,
+      "mtime_ns": 1795362240000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-11\\part.parquet",
+      "bytes": 7882526,
+      "mtime_ns": 1795362250000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-12\\part.parquet",
+      "bytes": 7740644,
+      "mtime_ns": 1795362260000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-13\\part.parquet",
+      "bytes": 7674729,
+      "mtime_ns": 1795362270000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-14\\part.parquet",
+      "bytes": 7569980,
+      "mtime_ns": 1795362280000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-15\\part.parquet",
+      "bytes": 7712669,
+      "mtime_ns": 1795362290000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-16\\part.parquet",
+      "bytes": 7967279,
+      "mtime_ns": 1795362302000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-17\\part.parquet",
+      "bytes": 7961670,
+      "mtime_ns": 1795362312000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-18\\part.parquet",
+      "bytes": 8050070,
+      "mtime_ns": 1795362322000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-19\\part.parquet",
+      "bytes": 8335799,
+      "mtime_ns": 1795362332000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-20\\part.parquet",
+      "bytes": 8392869,
+      "mtime_ns": 1795362342000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-21\\part.parquet",
+      "bytes": 8178911,
+      "mtime_ns": 1795362354000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-22\\part.parquet",
+      "bytes": 8015889,
+      "mtime_ns": 1795362362000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-23\\part.parquet",
+      "bytes": 8111753,
+      "mtime_ns": 1795362370000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-24\\part.parquet",
+      "bytes": 8087822,
+      "mtime_ns": 1795362376000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-25\\part.parquet",
+      "bytes": 7705099,
+      "mtime_ns": 1795362386000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-26\\part.parquet",
+      "bytes": 8155154,
+      "mtime_ns": 1795362396000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-27\\part.parquet",
+      "bytes": 8087229,
+      "mtime_ns": 1795362402000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-28\\part.parquet",
+      "bytes": 7790956,
+      "mtime_ns": 1795362410000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-29\\part.parquet",
+      "bytes": 7786227,
+      "mtime_ns": 1795362420000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-30\\part.parquet",
+      "bytes": 8115627,
+      "mtime_ns": 1795362430000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2024-12-31\\part.parquet",
+      "bytes": 7902832,
+      "mtime_ns": 1795362440000000000
+    },
+    {
+      "path": "D:\\APEX_ARENA_V2\\BTCUSDT_1m_eligible\\date=2025-01-01\\part.parquet",
+      "bytes": 7673227,
+      "mtime_ns": 1795362448000000000
+    }
+  ],
+  "scope": "Reconstructed full feature matrix from existing H4 arena plus native H4 target. Native-source feature probes are a separate check."
+}

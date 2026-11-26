@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "formula": "10000*(native P(t+16)/native P(t+1)-1)",
+  "rows": 923007,
+  "quarters": [
+    {
+      "quarter": "2023Q2",
+      "rows": 131040,
+      "max_price_formula_error_bps": 1.1368683772161603e-12
+    },
+    {
+      "quarter": "2023Q3",
+      "rows": 132480,
+      "max_price_formula_error_bps": 1.1226575225009583e-12
+    },
+    {
+      "quarter": "2023Q4",
+      "rows": 132480,
+      "max_price_formula_error_bps": 2.2239987629291136e-12
+    },
+    {
+      "quarter": "2024Q1",
+      "rows": 131023,
+      "max_price_formula_error_bps": 1.1226575225009583e-12
+    },
+    {
+      "quarter": "2024Q2",
+      "rows": 131040,
+      "max_price_formula_error_bps": 1.1368683772161603e-12
+    },
+    {
+      "quarter": "2024Q3",
+      "rows": 132480,
+      "max_price_formula_error_bps": 1.1368683772161603e-12
+    },
+    {
+      "quarter": "2024Q4",
+      "rows": 132464,
+      "max_price_formula_error_bps": 1.1368683772161603e-12
+    }
+  ],
+  "scope": "Float64 endpoint formula check on every replay origin; native full-path validity is checked with native Y separately"
+}

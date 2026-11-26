@@ -1,0 +1,60 @@
+{
+  "source_files_unchanged": 77,
+  "authored_report_links": "PASS",
+  "report": "FINDINGS.md",
+  "monthly_rows": 21,
+  "receipt_files": [
+    {
+      "path": "ADDITIONAL_RUNTIME_CHECKS.json",
+      "sha256": "50fe70e37b633243137b8ebbc4c434dc999f1ddbfb3cff979b3c66cd7b30f478"
+    },
+    {
+      "path": "ARCHIVE_RECEIPT.json",
+      "sha256": "fa5dc5db8192ec81040557aa126857c957d4d2663c7864029aa9def0edeeb187"
+    },
+    {
+      "path": "AUDIT_CONTRACT.json",
+      "sha256": "a325d9421435d483f3077451e1975f140cbf54f0140179d46050ef152c8753f9"
+    },
+    {
+      "path": "AUDIT_SUMMARY.json",
+      "sha256": "c631c47ed0ef30b20138e1b6b1c577fc04ef2dff26b5fe1c69f1cbacbde1d720"
+    },
+    {
+      "path": "FULL_REPLAY_AND_CAUSALITY.json",
+      "sha256": "cb5c4fce3d9233f5738be037a5ab881377c3d488e48b7153761008b2aa08023e"
+    },
+    {
+      "path": "INPUT_RECONSTRUCTION.json",
+      "sha256": "2bc95caaa008d8e43a25ef947133cf7b79bf39d280bb94b2a8258173c00057df"
+    },
+    {
+      "path": "LEDGER_AUDIT.json",
+      "sha256": "2fd6c1daba4220e35194be031f4be0843a03dd25190160910f26e4ca4281f206"
+    },
+    {
+      "path": "MONTHLY_TRADES.json",
+      "sha256": "705658b1c991b55713a6165f00a8b5a137cc63b0c310185b07deebe551076fbb"
+    },
+    {
+      "path": "NATIVE_FEATURE_PROBES.json",
+      "sha256": "6e395782d3e5885e2a43ca83ce6fdc8d3fa42d741b562781ea9f591388776689"
+    },
+    {
+      "path": "PRICE_TARGET_AUDIT.json",
+      "sha256": "a1a42d24a4db893d064ef3ef7e1975776ab407e9b62f122e431a33131fd2c4c9"
+    },
+    {
+      "path": "Q4_RETRAINING_AUDIT.json",
+      "sha256": "f98e41a283eead9a80393c33a5b7533c8aa014c1ae1ee6cc092d38e4643b0b4d"
+    },
+    {
+      "path": "Q4_RETRAINING_LGB470.json",
+      "sha256": "9175ad24bfcfb1d07abf4eae3949d26907d91bee696656751d23533dc699e036"
+    },
+    {
+      "path": "RUNTIME_CHECK.json",
+      "sha256": "b4cd2dc9698758dac780aaa9bba5673eb021494d7842001c3f9c80c297bb2fb9"
+    }
+  ]
+}

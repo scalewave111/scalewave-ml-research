@@ -1,0 +1,20 @@
+{
+  "question": "Do the delivered Sakthi weights and code reproduce the stated BTC 15-minute historical predictions and trade metrics from independently reconstructed H4 inputs, and what changes under one-position accounting?",
+  "scope": "Read-only source audit, frozen inference, native-target reconciliation, bounded causal/feature checks, and declared execution-policy sensitivity. No parameter search or H4a access.",
+  "population": "923007 valid minute origins, 2023-04-01 through 2024-12-31 UTC, inherited decision calendar",
+  "target": "10000 * (P(t+16min)/P(t+1min)-1); native H4 Y(t+1), VALID and no binding crossing",
+  "reported_threshold": "absolute predicted signed score >= 10 bps; no outcome filter for all-trade performance",
+  "reported_result_to_test": {
+    "signals": 1145,
+    "wins": 755,
+    "gross_bps_mean": 24.761058197035105
+  },
+  "policy_sensitivity": "Fixed threshold unchanged; first eligible signal when flat, one position for 15 minutes, both sides share the same position limit. Assumed round-trip costs 0,2,4,8 bps.",
+  "acceptance": "Report hash, row, schema, target, inference and selection mismatches explicitly. Separate software/historical reproducibility from evidence of live profitability. Do not retune to recover the headline.",
+  "historical_exposure": "All H4 evaluation periods have been used in iterative model research; none is a fresh holdout",
+  "protected_data": "Neither Handoff 4a block is used for fitting or evaluation in this audit",
+  "user_steering": "Multiple concurrent trades are permitted. The all-signal strategy remains primary; one-position accounting is a diagnostic comparison, not an acceptance requirement.",
+  "primary_position_policy": "Take every eligible signal at declared equal per-entry notional; quantify simultaneous exposure, dependence and costs. No capital allocation is assumed to be authorized or optimal.",
+  "monthly_analysis": "Primary all-entry strategy: each calendar month, including zero-entry months, with forecasts, long/short counts, wins/losses/breakeven, direction accuracy, >=10 bps hits, mean/sum gross bps and cost scenarios.",
+  "bounded_training_verification": "After independent inputs are available, replay all seven frozen quarterly bundles and retrain only the latest 2024Q4 bundle with unchanged supplied settings. Record runtime-version differences; no search or H4a."
+}

@@ -1,0 +1,48 @@
+{
+  "decision": "HISTORICAL_EXECUTION_AND_METRICS_VERIFIED; LIVE_EDGE_NOT_ESTABLISHED",
+  "primary_strategy": "All eligible entries; multiple concurrent positions permitted by user",
+  "package_files_verified": 76,
+  "model_files_loaded": 14,
+  "frozen_replay_rows": 923007,
+  "max_replay_numeric_error": 2.4868995751603507e-14,
+  "primary_metrics": {
+    "trades": 1145,
+    "longs": 1081,
+    "shorts": 64,
+    "wins": 755,
+    "losses": 390,
+    "breakeven": 0,
+    "win_rate": 0.6593886462882096,
+    "wins_at_least_10bps": 695,
+    "avg_gross_bps": 24.761058197035105,
+    "sum_gross_bps": 28351.411635605196,
+    "max_realised_drawdown_bps_equal_entry_notional": 8212.410650528052,
+    "always_long_same_entries_avg_bps": 18.977160446451265,
+    "long_avg_gross_bps": 23.16385769971873,
+    "short_avg_gross_bps": 51.738772847019455,
+    "avg_net_assuming_2bps_round_trip": 22.761058197035105,
+    "avg_net_assuming_4bps_round_trip": 20.761058197035105,
+    "avg_net_assuming_8bps_round_trip": 16.761058197035105,
+    "peak_simultaneous_positions": 15,
+    "mean_active_positions_at_signal_arrival": 5.685589519650655,
+    "all_entries_allowed": true,
+    "unweighted_sum_is_not_account_return": true
+  },
+  "tests": {
+    "bundled": 3,
+    "additional_runtime": 11,
+    "native_feature_probe_cells": 743040,
+    "future_label_perturbation": "PASS",
+    "prefix_causality": "PASS"
+  },
+  "q4_retraining_status": "PASS_NUMERICAL_TOLERANCE",
+  "monthly_file": "MONTHLY_TRADES.csv",
+  "no_h4a_fitting_or_evaluation": true,
+  "limitations": [
+    "Iterative selection on the same historical quarters",
+    "Gross reference-VWAP returns; actual fills/costs/capacity not measured",
+    "Frozen routing ends before 2025-01-01",
+    "Capital/position sizes unspecified; summed entry bps is not account ROI",
+    "All seven training reruns were not independently repeated in the original environment"
+  ]
+}

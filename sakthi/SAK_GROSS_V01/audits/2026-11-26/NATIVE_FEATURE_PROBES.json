@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "day": "2022-04-22",
+      "rows": 1440,
+      "fields": 86,
+      "exact_native_cache_parity": true,
+      "availability_violations": 0,
+      "guards_match_missingness": true
+    },
+    {
+      "day": "2023-04-01",
+      "rows": 1440,
+      "fields": 86,
+      "exact_native_cache_parity": true,
+      "availability_violations": 0,
+      "guards_match_missingness": true
+    },
+    {
+      "day": "2023-10-01",
+      "rows": 1440,
+      "fields": 86,
+      "exact_native_cache_parity": true,
+      "availability_violations": 0,
+      "guards_match_missingness": true
+    },
+    {
+      "day": "2024-01-01",
+      "rows": 1440,
+      "fields": 86,
+      "exact_native_cache_parity": true,
+      "availability_violations": 0,
+      "guards_match_missingness": true
+    },
+    {
+      "day": "2024-07-01",
+      "rows": 1440,
+      "fields": 86,
+      "exact_native_cache_parity": true,
+      "availability_violations": 0,
+      "guards_match_missingness": true
+    },
+    {
+      "day": "2024-10-01",
+      "rows": 1440,
+      "fields": 86,
+      "exact_native_cache_parity": true,
+      "availability_violations": 0,
+      "guards_match_missingness": true
+    }
+  ],
+  "checked_cells": 743040,
+  "scope": "All 86 fields on six fixed days; not an exhaustive native-source check of every day"
+}

@@ -1,0 +1,392 @@
+{
+  "archive": "C:\\Users\\Ajay\\Desktop\\APEX V1\\dates\\2026-11-26\\SAK_GROSS_V01_COMPLETE_20261126.zip",
+  "archive_sha256": "bd0c6a1ddb2a836dc17d843a3e4247346b6dd2e7b8fb80996cba40366e526ed9",
+  "crc": "PASS",
+  "files": [
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/.gitignore",
+      "bytes": 219,
+      "sha256": "4ab5e0c2ab168ea8badce5557d8577068aa34a0aacb71328ec4b3cf8a9bec3fb"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/build_report.py",
+      "bytes": 7238,
+      "sha256": "0fbbaa134050df6a53163b65cfdaebc7accf69817fe0968c6356692e9d7e68e3"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/contracts/decision_calendar.parquet",
+      "bytes": 10514339,
+      "sha256": "e0c7084ff00aa8fe309037c67848bc7c52a1d2f0f37a06ca65f1fe5f3dc7a5ff"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/contracts/feature_config.json",
+      "bytes": 108849,
+      "sha256": "d8c006d40f365a956e8debbbfe6503e52a2ef33570fe49f6299d1b847dd997e8"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/contracts/matrix_complete.json",
+      "bytes": 5731,
+      "sha256": "ed85d74d67ad7dcbce56ce36ff92b9fbebb2db68bdaf60a4d6ab0752d7ec009c"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/engineered_features.py",
+      "bytes": 1507,
+      "sha256": "0db399970d4ec7542d2c9a149800a821c10c9f63f261873a14038001942f0bbd"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evaluate.py",
+      "bytes": 4127,
+      "sha256": "48960e2626be4d5a46f2337243e58b502686fbde8255e3b8c91ac0080a1997ee"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evaluation.json",
+      "bytes": 2106,
+      "sha256": "a222d99f9b0cee20f1b9e2ec2039e5c81ba6c6f3142972f21ae59555fc9f7008"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/audit.json",
+      "bytes": 2402,
+      "sha256": "2535a01a75a9e7e41dd3c99d97d104aa6e8909653d12ca8558b06d799a812122"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/blend_selected_trades.csv",
+      "bytes": 198954,
+      "sha256": "44bcbcd0c8a921edd52076fe38d3c78855bec5bf7301983d8a853256b15f26dc"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/comparison.csv",
+      "bytes": 482,
+      "sha256": "a9ba883d0e4ad64307242a715cd614c2c83920a8962f8d37690985664e219251"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/constant_baseline.json",
+      "bytes": 880,
+      "sha256": "87f86d59ab67aba93bd2adabf43e9bc590f06822bf3601cc9d321712b67ee978"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/daily_metrics.csv",
+      "bytes": 23636,
+      "sha256": "f89514f27b96234342e85268833e66c85af3ef6f3458a39ccd3e3b5c54563b0d"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/prior_comparison.csv",
+      "bytes": 4215,
+      "sha256": "32f7b17d28a4a06fe3e5ee63a3233930996173674b759ca18be0bf1e9c7940c2"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/raw_archive_probe.json",
+      "bytes": 250,
+      "sha256": "18a8a19a2a627650784501cca9daf65271a5e1875d1c6b4c7bb32fff7807988d"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/2023Q2.parquet",
+      "bytes": 11584828,
+      "sha256": "2ed0509e3893b365600d1e2248802b78e1de547a2ed59877ff57f0c033261f98"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/2023Q3.parquet",
+      "bytes": 11685197,
+      "sha256": "c0e0abde10cacd9a5093adbfcf5cf03b11d93a49b4ed9669f1e9468016fea7fb"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/2023Q4.parquet",
+      "bytes": 11684572,
+      "sha256": "5b6c1280ace7bcfbbd290ef87524d148a10e9977d0671e2b09d2254e6cd6ee2e"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/2024Q1.parquet",
+      "bytes": 11581738,
+      "sha256": "c3d0a53edb68298891ae3ecacfacba1fde0954ba15510d45c29563a84f47817e"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/2024Q2.parquet",
+      "bytes": 11583270,
+      "sha256": "4c4f1b350576cdd2f31fd23e1df5e4b16d4cffffa325a19c98ebdfb31eea07ab"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/2024Q3.parquet",
+      "bytes": 11685426,
+      "sha256": "8bde46811b2c4d12f6dee358255cde1d966401bf75298d84d3a1c66f9e284e06"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/2024Q4.parquet",
+      "bytes": 11684324,
+      "sha256": "da598ba77ae622765cbe1b6bdb22000cf4d84dee905a451195dc6d7a002a389e"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/metrics.json",
+      "bytes": 767,
+      "sha256": "7ec958481c2edbb35d3020b62ff9116d1faf92e4aa81dc808062ebfb9cecd90f"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/quarterly_metrics.csv",
+      "bytes": 1694,
+      "sha256": "c524e12bb454a0c5239dc4645f789383464aeab8564ba71696c65bf6c89e3c92"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/replay/selected_trades.csv",
+      "bytes": 273532,
+      "sha256": "71a0a97ac64ec29ff4fabb03ad3c0824718444c413e3423168df7a30434e254d"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/retraining_log.json",
+      "bytes": 3680,
+      "sha256": "1962a98674fb25c68e9dc66f7c1535468a634ce6331c8fd1420f174fe07acd34"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/retraining_verification.json",
+      "bytes": 2888,
+      "sha256": "c016c4bf4f28da8546dee010f6d5608d9a558e2fdf1250ca33b1d7d60fcebdf9"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/statistical_checks.json",
+      "bytes": 487,
+      "sha256": "c77edc34e35cce3dd25f46782771d2425d6baf76c7e7a9dbf35b61294f4960d6"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/evidence/v002_125_threshold_predictions.csv",
+      "bytes": 7517,
+      "sha256": "5f4439f3cc1860736f957d5b5517e62bc3f57bcddf08441dcc4333c511f29a3e"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/examples/expected_predictions.parquet",
+      "bytes": 10989,
+      "sha256": "3a1fcd6a1eb9996c70e4d70a982dce8dbe6bb87abffcf9af2c65ca4c8fd4486b"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/examples/features.parquet",
+      "bytes": 131288,
+      "sha256": "4c8d5e9b2f8858a6580a5e145f0b120a11dbb5cc880d7ae8363cbbf92ef91860"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/FEATURES.md",
+      "bytes": 11619,
+      "sha256": "cb7839b8f694db2f43e4a3168cfe1b08ee7e77bd2fd1d5788a59536b0562c7b6"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/INTERFACES.md",
+      "bytes": 2315,
+      "sha256": "5d4b44dd67a62e8b6a5548a5ed2af2673cb64ac701d9b5a60525a1e25e01376b"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/manifest.json",
+      "bytes": 7718,
+      "sha256": "38a4b729c739c58d14b8e391bfa266ac073af674dc5911bde9d69959757cb983"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/MODEL.md",
+      "bytes": 6001,
+      "sha256": "44627c2969831b9209be474ab31ac4e37b8ff25ab8daacfbd4f83897e446a86e"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/artifact_hashes.json",
+      "bytes": 2517,
+      "sha256": "344029c54a9d79355c56ff545d408da23fce60821d2f1347804ec1441bb58f42"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/bundle.json",
+      "bytes": 3137,
+      "sha256": "2c5c992fe0df258e2cb096f43f3bf06657a97d18c8331755bbb3360d53675209"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/feature_schema.json",
+      "bytes": 12151,
+      "sha256": "d49c1f0f61a044ecea2d1cf63fd55ec7e5cf8eba667138c4f2f88172cdb97737"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2023Q2.cbm",
+      "bytes": 64992,
+      "sha256": "a8259206f7eca3ba9f9071645610fd5bccf638f6fc63774cd2f5fd39db23cc64"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2023Q2_calibration.json",
+      "bytes": 303,
+      "sha256": "d7e9e1109a5cdf26e7ae4e07e4785b3eb739b5cebf84771bcdcf94fc4ed9d3c6"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2023Q3.cbm",
+      "bytes": 64608,
+      "sha256": "8a3c1fa18bf45555693bc88ce1e07b843f8ab80dc8662ef943ba3e2aa6fd9ae0"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2023Q3_calibration.json",
+      "bytes": 289,
+      "sha256": "caf7573476289d599d10b74c636a5380b51b378d8c2e7501c5a0e1a4079adf15"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2023Q4.cbm",
+      "bytes": 64680,
+      "sha256": "3621c85706eadc5474cbdc3a3cb88a33308d38de96b2f2c2395e785422569fb4"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2023Q4_calibration.json",
+      "bytes": 303,
+      "sha256": "69bfb1ca76304368e79190cdd03c89078ce3bc14b166e0eb33ac336211c022e2"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q1.cbm",
+      "bytes": 64632,
+      "sha256": "8ff86acc35cea083d3ae0113c401884a65d5716b2e765643e8793bd8e73ba645"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q1_calibration.json",
+      "bytes": 304,
+      "sha256": "5e782519cfa9361acc085e6280ff116f71e5e500d2a4b9e09486b7227f3c1b3a"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q2.cbm",
+      "bytes": 64680,
+      "sha256": "3ad57c2f4adba82f367618b659d1df796f48c4ab6ca0e29de23679be3bcfac3c"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q2_calibration.json",
+      "bytes": 304,
+      "sha256": "724f4857aaa5b0f5293f31eef0f1a458a8c1fd2305caaed1e4496f3424232d4b"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q3.cbm",
+      "bytes": 64760,
+      "sha256": "08f765e6165da4e6f719d9e5f115c426107a7426e8dc9d930c7316772335d41b"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q3_calibration.json",
+      "bytes": 304,
+      "sha256": "aecf35e4c559beb4f5be45547b3ded14a2bb6e1ac0a06607ec663af5c4352616"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q4.cbm",
+      "bytes": 64808,
+      "sha256": "b6daf4748ff2451330f112fac8aeb515c9a01d7a28740b412d746e44d964aec3"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_DIR_V01_2024Q4_calibration.json",
+      "bytes": 289,
+      "sha256": "fa3b918fe09eccd2864396530584e1e7fb8db5a62de55f749e16942ac8ace260"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_MAG_V01_2023Q2.txt",
+      "bytes": 336979,
+      "sha256": "c3b11bab278eaf114f5930ab5029f4ec3a7dea3682bb152c479b1f68cce116e9"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_MAG_V01_2023Q3.txt",
+      "bytes": 336622,
+      "sha256": "cd0b736d1fd924fc7fdc5d4e87dc62cf0d1fa44d9d6ae110e5a13b69c7866890"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_MAG_V01_2023Q4.txt",
+      "bytes": 336665,
+      "sha256": "152f57c4708733f06057ebcfabe5349cf2d30951f64cdbc66e3fcb0cb545c50a"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_MAG_V01_2024Q1.txt",
+      "bytes": 336344,
+      "sha256": "a0fed1eec927a0134f77f9ccfe3103150d44560d12b7875cd4b20d7b34cb5474"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_MAG_V01_2024Q2.txt",
+      "bytes": 336053,
+      "sha256": "204656a22bb88fa1b8884334b71215ebee32914e6c17dfba7b621c36bcfefd13"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_MAG_V01_2024Q3.txt",
+      "bytes": 335945,
+      "sha256": "4d9181980d0d50c59c7e1fa43256e983aa6a294e4ed01b73952c8fb4ae1231e3"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/SAK_MAG_V01_2024Q4.txt",
+      "bytes": 336639,
+      "sha256": "7b8e9d98749cbbd8b372a2cf5b6b7daf72e1b7df03ee1ca31d335d12bcc7c83d"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/training_configuration.json",
+      "bytes": 989,
+      "sha256": "2e1944c30c402fad4a102f0c3518c3297acdf39bd3d398bbee85c2cea318c4a3"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/model_files/training_data_identity.json",
+      "bytes": 560,
+      "sha256": "4df3287ecbefc4744300f3296b1b11f08126e95d315e4d6f895153ee7fa5100f"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/native_features.py",
+      "bytes": 3008,
+      "sha256": "8e6ebd6bc9718ea134f07eb5eb043bd41010faa9b719f1a40af043505e649fcf"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/predict.py",
+      "bytes": 187,
+      "sha256": "d95996ba7339ecc1bc2b7800831aa80b064b1255c28c2a43dea06d8fb0a4dc5e"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/prepare_handoff4.py",
+      "bytes": 4782,
+      "sha256": "5ea2e8cefb17b439098eb2292e7232cc38533de76e8bd372ef7f2abcdbb158ac"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/README.md",
+      "bytes": 9132,
+      "sha256": "e318e1d536f6d9df1b8a7a99fe1797248c9376e072e2149d2ca5fd63c8988671"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/REPORT.md",
+      "bytes": 4508,
+      "sha256": "fd14d71b2c197816ab8a570b1b0d1ab2544c91e2a3726282ef03e7eb038be231"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/requirements-lock.txt",
+      "bytes": 501,
+      "sha256": "2ca01a35e19b6f409e7090859172c4c8afd459537e782ec33e8a5f6c3ecd3b56"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/requirements.txt",
+      "bytes": 110,
+      "sha256": "6a9418c2970fd947f02d5f191cbd31802f7e1e5fc7009c40e2efa19d9df6aa5f"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/research_data.py",
+      "bytes": 5165,
+      "sha256": "d256f710634e59aed53ed50929b562ae210cd5b5bb32d1dec92c06a7f9e655df"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/SAK_DIR_V01.py",
+      "bytes": 5723,
+      "sha256": "d6dba408c4ae26a119af7f31cd93f0386d49ed344800fda9c086566878045e95"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/SAK_GROSS_V01.py",
+      "bytes": 1409,
+      "sha256": "f6dc38442fbe8912f546b83562008da6e57814579480756b7bc5290eda4eee4e"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/SAK_MAG_V01.py",
+      "bytes": 1526,
+      "sha256": "417f1d12fe394933de92cb42d902eda53afe0f4a615d62ffa8962378d053b55f"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/tests/test_contract.py",
+      "bytes": 1381,
+      "sha256": "0b81e262b8928826935521e770e609203bfdcfbb6ba9bae0f6c72e8e594e39f7"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/train.py",
+      "bytes": 3927,
+      "sha256": "a0d69682238ce441aaa86318cb521d91ab079d04857f13ecaae954316c47df0f"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/verify_package.py",
+      "bytes": 734,
+      "sha256": "200dc64c19502e09ee7c5e8d85d1473d70ebbf8ec58eed1dd74a1d7da6caa11a"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/verify_retraining.py",
+      "bytes": 2145,
+      "sha256": "1454a86af37800a972eb2c79668c6505eb2e0a7ad0cdb099d263e7df99816af5"
+    },
+    {
+      "path": "SAK_GROSS_V01_COMPLETE/PACKAGE_SHA256.json",
+      "bytes": 7818,
+      "sha256": "e810a4c938063a8cbb0b0ac40bbf9117d81588c64a230010df3303ed9badeb3f"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS_NUMERICAL_TOLERANCE",
+  "numerical_tolerance": 1e-10,
+  "scope": "Independent latest-quarter retraining with unchanged supplied settings and independently reconstructed H4 inputs",
+  "quarter": "2024Q4",
+  "rows": 132464,
+  "lightgbm_version": "4.7.0",
+  "max_absolute_errors": {
+    "p_up": 1.1102230246251565e-16,
+    "predicted_magnitude_bps": 0.0,
+    "signed_score_bps": 1.4210854715202004e-14,
+    "actual_bps": 0.0,
+    "gross_bps": 0.0
+  },
+  "changed_decisions": {
+    "eligible": 0,
+    "predicted_side": 0,
+    "trade_side": 0
+  },
+  "calibration_exact": true,
+  "metrics": {
+    "total_predictions": 132464,
+    "actual_threshold_moves": 77505,
+    "eligible_predictions": 94,
+    "correct_predictions": 77,
+    "accuracy": 0.8191489361702128,
+    "threshold_correct_predictions": 69,
+    "threshold_accuracy": 0.7340425531914894,
+    "both_threshold_trades": 80,
+    "correct_both_threshold_predictions": 69,
+    "intersection_win_rate": 0.8625,
+    "profitable_trades": 77,
+    "losing_trades": 17,
+    "breakeven_trades": 0,
+    "avg_gross_bps": 65.05189504428475,
+    "total_gross_bps": 6114.878134162766,
+    "intersection_avg_gross_bps": 76.45858657466042,
+    "intersection_total_gross_bps": 6116.686925972834,
+    "average_predicted_signed_bps": 12.544489704269102,
+    "average_absolute_predicted_bps": 12.544489704269102
+  },
+  "runtime_note": "Audit Python 3.12.8 / LightGBM 4.7.0 / SciPy 1.17.0. Supplied environment Python 3.13.9 / LightGBM 4.7.0 / SciPy 1.16.3. No global dependencies were changed.",
+  "not_repeated": "Retraining all seven quarters in the submitted environment remains a provided-package claim, not a new audit result."
+}

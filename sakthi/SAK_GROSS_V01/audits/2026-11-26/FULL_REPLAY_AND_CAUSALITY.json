@@ -1,0 +1,236 @@
+{
+  "status": "PASS",
+  "replay_rows": 923007,
+  "replay": [
+    {
+      "quarter": "2023Q2",
+      "rows": 131040,
+      "max_absolute_errors": {
+        "p_up": 1.1102230246251565e-16,
+        "p_down": 2.220446049250313e-16,
+        "predicted_magnitude_bps": 0.0,
+        "signed_score_bps": 1.2434497875801753e-14,
+        "actual_bps": 0.0,
+        "gross_bps": 0.0
+      },
+      "discrete_exact": {
+        "eligible": true,
+        "predicted_side": true,
+        "trade_side": true,
+        "model_fold": true,
+        "entry_timestamp_utc": true,
+        "exit_timestamp_utc": true
+      }
+    },
+    {
+      "quarter": "2023Q3",
+      "rows": 132480,
+      "max_absolute_errors": {
+        "p_up": 1.1102230246251565e-16,
+        "p_down": 1.1102230246251565e-16,
+        "predicted_magnitude_bps": 0.0,
+        "signed_score_bps": 8.881784197001252e-15,
+        "actual_bps": 0.0,
+        "gross_bps": 0.0
+      },
+      "discrete_exact": {
+        "eligible": true,
+        "predicted_side": true,
+        "trade_side": true,
+        "model_fold": true,
+        "entry_timestamp_utc": true,
+        "exit_timestamp_utc": true
+      }
+    },
+    {
+      "quarter": "2023Q4",
+      "rows": 132480,
+      "max_absolute_errors": {
+        "p_up": 1.1102230246251565e-16,
+        "p_down": 2.220446049250313e-16,
+        "predicted_magnitude_bps": 0.0,
+        "signed_score_bps": 1.3322676295501878e-14,
+        "actual_bps": 0.0,
+        "gross_bps": 0.0
+      },
+      "discrete_exact": {
+        "eligible": true,
+        "predicted_side": true,
+        "trade_side": true,
+        "model_fold": true,
+        "entry_timestamp_utc": true,
+        "exit_timestamp_utc": true
+      }
+    },
+    {
+      "quarter": "2024Q1",
+      "rows": 131023,
+      "max_absolute_errors": {
+        "p_up": 1.1102230246251565e-16,
+        "p_down": 2.220446049250313e-16,
+        "predicted_magnitude_bps": 0.0,
+        "signed_score_bps": 2.4868995751603507e-14,
+        "actual_bps": 0.0,
+        "gross_bps": 0.0
+      },
+      "discrete_exact": {
+        "eligible": true,
+        "predicted_side": true,
+        "trade_side": true,
+        "model_fold": true,
+        "entry_timestamp_utc": true,
+        "exit_timestamp_utc": true
+      }
+    },
+    {
+      "quarter": "2024Q2",
+      "rows": 131040,
+      "max_absolute_errors": {
+        "p_up": 1.1102230246251565e-16,
+        "p_down": 2.220446049250313e-16,
+        "predicted_magnitude_bps": 0.0,
+        "signed_score_bps": 2.1316282072803006e-14,
+        "actual_bps": 0.0,
+        "gross_bps": 0.0
+      },
+      "discrete_exact": {
+        "eligible": true,
+        "predicted_side": true,
+        "trade_side": true,
+        "model_fold": true,
+        "entry_timestamp_utc": true,
+        "exit_timestamp_utc": true
+      }
+    },
+    {
+      "quarter": "2024Q3",
+      "rows": 132480,
+      "max_absolute_errors": {
+        "p_up": 1.1102230246251565e-16,
+        "p_down": 2.220446049250313e-16,
+        "predicted_magnitude_bps": 0.0,
+        "signed_score_bps": 2.3092638912203256e-14,
+        "actual_bps": 0.0,
+        "gross_bps": 0.0
+      },
+      "discrete_exact": {
+        "eligible": true,
+        "predicted_side": true,
+        "trade_side": true,
+        "model_fold": true,
+        "entry_timestamp_utc": true,
+        "exit_timestamp_utc": true
+      }
+    },
+    {
+      "quarter": "2024Q4",
+      "rows": 132464,
+      "max_absolute_errors": {
+        "p_up": 1.1102230246251565e-16,
+        "p_down": 1.1102230246251565e-16,
+        "predicted_magnitude_bps": 0.0,
+        "signed_score_bps": 1.4210854715202004e-14,
+        "actual_bps": 0.0,
+        "gross_bps": 0.0
+      },
+      "discrete_exact": {
+        "eligible": true,
+        "predicted_side": true,
+        "trade_side": true,
+        "model_fold": true,
+        "entry_timestamp_utc": true,
+        "exit_timestamp_utc": true
+      }
+    }
+  ],
+  "folds": [
+    {
+      "quarter": "2023Q2",
+      "magnitude_train": 495343,
+      "direction_train": 99068,
+      "inner_train": 81788,
+      "calibration_rows": 43184,
+      "outer_rows": 131040,
+      "last_training_label": "2023-03-31 23:59:00+00:00",
+      "last_calibration_label": "2023-03-01 23:59:00+00:00",
+      "maturity_and_prior_parity": true
+    },
+    {
+      "quarter": "2023Q3",
+      "magnitude_train": 525584,
+      "direction_train": 105117,
+      "inner_train": 87837,
+      "calibration_rows": 43184,
+      "outer_rows": 132480,
+      "last_training_label": "2023-06-30 23:59:00+00:00",
+      "last_calibration_label": "2023-05-31 23:59:00+00:00",
+      "maturity_and_prior_parity": true
+    },
+    {
+      "quarter": "2023Q4",
+      "magnitude_train": 525584,
+      "direction_train": 105117,
+      "inner_train": 87837,
+      "calibration_rows": 43184,
+      "outer_rows": 132480,
+      "last_training_label": "2023-09-30 23:59:00+00:00",
+      "last_calibration_label": "2023-08-31 23:59:00+00:00",
+      "maturity_and_prior_parity": true
+    },
+    {
+      "quarter": "2024Q1",
+      "magnitude_train": 525584,
+      "direction_train": 105117,
+      "inner_train": 87837,
+      "calibration_rows": 43184,
+      "outer_rows": 131023,
+      "last_training_label": "2023-12-31 23:59:00+00:00",
+      "last_calibration_label": "2023-12-01 23:59:00+00:00",
+      "maturity_and_prior_parity": true
+    },
+    {
+      "quarter": "2024Q2",
+      "magnitude_train": 527007,
+      "direction_train": 105402,
+      "inner_train": 88125,
+      "calibration_rows": 43184,
+      "outer_rows": 131040,
+      "last_training_label": "2024-03-31 23:59:00+00:00",
+      "last_calibration_label": "2024-03-01 23:59:00+00:00",
+      "maturity_and_prior_parity": true
+    },
+    {
+      "quarter": "2024Q3",
+      "magnitude_train": 527007,
+      "direction_train": 105402,
+      "inner_train": 88122,
+      "calibration_rows": 43184,
+      "outer_rows": 132480,
+      "last_training_label": "2024-06-30 23:59:00+00:00",
+      "last_calibration_label": "2024-05-31 23:59:00+00:00",
+      "maturity_and_prior_parity": true
+    },
+    {
+      "quarter": "2024Q4",
+      "magnitude_train": 527007,
+      "direction_train": 105402,
+      "inner_train": 88122,
+      "calibration_rows": 43184,
+      "outer_rows": 132464,
+      "last_training_label": "2024-09-30 23:59:00+00:00",
+      "last_calibration_label": "2024-08-31 23:59:00+00:00",
+      "maturity_and_prior_parity": true
+    }
+  ],
+  "future_immature_label_perturbation": {
+    "changed_labels": 132481,
+    "probe_origins": 2881,
+    "cutoff": "2024-10-01 00:00:00+00:00",
+    "prepared_features_exactly_unchanged": true
+  },
+  "raw_derived_prefix_check": {
+    "probe_origins": 2881,
+    "exact": true
+  },
+  "limitation": "These checks verify declared temporal construction and one cutoff perturbation, not independence from earlier model/feature selection on the same historical quarters."
+}
