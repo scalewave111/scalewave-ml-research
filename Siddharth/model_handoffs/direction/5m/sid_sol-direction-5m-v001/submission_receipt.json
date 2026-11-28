@@ -1,0 +1,19 @@
+{
+  "model_version": "sid_sol-direction-5m-v001",
+  "experiment": "SOL",
+  "handoff_commit": "8136a11a80df28480dbbe0c72298d2e0ba389d38",
+  "run_id": "61fcc6ab8ede4f33a6bd3bb603a20b29",
+  "run_link": "https://scalewave.tailf4ff21.ts.net/#/experiments/6/runs/61fcc6ab8ede4f33a6bd3bb603a20b29",
+  "artifact_uri": "mlflow-artifacts:/6/61fcc6ab8ede4f33a6bd3bb603a20b29/artifacts",
+  "verified_artifact_sha256": {
+    "evaluation.json": "4a900da030e77d8f318181999bbaa4d120671e0a2cc205e04d808c0ec82b0118",
+    "example_input.json": "ec51ed714b430ae6d4c295caaf702cb9988cf7c03a5b9a382b2ddf31a14fadc0",
+    "expected_output.json": "1e50e19145ae97481258dd0f94e45f06ad472e15966a9f717d7fec8feba2b0ed",
+    "fit_5m_direction.py": "d6072fe43db8d5442e5178a1cda15667e6c69dc40c13e51c2df2d3f31806b578",
+    "manifest.json": "92c8f0f135792cb4916f0f6418628e40b1a560561e40a339ed9929be81996421",
+    "predict.py": "8e15e4ce9395b2cc6695e444863ba13ffe571ae08625625c116f60a28d6988a9",
+    "README.md": "382fcf4954063fe3fc4378fa36f8013d96c92e7043303f9e4c7a3999b6c32410",
+    "requirements.txt": "d4da7edaf6012cfdba294f7d51ef4126d526f7d86876cd962a806c66c6980457",
+    "direction.joblib": "89be3bbc2dc029808fe5653c5a48cacf854e762b63c239e4715c8a73f280f075"
+  }
+}
