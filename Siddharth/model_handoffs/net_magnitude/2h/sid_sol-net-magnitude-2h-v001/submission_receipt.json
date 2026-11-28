@@ -1,0 +1,19 @@
+{
+  "model_version": "sid_sol-net-magnitude-2h-v001",
+  "experiment": "SOL",
+  "handoff_commit": "8136a11a80df28480dbbe0c72298d2e0ba389d38",
+  "run_id": "2751b6a975d14fcb89d7f634b94fbd4f",
+  "run_link": "https://scalewave.tailf4ff21.ts.net/#/experiments/6/runs/2751b6a975d14fcb89d7f634b94fbd4f",
+  "artifact_uri": "mlflow-artifacts:/6/2751b6a975d14fcb89d7f634b94fbd4f/artifacts",
+  "verified_artifact_sha256": {
+    "evaluation.json": "0e4e83cc09ddb6d3b8b576dc48e21a5534367c0a59db18266714d124a7cbee4b",
+    "example_input.json": "21a97ccafedf32ab5b9bd89258b9cb10460567c31453a0ac2589d85556a0443e",
+    "expected_output.json": "a67b357dd29dcfce86d4436d9afdb140f51bde8476065124d9e580bffffa0a96",
+    "fit_2h_net_magnitude.py": "ceb9663a996f117ef6271151df38f249913642006840826051dd3204a0d1a38a",
+    "manifest.json": "5c9872848e9209ddbe58eb288da895ebf26cf31fb0272b87720075b57221d505",
+    "predict.py": "8e15e4ce9395b2cc6695e444863ba13ffe571ae08625625c116f60a28d6988a9",
+    "README.md": "363da0df8b206900202ec2343a0a9ae14487accb902e4c2983b5444019a20aaa",
+    "requirements.txt": "14e98361dc2bb9277a66c8dc7ce23a64d3b5c6ff297416c8ad7ca74f10ed2fec",
+    "net-magnitude.joblib": "46558aaa78f9fc6a5f06a93ce8bb0996720440e36a9ce9599560e85a65b58cc2"
+  }
+}
