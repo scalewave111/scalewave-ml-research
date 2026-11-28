@@ -1,0 +1,7 @@
+{
+  "model_version": "sid_sol-net-magnitude-5m-v001",
+  "symbol": "SOLUSDT",
+  "horizon": "5m",
+  "forecast_time_utc": "2024-10-01T00:00:00Z",
+  "net_magnitude_bps": 20.65617699264136
+}

@@ -1,0 +1,7 @@
+{
+  "model_version": "sid_sol-direction-5m-v001",
+  "symbol": "SOLUSDT",
+  "horizon": "5m",
+  "forecast_time_utc": "2024-10-01T00:00:00Z",
+  "p_up": 0.4753428818861139
+}
