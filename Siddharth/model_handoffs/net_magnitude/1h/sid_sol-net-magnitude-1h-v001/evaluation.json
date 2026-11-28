@@ -1,0 +1,87 @@
+{
+  "model_version": "sid_sol-net-magnitude-1h-v001",
+  "primary_metric": "mae_bps",
+  "model_score": 34.79933970811238,
+  "baseline_score": 34.640620914519864,
+  "row_count": 130979,
+  "evaluation_start_utc": "2025-04-24T00:01:00+00:00",
+  "evaluation_end_utc": "2025-07-23T22:59:00+00:00",
+  "baseline_name": "Median absolute return over scored historical rows",
+  "extra_metrics": {
+    "historical_model_score": 43.737911287260715,
+    "historical_baseline_score": 44.3924509771173,
+    "historical_row_count": 922980,
+    "validation_model_score": 48.18986743507165,
+    "validation_baseline_score": 49.703729664262,
+    "validation_row_count": 129539,
+    "test_model_score": 34.79933970811238,
+    "test_baseline_score": 34.640620914519864,
+    "test_row_count": 130979
+  },
+  "scope": "Primary score and baseline use retrospective test minutes. Historical rows span quarterly refits. Historical magnitude baseline is descriptive in-sample.",
+  "quarterly_results": [
+    {
+      "issue": "2023-04-01",
+      "model_score": 37.3006855369377,
+      "baseline_score": 37.44880294741699,
+      "row_count": 131040,
+      "evaluation_start_utc": "2023-04-01T00:00:00+00:00",
+      "evaluation_end_utc": "2023-06-30T23:59:00+00:00"
+    },
+    {
+      "issue": "2023-07-01",
+      "model_score": 35.44368430227195,
+      "baseline_score": 35.36963523819934,
+      "row_count": 132480,
+      "evaluation_start_utc": "2023-07-01T00:00:00+00:00",
+      "evaluation_end_utc": "2023-09-30T23:59:00+00:00"
+    },
+    {
+      "issue": "2023-10-01",
+      "model_score": 55.78607847045381,
+      "baseline_score": 58.3914752929685,
+      "row_count": 132480,
+      "evaluation_start_utc": "2023-10-01T00:00:00+00:00",
+      "evaluation_end_utc": "2023-12-31T23:59:00+00:00"
+    },
+    {
+      "issue": "2024-01-01",
+      "model_score": 52.59695683276303,
+      "baseline_score": 53.736978200032134,
+      "row_count": 131040,
+      "evaluation_start_utc": "2024-01-01T00:00:00+00:00",
+      "evaluation_end_utc": "2024-03-31T23:59:00+00:00"
+    },
+    {
+      "issue": "2024-04-01",
+      "model_score": 43.571146834645134,
+      "baseline_score": 44.62009497688543,
+      "row_count": 131040,
+      "evaluation_start_utc": "2024-04-01T00:00:00+00:00",
+      "evaluation_end_utc": "2024-06-30T23:59:00+00:00"
+    },
+    {
+      "issue": "2024-07-01",
+      "model_score": 40.90569995411372,
+      "baseline_score": 41.09451891245658,
+      "row_count": 132480,
+      "evaluation_start_utc": "2024-07-01T00:00:00+00:00",
+      "evaluation_end_utc": "2024-09-30T23:59:00+00:00"
+    },
+    {
+      "issue": "2024-10-01",
+      "model_score": 40.58421024412265,
+      "baseline_score": 40.11228369457446,
+      "row_count": 132420,
+      "evaluation_start_utc": "2024-10-01T00:00:00+00:00",
+      "evaluation_end_utc": "2024-12-31T23:59:00+00:00"
+    }
+  ],
+  "frozen_checkpoint_test": {
+    "model_score": 34.79933970811238,
+    "baseline_score": 34.640620914519864,
+    "row_count": 130979,
+    "evaluation_start_utc": "2025-04-24T00:01:00+00:00",
+    "evaluation_end_utc": "2025-07-23T22:59:00+00:00"
+  }
+}
